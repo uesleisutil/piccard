@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+MyAppCPP = SANDY
+VARNAME  = ROMS/External/varinfo.dat
+GRDNAME == Projects/Sandy/Sandy\PYGZus{}roms\PYGZus{}grid.nc \PYGZbs{}
+           Projects/Sandy/Sandy\PYGZus{}roms\PYGZus{}grid\PYGZus{}ref3.nc
+ININAME == Projects/Sandy/Sandy\PYGZus{}ini.nc \PYGZbs{}
+           Projects/Sandy/Sandy\PYGZus{}ini\PYGZus{}ref3.nc
+NGCNAME =  Projects/Sandy/Sandy\PYGZus{}roms\PYGZus{}contact.nc
+BRYNAME == Projects/Sandy/Sandy\PYGZus{}bdy.nc
+FRCNAME == Projects/Sandy/roms\PYGZus{}narr\PYGZus{}Oct2012.nc \PYGZbs{}
+           Projects/Sandy/roms\PYGZus{}narr\PYGZus{}ref3\PYGZus{}Oct2012.nc
+\end{Verbatim}

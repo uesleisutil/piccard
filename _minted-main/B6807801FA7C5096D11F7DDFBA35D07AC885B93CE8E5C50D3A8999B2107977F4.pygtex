@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+svn checkout \PYGZhy{}\PYGZhy{}username myusrname https://coawstmodel.sourcerepo.com/coawstmodel/COAWST
+\end{Verbatim}

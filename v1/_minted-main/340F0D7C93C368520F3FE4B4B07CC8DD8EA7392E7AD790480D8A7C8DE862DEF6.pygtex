@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+ PBS \PYGZhy{}l mppwidth=3
+aprun \PYGZhy{}n 3 coawstM ./coupling.in 1\PYGZgt{} log.out 2\PYGZgt{} log.err
+\end{Verbatim}

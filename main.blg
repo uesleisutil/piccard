@@ -1,0 +1,17 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[6] Config.pm:305> INFO - Logfile is 'main.blg'
+[30] biber:313> INFO - === qui jul 25, 2019, 11:36:23
+[53] Biber.pm:371> INFO - Reading 'main.bcf'
+[101] Biber.pm:857> INFO - Found 39 citekeys in bib section 0
+[112] Biber.pm:3981> INFO - Processing section 0
+[120] Biber.pm:4154> INFO - Looking for bibtex format file 'refs.bib' for section 0
+[123] bibtex.pm:1468> INFO - LaTeX decoding ...
+[161] bibtex.pm:1294> INFO - Found BibTeX data source 'refs.bib'
+[298] Utils.pm:169> WARN - month field 'apr' in entry 'Warner2018' is not an integer - this will probably not sort properly.
+[491] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[491] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[491] Biber.pm:3809> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[491] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[533] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[600] bbl.pm:720> INFO - Output to main.bbl
+[600] Biber.pm:110> INFO - WARNINGS: 1

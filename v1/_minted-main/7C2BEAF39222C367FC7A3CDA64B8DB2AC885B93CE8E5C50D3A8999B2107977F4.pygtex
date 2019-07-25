@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+tar \PYGZhy{}cvzf SST.tar.gz SST/
+tar \PYGZhy{}cvzf Pressure.tar.gz Pressure/
+tar \PYGZhy{}cvzf Surface.tar.gz Surface/
+ssh \PYGZhy{}Y nome.sobrenome@acesso\PYGZhy{}hpc.cptec.inpe.br \PYGZhy{}p 2000
+mkdir Dados\PYGZus{}CFSR
+exit
+sftp \PYGZhy{}P2000 nome.sobrenome@acesso\PYGZhy{}hpc.cptec.inpe.br
+cd Dados\PYGZus{}CFSR
+put SST.tar.gz
+put Pressure.tar.gz
+put Surface.tar.gz
+exit
+ssh \PYGZhy{}Y nome.sobrenome@acesso\PYGZhy{}hpc.cptec.inpe.br \PYGZhy{}p 2000
+cd Dados\PYGZus{}CFSR
+tar \PYGZhy{}xvzf SST.tar.gz
+tar \PYGZhy{}xvzf Pressure.tar.gz
+tar \PYGZhy{}xvzf Surface.tar.gz
+\end{Verbatim}

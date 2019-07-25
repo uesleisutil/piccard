@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+cd /home/nome.sobrenome/repositorio/WPS\PYGZus{}scripts
+mv qsub\PYGZus{}geogrid.sh qsub\PYGZus{}ungrib.sh qsub\PYGZus{}metgrid.sh /home/nome.sobrenome/COAWST/WPS
+\end{Verbatim}

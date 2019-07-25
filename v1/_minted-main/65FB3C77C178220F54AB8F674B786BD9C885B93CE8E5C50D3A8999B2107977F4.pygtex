@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+printf \PYGZdq{}Compile for nesting? (1=basic, 2=preset moves, 3=vortex following) [default 1]: \PYGZdq{} ;
+\PYGZcb{}
+\PYGZdl{}response = 1 ;
+\end{Verbatim}

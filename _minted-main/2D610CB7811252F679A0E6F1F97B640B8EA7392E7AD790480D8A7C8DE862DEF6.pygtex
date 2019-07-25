@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+cd ../../gridgen/
+export FC=gfortran
+export F77=gfortran
+export CC=gcc
+wxport CXX=g++
+./configure \PYGZhy{}prefix=/home/uesleisutil/libsmodels CPPFLAGS=\PYGZhy{}I/home/uesleisutil/libsmodels/include
+LDFLAGS=\PYGZhy{}L/home/mf/libsmodels/lib
+\end{Verbatim}

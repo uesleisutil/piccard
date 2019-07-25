@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+module load java
+module load netcdf
+
+export PATH=/scratch/nome.sobrenome/repositorio/Softs/nedit/5.5:\PYGZdl{}PATH
+export PATH=/scratch/nome.sobrenome/repositorio/Softs/bin:\PYGZdl{}PATH
+
+export PHDF5=\PYGZdl{}\PYGZob{}HDF\PYGZus{}DIR\PYGZcb{}
+export WRFIO\PYGZus{}NCD\PYGZus{}LARGE\PYGZus{}FILE\PYGZus{}SUPPORT=1
+
+export PATH=/home/luciano.pezzi/local/bin:\PYGZdl{}PATH
+export JASPERINC=/home/luciano.pezzi/local/include
+export JASPERLIB=/home/luciano.pezzi/local/lib
+export LD\PYGZus{}LIBRARY\PYGZus{}PATH=/home/luciano.pezzi/local/lib:\PYGZdl{}LD\PYGZus{}LIBRARY\PYGZus{}PATH
+\end{Verbatim}

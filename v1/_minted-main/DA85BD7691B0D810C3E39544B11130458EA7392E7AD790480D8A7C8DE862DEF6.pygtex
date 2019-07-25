@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+printf \PYGZdq{}\PYGZbs{}nEnter selection [\PYGZpc{}d\PYGZhy{}\PYGZpc{}d] : \PYGZdq{},1,\PYGZdl{}opt ;
+\PYGZdl{}response = \PYGZlt{}STDIN\PYGZgt{} ;
+\end{Verbatim}

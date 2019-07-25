@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+apt\PYGZhy{}get install gfortran
+ sudo apt\PYGZhy{}get install g++
+\end{Verbatim}

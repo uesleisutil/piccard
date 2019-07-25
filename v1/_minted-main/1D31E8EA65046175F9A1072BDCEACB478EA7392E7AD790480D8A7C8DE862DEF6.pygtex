@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+ncconfig    = /home/uesleisutil/libsmodels/bin/nc\PYGZhy{}config
+netCDF4\PYGZus{}dir = /home/uesleisutil/libsmodels
+HDF5\PYGZus{}dir    = /home/uesleisutil/libsmodels
+szip\PYGZus{}dir    = /home/uesleisutil/libsmodels
+jpeg\PYGZus{}dir    = /home/uesleisutil/libsmodels
+curl\PYGZus{}dir    = /home/uesleisutil/libsmodels
+\end{Verbatim}

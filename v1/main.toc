@@ -1,0 +1,127 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Nota dos autores}{7}{chapter*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{9}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}O Regional Ocean Modeling System}{9}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}O Weather Research \& Forecasting Model}{10}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}O Simulating Waves Nearshore}{11}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}O Model Coupling Toolkit}{11}{section.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5} O Spherical Coordinate Remapping Interpolation Package}{11}{section.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}O Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}{12}{section.1.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.7}O Python}{13}{section.1.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.8}Materiais necess\IeC {\'a}rios para o uso do guia}{13}{section.1.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}O COAWST no cluster Kerana}{15}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Sobre o Kerana}{15}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Registrando uma conta de usu\IeC {\'a}rio}{15}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Acessando o cluster Kerana}{16}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Reposit\IeC {\'o}rio de arquivos}{17}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}O ambiente do Kerana}{17}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Baixando o COAWST}{18}{section.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Automatizando a compila\IeC {\c c}\IeC {\~a}o do COAWST no Kerana}{18}{section.2.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.8}Compilando o MCT}{19}{section.2.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.9}Compilando o caso-teste Sandy}{20}{section.2.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.1}Pasta Projects}{21}{subsection.2.9.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.2}Pasta Work}{23}{subsection.2.9.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.3}Compilando o caso teste}{24}{subsection.2.9.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.10}Simulando o caso teste Sandy}{26}{section.2.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Caracter\IeC {\'\i }sticas do COAWST}{29}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Os arquivos estruturais dos modelos}{29}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Modificando o n\IeC {\'u}mero de processadores}{30}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Modificando os processadores no ROMS}{30}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Modificando os processadores no WRF}{30}{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.3}Modificando os processadores no SWAN}{30}{subsection.3.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.4}Modificando os processadores no COAWST}{30}{subsection.3.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Modificando o intervalo de tempo do acoplamento entre os modelos}{31}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Construindo o seu projeto no WRF}{33}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Compilando o WRF no Kerana}{33}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}O WRF Preprocessing System (WPS)}{34}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Download do WPS}{35}{subsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Compilando o WPS no Kerana}{35}{subsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Construindo o seu projeto utilizando o CFSR}{37}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}O geogrid}{39}{subsection.4.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Utilizando o NCL para plotar o dom\IeC {\'\i }nio da grade}{41}{subsection.4.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}O ungrib}{43}{subsection.4.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.4}O metgrid}{45}{subsection.4.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.5}O real}{45}{subsection.4.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Usando o WRF}{47}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Construindo o ROMS}{49}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Instalando as bibliotecas do Python no computador pessoal}{49}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}Instala\IeC {\c c}\IeC {\~a}o manual}{49}{subsection.5.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.2}Utilizando o Conda}{60}{subsection.5.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Instalando o Pyroms}{60}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}O model2roms}{63}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}O ETOPO1 1 Arc-Minute Global Relief Model}{63}{subsection.5.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.2}Gerar a grade do ROMS}{63}{subsection.5.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.3}O Simple Ocean Data Assimilation (SODA)}{65}{subsection.5.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.4}Gerar as condi\IeC {\c c}\IeC {\~o}es do ROMS}{65}{subsection.5.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Compilando o ROMS com o modelo de gelo marinho}{70}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Construindo o SWAN}{71}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Construindo os pesos entre grades com o SCRIP}{73}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Construindo os pesos}{73}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Executanto seu projeto no COAWST}{75}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Trabalhos do LOA}{77}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Agradecimentos}{83}{chapter*.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{85}{chapter*.39}
+\contentsfinish 

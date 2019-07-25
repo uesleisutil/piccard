@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+cd ../../lp\PYGZus{}solve\PYGZus{}5.5/extra/Python/
+gedit setup.py
+\end{Verbatim}

@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+export PATH=/home/usuario/libsmodels/bin:\PYGZbs{}\PYGZdl{}PATH
+  export LD\PYGZbs{}\PYGZus{}LIBRARY\PYGZbs{}\PYGZus{}PATH=/home/usuario/libsmodels/lib:\PYGZbs{}\PYGZdl{}LD\PYGZbs{}\PYGZus{}LIBRARY\PYGZbs{}\PYGZus{}PATH
+  export PATH=/home/usuario/libsmodels/include:\PYGZbs{}\PYGZdl{}PATH
+\end{Verbatim}

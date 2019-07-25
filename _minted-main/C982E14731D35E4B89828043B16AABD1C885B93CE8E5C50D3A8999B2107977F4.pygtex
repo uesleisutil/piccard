@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+include\PYGZus{}dirs=[\PYGZsq{}../..\PYGZsq{},\PYGZsq{}/usr/include\PYGZsq{},\PYGZsq{}/home/usuario/libsmodels/include\PYGZsq{}],
+library\PYGZus{}dirs=[\PYGZsq{}/home/usuario/libsmodels/pyroms/lib/\PYGZsq{},\PYGZsq{}/home/usuario/libsmodels/lib\PYGZsq{}],
+\end{Verbatim}

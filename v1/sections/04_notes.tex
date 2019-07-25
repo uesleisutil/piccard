@@ -1,0 +1,20 @@
+% !TEX root = /media/ueslei/Ueslei/INPE/PCI/Guia_COAWST/main.tex
+\chapterimage{ocean2.jpg}
+\chapter*{Nota dos autores}
+\addcontentsline{toc}{chapter}{Nota dos autores}
+
+\noindent Este guia foi desenvolvido para auxiliar usuários novos com a familiarização e utilização do sistema de modelagem regional acoplada (COAWST). A principal idéia é ensinar o leitor as etapas necessárias para utilizar o COAWST, desde a sua instalação, simulação de um caso teste e a configuração de um projeto, escolhido pelo próprio usuário. Para atingir este objetivo, utilizamos diversas linguagens de programação, como Fortran, Python e MATLAB. Futuramente pretendemos adaptar todas as rotinas (scripts) para linguagem computacionais que sejam livres (gratuitas).
+\bigskip
+
+\noindent Quando começamos a escrever nosso guia, sentimos a necessidade de expandi-lo em seu o escopo e incluir o passo a passo para a utilização do Coupled Ocean-Atmosphere-Wave-Sediment Transport Modeling System. Queríamos passar para o leitor a nossa experiência em utilizar o sistema de modelagem numérica considerado o estado da arte na área, de modo que fosse possível, ao longo da leitura, entender o funcionamento e a aplicação dele, unindo a teoria com a prática.
+\bigskip
+
+\noindent Porém uma grande dificuldade neste processo é a geração das condições de contorno e inicial do modelo regional oceanico, o Regional Ocean Modeling System, que depende de softwares pagos. Para contornar este problemas escolhemos trabalhar com o pacote \textit{model2roms}.Este conjunto de rotinas foi desenvolvido em linguagem Python por Trond Kristiansen (\textcolor{bleu_cite}{\textit{http://www.trondkristiansen.com/}}).
+
+\noindent Cabe também destacar, que em alguns capítulos o leitor irá encontrará como utilizar o COAWST em um cluster com arquitetura que esta disponivel para o uso do Laboratório de Estudos do Oceano e da Atmosfera (LOA) da Coordenação Geral de Observação da Terra (OBT) do Instituto Nacional de Pesquisas Espaciais (INPE). Este é um sistema de computação de alta performance que permite o paralelismo de operações numéricas. Neste caso, o guia poderá servir somente como inspiração e valerá o conhecimento prévio do leitor em aplicar o COAWST no seu próprio sistema computacional. Isto implicará em conhecimento prévio do usuário em relação a sistema opercaional (UNIX), compiladores fortran e C, além de bibliotecas de leitura de dados (por exemplo NetCDF), que deverão estar instaladas \textit{a priori} no sistema computacional a ser utilizado.
+\bigskip
+
+\noindent Desejamos uma boa leitura e sucesso na sua pesquisa.
+\begin{flushright}
+\noindent Os autores.
+\end{flushright}

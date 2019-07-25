@@ -1,0 +1,34 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+FC  	    = ftn
+FCFLAGS	 = \PYGZhy{}O2
+F90FLAGS        =
+REAL8           = \PYGZhy{}r8
+ENDIAN          = \PYGZhy{}Mbyteswapio
+INCFLAG         = \PYGZhy{}I
+INCPATH         =
+MPILIBS         =
+DEFS            = \PYGZhy{}DSYSLINUX \PYGZhy{}DCPRPGI
+FPP	     = cpp
+FPPFLAGS        = \PYGZhy{}P \PYGZhy{}C \PYGZhy{}N \PYGZhy{}traditional
+CC              = cc
+ALLCFLAGS       = \PYGZhy{}DFORTRAN\PYGZus{}UNDERSCORE\PYGZus{} \PYGZhy{}DSYSLINUX \PYGZhy{}DCPRPGI \PYGZhy{}O
+COMPILER\PYGZus{}ROOT   =
+BABELROOT       =
+PYTHON          =
+PYTHONOPTS      =
+FORT\PYGZus{}SIZE       =
+CRULE           = .c.o
+90RULE          = .F90.o
+F90RULECPP      = .F90RULECPP
+INSTALL         = /home/nome.sobrenome/COAWST/Lib/MCT/install\PYGZhy{}sh \PYGZhy{}c
+MKINSTALLDIRS   = /home/nome.sobrenome/COAWST/Lib/MCT/mkinstalldirs
+abs\PYGZus{}top\PYGZus{}builddir= /home/nome.sobrenome/COAWST/Lib/MCT/
+MCTPATH         = /home/nome.sobrenome/COAWST/Lib/MCT/mct
+MPEUPATH        = /home/nome.sobrenome/COAWST/Lib/MCT/mpeu
+EXAMPLEPATH     = /home/nome.sobrenome/COAWST/Lib/MCT/examples
+MPISERPATH      =
+libdir          = /home/nome.sobrenome/COAWST/Lib/MCT/pgi/lib
+includedir      = /home/nome.sobrenome/COAWST/Lib/MCT/pgi/include
+AR	      = ar cq
+RM	      = rm \PYGZhy{}f
+\end{Verbatim}

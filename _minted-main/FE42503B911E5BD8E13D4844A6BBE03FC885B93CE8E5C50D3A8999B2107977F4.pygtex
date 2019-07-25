@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+export ESMF\PYGZus{}F90COMPILER=gfortran
+export ESMF\PYGZus{}NETCDF\PYGZus{}LIBS=\PYGZdq{}\PYGZhy{}lnetcdff \PYGZhy{}lnetcdf\PYGZdq{}
+export ESMF\PYGZus{}DIR=/home/usuario/libsmodels/packages/esmp.ESMF\PYGZus{}6\PYGZus{}3\PYGZus{}0rp1\PYGZus{}ESMP\PYGZus{}01/esmf
+export ESMF\PYGZus{}NETCDF=\PYGZdq{}local\PYGZdq{}
+export ESMF\PYGZus{}COMPILER=gfortran
+export ESMF\PYGZus{}COMM=openmpi
+export ESMF\PYGZus{}TESTEXHAUSTIVE=on
+export ESMF\PYGZus{}TESTSHAREDOBJ=on
+export ESMF\PYGZus{}NETCDF\PYGZus{}INCLUDE=/home/usuario/libsmodels/include
+export ESMF\PYGZus{}NETCDF\PYGZus{}LIBPATH=/home/usuario/libsmodels/lib
+export ESMF\PYGZus{}INSTALL\PYGZus{}PREFIX=/home/usuario/libsmodels/ESMF
+make
+make check
+make all\PYGZus{}tests
+make install
+\end{Verbatim}

@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+self.\PYGZus{}libgridgen = np.ctypeslib.load\PYGZus{}library(\PYGZsq{}libgridgen.so\PYGZsq{}, \PYGZsq{}/home/usuario/libsmodels/lib\PYGZsq{})
+print octant.\PYGZus{}\PYGZus{}path\PYGZus{}\PYGZus{}[0]
+self.\PYGZus{}libgridgen = np.ctypeslib.load\PYGZus{}library(\PYGZsq{}\PYGZus{}gridgen\PYGZsq{}, octant.\PYGZus{}\PYGZus{}path\PYGZus{}\PYGZus{}[0])
+\end{Verbatim}

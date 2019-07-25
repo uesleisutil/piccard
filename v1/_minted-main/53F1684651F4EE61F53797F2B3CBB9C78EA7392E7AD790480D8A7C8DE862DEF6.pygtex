@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYGZus{}csa = np.ctypeslib.load\PYGZus{}library(\PYGZsq{}csa.o\PYGZsq{}, \PYGZsq{}/home/uesleisutil/libsmodels/libs\PYGZsq{})
+\end{Verbatim}

@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+./configure \PYGZhy{}\PYGZhy{}prefix=/home/usuario/libsmodels
+\PYGZhy{}\PYGZhy{}enable\PYGZhy{}netcdf4 \PYGZhy{}\PYGZhy{}with\PYGZhy{}hdf5=/home/usuario/libsmodels \PYGZhy{}\PYGZhy{}enable\PYGZhy{}shared \PYGZhy{}\PYGZhy{}enable\PYGZhy{}dap
+\end{Verbatim}

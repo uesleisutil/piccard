@@ -1,0 +1,31 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+conda install \PYGZhy{}c conda\PYGZhy{}forge openmpi
+conda install \PYGZhy{}c anaconda gcc
+conda install \PYGZhy{}c mutirri szip
+conda install \PYGZhy{}c anaconda zlib
+conda install \PYGZhy{}c anaconda curl
+conda install \PYGZhy{}c anaconda hdf5
+conda install \PYGZhy{}c conda\PYGZhy{}forge netcdf\PYGZhy{}fortran
+conda install \PYGZhy{}c scitools jasper
+conda install \PYGZhy{}c anaconda libpng
+conda install \PYGZhy{}c scitools udunits
+conda install \PYGZhy{}c anaconda netcdf4
+conda install \PYGZhy{}c anaconda cython
+conda install \PYGZhy{}c anaconda numpy
+conda install \PYGZhy{}c anaconda scipy
+conda install \PYGZhy{}c anaconda mpi4py
+conda install \PYGZhy{}c conda\PYGZhy{}forge esmf
+bigskip
+
+\PYGZbs{}section\PYGZob{}Instalando o Pyroms\PYGZcb{}\PYGZbs{}index\PYGZob{}Instalando o Pyroms\PYGZcb{}
+\PYGZbs{}bigskip
+
+\PYGZbs{}noindent Com as bibliotecas básicas já instaladas, nesta seção será mostrado como instalar o PyROMS. Ele é uma coleção de ferramentas para ajudar com arquivos de entrada e saída do ROMS. Foi originalmente iniciado por Rob Hetland como um projeto no GoogleCode e reescrito por Frederic Castruccio. Será seguido o mesmo esquema da seção anterior, com o endereço para baixar a biblioteca e os comandos que deverão ser digitados no terminal.
+\PYGZbs{}bigskip
+
+\PYGZbs{}noindent Baixe o PyROMS dentro do seu \PYGZbs{}textit\PYGZob{}libsmodels\PYGZcb{}:
+\PYGZbs{}bigskip
+
+\PYGZbs{}begin\PYGZob{}bashcode\PYGZcb{}
+cd Do
+\end{Verbatim}

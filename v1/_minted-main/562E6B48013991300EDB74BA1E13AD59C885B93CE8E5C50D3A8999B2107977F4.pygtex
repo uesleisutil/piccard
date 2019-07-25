@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+sudo apt\PYGZhy{}get install python\PYGZhy{}setuptools
+sudo easy\PYGZus{}install pip
+sudo pip install distribute
+sudo pip install nose
+\end{Verbatim}

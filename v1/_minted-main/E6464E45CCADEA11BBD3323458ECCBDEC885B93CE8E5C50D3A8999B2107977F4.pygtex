@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+rm \PYGZhy{}rf *
+git clone https://github.com/sakov/gridgen\PYGZhy{}c.git
+git clone https://github.com/sakov/gridutils\PYGZhy{}c
+git clone https://github.com/sakov/csa\PYGZhy{}c
+git clone https://github.com/sakov/nn\PYGZhy{}c
+\end{Verbatim}

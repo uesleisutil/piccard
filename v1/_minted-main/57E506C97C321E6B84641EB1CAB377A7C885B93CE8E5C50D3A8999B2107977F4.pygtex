@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+cd /scratch/nome.sobrenome/repositorio/work\PYGZus{}coawst
+cp limpa.sh link.sh run\PYGZus{}sandy.sh /scratch/nome.sobrenome/COAWST/Work/Sandy
+\end{Verbatim}

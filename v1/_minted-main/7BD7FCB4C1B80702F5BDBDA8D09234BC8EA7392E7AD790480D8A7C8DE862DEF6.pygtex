@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+./configure \PYGZhy{}\PYGZhy{}prefix=/scratch/nome.sobrenome/COAWST/Lib/MCT/pgi
+make
+make install
+\end{Verbatim}

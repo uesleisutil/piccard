@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+export   COAWST\PYGZus{}APPLICATION=JOE\PYGZus{}TC
+export   MY\PYGZus{}ROOT\PYGZus{}DIR=\PYGZdl{}\PYGZob{}HOME\PYGZcb{}/COAWST
+export   MY\PYGZus{}HEADER\PYGZus{}DIR=\PYGZdl{}\PYGZob{}MY\PYGZus{}PROJECT\PYGZus{}DIR\PYGZcb{}/Projects/JOE\PYGZus{}TC
+\end{Verbatim}

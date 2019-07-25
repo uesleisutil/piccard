@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+WRF\PYGZus{}DIR  = ../WRFV3
+SFC      = ftn
+SCC      = gcc
+DM\PYGZus{}CC    = cc
+DM\PYGZus{}FC    = ftn
+FFLAGS   = \PYGZhy{}N255 \PYGZhy{}f free \PYGZhy{}h byteswapio
+F77FLAGS = \PYGZhy{}N255 \PYGZhy{}f fixed \PYGZhy{}h byteswapio
+\end{Verbatim}

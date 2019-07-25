@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+cd nn/nn/
+export FC=gfortran
+export F77=gfortran
+export CC=gcc
+export CXX=g++
+./configure \PYGZhy{}\PYGZhy{}prefix=/home/uesleisutil/libsmodels
+make
+make install
+\end{Verbatim}

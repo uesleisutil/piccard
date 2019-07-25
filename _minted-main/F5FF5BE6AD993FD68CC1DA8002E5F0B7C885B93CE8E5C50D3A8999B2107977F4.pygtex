@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+ipython compile.py \PYGZhy{}\PYGZhy{}pylab
+\end{Verbatim}

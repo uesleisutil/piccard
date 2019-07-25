@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+CFLAGS = \PYGZhy{}g \PYGZhy{}O2 \PYGZhy{}Wall \PYGZhy{}I/home/uesleisutil/libsmodels/include
+LDFLAGS = \PYGZhy{}L/home/uesleisutil/libsmodels/lib
+LIBS = \PYGZhy{}lgu \PYGZhy{}lm \PYGZhy{}L/home/uesleisutil/libsmodels/lib
+\end{Verbatim}

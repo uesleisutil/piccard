@@ -102,7 +102,7 @@ compile em_real
 \noindent O WPS é controlado pelo arquivo de texto \textit{namelist.wps} e é melhor esquematizado na Figura \textcolor{bleu_cite}{\ref{wpsdetalha}}.
 \bigskip
 
-\noindent Para mais informações sobre o WPS, acesse: \textcolor{bleu_cite}{\textit{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}}.
+\noindent Para mais informações sobre o WPS, acesse:  \textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}{\textit{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}}}.
 \bigskip
 
 \noindent Após criar estes arquivos, é utilizado o real para interpolar os campos meteorológicos para os níveis eta do WRF.
@@ -120,7 +120,7 @@ compile em_real
 \subsection{Download do WPS}
 \bigskip
 
-\noindent O WPS está incluído no pacote do COAWST, entretanto o \textit{download} do WPS, pode ser feito na página do WRF (\textcolor{bleu_cite}{\textit{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}}). Baixe-o e adicione o arquivo \textit{tar.gz} no cluster (de preferência dentro da pasta do COAWST) com o \textit{sftp}:
+\noindent O WPS está incluído no pacote do COAWST, entretanto o \textit{download} do WPS, pode ser feito na página do WRF (\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}{\textit{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}}}). Baixe-o e adicione o arquivo \textit{tar.gz} no cluster (de preferência dentro da pasta do COAWST) com o \textit{sftp}:
 \bigskip
 
 \begin{bashcode}
@@ -262,7 +262,7 @@ DMCC    = gcc
 \section{Construindo o seu projeto utilizando o CFSR}
 \bigskip
 
-\noindent Uma opção de banco de dados para alimentar as simulações do modelo regional atmosférico é utilizsar os dados do NCEP Climate Forecast System Reanalysis (CFSR) (\textcolor{bleu_cite}{\textit{http://rda.ucar.edu/datasets/ds093.0}}). Esse banco de dados é uma reanálise, de janeiro de 1979 a dezembro de 2010, alimentado através de dados orbitais, de cruzeiros de pesquisa, boias oceanográficas e estações meteorológicas e também através de modelagem numérica. Esta base de dados possui resolução vertical com 38 níveis, que se estendem desde a superfície até 1 hPa, com resolução temporal de 6 horas e horizontal de 0,5\degree para níveis de pressão e de 0,312\degree para variáveis na superfície.
+\noindent Uma opção de banco de dados para alimentar as simulações do modelo regional atmosférico é utilizsar os dados do NCEP Climate Forecast System Reanalysis (CFSR) (\textcolor{bleu_cite}{\href{http://rda.ucar.edu/datasets/ds093.0}{\textit{http://rda.ucar.edu/datasets/ds093.0}}}). Esse banco de dados é uma reanálise, de janeiro de 1979 a dezembro de 2010, alimentado através de dados orbitais, de cruzeiros de pesquisa, boias oceanográficas e estações meteorológicas e também através de modelagem numérica. Esta base de dados possui resolução vertical com 38 níveis, que se estendem desde a superfície até 1 hPa, com resolução temporal de 6 horas e horizontal de 0,5\degree para níveis de pressão e de 0,312\degree para variáveis na superfície.
 \bigskip
 
 \noindent Para acessar aos dados é necessário se cadastrar no site. Após feito isto, entre no link do banco de dados, clique na guia \textit{Data Acess} e clique em \textit{Get a subset}.
@@ -322,7 +322,7 @@ Você pode criar uma pasta de dados do CFSR na sua área. Não é preciso coloca
 \subsection{O geogrid}\label{geowps}
 \bigskip
 
-\noindent Como dito anteriormente, o geogrid gera o domínio da grade através de dados geográficos. Os dados podem ser obtidos nesse site: \textcolor{bleu_cite}{\textit{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}}, ou então no repositório do guia a partir do diretório:
+\noindent Como dito anteriormente, o geogrid gera o domínio da grade através de dados geográficos. Os dados podem ser obtidos nesse site: (\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}{\textit{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}}}), ou então no repositório do guia a partir do diretório:
 \bigskip
 
 \begin{bashcode}

@@ -1,16 +1,16 @@
 # Fdb version 3
-["biber main"] 1564418896 "main.bcf" "main.bbl" "main" 1564422134
-  "main.bcf" 1564422134 93006 c247b78c9519b0c82fa373dedc62d1a4 ""
+["biber main"] 1564418896 "main.bcf" "main.bbl" "main" 1564422571
+  "main.bcf" 1564422571 93006 c247b78c9519b0c82fa373dedc62d1a4 ""
   "refs.bib" 1564065383 15854 f2d903ebb7d0f5a2588542bfbaaf510c ""
   (generated)
   "main.blg"
   "main.bbl"
-["makeindex main.idx"] 1564419288 "main.idx" "main.ind" "main" 1564422134
-  "main.idx" 1564422134 1277 4d5c32ccfb3f7a3d4add547ccf88f07a ""
+["makeindex main.idx"] 1564419288 "main.idx" "main.ind" "main" 1564422571
+  "main.idx" 1564422571 1277 4d5c32ccfb3f7a3d4add547ccf88f07a ""
   (generated)
   "main.ind"
   "main.ilg"
-["pdflatex"] 1564422125 "/media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex" "main.pdf" "main" 1564422134
+["pdflatex"] 1564422561 "/media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex" "main.pdf" "main" 1564422571
   "/dev/null" 1564417334 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/etc/texmf/web2c/texmf.cnf" 1552575028 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex" 1564417665 8741 30cf97d4f16fb0a65b63de843c778a7a ""
@@ -528,13 +528,13 @@
   "_minted-main/colorful.pygstyle" 1527014227 10235 9c8eab61d0de29a2d09a73c4a986cca9 ""
   "_minted-main/default-pyg-prefix.pygstyle" 1527001976 7493 51cba9593a43acb2bf88b9295207f4be ""
   "main.aex" 0 -1 0 ""
-  "main.aux" 1564422134 52497 c0c9d737335cbcf0a4b748cec9069eaa ""
+  "main.aux" 1564422571 52497 c0c9d737335cbcf0a4b748cec9069eaa ""
   "main.bbl" 1564418898 90706 bc3c68a4f48fa3c5a10697aeca9bf6dd "biber main"
   "main.ind" 1564419289 1392 0af3f3f0d185d8c1a1698b325c76539b "makeindex main.idx"
-  "main.out" 1564422134 4906 85529e8e43e3d640c5888e97b61b8c9d ""
-  "main.run.xml" 1564422134 2349 dc3768f7de658652938a6ef4bc9575c4 ""
+  "main.out" 1564422571 4906 85529e8e43e3d640c5888e97b61b8c9d ""
+  "main.run.xml" 1564422571 2349 dc3768f7de658652938a6ef4bc9575c4 ""
   "main.tex" 1564417665 8741 30cf97d4f16fb0a65b63de843c778a7a ""
-  "main.toc" 1564422134 8515 33e6a765a44f7047582dceb90c5a8ec0 ""
+  "main.toc" 1564422571 8515 33e6a765a44f7047582dceb90c5a8ec0 ""
   "main.w18" 0 -1 0 ""
   "sections/01_titlepage.tex" 1563826324 498 012ebebcababbf098a9a2b9b0d0a30e0 ""
   "sections/02_copyright.tex" 1564415917 1993 9f1637239c5c7857547d1605df0b52d3 ""
@@ -548,17 +548,17 @@
   "sections/11_chapter_6.tex" 1564020014 4097 51196e6d9a4369ee51e5d5f12d09d310 ""
   "sections/12_chapter_7.tex" 1534795599 3539 40c39a1cfbbbcd31a0301eb84b8be737 ""
   "sections/13_chapter_8.tex" 1530797190 10264 c598eec90a91dde9bcf29bf21dfeb140 ""
-  "sections/14_reviewers.tex" 1564416657 606 1a9307275bc0eb397aa2b979cdc53001 ""
+  "sections/14_reviewers.tex" 1564422560 605 bea42973ec69d351b1f55388c2f0c2cc ""
   "sections/15_acknowledgments.tex" 1564416674 1401 8a28e89f8c22a71e0b43e7dabd8fe9fa ""
   "structure.tex" 1527012568 14509 243301e6645a83eb963c0ef9b374f572 ""
   (generated)
-  "main.listing"
-  "main.run.xml"
-  "main.ptc"
-  "main.pdf"
   "main.log"
-  "main.toc"
-  "main.aux"
-  "main.idx"
+  "main.run.xml"
+  "main.listing"
   "main.bcf"
+  "main.idx"
   "main.out"
+  "main.ptc"
+  "main.toc"
+  "main.pdf"
+  "main.aux"

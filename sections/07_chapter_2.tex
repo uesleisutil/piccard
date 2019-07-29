@@ -17,10 +17,10 @@ e temporal.
 \section{Registrando uma conta de usuário}
 \bigskip
 
-\noindent Para iniciar o processo de requerimento de uma conta de usuário no Kerana, é necessário que o computador nas dependências do INPE possuia IP fixo. É requerido do seu orientador ou supervisor o envio de um email para o Suporte do INPE (\textcolor{bleu_cite}{\textit{suporte@dsr.inpe.br}}) informando o endereço MAC, \textit{hostname} do computador e motivo da requisição. Caso o computador já possua um IP fixo atribuído, também informe para que ocorra a troca.
+\noindent Para iniciar o processo de requerimento de uma conta de usuário no Kerana, é necessário que o computador nas dependências do INPE possuia IP fixo. É requerido do seu orientador ou supervisor o envio de um email para o \textit{Helpdesk} do INPE  (\textcolor{bleu_cite}{\href{helpdesk.cptec@inpe.br}{\textit{helpdesk.cptec@inpe.br}}}) informando o endereço MAC, \textit{hostname} do computador e motivo da requisição. Caso o computador já possua um IP fixo atribuído, também informe para que ocorra a troca.
 \bigskip
 
-\noindent Com o IP fixado, é necessário que o seu supervisor ou orientador entre em contato com o \textit{Helpdesk} do INPE (\textcolor{bleu_cite}{\textit{helpdesk@cptec.inpe.br}}) requisitando a abertura da conta no cluster Kerana. Será necessário completar o preenchimento de um formulário via email, como o exemplo a seguir:
+\noindent Com o IP fixado, o seu supervisor ou orientador entrará novamente em contato com o \textit{Helpdesk} requisitando a abertura da conta no cluster Kerana. Será necessário completar o preenchimento de um formulário via email, como o exemplo a seguir:
 \bigskip
 \begin{enumerate}
 \item \textbf{Nome do solicitante};
@@ -192,11 +192,11 @@ source .bashrc
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
     rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-O COAWST versão 3.4 já está dentro do repositório discutido na Seção \textcolor{bleu_cite}{\ref{reposit}}.
+O COAWST versão 3.4 está no repositório discutido na Seção \textcolor{bleu_cite}{\ref{reposit}}.
 \end{tcolorbox}
 \bigskip
 
-\noindent Para baixar o COAWST, envie um email para o Dr. John Warner (\textcolor{bleu_cite}{\textit{jcwarner@usgs.gov}}), um dos idealizadores do sistema de modelagem regional acoplada.
+\noindent Para baixar o COAWST, envie um email para o Dr. John Warner (\textcolor{bleu_cite}{\href{jcwarner@usgs.gov}{\textit{jcwarner@usgs.gov}}}), um dos idealizadores do sistema de modelagem regional acoplada.
 \bigskip
 
 \noindent Após ter o acesso liberado, com as credenciais de usuário e senha disponibilizadas pelo Dr. John Warner, digite no terminal o comando abaixo, alterando o \textit{myusrname} para o seu nome de usuário.
@@ -207,7 +207,7 @@ svn checkout --username myusrname https://coawstmodel.sourcerepo.com/coawstmodel
 \end{bashcode}
 \bigskip
 
-\noindent Adicione a pasta do COAWST na sua área de trabalho do Kerana através de \textit{sftp}, conforme ensinado na Seção \textcolor{bleu_cite}{\ref{keranaacess}}.
+\noindent Adicione a pasta do COAWST na sua área de trabalho do Kerana através de \textit{sftp}, conforme a Seção \textcolor{bleu_cite}{\ref{keranaacess}}.
 \bigskip
 
 \section{Automatizando a compilação do COAWST no Kerana}\label{autowrf}
@@ -228,7 +228,7 @@ Este guia utiliza o COAWST versão 3.4.
 \end{tcolorbox}
 \bigskip
 
-\noindent Para agilizar o processo, é possível automatizar alguns passos da compilação. Portanto, entre no seguinte diretório:
+\noindent Para agilizar o processo, é possível automatizar alguns passos da compilação. Entre no diretório:
 \bigskip
 
 \begin{bashcode}
@@ -236,7 +236,7 @@ cd /scratch/nome.sobrenome/COAWST/WRF/arch
 \end{bashcode}
 \bigskip
 
-\noindent Abra o arquivo \textit{Config.pl}
+\noindent Abra o arquivo \textit{Config.pl}:
 \bigskip
 
 \begin{bashcode}
@@ -336,7 +336,7 @@ Este guia utiliza o COAWST v 3.4.
 \bigskip
 
 
-\noindent Deve-se compilar o MCT antes de compilar o COAWST. Neste caso, é necessário utilizar o arquivo \textit{setup\_pgi.sh}. Este arquivo foi copiado do repositório anterior, sendo indispensável alterar os diretórios contidos nele.
+\noindent Deve-se compilar o MCT antes de compilar o COAWST. O primeiro passp é utilizar o arquivo \textit{setup\_pgi.sh}. Este arquivo foi copiado do repositório anterior, sendo indispensável alterar os diretórios contidos nele.
 Portanto:
 \bigskip
 

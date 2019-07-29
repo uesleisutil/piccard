@@ -20,7 +20,7 @@
 \noindent Segundo \textcite{Gouveia2015}, o ROMS está estruturado por diversos modulos escritos em liguagem em Fortran (\textit{.F}). Além deles também tem os arquivos de entrada (\textit{.in}) que contém as parametrizações numéricas do modelo, arquivos de cabeçalho (\textit{.h}) que fornecem informações de pré-processamento, arquivos com definições de variáveis (\textit{varinfo.dat}) e pelo \textit{makefile} usado para compilar os executáveis.
 \bigskip
 
-\noindent O ROMS é um modelo que possui códigos livre e seu desenvolvimento conta com a contribuição da comunidade de usuários. Atualmente, a versão utilizado no COAWST é gerenciado pelo Dr. Hernan Arango da Rutgers University. Para acessar ao código do modelo, é necessário fazer o cadastro no site do ROMS (\textcolor{bleu_cite}{\textit{https://www.myroms.org/}}) para ter acesso ao código fonte do modelo. É necessário apresentar uma justificativa para se cadastrar no site. O site também conta com um fórum extremamente útil e bastante ativo (\textcolor{bleu_cite}{\textit{https://www.myroms.org/forum/}}) para perguntas e sugestões sobre problemas na utilização deste modelo.
+\noindent O ROMS é um modelo que possui códigos livre e seu desenvolvimento conta com a contribuição da comunidade de usuários. Atualmente, a versão utilizado no COAWST é gerenciado pelo Dr. Hernan Arango da Rutgers University. Para acessar ao código do modelo, é necessário fazer o cadastro no site do ROMS (\textcolor{bleu_cite}{\href{https://www.myroms.org/}{\textit{https://www.myroms.org/}}}) para ter acesso ao código fonte do modelo. É necessário apresentar uma justificativa para se cadastrar no site. O site também conta com um fórum extremamente útil e bastante ativo (\textcolor{bleu_cite}{\href{https://www.myroms.org/forum}{\textit{https://www.myroms.org/forum}}}) para perguntas e sugestões sobre problemas na utilização deste modelo.
 \bigskip
 
 \noindent Recomenda-se a leitura do Manual Técnico do ROMS, escrito por \textcite{hedstrom2018}. Este manual conta com diversas informações sobre as equaçõe s e algorítmos do modelo e exemplos de casos-teste. 
@@ -52,7 +52,7 @@
 \section{O Weather Research \& Forecasting Model}\index{Weather Research \& Forecasting Model}
 \bigskip
 
-\noindent O Weather Research and Forecasting (WRF; \cite{Skamarock2008}) é um modelo desenvolvido pelo National Centers for Environmental Prediction (NCEP), National Center for Atmospheric Research (NCAR) e grupos de pesquisa de diferentes universidades (\textcolor{bleu_cite}{\textit{https://www.mmm.ucar.edu/weather-research-and-forecasting-model}}).
+\noindent O Weather Research and Forecasting (WRF; \cite{Skamarock2008}) é um modelo desenvolvido pelo National Centers for Environmental Prediction (NCEP), National Center for Atmospheric Research (NCAR) e grupos de pesquisa de diferentes universidades (\textcolor{bleu_cite}{\href{https://www.mmm.ucar.edu/weather-research-and-forecasting-model}{\textit{https://www.mmm.ucar.edu/weather-research-and-forecasting-model}}}).
 \bigskip
 
 \noindent Para integrar no tempo as equações governantes, o ARW utiliza modos de baixa freqüência que são integrados utilizando o esquema de Runge-Kutta de terceira ordem, e os modos acústicos (de alta frequência) integrados com passo de tempo menor, para manter a estabilidade numérica, através de um esquema “forward-backward” para os modos acústicos que se propagam horizontalmente, e de um esquema implícito para modos acústicos de propagação vertical e oscilações de empuxo (\cite{Skamarock2008}).
@@ -114,7 +114,7 @@ Z_{0} = Z_{ch} \frac{u_{*}^{2}}{g}
 \noindent O Model Coupling Toolkip (MCT; \cite{Larson2005,Jacob2005,Warner2008}) é um conjunto de rotinas livres, escritas basicamente em Fortran 90 que são utilizadas no acoplamento de modelos. Ele é uma ferramenta muito poderosa pois permite que os modelos sejam acoplados também de forma paralela.
 \bigskip
 
-\noindent Segundo o site do MCT (\textcolor{bleu_cite}{\textit{http://www.mcs.anl.gov/research/projects/mct/}}), ele fornece os seguintes serviços de acoplamento de núcleo:
+\noindent Segundo o site do MCT ((\textcolor{bleu_cite}{\href{http://www.mcs.anl.gov/research/projects/mct/}{\textit{http://www.mcs.anl.gov/research/projects/mct/}}}), ele fornece os seguintes serviços de acoplamento de núcleo:
 \bigskip
 
 \begin{itemize}
@@ -130,7 +130,7 @@ Z_{0} = Z_{ch} \frac{u_{*}^{2}}{g}
 \section{ O Spherical Coordinate Remapping Interpolation Package}\label{scripsecao}
 \bigskip
 
-\noindent O  Spherical Coordinate Remapping Interpolation Package (SCRIP; \cite{Jones1999,Jones1998}) está disponível gratuitamente em \textcolor{bleu_cite}{\textit{http://oceans11.lanl.gov/trac/SCRIP}} e é distribuído junto com o COAWST. Este pacote é usado para projetos que utilizam mais de um modelo e que possuem grades horizontais diferentes, ou seja com diferentes resoluções espaciais. O SCRIP gerará os pesos de interpolação que são usados para remapear os dados entre as distintas grades dos distintos modelos.
+\noindent O  Spherical Coordinate Remapping Interpolation Package (SCRIP; \cite{Jones1999,Jones1998}) está disponível gratuitamente em \textcolor{bleu_cite}{\href{http://oceans11.lanl.gov/trac/SCRIP}{\textit{http://oceans11.lanl.gov/trac/SCRIP}}} e é distribuído junto com o COAWST. Este pacote é usado para projetos que utilizam mais de um modelo e que possuem grades horizontais diferentes, ou seja com diferentes resoluções espaciais. O SCRIP gerará os pesos de interpolação que são usados para remapear os dados entre as distintas grades dos distintos modelos.
 \bigskip
 
 \noindent No COAWST, o SCRIP foi modificado para gerar um único arquivo (no format NetCDF) que contém o resultado do cálculo dos pesos baseado nas grades dos modelos.
@@ -174,11 +174,8 @@ Este guia não usa o CSTM. Caso esteja interessado, há um estudo prévio sobre 
 \item WRF -> SWAN: Vento a 10m.
 \end{itemize}
 \bigskip
-\noindent A página do Woods Hole Coastal and Marine Science Center fornece, em caráter experimental, uma apresentação em tempo real da integração do COAWST (Temperatura da Superfície do Mar, Altura da Superfície do Mar, Altura Significativa de Ondas, Vetores de Corrente e Vento e dispersão de Sedimentos) para o leste dos Estados Unidos e Golfo do México. É possível acessar o conteúdo em \textcolor{bleu_cite}{\textit{https://woodshole.er.usgs.gov/project-pages/cccp/public/COAWST.htm}}.
 
-
-\begin{figure}
-    \bigskip
+\begin{figure}[H]
     \begin{tikzpicture}[->,
         >=stealth',
         shorten >=1pt,
@@ -195,7 +192,7 @@ Este guia não usa o CSTM. Caso esteja interessado, há um estudo prévio sobre 
         rounded corners,
         font=\small}]
 
-        \hspace{3cm}
+        \hspace{5cm}
         \node[state] (A)  {\small WRF};
         \node[state] (C)  [right=4cm of A] {\small ROMS \scriptsize{Sea ice}};
         \node[state] (B)  [below=4cm of C,right of= A] {\small SWAN};
@@ -207,11 +204,13 @@ Este guia não usa o CSTM. Caso esteja interessado, há um estudo prévio sobre 
         \path (B) edge [draw=black, bend right=20] node[sloped, align=center, below,font=\tiny] {L\textsubscript{wave}, H\textsubscript{wave}, D\textsubscript{wave}, \\T\textsubscript{surface}, T\textsubscript{bottom}, Q\textsubscript{B}, \\W\textsubscript{dissipation}, U\textsubscript{b}} (C); 
         \path (C) edge [draw=black, bend right=20] node[sloped, align=center, below,font=\tiny] {U\textsubscript{s}, V\textsubscript{s}, Bathymetry, \\Bottom Elevation} (B); 
         \node[align=center,font=\bfseries, yshift=2em] (title) at (current bounding box.north) {\small Coupled Ocean-Atmosphere-Wave-\\\small Sediment Transport modeling system \\\small v3.4};
-
-        \label{acopla}
     \end{tikzpicture}
-\caption{Esquema sobre a troca de informações entre os modelos que compões o COAWST.}
+\caption{Esquema sobre a troca de informações entre os modelos que compõe o sistema COAWST. (\cite{Warner2008})}
+\label{acopla}
 \end{figure}
+\bigskip
+
+\noindent A página do Woods Hole Coastal and Marine Science Center fornece, em caráter experimental, uma apresentação em tempo real da integração do COAWST (Temperatura da Superfície do Mar, Altura da Superfície do Mar, Altura Significativa de Ondas, Vetores de Corrente e Vento e dispersão de Sedimentos) para o leste dos Estados Unidos e Golfo do México. O conteúdo está disponível em \textcolor{bleu_cite}{\href{https://woodshole.er.usgs.gov/project-pages/cccp/public/COAWST.htm}{\textit{https://woodshole.er.usgs.gov/project-pages/cccp/public/COAWST.htm}}}.
 \bigskip
 
 %%%%%%%%%%%%%%%%%%%%%  PYTHON %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -224,7 +223,7 @@ Este guia não usa o CSTM. Caso esteja interessado, há um estudo prévio sobre 
 \noindent A linguagem preza pela simplicidade e eficácia e possui uma ampla comunidade, o que facilita muito ao usuário em caso de dúvidas, pois encontra-se facilemnte através da internet um extenso acervo de bibliotecas e documentação.
 \bigskip
 
-\noindent O Python Brasil (\textcolor{bleu_cite}{\textit{http://python.org.br}}) oferece grande auxílio para iniciantes na linguagem, disponibilizando introduções (\textcolor{bleu_cite}{\textit{http://python.org.br/introducao/}}) e também um guia (\textcolor{bleu_cite}{\textit{http://python.org.br/cientifico}}) para usar o Python no meio científico.
+\noindent O Python Brasil (\textcolor{bleu_cite}{\href{http://python.org.br}{\textit{http://python.org.br}}}) oferece grande auxílio para iniciantes na linguagem, disponibilizando introduções ((\textcolor{bleu_cite}{\href{http://python.org.br/introducao}{\textit{http://python.org.br/introducao}}}) e também um guia ((\textcolor{bleu_cite}{\href{http://python.org.br/cientifico}{\textit{http://python.org.br/cientifico}}}) para usar o Python no meio científico.
 
 
 
@@ -235,4 +234,4 @@ Este guia não usa o CSTM. Caso esteja interessado, há um estudo prévio sobre 
 \noindent Antes de continuar, é necessário ter em mente os materiais utilizados neste guia. Ele foi contruído  utilizando o Ubuntu 18.04 LTS. Isso é importante pois sistemas operacionais diferentes podem gerar conflitos ao utilizar o pacote \textit{model2roms}. que gera as os arquivos necessários para utilizar o ROMS.
 \bigskip
 
-\noindent Este guia também utiliza o COAWST v. 3.4. É importante manter a versão utilizada, pois versão diferentes podem apresentar problemas na compilação.
+\noindent Este guia utiliza o COAWST v. 3.4. É importante manter a versão utilizada, pois versão diferentes podem apresentar problemas na compilação.

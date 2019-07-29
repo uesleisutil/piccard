@@ -2059,37 +2059,6 @@
       \verb http://dx.doi.org/10.5065/D6WD3XH5
       \endverb
     \endentry
-    \entry{Warner2018}{online}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=aca0981e9f165c088075f1d1143548c6}{%
-           family={Warner},
-           familyi={W\bibinitperiod},
-           given={J.\bibnamedelimi C.},
-           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{aca0981e9f165c088075f1d1143548c6}
-      \strng{fullhash}{aca0981e9f165c088075f1d1143548c6}
-      \strng{bibnamehash}{aca0981e9f165c088075f1d1143548c6}
-      \strng{authorbibnamehash}{aca0981e9f165c088075f1d1143548c6}
-      \strng{authornamehash}{aca0981e9f165c088075f1d1143548c6}
-      \strng{authorfullhash}{aca0981e9f165c088075f1d1143548c6}
-      \field{sortinit}{W}
-      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{4}
-      \field{title}{A Coupled-Ocean-Atmosphere-Wave- Sediment Transport Modeling System}
-      \field{year}{2018}
-      \verb{urlraw}
-      \verb https://woodshole.er.usgs.gov/operations/modeling/COAWST/
-      \endverb
-      \verb{url}
-      \verb https://woodshole.er.usgs.gov/operations/modeling/COAWST/
-      \endverb
-    \endentry
     \entry{Warner2010}{article}{}
       \name{author}{4}{}{%
         {{uniquename=0,uniquepart=base,hash=aca0981e9f165c088075f1d1143548c6}{%

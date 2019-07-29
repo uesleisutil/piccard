@@ -20,10 +20,10 @@
 \noindent Segundo \textcite{Gouveia2015}, o ROMS está estruturado por diversos modulos escritos em liguagem em Fortran (\textit{.F}). Além deles também tem os arquivos de entrada (\textit{.in}) que contém as parametrizações numéricas do modelo, arquivos de cabeçalho (\textit{.h}) que fornecem informações de pré-processamento, arquivos com definições de variáveis (\textit{varinfo.dat}) e pelo \textit{makefile} usado para compilar os executáveis.
 \bigskip
 
-\noindent O ROMS é um modelo que possui códigos livre e seu desenvolvimento conta com a contribuição da comunidade de usuários. Atualmente, a versão utilizado no COAWST é gerenciado pelo Dr Hernan Arango da Rutgers University. Para acessar ao código do modelo, é necessário fazer o cadastro no site do ROMS (\textcolor{bleu_cite}{\textit{https://www.myroms.org/}}) para ter acesso ao código fonte do modelo. É necessário apresentar uma justificativa para se cadastrar no site. O site também conta com um fórum extremamente útil e bastante ativo (\textcolor{bleu_cite}{\textit{https://www.myroms.org/forum/}}) para perguntas e sugestões sobre problemas na utilização deste modelo.
+\noindent O ROMS é um modelo que possui códigos livre e seu desenvolvimento conta com a contribuição da comunidade de usuários. Atualmente, a versão utilizado no COAWST é gerenciado pelo Dr. Hernan Arango da Rutgers University. Para acessar ao código do modelo, é necessário fazer o cadastro no site do ROMS (\textcolor{bleu_cite}{\textit{https://www.myroms.org/}}) para ter acesso ao código fonte do modelo. É necessário apresentar uma justificativa para se cadastrar no site. O site também conta com um fórum extremamente útil e bastante ativo (\textcolor{bleu_cite}{\textit{https://www.myroms.org/forum/}}) para perguntas e sugestões sobre problemas na utilização deste modelo.
 \bigskip
 
-\noindent Recomenda-se a leitura do Manual Técnico do ROMS, escrito por \textcite{hedstrom2018}. Este manual conta com diversas informações sobre as equaçõe s e algorítmos do modelo, bem com as configurações necessárias para simular casos-teste. 
+\noindent Recomenda-se a leitura do Manual Técnico do ROMS, escrito por \textcite{hedstrom2018}. Este manual conta com diversas informações sobre as equaçõe s e algorítmos do modelo e exemplos de casos-teste. 
 
 
 %%%%%%%%%%%%%%%%%%%% Sea Ice %%%%%%%%%%%%%%%%%%%%
@@ -174,17 +174,45 @@ Este guia não usa o CSTM. Caso esteja interessado, há um estudo prévio sobre 
 \item WRF -> SWAN: Vento a 10m.
 \end{itemize}
 \bigskip
+\noindent A página do Woods Hole Coastal and Marine Science Center fornece, em caráter experimental, uma apresentação em tempo real da integração do COAWST (Temperatura da Superfície do Mar, Altura da Superfície do Mar, Altura Significativa de Ondas, Vetores de Corrente e Vento e dispersão de Sedimentos) para o leste dos Estados Unidos e Golfo do México. É possível acessar o conteúdo em \textcolor{bleu_cite}{\textit{https://woodshole.er.usgs.gov/project-pages/cccp/public/COAWST.htm}}.
 
-\begin{figure}[H]
-    \centering
-    \captionsetup{justification=centering}
-    \includegraphics[width=0.55\textwidth]{model.png}
-    \caption{Esquema que detalha a troca de informações entre os modelos que compõem o COAWST. \newline Fonte: \textcite{Warner2018}.}
-    \label{acopla}
+
+\begin{figure}
+    \bigskip
+    \begin{tikzpicture}[->,
+        >=stealth',
+        shorten >=1pt,
+        auto,
+        node distance=2.75cm, 
+        state/.style={
+        draw=red,
+        fill=red,
+        circle, 
+        text=black,
+        text width={width("ROMS")},
+        minimum size=1.5cm,
+        align=center,
+        rounded corners,
+        font=\small}]
+
+        \hspace{3cm}
+        \node[state] (A)  {\small WRF};
+        \node[state] (C)  [right=4cm of A] {\small ROMS \scriptsize{Sea ice}};
+        \node[state] (B)  [below=4cm of C,right of= A] {\small SWAN};
+
+        \path (A) edge [draw=black, bend right=20] node[sloped, align=center, below,font=\tiny]  {U\textsubscript{wind}, V\textsubscript{wind}, P\textsubscript{atm}, RH, \\T\textsubscript{air}, Cloud, Rain, \\SW\textsubscript{rad}, LW\textsubscript{rad}} (C); % WRF->ROMS
+        \path (C) edge [draw=black, bend right=20] node[sloped, align=center, below,font=\tiny] {SST} (A);
+        \path (A) edge [draw=black, bend right=20] node[sloped, align=center, below,font=\tiny] {U\textsubscript{wind}, \textsubscript{wind}} (B); 
+        \path (B) edge [draw=black, bend right=20] node[sloped, align=center, below,font=\tiny] {L\textsubscript{wave}, H\textsubscript{wave}} (A);
+        \path (B) edge [draw=black, bend right=20] node[sloped, align=center, below,font=\tiny] {L\textsubscript{wave}, H\textsubscript{wave}, D\textsubscript{wave}, \\T\textsubscript{surface}, T\textsubscript{bottom}, Q\textsubscript{B}, \\W\textsubscript{dissipation}, U\textsubscript{b}} (C); 
+        \path (C) edge [draw=black, bend right=20] node[sloped, align=center, below,font=\tiny] {U\textsubscript{s}, V\textsubscript{s}, Bathymetry, \\Bottom Elevation} (B); 
+        \node[align=center,font=\bfseries, yshift=2em] (title) at (current bounding box.north) {\small Coupled Ocean-Atmosphere-Wave-\\\small Sediment Transport modeling system \\\small v3.4};
+
+        \label{acopla}
+    \end{tikzpicture}
+\caption{Esquema sobre a troca de informações entre os modelos que compões o COAWST.}
 \end{figure}
 \bigskip
-
-\noindent A página do Woods Hole Coastal and Marine Science Center fornece, em caráter experimental, uma apresentação em tempo real da integração do COAWST (Temperatura da Superfície do Mar, Altura da Superfície do Mar, Altura Significativa de Ondas, Vetores de Corrente e Vento e dispersão de Sedimentos) para o leste dos Estados Unidos e Golfo do México. É possível acessar o conteúdo em \textcolor{bleu_cite}{\textit{https://woodshole.er.usgs.gov/project-pages/cccp/public/COAWST.htm}}.
 
 %%%%%%%%%%%%%%%%%%%%%  PYTHON %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{O Python}\index{Python}

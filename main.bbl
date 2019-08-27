@@ -494,6 +494,54 @@
       \field{title}{The WRF Preprocessing System}
       \field{year}{2008}
     \endentry
+    \entry{Endo2019}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=379b5b94ac7570fb7376b6169ec0ce5a}{%
+           family={Endo},
+           familyi={E\bibinitperiod},
+           given={C.\bibnamedelimi A.\bibnamedelimi K.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bc34291ad96b768a4cc1340209d5d08b}{%
+           family={Gherardi},
+           familyi={G\bibinitperiod},
+           given={D.\bibnamedelimi F.\bibnamedelimi M.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e2ae4ad7c3f743279a93222a32095973}{%
+           family={Pezzi},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi P.},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=53d65bff3705f76af0a0724fcbfc55a7}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={L.\bibnamedelimi N.},
+           giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{090765ea5528eb1e5a5626999f409c9d}
+      \strng{fullhash}{5d08ba73ae6967e60bf969637dd37724}
+      \strng{bibnamehash}{5d08ba73ae6967e60bf969637dd37724}
+      \strng{authorbibnamehash}{5d08ba73ae6967e60bf969637dd37724}
+      \strng{authornamehash}{090765ea5528eb1e5a5626999f409c9d}
+      \strng{authorfullhash}{5d08ba73ae6967e60bf969637dd37724}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Scientific Reports}
+      \field{title}{Low connectivity compromises the conservation of reef fishes by marine protected areas in the tropical South Atlantic}
+      \field{year}{2019}
+      \field{pages}{01\bibrangedash 11}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1038/s41598-019-45042-0
+      \endverb
+    \endentry
     \entry{Fernandez2018}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=6a12fdfe21c3394b2cd16b74bc6b7d7a}{%
@@ -527,37 +575,6 @@
       \field{year}{2018}
       \field{pages}{1\bibrangedash 15}
       \range{pages}{15}
-    \endentry
-    \entry{Gouveia2015}{thesis}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=75e3a8f734f5895c9e3adb4e093ab182}{%
-           family={Gouveia},
-           familyi={G\bibinitperiod},
-           given={M.\bibnamedelimi B.},
-           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{institution}{1}{%
-        {Sensoriamento Remoto, Instituto Nacional de Pesquisas Espaciais}%
-      }
-      \list{location}{1}{%
-        {São José dos Campos, SP}%
-      }
-      \strng{namehash}{75e3a8f734f5895c9e3adb4e093ab182}
-      \strng{fullhash}{75e3a8f734f5895c9e3adb4e093ab182}
-      \strng{bibnamehash}{75e3a8f734f5895c9e3adb4e093ab182}
-      \strng{authorbibnamehash}{75e3a8f734f5895c9e3adb4e093ab182}
-      \strng{authornamehash}{75e3a8f734f5895c9e3adb4e093ab182}
-      \strng{authorfullhash}{75e3a8f734f5895c9e3adb4e093ab182}
-      \field{sortinit}{G}
-      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{A influência dos processos de circulação oceânica nos extremos de produção comercial da Sardinha Verdadeira}
-      \field{type}{Dissertação de Mestrado}
-      \field{year}{2015}
     \endentry
     \entry{Haidvogel2008}{article}{}
       \name{author}{20}{}{%
@@ -1045,6 +1062,52 @@
       \verb{doi}
       \verb 10.1002/2014JC010678
       \endverb
+    \endentry
+    \entry{Lima2019}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=53d65bff3705f76af0a0724fcbfc55a7}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={L.\bibnamedelimi N.},
+           giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e2ae4ad7c3f743279a93222a32095973}{%
+           family={Pezzi},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi P.},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=746dbdaecc64eb1d72eb9abe17f8c79e}{%
+           family={Penny},
+           familyi={P\bibinitperiod},
+           given={S.\bibnamedelimi G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7e5cb0fd71a568a28043c9f7cccefd5a}{%
+           family={Tanajura},
+           familyi={T\bibinitperiod},
+           given={C.\bibnamedelimi A.\bibnamedelimi S.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a5fe7406dbc8ca17cce4f9c08acf9ab9}
+      \strng{fullhash}{edead25de09c95838c1a2fedf26b5b33}
+      \strng{bibnamehash}{edead25de09c95838c1a2fedf26b5b33}
+      \strng{authorbibnamehash}{edead25de09c95838c1a2fedf26b5b33}
+      \strng{authornamehash}{a5fe7406dbc8ca17cce4f9c08acf9ab9}
+      \strng{authorfullhash}{edead25de09c95838c1a2fedf26b5b33}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Geophysical Research: Oceans}
+      \field{title}{An Investigation of Ocean Model Uncertainties Through Ensemble Forecast Experiments in the Southwest Atlantic Ocean}
+      \field{volume}{120}
+      \field{year}{2019}
+      \field{pages}{432\bibrangedash 452}
+      \range{pages}{21}
     \endentry
     \entry{Mellor1989}{article}{}
       \name{author}{2}{}{%
@@ -2029,6 +2092,91 @@
       \field{year}{1990}
       \field{pages}{355\bibrangedash 375}
       \range{pages}{21}
+    \endentry
+    \entry{Sutil2018}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=b283276857dc57738312476f278bbcb5}{%
+           family={Sutil},
+           familyi={S\bibinitperiod},
+           given={U.\bibnamedelimi A},
+           giveni={U\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e2ae4ad7c3f743279a93222a32095973}{%
+           family={Pezzi},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi P.},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{188a2cf3e74a8bcdf76c3e4ef0a5496d}
+      \strng{fullhash}{188a2cf3e74a8bcdf76c3e4ef0a5496d}
+      \strng{bibnamehash}{188a2cf3e74a8bcdf76c3e4ef0a5496d}
+      \strng{authorbibnamehash}{188a2cf3e74a8bcdf76c3e4ef0a5496d}
+      \strng{authornamehash}{188a2cf3e74a8bcdf76c3e4ef0a5496d}
+      \strng{authorfullhash}{188a2cf3e74a8bcdf76c3e4ef0a5496d}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{National Institute for Space Research}
+      \field{title}{{Guia Prático para Utilização do COAWST}}
+      \field{volume}{1}
+      \field{year}{2018}
+      \field{pages}{01\bibrangedash 91}
+      \range{pages}{91}
+      \verb{doi}
+      \verb 10.13140/RG.2.2.31726.87363
+      \endverb
+    \endentry
+    \entry{Sutil2019}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=b283276857dc57738312476f278bbcb5}{%
+           family={Sutil},
+           familyi={S\bibinitperiod},
+           given={U.\bibnamedelimi A},
+           giveni={U\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e2ae4ad7c3f743279a93222a32095973}{%
+           family={Pezzi},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi P.},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d85978a632f526ce7da96224488ef4f0}{%
+           family={Alves},
+           familyi={A\bibinitperiod},
+           given={R.\bibnamedelimi C.\bibnamedelimi M.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fc194c5265c2df7db1de6ff41602e0c5}{%
+           family={Nunes},
+           familyi={N\bibinitperiod},
+           given={A.\bibnamedelimi B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{10250dbdbb3ba695278b68dd7f107936}
+      \strng{fullhash}{cc1381f179af2e2c1ac2dcfa22f405b6}
+      \strng{bibnamehash}{cc1381f179af2e2c1ac2dcfa22f405b6}
+      \strng{authorbibnamehash}{cc1381f179af2e2c1ac2dcfa22f405b6}
+      \strng{authornamehash}{10250dbdbb3ba695278b68dd7f107936}
+      \strng{authorfullhash}{cc1381f179af2e2c1ac2dcfa22f405b6}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Anuário do Instituto de Geociências - UFRJ}
+      \field{title}{{Ocean-Atmosphere Interactions in an Entratropical Cyclone in the Southwest Atlantic}}
+      \field{year}{2018}
+      \field{pages}{525\bibrangedash 535}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.11137/2019_1_525_535
+      \endverb
     \endentry
     \entry{Ncl2017}{software}{}
       \name{author}{1}{}{%

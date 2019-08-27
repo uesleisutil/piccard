@@ -1,65 +1,63 @@
-\BOOKMARK [0][-]{chapter*.4}{Nota dos autores}{}% 1
-\BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 2
-\BOOKMARK [1][-]{section.1.1}{O Regional Ocean Modeling System}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.2}{O Budgell's Sea Ice Model}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.3}{O Weather Research \046 Forecasting Model}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.4}{O Simulating Waves Nearshore}{chapter.1}% 6
-\BOOKMARK [1][-]{section.1.5}{O Model Coupling Toolkit}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.6}{ O Spherical Coordinate Remapping Interpolation Package}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.7}{O Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.8}{O Python}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.9}{Materiais necess\341rios para o uso do guia}{chapter.1}% 11
-\BOOKMARK [0][-]{chapter.2}{O COAWST no cluster Kerana}{}% 12
-\BOOKMARK [1][-]{section.2.1}{Sobre o Kerana}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.2}{Registrando uma conta de usu\341rio}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.3}{Acessando o cluster Kerana}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.4}{Reposit\363rio de arquivos}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.5}{O ambiente do Kerana}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.6}{Baixando o COAWST}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.7}{Automatizando a compila\347\343o do COAWST no Kerana}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.8}{Compilando o MCT}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.9}{Compilando o caso-teste Sandy}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.9.1}{Pasta Projects}{section.2.9}% 22
-\BOOKMARK [2][-]{subsection.2.9.2}{Pasta Work}{section.2.9}% 23
-\BOOKMARK [2][-]{subsection.2.9.3}{Compilando o caso teste}{section.2.9}% 24
-\BOOKMARK [1][-]{section.2.10}{Simulando o caso teste Sandy}{chapter.2}% 25
-\BOOKMARK [0][-]{chapter.3}{Caracter\355sticas do COAWST}{}% 26
-\BOOKMARK [1][-]{section.3.1}{Os arquivos estruturais dos modelos}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.2}{Modificando o n\372mero de processadores}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.2.1}{Modificando os processadores no ROMS}{section.3.2}% 29
-\BOOKMARK [2][-]{subsection.3.2.2}{Modificando os processadores no WRF}{section.3.2}% 30
-\BOOKMARK [2][-]{subsection.3.2.3}{Modificando os processadores no SWAN}{section.3.2}% 31
-\BOOKMARK [2][-]{subsection.3.2.4}{Modificando os processadores no COAWST}{section.3.2}% 32
-\BOOKMARK [1][-]{section.3.3}{Modificando o intervalo de tempo do acoplamento entre os modelos}{chapter.3}% 33
-\BOOKMARK [0][-]{chapter.4}{Construindo o seu projeto no WRF}{}% 34
-\BOOKMARK [1][-]{section.4.1}{Compilando o WRF no Kerana}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.2}{O WRF Preprocessing System \(WPS\)}{chapter.4}% 36
-\BOOKMARK [2][-]{subsection.4.2.1}{Download do WPS}{section.4.2}% 37
-\BOOKMARK [2][-]{subsection.4.2.2}{Compilando o WPS no Kerana}{section.4.2}% 38
-\BOOKMARK [1][-]{section.4.3}{Construindo o seu projeto utilizando o CFSR}{chapter.4}% 39
-\BOOKMARK [2][-]{subsection.4.3.1}{O geogrid}{section.4.3}% 40
-\BOOKMARK [2][-]{subsection.4.3.2}{Utilizando o NCL para plotar o dom\355nio da grade}{section.4.3}% 41
-\BOOKMARK [2][-]{subsection.4.3.3}{O ungrib}{section.4.3}% 42
-\BOOKMARK [2][-]{subsection.4.3.4}{O metgrid}{section.4.3}% 43
-\BOOKMARK [2][-]{subsection.4.3.5}{O real}{section.4.3}% 44
-\BOOKMARK [1][-]{section.4.4}{Usando o WRF}{chapter.4}% 45
-\BOOKMARK [0][-]{chapter.5}{Construindo o ROMS}{}% 46
-\BOOKMARK [1][-]{section.5.1}{Instalando as bibliotecas do Python no computador pessoal}{chapter.5}% 47
-\BOOKMARK [2][-]{subsection.5.1.1}{Instala\347\343o manual}{section.5.1}% 48
-\BOOKMARK [2][-]{subsection.5.1.2}{Utilizando o Conda}{section.5.1}% 49
-\BOOKMARK [1][-]{section.5.2}{Instalando o Pyroms}{chapter.5}% 50
-\BOOKMARK [1][-]{section.5.3}{O model2roms}{chapter.5}% 51
-\BOOKMARK [2][-]{subsection.5.3.1}{Introdu\347\343o sobre a grade do ROMS}{section.5.3}% 52
-\BOOKMARK [2][-]{subsection.5.3.2}{O ETOPO1 1 Arc-Minute Global Relief Model}{section.5.3}% 53
-\BOOKMARK [2][-]{subsection.5.3.3}{Introdu\347\343o sobre as condi\347\365es do ROMS}{section.5.3}% 54
-\BOOKMARK [2][-]{subsection.5.3.4}{O Global Ocean Physics Reanalysis \(GLORYS\)}{section.5.3}% 55
-\BOOKMARK [2][-]{subsection.5.3.5}{Gerando as condi\347\365es do ROMS}{section.5.3}% 56
-\BOOKMARK [0][-]{chapter.6}{Construindo o SWAN}{}% 57
-\BOOKMARK [0][-]{chapter.7}{Construindo o Budgell's Sea Ice Model}{}% 58
-\BOOKMARK [0][-]{chapter.8}{Construindo os pesos entre grades com o SCRIP}{}% 59
-\BOOKMARK [1][-]{section.8.1}{Construindo os pesos}{chapter.8}% 60
-\BOOKMARK [1][-]{section.8.2}{Executanto seu projeto no COAWST}{chapter.8}% 61
-\BOOKMARK [0][-]{chapter.9}{Trabalhos do LOA}{}% 62
-\BOOKMARK [0][-]{chapter*.43}{Revisores}{}% 63
-\BOOKMARK [0][-]{chapter*.44}{Agradecimentos}{}% 64
-\BOOKMARK [0][-]{chapter*.45}{Refer\352ncias bibliogr\341ficas}{}% 65
+\BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Regional Ocean Modeling System}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Budgell's Sea Ice Model}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Weather Research \046 Forecasting Model}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Simulating Waves Nearshore}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{Model Coupling Toolkit}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.6}{Spherical Coordinate Remapping Interpolation Package}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.7}{Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.8}{Python}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.9}{Materiais necess\341rios para o uso deste guia}{chapter.1}% 10
+\BOOKMARK [0][-]{chapter.2}{COAWST no cluster Kerana}{}% 11
+\BOOKMARK [1][-]{section.2.1}{Sobre o Kerana}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.2}{Registrando uma conta de usu\341rio}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Acessando o cluster Kerana}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.4}{Reposit\363rio de arquivos}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.5}{Ambiente do Kerana}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.6}{Baixando o COAWST}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.7}{Automatizando a compila\347\343o do COAWST no Kerana}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.8}{Compilando o MCT}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.9}{Compilando o caso-teste Sandy}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.9.1}{Diret\363rio Projects}{section.2.9}% 21
+\BOOKMARK [2][-]{subsection.2.9.2}{Diret\363rio Work}{section.2.9}% 22
+\BOOKMARK [2][-]{subsection.2.9.3}{Compilando o caso teste}{section.2.9}% 23
+\BOOKMARK [1][-]{section.2.10}{Simulando o caso teste Sandy}{chapter.2}% 24
+\BOOKMARK [0][-]{chapter.3}{Caracter\355sticas do COAWST}{}% 25
+\BOOKMARK [1][-]{section.3.1}{Arquivos estruturais dos modelos}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.2}{Modificando o n\372mero de processadores}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.2.1}{No ROMS}{section.3.2}% 28
+\BOOKMARK [2][-]{subsection.3.2.2}{No WRF}{section.3.2}% 29
+\BOOKMARK [2][-]{subsection.3.2.3}{No SWAN}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.4}{No COAWST}{section.3.2}% 31
+\BOOKMARK [1][-]{section.3.3}{Modificando o intervalo de tempo do acoplamento entre os modelos}{chapter.3}% 32
+\BOOKMARK [0][-]{chapter.4}{Construindo o seu projeto no WRF}{}% 33
+\BOOKMARK [1][-]{section.4.1}{Compilando o WRF no Kerana}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.2}{WRF Preprocessing System \(WPS\)}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.2.1}{Download do WPS}{section.4.2}% 36
+\BOOKMARK [2][-]{subsection.4.2.2}{Compilando o WPS no Kerana}{section.4.2}% 37
+\BOOKMARK [1][-]{section.4.3}{Construindo o seu projeto utilizando o CFSR}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.3.1}{geogrid}{section.4.3}% 39
+\BOOKMARK [2][-]{subsection.4.3.2}{Utilizando o NCL para plotar o dom\355nio da grade}{section.4.3}% 40
+\BOOKMARK [2][-]{subsection.4.3.3}{ungrib}{section.4.3}% 41
+\BOOKMARK [2][-]{subsection.4.3.4}{metgrid}{section.4.3}% 42
+\BOOKMARK [2][-]{subsection.4.3.5}{real}{section.4.3}% 43
+\BOOKMARK [1][-]{section.4.4}{Usando o WRF}{chapter.4}% 44
+\BOOKMARK [0][-]{chapter.5}{Construindo o ROMS}{}% 45
+\BOOKMARK [1][-]{section.5.1}{Instalando as bibliotecas do Python no computador pessoal}{chapter.5}% 46
+\BOOKMARK [2][-]{subsection.5.1.1}{Instala\347\343o manual}{section.5.1}% 47
+\BOOKMARK [2][-]{subsection.5.1.2}{Utilizando o Conda}{section.5.1}% 48
+\BOOKMARK [1][-]{section.5.2}{Instalando o Pyroms}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.3}{model2roms}{chapter.5}% 50
+\BOOKMARK [2][-]{subsection.5.3.1}{Introdu\347\343o sobre a grade do ROMS}{section.5.3}% 51
+\BOOKMARK [2][-]{subsection.5.3.2}{O ETOPO1 1 Arc-Minute Global Relief Model}{section.5.3}% 52
+\BOOKMARK [2][-]{subsection.5.3.3}{Introdu\347\343o sobre as condi\347\365es do ROMS}{section.5.3}% 53
+\BOOKMARK [2][-]{subsection.5.3.4}{O Global Ocean Physics Reanalysis \(GLORYS\)}{section.5.3}% 54
+\BOOKMARK [2][-]{subsection.5.3.5}{Gerando as condi\347\365es do ROMS}{section.5.3}% 55
+\BOOKMARK [0][-]{chapter.6}{Construindo o SWAN}{}% 56
+\BOOKMARK [0][-]{chapter.7}{Construindo o Budgell's Sea Ice Model}{}% 57
+\BOOKMARK [0][-]{chapter.8}{Construindo os pesos entre grades com o SCRIP}{}% 58
+\BOOKMARK [1][-]{section.8.1}{Construindo os pesos}{chapter.8}% 59
+\BOOKMARK [1][-]{section.8.2}{Executanto seu projeto no COAWST}{chapter.8}% 60
+\BOOKMARK [0][-]{chapter.9}{Trabalhos do Laborat\363rio de Estudos do Oceano e da Atmosfera}{}% 61
+\BOOKMARK [0][-]{chapter*.44}{Agradecimentos}{}% 62
+\BOOKMARK [0][-]{chapter*.45}{Refer\352ncias bibliogr\341ficas}{}% 63

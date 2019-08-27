@@ -1,15 +1,17 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'main.blg'
-[20] biber:313> INFO - === seg jul 29, 2019, 13:48:17
-[38] Biber.pm:371> INFO - Reading 'main.bcf'
-[85] Biber.pm:857> INFO - Found 38 citekeys in bib section 0
-[96] Biber.pm:3981> INFO - Processing section 0
-[105] Biber.pm:4154> INFO - Looking for bibtex format file 'refs.bib' for section 0
-[107] bibtex.pm:1468> INFO - LaTeX decoding ...
-[144] bibtex.pm:1294> INFO - Found BibTeX data source 'refs.bib'
-[443] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[443] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[443] Biber.pm:3809> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[443] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[17] biber:313> INFO - === ter ago 27, 2019, 17:07:43
+[31] Biber.pm:371> INFO - Reading 'main.bcf'
+[73] Biber.pm:857> INFO - Found 41 citekeys in bib section 0
+[82] Biber.pm:3981> INFO - Processing section 0
+[88] Biber.pm:4154> INFO - Looking for bibtex format file 'refs.bib' for section 0
+[90] bibtex.pm:1468> INFO - LaTeX decoding ...
+[127] bibtex.pm:1294> INFO - Found BibTeX data source 'refs.bib'
+[400] Utils.pm:169> WARN - BibTeX subsystem: /tmp/F1dXnkq7N_/refs.bib_29353.utf8, line 205, warning: undefined macro "42-1"
+[447] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[447] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[447] Biber.pm:3809> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[447] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
 [488] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[551] bbl.pm:720> INFO - Output to main.bbl
+[548] bbl.pm:720> INFO - Output to main.bbl
+[549] Biber.pm:110> INFO - WARNINGS: 1

@@ -88,7 +88,7 @@
     \centering
     \captionsetup{justification=centering}
     \includegraphics[width=0.80\textwidth]{grid_new.png}
-    \centering \caption{Grade horizontal e vertical do Weather Research and Forecast (WRF) em Arawaka-C. As componentes horizontal e vertical
+    \caption{Grade horizontal e vertical do Weather Research and Forecast (WRF) em Arawaka-C. As componentes horizontal e vertical
                         da velocidade (\textbf{u}, \textbf{v} e \textbf{w}) estão posicionados ao longo das faces das grades e as variáveis termodinâmicas
                         (\straighttheta) estão posicionados no centro de cada grade. \newline Fonte: \textcite{Skamarock2008}.}
     \label{gradeswrf}
@@ -252,6 +252,7 @@ Este guia não usa o CSTM. Caso esteja interessado, há um estudo sobre a transf
         \path (C) edge [draw=black, bend right=20] node[sloped, align=center, below,font=\tiny] {U\textsubscript{s}, V\textsubscript{s}, Bathymetry, \\Bottom Elevation} (B); 
         \node[align=center,font=\bfseries, yshift=2em] (title) at (current bounding box.north) {\small Coupled Ocean-Atmosphere-Wave-\\\small Sediment Transport modeling system \\\small v3.4};
     \end{tikzpicture}
+\captionsetup{justification=centering}
 \caption{Esquema sobre a troca de informações entre três modelos que compõe o sistema COAWST. (\cite{Warner2008})}
 \label{acopla}
 \end{figure}

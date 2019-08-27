@@ -895,7 +895,7 @@ conda install -c anaconda basemap
 \end{bashcode}
 \bigskip
 
-\subsection{O ETOPO1 1 Arc-Minute Global Relief Model}\index{O ETOPO1 1 Arc-Minute Global Relief Model}
+\subsection{ETOPO1 1 Arc-Minute Global Relief Model}\index{O ETOPO1 1 Arc-Minute Global Relief Model}
 \bigskip
 
 \noindent O ETOPO1 (\cite{Amante2009}; Figura \textcolor{bleu_cite}{\ref{etopo1}}) é produzido pelo National Geophysical Data Center e fornece duas camadas de informações de relevo. As camadas incluem batimetria sobre os oceanos e alguns dos principais lagos da Terra. A topografia terrestre e a batimetria oceânica baseiam-se na topografia SRTM30 e através de vários cruzeiros batimétricos. 
@@ -1013,7 +1013,7 @@ ipython make_roms_grid.py --pylab
 
 \noindent Utilizaremos o \textit{model2roms} para gerar as condições do ROMS. A toolbox oferece suporte aos dados do GLORYS12V1 (\cite{Fernandez2018}) e SODA3 ()\cite{Carton2018}), porém, utilizaremos apenas o GLORYS12V1 como exemplo.
 
-\subsection{O Global Ocean Physics Reanalysis (GLORYS)}\index{O Global Ocean Physics Reanalysis (GLORYS)}
+\subsection{Global Ocean Physics Reanalysis (GLORYS)}\index{O Global Ocean Physics Reanalysis (GLORYS)}
 \bigskip
 
 \noindent  O GLORYS é uma reanálise global do oceano com resolução espacial de 1/12°, resolução temporal diária ou mensal e 50 níveis verticais. Ele é baseado no atual sistema CMEMS de previsão global do tempo e é forçado pelo ERA-Interim do ECMWF a partir do modelo NEMO. É utilizado um filtro de Kalman de ordem reduzida para assimilar os dados de altimetria do mar, temperatura da superfície do mar, concentração de gelo marinho obtidos a partir de sensoriamento remoto e os dados \textit{in situ} de perfis verticais de temperatura e salinidade. Além disso, um esquema 3D-VAR fornece uma correção para os desvios de temperatura e salinidade. 
@@ -1111,6 +1111,7 @@ cdo cat glorys* glorys.nc
     \item \textit{glorys*} que serão concatenados todos os arquvis chamados \textit{glorys} dentro da pasta; 
     \item \textit{glorys.nc} o arquivo final criado pela concatenação do \textit{CDO}.
 \end{itemize}
+\bigskip
 
 \begin{tcolorbox}[enhanced,
     grow to left by   = 0cm,

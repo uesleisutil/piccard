@@ -1,7 +1,7 @@
 % !TEX root = /media/ueslei/Ueslei/INPE/PCI/Guia_COAWST/main.tex
-\chapterimage{ocean2.jpg}
+\chapterimage{header.jpg}
 \chapter{Construindo o seu projeto no WRF}\index{Construindo o WRF}
-
+\bigskip 
 \noindent Agora que aprendemos como simular um caso teste e mudar a taxa de acoplamento e o número de processadores, iniciaremos o processo de criação de uma grade especifica e das condições iniciais e de contorno (lateral) do WRF usando o NCEP Climate Forecast System Reanalysis (CFSR; \cite{Saha2006}).
 \bigskip
 
@@ -110,7 +110,6 @@ compile em_real
 
 \begin{figure}[H]
     \centering
-    \captionsetup{justification=centering}
     \includegraphics[width=0.65\textwidth]{image002.png}
     \caption{Construção de uma simulação \textit{real} usando o WPS. \newline Fonte: \textcite{duda2006}}.
     \label{wpsdetalha}
@@ -647,7 +646,7 @@ qsub qsub_ungrib.sh
 
 
 
-\subsection{metgrid}
+\subsection{\textit{metgrid}}
 \bigskip
 \noindent Para interpolar os dados gerados pelo \textit{ungrib.exe},  abra o \textit{namelist.wps} e altere na guia \textit{fg\_name} os nomes utilizados no \textit{ungrib}. No caso anterior, foram utilizados \textit{PRES}, \textit{SFC} e \textit{SST}, como no exemplo da Figura \textcolor{bleu_cite}{\ref{fgname}}:
 \bigskip

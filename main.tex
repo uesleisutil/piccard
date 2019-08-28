@@ -69,16 +69,19 @@
 \newtcblisting{bashcode}[1][]{
   listing engine=minted,
   colback=bashcodebg,
-  colframe=black!90,
+  colframe=bashcodebg2,
   listing only,
   minted style=colorful,
   minted language=text,
   minted options={linenos=true,numbersep=3mm,texcl=true,#1},
   left=5mm,enhanced,
-  overlay={\begin{tcbclipinterior}\fill[black!25]  (frame.south west)
+  overlay={\begin{tcbclipinterior}\fill[bashcodebg3!70]  (frame.south west)
             rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}}
 }
-\definecolor{bashcodebg}{rgb}{0.85,0.85,0.85}
+\definecolor{bashcodebg}{HTML}{e7f5f8}
+\definecolor{bashcodebg2}{HTML}{1ba1c1}
+\definecolor{bashcodebg3}{HTML}{016d9d}
+
 
 % Font Settings
 \usepackage{avant} % Use the Avantgarde font for headings
@@ -112,7 +115,7 @@
 \usepackage{subfiles}
 \usepackage{blindtext}
 \usepackage{fancyhdr}
-
+\usepackage[document]{ragged2e}
 % Fix comma in textcite because biber 3.3 has a bug
 \renewbibmacro*{textcite}{%
   \ifnameundef{labelname}
@@ -142,11 +145,12 @@
 \begin{document}
 
 % Translate figure name
-\captionsetup[figure]{labelfont={bf},labelformat={default},labelsep=period,name={Figura}}
+\captionsetup[figure]{labelfont={bf},labelformat={default},labelsep=period,name={Figura}, justification   = raggedright,
+singlelinecheck = false}
 
 % PDF metadata
 \hypersetup{
-pdftitle={Guia prático para configuração do COAWST},
+pdftitle={Guia prático para configuração do COAWST - Segunda Edição},
 pdfauthor={Ueslei Adriano Sutil e Luciano Ponzi Pezzi},
 }
 
@@ -225,14 +229,10 @@ pdfauthor={Ueslei Adriano Sutil e Luciano Ponzi Pezzi},
 %----------------------------------------------------------------------------------------
 \subfile{sections/15_acknowledgments.tex}
 
-
-
-
-
 %----------------------------------------------------------------------------------------
 %	REFERENCES
 %----------------------------------------------------------------------------------------
-\chapterimage{ocean2.jpg}
+\chapterimage{header.jpg}
 \printbibliography[ heading=bibintoc, title={Referências bibliográficas}]
 
 %----------------------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.14)  27 AUG 2019 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.14)  28 AUG 2019 17:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2063,6 +2063,41 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@randommax=\count498
 \c@blind@pangramcount=\count499
 \c@blind@pangrammax=\count500
+) (/usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+
+LaTeX Warning: Command \@arrayparboxrestore  has changed.
+               Check if current package is valid.
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+) (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks52
+\footnotemargin=\dimen321
+\c@pp@next@reset=\count501
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
+)
+\CenteringLeftskip=\skip155
+\RaggedLeftLeftskip=\skip156
+\RaggedRightLeftskip=\skip157
+\CenteringRightskip=\skip158
+\RaggedLeftRightskip=\skip159
+\RaggedRightRightskip=\skip160
+\CenteringParfillskip=\skip161
+\RaggedLeftParfillskip=\skip162
+\RaggedRightParfillskip=\skip163
+\JustifyingParfillskip=\skip164
+\CenteringParindent=\skip165
+\RaggedLeftParindent=\skip166
+\RaggedRightParindent=\skip167
+\JustifyingParindent=\skip168
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
@@ -2236,33 +2271,33 @@ LaTeX Warning: Unused global option(s):
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 142.
-LaTeX Font Info:    ... okay on input line 142.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 142.
-LaTeX Font Info:    ... okay on input line 142.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 142.
-LaTeX Font Info:    ... okay on input line 142.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 142.
-LaTeX Font Info:    ... okay on input line 142.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 142.
-LaTeX Font Info:    ... okay on input line 142.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 142.
-LaTeX Font Info:    ... okay on input line 142.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 142.
-LaTeX Font Info:    Try loading font information for LGR+cmr on input line 142.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 145.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 145.
  (/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 142.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 142.
-LaTeX Font Info:    ... okay on input line 142.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 142.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 142.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 145.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 145.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 142.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 142.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 145.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -2302,17 +2337,17 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count501
-\scratchdimen=\dimen321
+\scratchcounter=\count502
+\scratchdimen=\dimen322
 \scratchbox=\box106
-\nofMPsegments=\count502
-\nofMParguments=\count503
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count504
-\MPscratchDim=\dimen322
-\MPnumerator=\count505
-\makeMPintoPDFobject=\count506
-\everyMPtoPDFconversion=\toks53
+\nofMPsegments=\count503
+\nofMParguments=\count504
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count505
+\MPscratchDim=\dimen323
+\MPnumerator=\count506
+\makeMPintoPDFobject=\count507
+\everyMPtoPDFconversion=\toks54
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -2325,37 +2360,37 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count507
+\c@lstlisting=\count508
 \symgns@font=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/ptm/m/n --> TS1/ptm/bx/n on input line 142.
-Package gensymb Info: Math companion symbols declared on input line 142.
-LaTeX Info: Redefining \degree on input line 142.
-LaTeX Info: Redefining \celsius on input line 142.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 142.
-LaTeX Info: Redefining \ohm on input line 142.
-Package gensymb Info: Using \textohm for \ohm on input line 142.
-Package gensymb Info: Using \textmu for \micro on input line 142.
+(Font)                  TS1/ptm/m/n --> TS1/ptm/bx/n on input line 145.
+Package gensymb Info: Math companion symbols declared on input line 145.
+LaTeX Info: Redefining \degree on input line 145.
+LaTeX Info: Redefining \celsius on input line 145.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 145.
+LaTeX Info: Redefining \ohm on input line 145.
+Package gensymb Info: Using \textohm for \ohm on input line 145.
+Package gensymb Info: Using \textmu for \micro on input line 145.
  ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box107
-Package hyperref Info: Link coloring OFF on input line 142.
+Package hyperref Info: Link coloring OFF on input line 145.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count508
+\c@section@level=\count509
 )
-LaTeX Info: Redefining \ref on input line 142.
-LaTeX Info: Redefining \pageref on input line 142.
-LaTeX Info: Redefining \nameref on input line 142.
+LaTeX Info: Redefining \ref on input line 145.
+LaTeX Info: Redefining \pageref on input line 145.
+LaTeX Info: Redefining \nameref on input line 145.
  (./main.out) (./main.out)
 \@outlinefile=\write11
 \openout11 = `main.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 142.
+LaTeX Info: Redefining \microtypecontext on input line 145.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2376,143 +2411,133 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 142.
-Package biblatex Info: Reference segment=0 on input line 142.
+Package biblatex Info: Reference section=0 on input line 145.
+Package biblatex Info: Reference segment=0 on input line 145.
+Package ragged2e Info: ABD: executing \RaggedRight on input line 145.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 145.
  (./sections/01_titlepage.tex
-LaTeX Font Info:    Try loading font information for T1+pag on input line 7.
+<Pictures/cover.jpg, id=284, 2601.72pt x 3468.96pt>
+File: Pictures/cover.jpg Graphic file (type jpg)
+<use Pictures/cover.jpg>
+Package pdftex.def Info: Pictures/cover.jpg  used on input line 8.
+(pdftex.def)             Requested size: 614.295pt x 819.01683pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 9.
+LaTeX Font Info:    Try loading font information for T1+pag on input line 9.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pag.fd
 File: t1pag.fd 2001/06/04 font definitions for T1/pag.
 )
+LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 9.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <24.88> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 9.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `pag' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <30> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 8.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <30> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 8.
-LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 8.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <17.28> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 8.
-) (./sections/02_copyright.tex
-<Pictures/2.png, id=284, 898.85812pt x 1109.64563pt>
-File: Pictures/2.png Graphic file (type png)
-<use Pictures/2.png>
-Package pdftex.def Info: Pictures/2.png  used on input line 2.
-(pdftex.def)             Requested size: 898.85593pt x 1109.64293pt.
- [1
+LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <20.74> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 11.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 11.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 11.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 11.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 11.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 11.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
+ (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 11.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)) (./sections/02_copyright.tex [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Pictures/2.png>]
-<Pictures/loa.jpg, id=292, 1999.47pt x 992.70876pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Pictures/cover.jpg>]
+<Pictures/loa.jpg, id=291, 1999.47pt x 992.70876pt>
 File: Pictures/loa.jpg Graphic file (type jpg)
 <use Pictures/loa.jpg>
 Package pdftex.def Info: Pictures/loa.jpg  used on input line 8.
-(pdftex.def)             Requested size: 305.33789pt x 151.59615pt.
+(pdftex.def)             Requested size: 258.36668pt x 128.269pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
+\T1/ptm/m/n/10.95 (+20) disponível livre de li-cença. Para obter uma cópia, acesse: 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--26
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--29
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
-
- []
-
-
-Underfull \hbox (badness 6792) in paragraph at lines 33--37
-\T1/ptm/m/n/10.95 (+20) por Vel ([][]\T1/ptm/m/it/10.95 (+20) vel@latextemplates.com[][]\T1/ptm/m/n/10.95 (+20) ) e An-drea Hi-dalgo. Li-cen-ci-ado sob \T1/ptm/m/it/10.95 (+20) Cre-ative Com-mons
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--37
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
- []
-
-<Pictures/cnpq.png, id=300, 739.76375pt x 234.8775pt>
+<Pictures/cnpq.png, id=301, 739.76375pt x 234.8775pt>
 File: Pictures/cnpq.png Graphic file (type png)
 <use Pictures/cnpq.png>
-Package pdftex.def Info: Pictures/cnpq.png  used on input line 48.
+Package pdftex.def Info: Pictures/cnpq.png  used on input line 56.
 (pdftex.def)             Requested size: 126.83586pt x 40.26912pt.
-<Pictures/capes.jpg, id=302, 150.5625pt x 150.5625pt>
+<Pictures/capes.jpg, id=303, 150.5625pt x 150.5625pt>
 File: Pictures/capes.jpg Graphic file (type jpg)
 <use Pictures/capes.jpg>
-Package pdftex.def Info: Pictures/capes.jpg  used on input line 50.
+Package pdftex.def Info: Pictures/capes.jpg  used on input line 58.
 (pdftex.def)             Requested size: 65.76541pt x 65.76753pt.
-<Pictures/inpe.jpg, id=303, 194.4063pt x 157.0668pt>
+<Pictures/inpe.jpg, id=304, 194.4063pt x 157.0668pt>
 File: Pictures/inpe.jpg Graphic file (type jpg)
 <use Pictures/inpe.jpg>
-Package pdftex.def Info: Pictures/inpe.jpg  used on input line 52.
+Package pdftex.def Info: Pictures/inpe.jpg  used on input line 60.
 (pdftex.def)             Requested size: 70.46037pt x 56.92746pt.
 ) (./sections/03_reviewers.tex [2 <./Pictures/loa.jpg> <./Pictures/cnpq.png> <./Pictures/capes.jpg> <./Pictures/inpe.jpg>]
-<Pictures/ocean2.jpg, id=314, 303.49606pt x 102.42992pt>
-File: Pictures/ocean2.jpg Graphic file (type jpg)
-<use Pictures/ocean2.jpg>
-Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 3.
-(pdftex.def)             Requested size: 614.295pt x 207.36316pt.
-LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <20.74> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 3.
+<Pictures/header.jpg, id=315, 2140.99875pt x 1071.00125pt>
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
+(pdftex.def)             Requested size: 614.295pt x 307.29764pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 6.
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 10.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)) (./sections/04_notes.tex [3
+) (./sections/04_notes.tex [3
 
- <./Pictures/ocean2.jpg>] [4
+ <./Pictures/header.jpg>] [4
 
 ]
-File: Pictures/ocean2.jpg Graphic file (type jpg)
-<use Pictures/ocean2.jpg>
-Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 3.
-(pdftex.def)             Requested size: 614.295pt x 207.36316pt.
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
+(pdftex.def)             Requested size: 614.295pt x 307.29764pt.
 ) (./sections/05_tableofcontents.tex [5] [6
 
 ]
-File: Pictures/ocean2.jpg Graphic file (type jpg)
-<use Pictures/ocean2.jpg>
-Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 6.
-(pdftex.def)             Requested size: 614.295pt x 207.36316pt.
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 6.
+(pdftex.def)             Requested size: 614.295pt x 307.29764pt.
  (./main.toc
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <12> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 4.
-LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 4.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 4.
@@ -2535,94 +2560,120 @@ LaTeX Font Info:    Font shape `T1/pag/db/it' in size <10.95> not available
 
 ]
 Chapter 1.
-\c@ttl@toc@default=\count509
-File: Pictures/ocean2.jpg Graphic file (type jpg)
-<use Pictures/ocean2.jpg>
-Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 3.
-(pdftex.def)             Requested size: 614.295pt x 207.36316pt.
+\c@ttl@toc@default=\count510
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
+(pdftex.def)             Requested size: 614.295pt x 307.29764pt.
+
+Overfull \hbox (0.19756pt too wide) in paragraph at lines 10--15
+\T1/ptm/m/n/10.95 (+15) tridi-men-sional de su-per-fí-cie livre, co-or-de-nada ver-ti-cal sigma (que segue o ter-reno) e que re-solve equações 
+ []
+
 [11]
-<Pictures/grid_new.png, id=519, 952.55875pt x 443.6575pt>
+<Pictures/grid_new.png, id=521, 952.55875pt x 443.6575pt>
 File: Pictures/grid_new.png Graphic file (type png)
 <use Pictures/grid_new.png>
-Package pdftex.def Info: Pictures/grid_new.png  used on input line 90.
+Package pdftex.def Info: Pictures/grid_new.png  used on input line 89.
 (pdftex.def)             Requested size: 375.80544pt x 175.0363pt.
-LaTeX Font Info:    Try loading font information for LGR+ptm on input line 93.
-LaTeX Font Info:    No file LGRptm.fd. on input line 93.
+LaTeX Font Info:    Try loading font information for LGR+ptm on input line 92.
+LaTeX Font Info:    No file LGRptm.fd. on input line 92.
 
 
 LaTeX Font Warning: Font shape `LGR/ptm/m/n' undefined
-(Font)              using `LGR/cmr/m/n' instead on input line 93.
+(Font)              using `LGR/cmr/m/n' instead on input line 92.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Try loading font information for U+eur on input line 93.
+LaTeX Font Info:    Try loading font information for U+eur on input line 92.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueur.fd
 File: ueur.fd 2013/01/14 v3.01 Euler Roman
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 ) [12]
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 103.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `ztmcm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 103.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 103.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 103.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 103.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 102.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 102.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
- (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [13 <./Pictures/grid_new.png>]
-LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <9> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 208.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <9> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 208.
- [14]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 247.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 253.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 102.
 
-Underfull \hbox (badness 5091) in paragraph at lines 261--266
-\T1/ptm/m/n/10.95 (+20) para o leste dos Es-ta-dos Unidos e Golfo do Méx-ico. O con-teúdo está disponível em
+Overfull \hbox (0.13194pt too wide) in paragraph at lines 109--113
+\T1/ptm/m/n/10.95 (+6) Onde \T1/ptm/m/it/10.95 (+6) Z$[]$ \T1/ptm/m/n/10.95 (+6) é a rugosidade, \T1/ptm/m/it/10.95 (+6) Z$[]$ \T1/ptm/m/n/10.95 (+6) é o parâmetro de Charnock (um valor adimensional de 0,018), \T1/ptm/m/it/10.95 (+6) u$[]$ \T1/ptm/m/n/10.95 (+6) a velocidade 
  []
 
-[15]) (./sections/08_chapter_2.tex [16]
+
+Overfull \hbox (0.12357pt too wide) in paragraph at lines 122--127
+\T1/ptm/m/n/10.95 (+4) con-ce-bido para com-putar em regiões costeiras com águas rasas e cor-rentes lo-cais. O mod-elo é am-pla-mente 
+ []
+
+
+Overfull \hbox (0.1099pt too wide) in paragraph at lines 122--127
+\T1/ptm/m/n/10.95 (+5) po-dendo uti-lizar cam-pos de vento, ba-time-tria e cor-rentes forneci-dos por out-ros mod-e-los []([]Booij et al., []1996[][], 
+ []
+
+[13 <./Pictures/grid_new.png>]
+LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <9> not available
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 207.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <9> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 207.
+ [14]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 246.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 252.
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--264
+\T1/ptm/m/n/10.95 (+20) para o leste dos Es-ta-dos Unidos e Golfo do Méx-ico. O con-teúdo está disponível em 
+ []
+
+[15]
+Underfull \hbox (badness 2617) in paragraph at lines 274--277
+\T1/ptm/m/n/10.95 (+20) muito ao usuário em caso de dúvi-das, pois há na in-ter-net um ex-tenso ac-ervo de bib-liote-cas e 
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 278--282
+\T1/ptm/m/n/10.95 (+20) O Python Brasil ([][]\T1/ptm/m/it/10.95 (+20) http://python.org.br[][]\T1/ptm/m/n/10.95 (+20) ) ofer-ece grande auxílio para ini-ciantes na lin-guagem, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--282
+\T1/ptm/m/n/10.95 (+20) disponi-bi-lizando in-tro-duções (([][]\T1/ptm/m/it/10.95 (+20) http://python.org.br/introducao[][]\T1/ptm/m/n/10.95 (+20) ) e tam-bém um guia 
+ []
+
+) (./sections/08_chapter_2.tex [16]
 Chapter 2.
-File: Pictures/ocean2.jpg Graphic file (type jpg)
-<use Pictures/ocean2.jpg>
-Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 4.
-(pdftex.def)             Requested size: 614.295pt x 207.36316pt.
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 4.
+(pdftex.def)             Requested size: 614.295pt x 307.29764pt.
+
+Underfull \hbox (badness 1796) in paragraph at lines 10--16
+\T1/ptm/m/n/10.95 (+20) con-tando com 84 nós de pro-ces-sa-mento e 2688 nú-cleos e está lo-cal-izada nas de-pendên-cias do 
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 36--42
+\T1/ptm/m/n/10.95 (+20) Para ini-ciar o pro-cesso de re-quer-i-mento de uma conta de usuário no Ker-ana, é necessário que o 
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 43--46
+\T1/ptm/m/n/10.95 (+20) Com o IP fix-ado, o seu su-per-vi-sor ou ori-en-ta-dor en-trará no-va-mente em con-tato com o \T1/ptm/m/it/10.95 (+20) Helpdesk 
+ []
+
 [17
 
 ]
+Overfull \hbox (0.13216pt too wide) in paragraph at lines 62--64
+\T1/ptm/m/n/10.95 (+7) O acesso será feito inteiramente pelo terminal do computador. Serão necessários dois comandos primários: 
+ []
+
 \openout4 = `main.listing'.
 
- (./_minted-main/default-pyg-prefix.pygstyle) (./_minted-main/colorful.pygstyle) (./_minted-main/4996F394993108F8A901D1D9BF941157C885B93CE8E5C50D3A8999B2107977F4.pygtex
+(./_minted-main/default-pyg-prefix.pygstyle) (./_minted-main/colorful.pygstyle) (./_minted-main/4996F394993108F8A901D1D9BF941157C885B93CE8E5C50D3A8999B2107977F4.pygtex
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -2650,15 +2701,23 @@ Package microtype Info: Loading generic protrusion settings for font family
 \openout4 = `main.listing'.
 
  (./_minted-main/E5A7255FCF2B8AB81EF1E6CC7DDF7BDFC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+Overfull \hbox (0.23592pt too wide) in paragraph at lines 173--175
+\T1/ptm/m/n/10.95 (+20) Adicione os seguintes campos no final do arquivo, alterando somente o \T1/ptm/m/it/10.95 (+20) nome.sobrenome \T1/ptm/m/n/10.95 (+20) para o seu nome 
+ []
+
 \openout4 = `main.listing'.
 
- (./_minted-main/6AD78E037E3B06343939234F95B17DFAC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+(./_minted-main/6AD78E037E3B06343939234F95B17DFAC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
  (./_minted-main/594A4153159CB3435C25F5CAE03A1FA6C885B93CE8E5C50D3A8999B2107977F4.pygtex) [19]
+Underfull \hbox (badness 1152) in paragraph at lines 219--221
+\T1/ptm/m/n/10.95 (+20) Para baixar o COAWST, en-vie um email para o Dr. John Warner ([][]\T1/ptm/m/it/10.95 (+20) jcwarner@usgs.gov[][]\T1/ptm/m/n/10.95 (+20) ), um dos 
+ []
+
 \openout4 = `main.listing'.
 
- (./_minted-main/B6807801FA7C5096D11F7DDFBA35D07AC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+(./_minted-main/B6807801FA7C5096D11F7DDFBA35D07AC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
  (./_minted-main/FDFF4CDF67F9C02A4BE418C6C763082CC885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2683,7 +2742,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 <Pictures/linuxoptions.png, id=638, 761.84625pt x 201.75375pt>
 File: Pictures/linuxoptions.png Graphic file (type png)
 <use Pictures/linuxoptions.png>
-Package pdftex.def Info: Pictures/linuxoptions.png  used on input line 315.
+Package pdftex.def Info: Pictures/linuxoptions.png  used on input line 314.
 (pdftex.def)             Requested size: 375.80544pt x 99.519pt.
 \openout4 = `main.listing'.
 
@@ -2700,7 +2759,7 @@ Package pdftex.def Info: Pictures/linuxoptions.png  used on input line 315.
 <Pictures/modules.png, id=646, 762.59906pt x 417.81094pt>
 File: Pictures/modules.png Graphic file (type png)
 <use Pictures/modules.png>
-Package pdftex.def Info: Pictures/modules.png  used on input line 384.
+Package pdftex.def Info: Pictures/modules.png  used on input line 382.
 (pdftex.def)             Requested size: 399.29463pt x 218.76112pt.
 \openout4 = `main.listing'.
 
@@ -2717,15 +2776,19 @@ Package pdftex.def Info: Pictures/modules.png  used on input line 384.
 <Pictures/estruturacoawst.png, id=658, 425.33907pt x 443.40656pt>
 File: Pictures/estruturacoawst.png Graphic file (type png)
 <use Pictures/estruturacoawst.png>
-Package pdftex.def Info: Pictures/estruturacoawst.png  used on input line 486.
+Package pdftex.def Info: Pictures/estruturacoawst.png  used on input line 483.
 (pdftex.def)             Requested size: 234.8775pt x 244.85541pt.
  [24 <./Pictures/estruturacoawst.png>] [25]
 \openout4 = `main.listing'.
 
  (./_minted-main/E4AED758C02B4586133B143751610AAAC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 590--592
+\T1/ptm/m/n/10.95 (+20) necessário ini-ciar uma nova in-te-gração. Os ar-quivos se en-con-tram den-tro da pasta 
+ []
+
 \openout4 = `main.listing'.
 
- (./_minted-main/57E506C97C321E6B84641EB1CAB377A7C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+(./_minted-main/57E506C97C321E6B84641EB1CAB377A7C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
  (./_minted-main/02A844732D26A0C4093EB2CB7C577940C885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2758,10 +2821,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 )
 \openout4 = `main.listing'.
 
- (./_minted-main/139C9DCC61401332E47E78126EA7D16CC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+ (./_minted-main/139C9DCC61401332E47E78126EA7D16CC885B93CE8E5C50D3A8999B2107977F4.pygtex) [27]
 \openout4 = `main.listing'.
 
- (./_minted-main/75C6FD713F0C4F856C4EAC5BD5E3CD9DC885B93CE8E5C50D3A8999B2107977F4.pygtex) [27]
+ (./_minted-main/75C6FD713F0C4F856C4EAC5BD5E3CD9DC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
  (./_minted-main/514786C3B0DF1FD88C059D58A46FF9D3C885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2783,7 +2846,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 <Pictures/coawstfinal.png, id=686, 369.63094pt x 121.95563pt>
 File: Pictures/coawstfinal.png Graphic file (type png)
 <use Pictures/coawstfinal.png>
-Package pdftex.def Info: Pictures/coawstfinal.png  used on input line 775.
+Package pdftex.def Info: Pictures/coawstfinal.png  used on input line 771.
 (pdftex.def)             Requested size: 305.33789pt x 100.74301pt.
 \openout4 = `main.listing'.
 
@@ -2802,15 +2865,25 @@ Package pdftex.def Info: Pictures/coawstfinal.png  used on input line 775.
  (./_minted-main/A9C3D813F3205F34FEE4929BA985BECBC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
- (./_minted-main/598A48C4978A6DB8BF3E1D73B5FB00A7C885B93CE8E5C50D3A8999B2107977F4.pygtex)) (./sections/09_chapter_3.tex [30]
+ (./_minted-main/598A48C4978A6DB8BF3E1D73B5FB00A7C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+Underfull \hbox (badness 1735) in paragraph at lines 891--892
+[]\T1/ptm/m/n/10.95 (+20) A sim-u-lação do caso teste Sandy poderá de-morar 5 ho-ras ao in-te-grar us-ando 3 
+ []
+
+) (./sections/09_chapter_3.tex [30]
 Chapter 3.
-File: Pictures/ocean2.jpg Graphic file (type jpg)
-<use Pictures/ocean2.jpg>
-Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 3.
-(pdftex.def)             Requested size: 614.295pt x 207.36316pt.
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
+(pdftex.def)             Requested size: 614.295pt x 307.29764pt.
+
+Overfull \hbox (0.18533pt too wide) in paragraph at lines 17--25
+\T1/ptm/m/n/10.95 (+1) du-rante a com-pi-lação, como por ex-em-plo os passo de tempo, co-e-fi-cientes e con-stantes físi-cas, con-fig-u-ração 
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 26--32
-\T1/ptm/m/n/10.95 (+20) opções físi-cas do mod-elo e as refer-ên-cias de cada um de-les, acesse
+\T1/ptm/m/n/10.95 (+20) opções físi-cas do mod-elo e as refer-ên-cias de cada um de-les, acesse 
  []
 
 [31
@@ -2821,6 +2894,11 @@ File: Pictures/roms_proc.png Graphic file (type png)
 <use Pictures/roms_proc.png>
 Package pdftex.def Info: Pictures/roms_proc.png  used on input line 53.
 (pdftex.def)             Requested size: 375.80544pt x 55.28185pt.
+
+Underfull \hbox (badness 1824) in paragraph at lines 62--66
+\T1/ptm/m/n/10.95 (+20) ex-is-tem as var-iáveis \T1/ptm/m/it/10.95 (+20) nproc_x \T1/ptm/m/n/10.95 (+20) e \T1/ptm/m/it/10.95 (+20) nproc_y\T1/ptm/m/n/10.95 (+20) , como na Figura [][]3.2[][]. Neste caso serão reser-va-dos 320 
+ []
+
 <Pictures/wrf_proc.png, id=710, 228.10219pt x 24.09pt>
 File: Pictures/wrf_proc.png Graphic file (type png)
 <use Pictures/wrf_proc.png>
@@ -2831,7 +2909,7 @@ File: Pictures/taxa_acopl.png Graphic file (type png)
 <use Pictures/taxa_acopl.png>
 Package pdftex.def Info: Pictures/taxa_acopl.png  used on input line 92.
 (pdftex.def)             Requested size: 375.80544pt x 61.57599pt.
- [32 <./Pictures/roms_proc.png> <./Pictures/wrf_proc.png> <./Pictures/taxa_acopl.png>]
+[32 <./Pictures/roms_proc.png> <./Pictures/wrf_proc.png> <./Pictures/taxa_acopl.png>]
 \openout4 = `main.listing'.
 
  (./_minted-main/42CB675B7EF4EB51DA4D52E1282A55D4C885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2847,10 +2925,10 @@ Package pdftex.def Info: Pictures/coupltime.png  used on input line 160.
 
 ]
 Chapter 4.
-File: Pictures/ocean2.jpg Graphic file (type jpg)
-<use Pictures/ocean2.jpg>
-Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 3.
-(pdftex.def)             Requested size: 614.295pt x 207.36316pt.
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
+(pdftex.def)             Requested size: 614.295pt x 307.29764pt.
 \openout4 = `main.listing'.
 
 (./_minted-main/E1080054FFF2F6D4847AF382783F6D39C885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2859,7 +2937,12 @@ Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 3.
  (./_minted-main/54DCA5E37D2E5A21397D9CEE4B2506BEC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
- (./_minted-main/469F92E4B1AAEAABAF641A01620888C3C885B93CE8E5C50D3A8999B2107977F4.pygtex) [35]
+ (./_minted-main/469F92E4B1AAEAABAF641A01620888C3C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+Overfull \hbox (0.12408pt too wide) in paragraph at lines 49--51
+\T1/ptm/m/n/10.95 (+13) Caso tenha automatizado o processo de compilação, conforme apresentado na Seção [][]2.7[][], serão gerados os 
+ []
+
+[35]
 \openout4 = `main.listing'.
 
  (./_minted-main/E1DC1684D3B6A78688AABE90308D5EABC885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2868,15 +2951,24 @@ Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 3.
  (./_minted-main/0B5FFBB99CF089799434C352BCA039DCC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 96.
+
+Overfull \hbox (0.1582pt too wide) in paragraph at lines 98--99
+[]\T1/ptm/m/n/10.95 (+11) metgrid: Interpola os campos meteorológicos extraídos pelo ungrib para a grade do modelo definida 
+ []
+
 <Pictures/image002.png, id=744, 290.58563pt x 142.28156pt>
 File: Pictures/image002.png Graphic file (type png)
 <use Pictures/image002.png>
-Package pdftex.def Info: Pictures/image002.png  used on input line 114.
+Package pdftex.def Info: Pictures/image002.png  used on input line 113.
 (pdftex.def)             Requested size: 305.33789pt x 149.51509pt.
- [36]
+[36]
+Overfull \hbox (0.12701pt too wide) in paragraph at lines 122--124
+\T1/ptm/m/n/10.95 (+16) do WRF ([][]\T1/ptm/m/it/10.95 (+16) http://www2.mmm.ucar.edu/wrf/users/download/get_source.html[][]\T1/ptm/m/n/10.95 (+16) ). Baixe-o e adicione o arquivo 
+ []
+
 \openout4 = `main.listing'.
 
- (./_minted-main/4194C42E41056BE5277425BA307D55B0C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+(./_minted-main/4194C42E41056BE5277425BA307D55B0C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
  (./_minted-main/938CBCD14A6A0529E55595CB0CD829EFC885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2907,41 +2999,52 @@ Package pdftex.def Info: Pictures/image002.png  used on input line 114.
 \openout4 = `main.listing'.
 
  (./_minted-main/B0AA024C3F53FCAD2453C5D0B662877FC885B93CE8E5C50D3A8999B2107977F4.pygtex)
-<Pictures/1.png, id=769, 745.28438pt x 373.395pt>
+<Pictures/1.png, id=768, 745.28438pt x 373.395pt>
 File: Pictures/1.png Graphic file (type png)
 <use Pictures/1.png>
-Package pdftex.def Info: Pictures/1.png  used on input line 285.
+Package pdftex.def Info: Pictures/1.png  used on input line 284.
 (pdftex.def)             Requested size: 446.26582pt x 223.58292pt.
  [39]
 \openout4 = `main.listing'.
 
- (./_minted-main/7C2BEAF39222C367FC7A3CDA64B8DB2AC885B93CE8E5C50D3A8999B2107977F4.pygtex) [40 <./Pictures/1.png>]
+ (./_minted-main/7C2BEAF39222C367FC7A3CDA64B8DB2AC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 334--336
+\T1/ptm/m/n/10.95 (+20) po-dem ser obti-dos nesse site: 
+ []
+
+
+Overfull \hbox (0.14484pt too wide) in paragraph at lines 334--336
+\T1/ptm/m/n/10.95 (+13) ([][]\T1/ptm/m/it/10.95 (+13) http://www2.mmm.ucar.edu/wrf/users/download/get_sources_wps_geog.html[][]\T1/ptm/m/n/10.95 (+13) ), ou en-tão no repositório do 
+ []
+
+[40 <./Pictures/1.png>]
 \openout4 = `main.listing'.
 
  (./_minted-main/CD0DAEA889B00B255074147BA420A3E2C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
  (./_minted-main/21F4B921FC3A28C8595255EBDA40998BC885B93CE8E5C50D3A8999B2107977F4.pygtex)
-<Pictures/image3411.png, id=781, 1265.528pt x 599.038pt>
+<Pictures/image3411.png, id=780, 1265.528pt x 599.038pt>
 File: Pictures/image3411.png Graphic file (type png)
 <use Pictures/image3411.png>
-Package pdftex.def Info: Pictures/image3411.png  used on input line 353.
+Package pdftex.def Info: Pictures/image3411.png  used on input line 352.
 (pdftex.def)             Requested size: 446.26582pt x 211.23862pt.
+ [41 <./Pictures/image3411.png>]
 \openout4 = `main.listing'.
 
- (./_minted-main/170234842B3843C385FEE13B6EC03BE6C885B93CE8E5C50D3A8999B2107977F4.pygtex) [41 <./Pictures/image3411.png>]
-<Pictures/qsubgeonedit.png, id=790, 469.755pt x 286.06876pt>
+ (./_minted-main/170234842B3843C385FEE13B6EC03BE6C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/qsubgeonedit.png, id=789, 469.755pt x 286.06876pt>
 File: Pictures/qsubgeonedit.png Graphic file (type png)
 <use Pictures/qsubgeonedit.png>
-Package pdftex.def Info: Pictures/qsubgeonedit.png  used on input line 385.
+Package pdftex.def Info: Pictures/qsubgeonedit.png  used on input line 384.
 (pdftex.def)             Requested size: 446.26582pt x 271.76376pt.
 \openout4 = `main.listing'.
 
  (./_minted-main/719215566DE793AD5AD3C4D9DFF3287EC885B93CE8E5C50D3A8999B2107977F4.pygtex)
-<Pictures/qsubgeo.png, id=792, 401.24907pt x 70.01157pt>
+<Pictures/qsubgeo.png, id=791, 401.24907pt x 70.01157pt>
 File: Pictures/qsubgeo.png Graphic file (type png)
 <use Pictures/qsubgeo.png>
-Package pdftex.def Info: Pictures/qsubgeo.png  used on input line 404.
+Package pdftex.def Info: Pictures/qsubgeo.png  used on input line 403.
 (pdftex.def)             Requested size: 258.36668pt x 45.08392pt.
  [42 <./Pictures/qsubgeonedit.png> <./Pictures/qsubgeo.png>]
 \openout4 = `main.listing'.
@@ -2959,10 +3062,10 @@ Package pdftex.def Info: Pictures/qsubgeo.png  used on input line 404.
 \openout4 = `main.listing'.
 
  (./_minted-main/7B491E6197187BDF08241B6A2354CFDAC885B93CE8E5C50D3A8999B2107977F4.pygtex)
-<Pictures/nclinit.png, id=804, 374.14781pt x 79.79813pt>
+<Pictures/nclinit.png, id=803, 374.14781pt x 79.79813pt>
 File: Pictures/nclinit.png Graphic file (type png)
 <use Pictures/nclinit.png>
-Package pdftex.def Info: Pictures/nclinit.png  used on input line 465.
+Package pdftex.def Info: Pictures/nclinit.png  used on input line 464.
 (pdftex.def)             Requested size: 446.26582pt x 95.18497pt.
  [43 <./Pictures/nclinit.png>]
 \openout4 = `main.listing'.
@@ -2977,7 +3080,7 @@ Package pdftex.def Info: Pictures/nclinit.png  used on input line 465.
 <Pictures/wps_domain_new.png, id=813, 1027.84pt x 1027.84pt>
 File: Pictures/wps_domain_new.png Graphic file (type png)
 <use Pictures/wps_domain_new.png>
-Package pdftex.def Info: Pictures/wps_domain_new.png  used on input line 502.
+Package pdftex.def Info: Pictures/wps_domain_new.png  used on input line 501.
 (pdftex.def)             Requested size: 305.33789pt x 305.34314pt.
  [44 <./Pictures/wps_domain_new.png>]
 \openout4 = `main.listing'.
@@ -2986,24 +3089,37 @@ Package pdftex.def Info: Pictures/wps_domain_new.png  used on input line 502.
 \openout4 = `main.listing'.
 
  (./_minted-main/8CA1186EBEDD851CD53EE47C78FB1218C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+Underfull \hbox (badness 1406) in paragraph at lines 530--534
+\T1/ptm/m/n/10.95 (+20) Com o domínio preparado pelo \T1/ptm/m/it/10.95 (+20) ge-ogrid\T1/ptm/m/n/10.95 (+20) , pode-mos avançar para o \T1/ptm/m/it/10.95 (+20) un-grib\T1/ptm/m/n/10.95 (+20) , que ex-trai os cam-pos 
+ []
+
+
+Overfull \hbox (0.234pt too wide) in paragraph at lines 530--534
+\T1/ptm/m/n/10.95 (+18) me-te-o-rológi-cos e oceanográ-fi-cos de ar-quivos com for-mato \T1/ptm/m/it/10.95 (+18) GRIB\T1/ptm/m/n/10.95 (+18) , e começare-mos a criar os da-dos de SST. 
+ []
+
 <Pictures/ungribprefix.png, id=822, 164.11313pt x 57.21375pt>
 File: Pictures/ungribprefix.png Graphic file (type png)
 <use Pictures/ungribprefix.png>
-Package pdftex.def Info: Pictures/ungribprefix.png  used on input line 538.
+Package pdftex.def Info: Pictures/ungribprefix.png  used on input line 537.
 (pdftex.def)             Requested size: 211.38832pt x 73.69601pt.
 \openout4 = `main.listing'.
 
- (./_minted-main/97A7A2894790D3691989CCE3FB82217CC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+(./_minted-main/97A7A2894790D3691989CCE3FB82217CC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+Overfull \hbox (0.19319pt too wide) in paragraph at lines 566--568
+\T1/ptm/m/n/10.95 (+16) Crie diversos links simbólicos com os dados de SST do CFSR através do arquivo \T1/ptm/m/it/10.95 (+16) link_grib.csh \T1/ptm/m/n/10.95 (+16) apontando 
+ []
+
 \openout4 = `main.listing'.
 
- (./_minted-main/5E71055EC04D3F6A416F4AFB48F16D84C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+(./_minted-main/5E71055EC04D3F6A416F4AFB48F16D84C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
  (./_minted-main/067F6D943CFFD15AC50748116A00237EC885B93CE8E5C50D3A8999B2107977F4.pygtex) [45 <./Pictures/ungribprefix.png>]
 <Pictures/qsubung.png, id=830, 389.95688pt x 57.21375pt>
 File: Pictures/qsubung.png Graphic file (type png)
 <use Pictures/qsubung.png>
-Package pdftex.def Info: Pictures/qsubung.png  used on input line 603.
+Package pdftex.def Info: Pictures/qsubung.png  used on input line 602.
 (pdftex.def)             Requested size: 211.38832pt x 31.01456pt.
 \openout4 = `main.listing'.
 
@@ -3017,7 +3133,7 @@ Package pdftex.def Info: Pictures/qsubung.png  used on input line 603.
 <Pictures/fgname.png, id=842, 233.37187pt x 52.69687pt>
 File: Pictures/fgname.png Graphic file (type png)
 <use Pictures/fgname.png>
-Package pdftex.def Info: Pictures/fgname.png  used on input line 657.
+Package pdftex.def Info: Pictures/fgname.png  used on input line 656.
 (pdftex.def)             Requested size: 234.8775pt x 53.03926pt.
 \openout4 = `main.listing'.
 
@@ -3031,7 +3147,7 @@ Package pdftex.def Info: Pictures/fgname.png  used on input line 657.
 <Pictures/namelisttimecontrol.png, id=844, 467.49657pt x 364.36125pt>
 File: Pictures/namelisttimecontrol.png Graphic file (type png)
 <use Pictures/namelisttimecontrol.png>
-Package pdftex.def Info: Pictures/namelisttimecontrol.png  used on input line 700.
+Package pdftex.def Info: Pictures/namelisttimecontrol.png  used on input line 699.
 (pdftex.def)             Requested size: 328.82707pt x 256.2965pt.
  [47 <./Pictures/fgname.png>]
 \openout4 = `main.listing'.
@@ -3040,7 +3156,7 @@ Package pdftex.def Info: Pictures/namelisttimecontrol.png  used on input line 70
 <Pictures/physics.png, id=853, 320.69812pt x 200.24812pt>
 File: Pictures/physics.png Graphic file (type png)
 <use Pictures/physics.png>
-Package pdftex.def Info: Pictures/physics.png  used on input line 716.
+Package pdftex.def Info: Pictures/physics.png  used on input line 715.
 (pdftex.def)             Requested size: 328.82707pt x 205.32898pt.
  [48 <./Pictures/namelisttimecontrol.png> <./Pictures/physics.png>]
 \openout4 = `main.listing'.
@@ -3049,7 +3165,7 @@ Package pdftex.def Info: Pictures/physics.png  used on input line 716.
 <Pictures/realsucess.png, id=862, 478.78876pt x 123.46124pt>
 File: Pictures/realsucess.png Graphic file (type png)
 <use Pictures/realsucess.png>
-Package pdftex.def Info: Pictures/realsucess.png  used on input line 752.
+Package pdftex.def Info: Pictures/realsucess.png  used on input line 751.
 (pdftex.def)             Requested size: 328.82707pt x 84.79272pt.
 \openout4 = `main.listing'.
 
@@ -3060,14 +3176,18 @@ Package pdftex.def Info: Pictures/realsucess.png  used on input line 752.
 \openout4 = `main.listing'.
 
  (./_minted-main/E2B049EB006B85F36A2159E2ACC418FDC885B93CE8E5C50D3A8999B2107977F4.pygtex) [49 <./Pictures/realsucess.png>]
+Overfull \hbox (0.20483pt too wide) in paragraph at lines 805--807
+\T1/ptm/m/n/10.95 (+9) Acompanhe a evolução da simulação a partir dos arquivos \T1/ptm/m/it/10.95 (+9) log.out \T1/ptm/m/n/10.95 (+9) e \T1/ptm/m/it/10.95 (+9) log.err\T1/ptm/m/n/10.95 (+9) . Caso opte pela informação ser 
+ []
+
 \openout4 = `main.listing'.
 
- (./_minted-main/A9C3D813F3205F34FEE4929BA985BECBC885B93CE8E5C50D3A8999B2107977F4.pygtex)) (./sections/11_chapter_5.tex [50]
+(./_minted-main/A9C3D813F3205F34FEE4929BA985BECBC885B93CE8E5C50D3A8999B2107977F4.pygtex)) (./sections/11_chapter_5.tex [50]
 Chapter 5.
-File: Pictures/ocean2.jpg Graphic file (type jpg)
-<use Pictures/ocean2.jpg>
-Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 3.
-(pdftex.def)             Requested size: 614.295pt x 207.36316pt.
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
+(pdftex.def)             Requested size: 614.295pt x 307.29764pt.
 \openout4 = `main.listing'.
 
 (./_minted-main/8AB754EA9FB88C29B0A8AEE033EDA2E5C885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -3090,10 +3210,10 @@ Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 3.
  (./_minted-main/594A4153159CB3435C25F5CAE03A1FA6C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
- (./_minted-main/AF4B66630488A250241199FCC4311FB9C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+ (./_minted-main/AF4B66630488A250241199FCC4311FB9C885B93CE8E5C50D3A8999B2107977F4.pygtex) [52]
 \openout4 = `main.listing'.
 
- (./_minted-main/1ED429560AF5DE74FE9138C5C6F67BBCC885B93CE8E5C50D3A8999B2107977F4.pygtex) [52]
+ (./_minted-main/1ED429560AF5DE74FE9138C5C6F67BBCC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
  (./_minted-main/419943C5C1541A5F888A8CE64DD8CB95C885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -3106,8 +3226,8 @@ Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 3.
 \openout4 = `main.listing'.
 
  (./_minted-main/1FA04D53EC5B3AA22DE4E942115F1B99C885B93CE8E5C50D3A8999B2107977F4.pygtex) [53]
-Underfull \hbox (badness 8113) in paragraph at lines 182--184
-\T1/ptm/m/n/10.95 (+20) Instale o \T1/ptm/m/it/10.95 (+20) Curl 7.50.3 \T1/ptm/m/n/10.95 (+20) ([][]\T1/ptm/m/it/10.95 (+20) http://curl.haxx.se/download.html[][]\T1/ptm/m/n/10.95 (+20) ). Baixe-o, de-scom-pacte na pasta
+Underfull \hbox (badness 4846) in paragraph at lines 183--185
+\T1/ptm/m/n/10.95 (+20) Instale o \T1/ptm/m/it/10.95 (+20) Curl 7.50.3 \T1/ptm/m/n/10.95 (+20) ([][]\T1/ptm/m/it/10.95 (+20) http://curl.haxx.se/download.html[][]\T1/ptm/m/n/10.95 (+20) ). Baixe-o, de-scom-pacte na pasta 
  []
 
 \openout4 = `main.listing'.
@@ -3146,16 +3266,16 @@ Underfull \hbox (badness 8113) in paragraph at lines 182--184
 \openout4 = `main.listing'.
 
  (./_minted-main/BABB8C1DABDA1300C2F446E718287178C885B93CE8E5C50D3A8999B2107977F4.pygtex)
-\openout4 = `main.listing'.
-
- (./_minted-main/BD2F1F8BC0D45370BC1CE5E2295D6E6BC885B93CE8E5C50D3A8999B2107977F4.pygtex)
-Underfull \hbox (badness 1112) in paragraph at lines 338--340
-\T1/ptm/m/n/10.95 (+20) Instale o \T1/ptm/m/it/10.95 (+20) Udunits 2.1.24 \T1/ptm/m/n/10.95 (+20) ([][]\T1/ptm/m/it/10.95 (+20) ftp://ftp.unidata.ucar.edu/pub/udunits/[][]\T1/ptm/m/n/10.95 (+20) ). Baixe-o, de-scom-pacte na pasta
+Underfull \hbox (badness 1642) in paragraph at lines 321--323
+\T1/ptm/m/n/10.95 (+20) Instale o \T1/ptm/m/it/10.95 (+20) libpng 1.6.24 \T1/ptm/m/n/10.95 (+20) ([][]\T1/ptm/m/it/10.95 (+20) http://sourceforge.net/projects/libpng/?source=typ_redirect[][]\T1/ptm/m/n/10.95 (+20) ). Baixe-o, 
  []
 
 \openout4 = `main.listing'.
 
-(./_minted-main/BABB8C1DABDA1300C2F446E718287178C885B93CE8E5C50D3A8999B2107977F4.pygtex) [56]
+(./_minted-main/BD2F1F8BC0D45370BC1CE5E2295D6E6BC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/BABB8C1DABDA1300C2F446E718287178C885B93CE8E5C50D3A8999B2107977F4.pygtex) [56]
 \openout4 = `main.listing'.
 
  (./_minted-main/0A4DEFFC3F92BE9AEF16FB4F99D86DA4C885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -3242,16 +3362,25 @@ Underfull \hbox (badness 1112) in paragraph at lines 338--340
  (./_minted-main/3E3034830014200D5D1C588EEB6A1C0BC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
- (./_minted-main/594A4153159CB3435C25F5CAE03A1FA6C885B93CE8E5C50D3A8999B2107977F4.pygtex) [61]
+ (./_minted-main/594A4153159CB3435C25F5CAE03A1FA6C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 676--678
+\T1/ptm/m/n/10.95 (+20) uti-liza-dos neste guia, fa-cil-i-tando a in-sta-lação. Para baixar o Ana-conda acesse: 
+ []
+
+[61]
 \openout4 = `main.listing'.
 
  (./_minted-main/8F031BCCD5A843D6EF079547C44D51A8C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
  (./_minted-main/4AC664770D5738A34E342FAE97BC3628C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+Overfull \hbox (0.16162pt too wide) in paragraph at lines 711--713
+\T1/ptm/m/n/10.95 (+15) coleção de ferramentas para ajudar com arquivos de entrada e saída do ROMS. Foi originalmente iniciado 
+ []
+
 \openout4 = `main.listing'.
 
- (./_minted-main/3B506B5C538713171823AE73C7E962D0C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+(./_minted-main/3B506B5C538713171823AE73C7E962D0C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
  (./_minted-main/13DCA8ED77BB6A320F58F9884BBBBC6CC885B93CE8E5C50D3A8999B2107977F4.pygtex) [62]
@@ -3288,24 +3417,32 @@ Underfull \hbox (badness 1112) in paragraph at lines 338--340
 \openout4 = `main.listing'.
 
  (./_minted-main/594A4153159CB3435C25F5CAE03A1FA6C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+Overfull \hbox (0.1834pt too wide) in paragraph at lines 847--849
+\T1/ptm/m/n/10.95 (+11) Vá até \T1/ptm/m/it/10.95 (+11) /home/usuario/libsmodels/pyroms/lib/python2.7/site-packages/bathy_smoother/ \T1/ptm/m/n/10.95 (+11) e apague o arquivo 
+ []
+
 \openout4 = `main.listing'.
 
- (./_minted-main/3AFD2F32EE5131687603A6957551FA21C885B93CE8E5C50D3A8999B2107977F4.pygtex) [64]
+(./_minted-main/3AFD2F32EE5131687603A6957551FA21C885B93CE8E5C50D3A8999B2107977F4.pygtex) [64]
 LaTeX Font Info:    Font shape `T1/pag/bx/it' in size <12> not available
-(Font)              Font shape `T1/pag/b/it' tried instead on input line 861.
+(Font)              Font shape `T1/pag/b/it' tried instead on input line 862.
 LaTeX Font Info:    Font shape `T1/pag/b/it' in size <12> not available
-(Font)              Font shape `T1/pag/db/it' tried instead on input line 861.
+(Font)              Font shape `T1/pag/db/it' tried instead on input line 862.
 LaTeX Font Info:    Font shape `T1/pag/db/it' in size <12> not available
-(Font)              Font shape `T1/pag/db/sl' tried instead on input line 861.
+(Font)              Font shape `T1/pag/db/sl' tried instead on input line 862.
 \openout4 = `main.listing'.
 
  (./_minted-main/6C3A78B9910103F3652682C9099EEB1CC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
  (./_minted-main/353D8986888DD4D1E1948485E29D0C73C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+Underfull \hbox (badness 2012) in paragraph at lines 888--890
+\T1/ptm/m/n/10.95 (+20) Para gerar a grade do ROMS, us-are-mos o código \T1/ptm/m/it/10.95 (+20) make_roms_grid.py\T1/ptm/m/n/10.95 (+20) , lo-cal-izado no di-retório 
+ []
+
 \openout4 = `main.listing'.
 
- (./_minted-main/9BA5CEBEADA8AFDAD166BB1F566F7B0AC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+(./_minted-main/9BA5CEBEADA8AFDAD166BB1F566F7B0AC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 <Pictures/etopo1.png, id=952, 1204.5pt x 615.80063pt>
 File: Pictures/etopo1.png Graphic file (type png)
 <use Pictures/etopo1.png>
@@ -3330,13 +3467,18 @@ Package pdftex.def Info: Pictures/makegrid.png  used on input line 997.
 \openout4 = `main.listing'.
 
  (./_minted-main/F391832866ABE11DA894731385B1B231C885B93CE8E5C50D3A8999B2107977F4.pygtex)
-Underfull \hbox (badness 4181) in paragraph at lines 1022--1024
-\T1/ptm/m/n/10.95 (+20) O GLO-RYS pode ser baix-ado no site: [][]\T1/ptm/m/it/10.95 (+20) http://marine.copernicus.eu/services-portfolio/access-to-
+Overfull \hbox (0.20453pt too wide) in paragraph at lines 1019--1021
+\T1/ptm/m/n/10.95 (+17) O GLO-RYS é uma re-análise global do oceano com res-olução es-pa-cial de 1/12\TS1/ptm/m/n/10.95 °\T1/ptm/m/n/10.95 (+17) , res-olução tem-po-ral diária 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1022--1024
-\T1/ptm/m/it/10.95 (+20) products/?option=com_csw&view=details&product_id=GLOBAL_REANALYSIS_PHY_001_030[][]\T1/ptm/m/n/10.95 (+20) .
+Underfull \hbox (badness 1314) in paragraph at lines 1019--1021
+\T1/ptm/m/n/10.95 (+20) or-dem re-duzida para as-sim-i-lar os da-dos de al-time-tria do mar, tem-per-atura da su-per-fí-cie do mar, 
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 1022--1024
+\T1/ptm/m/n/10.95 (+20) O GLO-RYS pode ser baix-ado no site: [][]\T1/ptm/m/it/10.95 (+20) http://marine.copernicus.eu/services-portfolio/access-to- 
  []
 
 <Pictures/glorys1.png, id=980, 966.61125pt x 929.4725pt>
@@ -3405,10 +3547,20 @@ Package pdftex.def Info: Pictures/m2roptions.png  used on input line 1243.
 
 ]
 Chapter 6.
-File: Pictures/ocean2.jpg Graphic file (type jpg)
-<use Pictures/ocean2.jpg>
-Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 3.
-(pdftex.def)             Requested size: 614.295pt x 207.36316pt.
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 4.
+(pdftex.def)             Requested size: 614.295pt x 307.29764pt.
+
+Overfull \hbox (0.14218pt too wide) in paragraph at lines 6--10
+\T1/ptm/m/n/10.95 (+14) (\T1/ptm/m/it/10.95 (+14) swan_bathy.bot\T1/ptm/m/n/10.95 (+14) ). Também é possivel definir uma grade numérica dentro do próprio \T1/ptm/m/it/10.95 (+14) SWAN.EDT \T1/ptm/m/n/10.95 (+14) e indicar 
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 15--20
+\T1/ptm/m/n/10.95 (+20) Para as condições de fron-teiras do SWAN, os cam-pos de vento serão prove-nientes do WRF, via 
+ []
+
 \openout4 = `main.listing'.
 
 (./_minted-main/8147661D0E2A9C670AAB35E0FF4D597CC885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -3419,10 +3571,15 @@ Package pdftex.def Info: Pictures/makeswan.png  used on input line 34.
 (pdftex.def)             Requested size: 220.78543pt x 195.06601pt.
  [77] [78 <./Pictures/makeswan.png>]
 Chapter 7.
-File: Pictures/ocean2.jpg Graphic file (type jpg)
-<use Pictures/ocean2.jpg>
-Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 48.
-(pdftex.def)             Requested size: 614.295pt x 207.36316pt.
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 48.
+(pdftex.def)             Requested size: 614.295pt x 307.29764pt.
+
+Overfull \hbox (0.14038pt too wide) in paragraph at lines 51--56
+\T1/ptm/m/n/10.95 (+8) O modelo de gelo marinho está integralmente acoplado ao ROMS, de modo que, após gerada as condições 
+ []
+
 <Pictures/hiceroms.png, id=1070, 293.095pt x 279.0425pt>
 File: Pictures/hiceroms.png Graphic file (type png)
 <use Pictures/hiceroms.png>
@@ -3438,24 +3595,28 @@ Package pdftex.def Info: Pictures/hiceroms.png  used on input line 76.
 
  (./_minted-main/962C192554697F7EA447D365B536D677C885B93CE8E5C50D3A8999B2107977F4.pygtex)) (./sections/13_chapter_7.tex [80 <./Pictures/hiceroms.png>]
 Chapter 8.
-File: Pictures/ocean2.jpg Graphic file (type jpg)
-<use Pictures/ocean2.jpg>
-Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 3.
-(pdftex.def)             Requested size: 614.295pt x 207.36316pt.
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
+(pdftex.def)             Requested size: 614.295pt x 307.29764pt.
 \openout4 = `main.listing'.
 
 (./_minted-main/05BC5420F3ABA3037700CE5F3FD82826C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 <Pictures/scripin.png, id=1087, 791.20593pt x 612.03656pt>
 File: Pictures/scripin.png Graphic file (type png)
 <use Pictures/scripin.png>
-Package pdftex.def Info: Pictures/scripin.png  used on input line 21.
+Package pdftex.def Info: Pictures/scripin.png  used on input line 22.
 (pdftex.def)             Requested size: 305.33789pt x 236.19046pt.
  [81
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 40--42
+\T1/ptm/m/n/10.95 (+20) Por fim, na quinta seção, al-tere os di-retórios das grades do WRF (\T1/ptm/m/it/10.95 (+20) WRF_GRIDS\T1/ptm/m/n/10.95 (+20) ). Em 
+ []
+
 \openout4 = `main.listing'.
 
- (./_minted-main/9FD53F7DA2E2E9B96828B04854E55D39C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+(./_minted-main/9FD53F7DA2E2E9B96828B04854E55D39C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
  (./_minted-main/4601DBE0204C0BD11CA788F658411210C885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -3465,7 +3626,7 @@ Package pdftex.def Info: Pictures/scripin.png  used on input line 21.
 <Pictures/scripqsub.png, id=1099, 831.105pt x 350.81062pt>
 File: Pictures/scripqsub.png Graphic file (type png)
 <use Pictures/scripqsub.png>
-Package pdftex.def Info: Pictures/scripqsub.png  used on input line 74.
+Package pdftex.def Info: Pictures/scripqsub.png  used on input line 75.
 (pdftex.def)             Requested size: 305.33789pt x 128.88254pt.
 \openout4 = `main.listing'.
 
@@ -3473,83 +3634,153 @@ Package pdftex.def Info: Pictures/scripqsub.png  used on input line 74.
 
 ]
 Chapter 9.
-File: Pictures/ocean2.jpg Graphic file (type jpg)
-<use Pictures/ocean2.jpg>
-Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 3.
-(pdftex.def)             Requested size: 614.295pt x 207.36316pt.
-[85] [86] [87] [88] [89] [90]
-Underfull \hbox (badness 2027) in paragraph at lines 209--210
-\T1/ptm/m/n/10.95 (+20) Avaliable at: [][]\T1/ptm/m/it/10.95 (+20) http://www.iag.usp.br/pos/meteorologia/biblio/modeling-spawning-strategies-and-larval-
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
+(pdftex.def)             Requested size: 614.295pt x 307.29764pt.
+
+Underfull \hbox (badness 1194) in paragraph at lines 18--26
+\T1/ptm/m/n/10.95 (+20) abil-ity to sim-u-late the in-ten-sity and tra-jec-tory of the cy-clone, com-pared to the sim-u-la-tion of the 
  []
 
-[91]) (./sections/15_acknowledgments.tex [92]
-File: Pictures/ocean2.jpg Graphic file (type jpg)
-<use Pictures/ocean2.jpg>
-Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 3.
-(pdftex.def)             Requested size: 614.295pt x 207.36316pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--12
-
+[85]
+Underfull \hbox (badness 2197) in paragraph at lines 45--55
+\T1/ptm/m/n/10.95 (+20) com-pre-hen-sively un-der-stood. An individual-based mod-el-ing scheme cou-pled with a re-gional 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
-
+[86]
+Overfull \hbox (0.18117pt too wide) in paragraph at lines 75--86
+\T1/ptm/m/n/10.95 (+4) dy-nam-ics dom-i-nat-ing over time. In the ver-ti-cal, the sea sur-face tem-per-a-ture ex-hib-ited high cor-re-la-tion with 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--17
+Overfull \hbox (0.16563pt too wide) in paragraph at lines 75--86
+\T1/ptm/m/n/10.95 (+11) cor-re-la-tions ex-hib-ited strong flow de-pen-dence at spe-cific points on the Brazil and Malv-inas Cur-rents. This 
+ []
 
+[87]
+Underfull \hbox (badness 1496) in paragraph at lines 114--116
+[][][]\T1/ptm/m/n/10.95 (+20) J. Pullen et al. (2017). \T1/ptm/m/it/10.95 (+20) The Sci-ence of Ocean Pre-dic-tion, The Sea\T1/ptm/m/n/10.95 (+20) . P. Ler-mu-si-aux and K. Brink. 
+ []
+
+[88]
+Underfull \hbox (badness 1102) in paragraph at lines 133--142
+\T1/ptm/m/n/10.95 (+20) pa-per makes use of the Re-gional Ocean Mod-el-ing Sys-tem (ROMS) for study-ing the wa-ter mass 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
+Overfull \hbox (0.22028pt too wide) in paragraph at lines 143--145
+[][]\T1/ptm/m/n/10.95 (+7) L. F. Men-donça et al. (2017). ^^P  Re-gional mod-el-ing of the wa-ter masses and cir-cu-la-tion an-nual vari-abil-ity at 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 1708) in paragraph at lines 143--145
+\T1/ptm/m/n/10.95 (+20) the South-ern Brazil-ian Con-ti-nen-tal Shelf^^Q. In: \T1/ptm/m/it/10.95 (+20) Jour-nal of Geo-phys-i-cal Re-search: Oceans \T1/ptm/m/n/10.95 (+20) 122, 
+ []
 
+[89]
+Overfull \hbox (0.2114pt too wide) in paragraph at lines 164--173
+\T1/ptm/m/n/10.95 (+8) dif-fer in re-gard to their sea ice mod-els, are dis-cussed. The ex-per-i-ments are per-turbed with ex-tremes of ASI 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-
+Overfull \hbox (0.11194pt too wide) in paragraph at lines 164--173
+\T1/ptm/m/n/10.95 (+19) dur-ing the pos-i-tive phase re-duces heat fluxes south of 60\TS1/ptm/m/n/10.95 °\T1/ptm/m/n/10.95 (+19) S, while at the same time these are in-ten-si-fied at 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-
+Overfull \hbox (0.10298pt too wide) in paragraph at lines 164--173
+\T1/ptm/m/n/10.95 (+18) lat-i-tudes (mid-lat-i-tudes), typ-i-cal of the south-ern an-nu-lar mode (SAM) pos-i-tive phase. The South-ern Ocean 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+Underfull \hbox (badness 1097) in paragraph at lines 164--173
+\T1/ptm/m/n/10.95 (+20) (SO) be-comes colder and fresher as the sea ice melts mainly through sea ice lat-eral melt-ing, the 
+ []
 
+[90]
+Underfull \hbox (badness 1448) in paragraph at lines 195--205
+\T1/ptm/m/n/10.95 (+20) ar-eas for spawn-ing, ac-cord-ing to the in-ter-an-nual vari-abil-ity of the SBB. The in-flu-ence of wa-ter 
+ []
+
+[91]
+Underfull \hbox (badness 1137) in paragraph at lines 227--235
+\T1/ptm/m/n/10.95 (+20) Sea sur-face tem-per-a-ture (SST) anomaly events in the Brazil-Malvinas Con-flu-ence (BMC) were 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
+Overfull \hbox (0.14444pt too wide) in paragraph at lines 227--235
+\T1/ptm/m/n/10.95 (+8) dy-nam-ics that drive these anoma-lies. Wavelet anal-y-sis pointed to the 8^^U12-year band as the most en-er-getic 
  []
 
+) (./sections/15_acknowledgments.tex [92]
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
+(pdftex.def)             Requested size: 614.295pt x 307.29764pt.
 ) [93
 
 ] [94
 
 ]
-File: Pictures/ocean2.jpg Graphic file (type jpg)
-<use Pictures/ocean2.jpg>
-Package pdftex.def Info: Pictures/ocean2.jpg  used on input line 236.
-(pdftex.def)             Requested size: 614.295pt x 207.36316pt.
- [95]
-Underfull \hbox (badness 10000) in paragraph at lines 236--236
-[][]\T1/ptm/m/n/10.95 (+20) Kristiansen, T. (2019). \T1/ptm/m/it/10.95 (+20) Model2roms Python Tool-box for ROMS\T1/ptm/m/n/10.95 (+20) .
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 236.
+(pdftex.def)             Requested size: 614.295pt x 307.29764pt.
+
+Underfull \hbox (badness 2042) in paragraph at lines 236--236
+\T1/ptm/m/n/10.95 (+20) Model de-scrip-tion and val-i-da-tion^^Q. In: \T1/ptm/m/it/10.95 (+20) Jour-nal of Geo-phys-i-cal Re-search: Oceans \T1/ptm/m/n/10.95 (+20) 104.C4, 
  []
 
-[96] [97]
+[95]
+Underfull \hbox (badness 1694) in paragraph at lines 236--236
+[][][]\T1/ptm/m/n/10.95 (+20) (1999). ^^P  First and Sec-ond Or-der Con-ser-va-tive Remap-ping Schemes for Grids in Spher-i-cal 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--236
+\T1/ptm/m/n/10.95 (+20) Co-or-di-nates^^Q. In: \T1/ptm/m/it/10.95 (+20) Monthly Weather Re-view \T1/ptm/m/n/10.95 (+20) 127, pp. 2204^^U2210. \T1/ptm/m/sc/10.95 (+20) doi\T1/ptm/m/n/10.95 (+20) : 
+ []
+
+[96]
+Overfull \hbox (0.1845pt too wide) in paragraph at lines 236--236
+[][]\T1/ptm/m/n/10.95 (+6) Miller, A. J., M. Collins, G. Silvio, T. G. Jensen, V. Misra, L. P. Pezzi, D. W. Pierce, D. Putrasahan, H. Seo 
+ []
+
+
+Overfull \hbox (0.20576pt too wide) in paragraph at lines 236--236
+[][]\T1/ptm/m/n/10.95 (+2) Overland, J. E. & C. H. Pease (1988). ^^P  Modeling ice dynamics of coastal seas.^^Q In: \T1/ptm/m/it/10.95 (+2) Journal of Geophysical 
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 236--236
+\T1/ptm/m/n/10.95 (+20) Cli-mate Sen-si-tiv-ity and Mem-ory to In-creased Antarc-tic Sea Ice^^Q. In: \T1/ptm/m/it/10.95 (+20) Jour-nak of Cli-mate \T1/ptm/m/n/10.95 (+20) 28, 
+ []
+
+
+Overfull \hbox (0.12764pt too wide) in paragraph at lines 236--236
+\T1/ptm/m/n/10.95 (+19) George Gayno, Jun Wang, Yu-Tai Hou, Hui-Ya Chuang, Hann-Ming H. Juang, Joe Sela, Mark Iredell, 
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 236--236
+\T1/ptm/m/n/10.95 (+20) Roger Lin, Ping-ping Xie, Mingyue Chen, Shuntai Zhou, Wayne Hig-gins, Cheng-Zhi Zou, 
+ []
+
+
+Overfull \hbox (0.1769pt too wide) in paragraph at lines 236--236
+[][]\T1/ptm/m/n/10.95 (+19) Skamarock, W. C., J. B. Klemp, J. Dudhia, D. O. Gill, D. M. Barker, M. G. Duda, X.-Y. Huang, W. Wang 
+ []
+
+[97]
 
 Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 236.
+
+
+Underfull \hbox (badness 5519) in paragraph at lines 236--236
+[][]\T1/ptm/m/n/10.95 (+20) Warner, J. C., B. Arm-strong, R. He & J. B. Zam-bon (2010). ^^P  De-vel-op-ment of a Cou-pled 
+ []
 
 \tf@ptc=\write13
 \openout13 = `main.ptc'.
@@ -3561,7 +3792,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B9A0DFCBDC42A9BFEFA900EBE1EAEB6C;4714.
+(rerunfilecheck)             Checksum: 4029A8D0347B6F00D33F97850D1B49EC;4717.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -3572,18 +3803,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
  ) 
 Here is how much of TeX's memory you used:
- 51873 strings out of 492982
- 1073242 string characters out of 6134896
- 1645670 words of memory out of 5000000
- 53422 multiletter control sequences out of 15000+600000
- 660284 words of font info for 349 fonts, out of 8000000 for 9000
+ 51988 strings out of 492982
+ 1076770 string characters out of 6134896
+ 1649292 words of memory out of 5000000
+ 53657 multiletter control sequences out of 15000+600000
+ 656745 words of font info for 284 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,83p,10558b,2888s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagdo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagko8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (98 pages, 6373218 bytes).
+Output written on main.pdf (98 pages, 5882420 bytes).
 PDF statistics:
- 1352 PDF objects out of 1440 (max. 8388607)
- 1072 compressed objects within 11 object streams
+ 1354 PDF objects out of 1440 (max. 8388607)
+ 1077 compressed objects within 11 object streams
  257 named destinations out of 1000 (max. 500000)
- 64311 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 69431 words of extra memory for PDF output out of 74296 (max. 10000000)
 

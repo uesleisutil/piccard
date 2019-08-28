@@ -1,17 +1,17 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'main.blg'
-[25] biber:313> INFO - === ter ago 27, 2019, 18:03:23
-[45] Biber.pm:371> INFO - Reading 'main.bcf'
-[98] Biber.pm:857> INFO - Found 40 citekeys in bib section 0
+[26] biber:313> INFO - === qua ago 28, 2019, 17:07:06
+[46] Biber.pm:371> INFO - Reading 'main.bcf'
+[97] Biber.pm:857> INFO - Found 40 citekeys in bib section 0
 [109] Biber.pm:3981> INFO - Processing section 0
-[121] Biber.pm:4154> INFO - Looking for bibtex format file 'refs.bib' for section 0
-[123] bibtex.pm:1468> INFO - LaTeX decoding ...
-[165] bibtex.pm:1294> INFO - Found BibTeX data source 'refs.bib'
-[456] Utils.pm:169> WARN - BibTeX subsystem: /tmp/yiYV3vnLHZ/refs.bib_8511.utf8, line 193, warning: undefined macro "42-1"
-[520] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[521] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[521] Biber.pm:3809> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[521] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
-[572] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[640] bbl.pm:720> INFO - Output to main.bbl
-[641] Biber.pm:110> INFO - WARNINGS: 1
+[117] Biber.pm:4154> INFO - Looking for bibtex format file 'refs.bib' for section 0
+[119] bibtex.pm:1468> INFO - LaTeX decoding ...
+[160] bibtex.pm:1294> INFO - Found BibTeX data source 'refs.bib'
+[433] Utils.pm:169> WARN - BibTeX subsystem: /tmp/DgHleQU45e/refs.bib_10634.utf8, line 193, warning: undefined macro "42-1"
+[547] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[547] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[547] Biber.pm:3809> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[547] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[594] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[666] bbl.pm:720> INFO - Output to main.bbl
+[666] Biber.pm:110> INFO - WARNINGS: 1

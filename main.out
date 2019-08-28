@@ -44,8 +44,8 @@
 \BOOKMARK [1][-]{section.4.4}{Usando o WRF}{chapter.4}% 44
 \BOOKMARK [0][-]{chapter.5}{Construindo o ROMS}{}% 45
 \BOOKMARK [1][-]{section.5.1}{Instalando as bibliotecas do Python no computador pessoal}{chapter.5}% 46
-\BOOKMARK [2][-]{subsection.5.1.1}{Instala\347\343o manual}{section.5.1}% 47
-\BOOKMARK [2][-]{subsection.5.1.2}{Utilizando o Conda}{section.5.1}% 48
+\BOOKMARK [2][-]{subsection.5.1.1}{Instalando manualmente}{section.5.1}% 47
+\BOOKMARK [2][-]{subsection.5.1.2}{Instalando com o Conda}{section.5.1}% 48
 \BOOKMARK [1][-]{section.5.2}{Instalando o Pyroms}{chapter.5}% 49
 \BOOKMARK [1][-]{section.5.3}{model2roms}{chapter.5}% 50
 \BOOKMARK [2][-]{subsection.5.3.1}{Introdu\347\343o sobre a grade do ROMS}{section.5.3}% 51

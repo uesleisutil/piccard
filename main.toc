@@ -83,7 +83,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.3}\textit {ungrib}}{45}{subsection.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}metgrid}{47}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.4}\textit {metgrid}}{47}{subsection.4.3.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.5}\textit {real}}{47}{subsection.4.3.5}
 \defcounter {refsection}{0}\relax 
@@ -93,9 +93,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}Instalando as bibliotecas do Python no computador pessoal}{51}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Instala\IeC {\c c}\IeC {\~a}o manual}{51}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Instalando manualmente}{51}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Utilizando o Conda}{62}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Instalando com o Conda}{62}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Instalando o Pyroms}{62}{section.5.2}
 \defcounter {refsection}{0}\relax 

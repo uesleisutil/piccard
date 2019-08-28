@@ -1,5 +1,5 @@
 % !TEX root = /media/ueslei/Ueslei/INPE/PCI/Guia_COAWST/main.tex
-\chapterimage{ocean2.jpg} % Chapter heading image
+\chapterimage{header.jpg} % Chapter heading image
 \chapter{Introdução}
 
 \bigskip
@@ -86,7 +86,6 @@
 
 \begin{figure}[H]
     \centering
-    \captionsetup{justification=centering}
     \includegraphics[width=0.80\textwidth]{grid_new.png}
     \caption{Grade horizontal e vertical do Weather Research and Forecast (WRF) em Arawaka-C. As componentes horizontal e vertical
                         da velocidade (\textbf{u}, \textbf{v} e \textbf{w}) estão posicionados ao longo das faces das grades e as variáveis termodinâmicas
@@ -169,7 +168,7 @@ Z_{0} = Z_{ch} \frac{u_{*}^{2}}{g}
 \bigskip
 
 \noindent O  Spherical Coordinate Remapping Interpolation Package (SCRIP; \cite{Jones1999,Jones1998}) 
-          está disponível gratuitamente em \textcolor{bleu_cite}{\href{http://oceans11.lanl.gov/trac/SCRIP}{\textit{http://oceans11.lanl.gov/trac/SCRIP}}} 
+          está disponível gratuitamente em \textcolor{bleu_cite}{\href{https://github.com/SCRIP-Project/SCRIP}{\textit{https://github.com/SCRIP-Project/SCRIP}}} 
           e é distribuído junto com o COAWST. Este pacote é usado para projetos que utilizam mais de um modelo e que possuem grades 
           horizontais diferentes, ou seja com diferentes resoluções espaciais. O SCRIP gerará os pesos de interpolação que serão 
           usados para remapear os dados entre as distintas grades dos diferentes modelos.
@@ -230,7 +229,7 @@ Este guia não usa o CSTM. Caso esteja interessado, há um estudo sobre a transf
         node distance=2.75cm, 
         state/.style={
         draw=black,
-        fill=bleu_cite,
+        fill=bashcodebg,
         circle, 
         text=black,
         text width={width("ROMS")},
@@ -252,7 +251,6 @@ Este guia não usa o CSTM. Caso esteja interessado, há um estudo sobre a transf
         \path (C) edge [draw=black, bend right=20] node[sloped, align=center, below,font=\tiny] {U\textsubscript{s}, V\textsubscript{s}, Bathymetry, \\Bottom Elevation} (B); 
         \node[align=center,font=\bfseries, yshift=2em] (title) at (current bounding box.north) {\small Coupled Ocean-Atmosphere-Wave-\\\small Sediment Transport modeling system \\\small v3.4};
     \end{tikzpicture}
-\captionsetup{justification=centering}
 \caption{Esquema sobre a troca de informações entre três modelos que compõe o sistema COAWST. (\cite{Warner2008})}
 \label{acopla}
 \end{figure}
@@ -295,3 +293,19 @@ Este guia não usa o CSTM. Caso esteja interessado, há um estudo sobre a transf
 
 \noindent Para gerar as condições e a grade do modelo oceânico ROMS, utilizamos o Ubuntu 18.04 LTS. Isso é importante pois sistemas
           operacionais diferentes podem gerar conflitos ao utilizar o pacote \textit{model2roms}. que gera as os arquivos necessários para utilizar o ROMS.
+\bigskip
+
+\begin{tcolorbox}[enhanced,
+    grow to left by=0cm,%   equivalent to negative mdframed 'leftmargin'
+    grow to right by=0cm,%  equivalent to negative mdframed 'rightmargin'
+    enlarge top by=0cm,%     equivalent to mdframed 'skipabove'
+    enlarge bottom by=0cm,%  equivalent to mdframed 'skipbelow'
+    tcbox raise base,
+    boxrule=1.0pt,
+    left=18mm,
+    colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
+    overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+  Este guia utiliza o COAWST v 3.4.
+  \end{tcolorbox}
+  \bigskip

@@ -2093,6 +2093,43 @@
       \field{pages}{355\bibrangedash 375}
       \range{pages}{21}
     \endentry
+    \entry{Sutil2018}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=b283276857dc57738312476f278bbcb5}{%
+           family={Sutil},
+           familyi={S\bibinitperiod},
+           given={U.\bibnamedelimi A},
+           giveni={U\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e2ae4ad7c3f743279a93222a32095973}{%
+           family={Pezzi},
+           familyi={P\bibinitperiod},
+           given={L.\bibnamedelimi P.},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{188a2cf3e74a8bcdf76c3e4ef0a5496d}
+      \strng{fullhash}{188a2cf3e74a8bcdf76c3e4ef0a5496d}
+      \strng{bibnamehash}{188a2cf3e74a8bcdf76c3e4ef0a5496d}
+      \strng{authorbibnamehash}{188a2cf3e74a8bcdf76c3e4ef0a5496d}
+      \strng{authornamehash}{188a2cf3e74a8bcdf76c3e4ef0a5496d}
+      \strng{authorfullhash}{188a2cf3e74a8bcdf76c3e4ef0a5496d}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{National Institute for Space Research}
+      \field{title}{{Guia Prático para Utilização do COAWST}}
+      \field{volume}{1}
+      \field{year}{2018}
+      \field{pages}{01\bibrangedash 91}
+      \range{pages}{91}
+      \verb{doi}
+      \verb 10.13140/RG.2.2.31726.87363
+      \endverb
+    \endentry
     \entry{Sutil2019}{article}{}
       \name{author}{4}{}{%
         {{uniquename=0,uniquepart=base,hash=b283276857dc57738312476f278bbcb5}{%

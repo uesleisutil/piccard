@@ -1,11 +1,88 @@
 % !TEX root = /media/ueslei/Ueslei/INPE/PCI/Guia_COAWST/main.tex
 \chapterimage{header.jpg} % Chapter heading image
 \chapter{Introdução}
-
 \bigskip
+
+\noindent Este guia apresenta uma breve introdução aos modelos que compõem o Coupled Ocean-Atmosphere-Wave-Sediment Transport Modeling System 
+          (COAWST), bem como as configurações adicionais do usuário necessárias para projetos específicos. Conforme a Figura \textcolor{bleu_cite}{\ref{coawstestruct}},
+          o COAWST acopla diversos modelos e programas que serão apresentados a seguir:
+\bigskip
+
+\begin{itemize}
+    \item \textbf{COAWST}: núcleo do sistema de modelagem numérica acoplada. Mais informações na Seção \textcolor{bleu_cite}{\ref{coawstsecao}};
+    \item \textbf{ROMS}: o modelo de oceânico. Mais informações na Seção \textcolor{bleu_cite}{\ref{romssecao}};
+    \item \textbf{Sea Ice}: o modelo de de gelo marinho, acoplado ao ROMS. Atualmente o ROMS utiliza o Budgell's Sea Ice Model
+                            Mais informações na Seção \textcolor{bleu_cite}{\ref{seaicesecao}};
+    \item \textbf{WRF}: o modelo atmosférico. Mais informações na Seção \textcolor{bleu_cite}{\ref{secaowrf}};
+    \item \textit{\textbf{real}}:  programa executável para gerar a condição inicial e as forçantes de fronteira do WRF. Mais informações na Seção \textcolor{bleu_cite}{\ref{realsecao}};
+    \item \textit{\textbf{wrf}}:  programa executável para iniciar a simulação atmosférica WRF. Mais informações na Seção \textcolor{bleu_cite}{\ref{wrfsecao2}};
+    \item \textit{\textbf{WPS}}: pacote com três programas para gerar os arquivos a serem utilizados no \textit{real}. Mais informações na Seção \textcolor{bleu_cite}{\ref{wpssecao}};
+    \item \textit{\textbf{geogrid}}: programa para gerar o domínio de grade do WRF. Mais informações na Seção \textcolor{bleu_cite}{\ref{geowps}};
+    \item \textit{\textbf{ungrib}}: programa que extrai os dados em formato \textit{GRIB}. Mais informações na Seção \textcolor{bleu_cite}{\ref{ungribsecao}};
+    \item \textit{\textbf{metgrid}}: programa que interpola os dados gerados pelo \textit{ungrib}. Mais informações na Seção \textcolor{bleu_cite}{\ref{metgridsecao}};
+    \item \textbf{SWAN}: o modelo de ondas. Mais informações na Seção \textcolor{bleu_cite}{\ref{swansecao}};
+    \item \textbf{MCT}: o conjunto de códigos que acopla os modelos anteriores. Mais informações na Seção \textcolor{bleu_cite}{\ref{mctsecao}}; 
+    \item \textbf{SCRIP}: pacote que interpola e remapeia as coordenadas das grades dos modelos para que sejam acoplados.
+                         Mais informações na Seção \textcolor{bleu_cite}{\ref{scripsecao}}.
+    
+\end{itemize}   
+\bigskip
+
+\begin{figure} 
+    \footnotesize
+    \centering
+    \begin{forest}
+        for tree={font=\sffamily, %grow'=0,
+        folder indent=1.1em, folder icons,
+        edge=solid}
+        [COAWST 
+        [SWAN]
+        [Lib
+            [SCRIP]
+            [MCT]]
+        [ROMS
+        [Sea Ice]]
+        [WRF
+            [WPS
+                [\textit{ungrib}]
+                [\textit{geogrid}]               
+                [\textit{metgrid}]]
+                [\textit{real}, is file]  
+                [\textit{wrf}, is file]
+        ]
+        ]
+      \end{forest}
+  \caption{Estrutura de diretórios do COAWST.}\label{coawstestruct}
+\end{figure}
+\bigskip
+\pagebreak
+
+\noindent Ao escrever este Guia, priorizamos a utilização do Python como linguagem para algumas etapas. Ele é uma
+          linguagem de programação projetada com a filosofia de enfatizar a importância 
+          do esforço do programador sobre o esforço computacional. Prioriza a legibilidade do código sobre 
+          a velocidade ou expressividade.
+\bigskip
+
+\noindent A linguagem preza pela simplicidade e eficácia e possui uma ampla e ativa comunidade, o que facilita muito ao
+         usuário em caso de dúvidas, pois há na internet um extenso acervo de bibliotecas e documentação.
+\bigskip
+
+\noindent O Python Brasil (\textcolor{bleu_cite}{\href{http://python.org.br}{\textit{http://python.org.br}}}) oferece
+          grande auxílio para iniciantes na linguagem, disponibilizando introduções ((\textcolor{bleu_cite}{\href{http://python.org.br/introducao}{\textit{http://python.org.br/introducao}}}) 
+          e também um guia ((\textcolor{bleu_cite}{\href{http://python.org.br/cientifico}{\textit{http://python.org.br/cientifico}}}) para o uso do 
+          Python no meio científico.
+\bigskip
+
+\noindent Também utilizamos o MATLAB como linguagem. Ele é um sotfware \textbf{fechado} interativo de alta performance, voltado para o 
+          cálculo numérico. O site MATLAB Answers, disponível em: \textcolor{bleu_cite}{\href{https://www.mathworks.com/matlabcentral/answers/index}{https://www.mathworks.com/matlabcentral/answers/index}}, 
+          é uma plataforma criada para responder dúvidas sobre a linguagem.
+
+
+
+
 %%%%%%%%%%%%%%%%%% ROMS %%%%%%%%%%%%%%%%%%%%
 
-\section{Regional Ocean Modeling System}\index{Regional Ocean Modeling System}
+\section{Regional Ocean Modeling System}\index{Regional Ocean Modeling System}\label{romssecao}
 \bigskip
 \noindent O Regional Ocean Modeling System (ROMS; \cite{Shchepetkin2005}) é um modelo oceânico tridimensional de superfície livre, 
           coordenada vertical sigma (que segue o terreno) e que resolve equações primitivas. Este modelo utiliza a média de Reynolds 
@@ -41,7 +118,7 @@
 
 %%%%%%%%%%%%%%%%%%%% Sea Ice %%%%%%%%%%%%%%%%%%%%
 
-\section{Budgell's Sea Ice Model}\index{Budgell's Sea Ice Model}
+\section{Budgell's Sea Ice Model}\index{Budgell's Sea Ice Model}\label{seaicesecao}
 \bigskip
 
 \noindent O Modelo de Gelo Marinho, proposto por \textcite{Budgell2005}, possui os mesmos passos de tempo e grade do ROMS e 
@@ -64,7 +141,7 @@
 
 %%%%%%%%%%%%%%%%%%%% WRF %%%%%%%%%%%%%%%%%%%%
 
-\section{Weather Research \& Forecasting Model}\index{Weather Research \& Forecasting Model}
+\section{Weather Research \& Forecasting Model}\index{Weather Research \& Forecasting Model}\label{secaowrf}
 \bigskip
 
 \noindent O Weather Research and Forecasting (WRF; \cite{Skamarock2008}) é um modelo desenvolvido pelo National Centers for 
@@ -116,7 +193,7 @@ Z_{0} = Z_{ch} \frac{u_{*}^{2}}{g}
 
 %%%%%%%%%%%%%%%%%%% SWAN %%%%%%%%%%%%%%%%
 
-\section{Simulating Waves Nearshore}\index{Simulating Waves Nearshore}
+\section{Simulating Waves Nearshore}\index{Simulating Waves Nearshore}\label{swansecao}
 \bigskip
 
 \noindent O Simulating Waves Nearshore (SWAN; \cite{Booij1999,Booij1996}) é um modelo de terceira geração, 
@@ -141,7 +218,7 @@ Z_{0} = Z_{ch} \frac{u_{*}^{2}}{g}
 \bigskip
 
 %%%%%%%%%%%%%%%%%%% MCT %%%%%%%%%%%%%%%%
-\section{Model Coupling Toolkit}\index{Model Coupling Toolkit}
+\section{Model Coupling Toolkit}\index{Model Coupling Toolkit}\label{mctsecao}
 \bigskip
 
 \noindent O Model Coupling Toolkip (MCT; \cite{Larson2005,Jacob2005,Warner2008}) é um conjunto de rotinas livres, 
@@ -180,9 +257,9 @@ Z_{0} = Z_{ch} \frac{u_{*}^{2}}{g}
 \bigskip
 %%%%%%%%%%%%%%%%%%% COAWST %%%%%%%%%%%%%%%%
 
-\section{Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}\index{Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}
+\section{Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}\index{Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}\label{coawstsecao}
 \bigskip
-\noindent O Coupled Ocean-Atmosphere-Wave-Sediment Transport Modeling System (COAWST; \cite{Warner2010,Warner2008}), 
+\noindent O COAWST ()\cite{Warner2010,Warner2008})
           é composto pelo modelo atmsoférico WRF, o modelo oceânico ROMS, o modelo de ondas SWAN e o modelo de transporte de sedimentos
           da Community Sediment Transport Modeling Project (CSTM; \cite{Warner2008}), acoplados pelo MCT (\cite{Warner2010,Warner2008}). 
           A frequência com que estas informações são trocadas entre os diferentes modelos é ajustada pelo usuário.
@@ -261,26 +338,6 @@ Este guia não usa o CSTM. Caso esteja interessado, há um estudo sobre a transf
           de Ondas, Vetores de Corrente e Vento e dispersão de Sedimentos) para o leste dos Estados Unidos e Golfo do México.
           O conteúdo está disponível em \textcolor{bleu_cite}{\href{https://woodshole.er.usgs.gov/project-pages/cccp/public/COAWST.htm}{\textit{https://woodshole.er.usgs.gov/project-pages/cccp/public/COAWST.htm}}}.
 \bigskip
-
-%%%%%%%%%%%%%%%%%%%%%  PYTHON %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Python}\index{Python}
-\bigskip
-
-\noindent O Python é uma linguagem de programação projetada com a filosofia de enfatizar a importância 
-          do esforço do programador sobre o esforço computacional. Prioriza a legibilidade do código sobre 
-          a velocidade ou expressividade.
-\bigskip
-
-\noindent A linguagem preza pela simplicidade e eficácia e possui uma ampla e ativa comunidade, o que facilita muito ao
-         usuário em caso de dúvidas, pois há na internet um extenso acervo de bibliotecas e documentação.
-\bigskip
-
-\noindent O Python Brasil (\textcolor{bleu_cite}{\href{http://python.org.br}{\textit{http://python.org.br}}}) oferece
-          grande auxílio para iniciantes na linguagem, disponibilizando introduções ((\textcolor{bleu_cite}{\href{http://python.org.br/introducao}{\textit{http://python.org.br/introducao}}}) 
-          e também um guia ((\textcolor{bleu_cite}{\href{http://python.org.br/cientifico}{\textit{http://python.org.br/cientifico}}}) para o uso do 
-          Python no meio científico.
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% MATERIAIS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Materiais necessários para o uso deste guia}\index{Materiais}

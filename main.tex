@@ -141,19 +141,45 @@
      \tolerance=1
 \emergencystretch=\maxdimen
 \hyphenpenalty=10000
+
+
+% Insert flowchart 
+\usepackage[edges]{forest}
+\definecolor{foldercolor}{RGB}{124,166,198}
+\tikzset{pics/folder/.style={code={%
+    \node[inner sep=0pt, minimum size=#1](-foldericon){};
+    \node[folder style, inner sep=0pt, minimum width=0.3*#1, minimum height=0.6*#1, above right, xshift=0.05*#1] at (-foldericon.west){};
+    \node[folder style, inner sep=0pt, minimum size=#1] at (-foldericon.center){};}
+    },
+    pics/folder/.default={20pt},
+    folder style/.style={draw=bashcodebg!90!black,top color=bashcodebg!60,bottom color=bashcodebg}
+}
+
+\forestset{is file/.style={edge path'/.expanded={%
+        ([xshift=\forestregister{folder indent}]!u.parent anchor) |- (.child anchor)},
+        inner sep=0.5pt},
+    this folder size/.style={edge path'/.expanded={%
+        ([xshift=\forestregister{folder indent}]!u.parent anchor) |- (.child anchor) pic[solid]{folder=#1}}, inner ysep=0.6*#1},
+    folder tree indent/.style={before computing xy={l=#1}},
+    folder icons/.style={folder, this folder size=#1, folder tree indent=2*#1},
+    folder icons/.default={10pt},
+}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% PREAMBLE END %%%%%%%%%%%%%%%%%%%%%%%
-\begin{document}
+\begin{document}x
 
 % Translate figure name
-\captionsetup[figure]{labelfont={bf},labelformat={default},labelsep=period,name={Figura}, justification   = raggedright,
+\captionsetup[figure]{labelfont={bf},labelformat={default},labelsep=period,name={Figura}, justification = justified,
 singlelinecheck = false}
+\justifying
 
 % PDF metadata
 \hypersetup{
 pdftitle={Guia prático para configuração do COAWST - Segunda Edição},
 pdfauthor={Ueslei Adriano Sutil e Luciano Ponzi Pezzi},
 }
-
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------

@@ -86,7 +86,7 @@ compile em_real
 \noindent Será gerado o \textit{real.exe}, \textit{wrf.exe}, \textit{tc.exe} e \textit{ndown.exe} no diretório \textit{/home/nome.sobrenome/WRF/test/em\_real}.
 \bigskip
 
-\section{WRF Preprocessing System (WPS)}
+\section{WRF Preprocessing System (WPS)}\label{wpssecao}
 \bigskip
 
 \noindent Para construir as condições iniciais e de contorno do WRF, usaremos WRF Preprocessing System (WPS). O WPS é um conjunto de três programas que preparam os dados de entrada para as simulações. Ele é composto pelos seguintes módulos:
@@ -525,10 +525,10 @@ nedit log.err log.out &
 \bigskip
 
 
-\subsection{\textit{ungrib}}
+\subsection{\textit{ungrib}}\label{ungribsecao}
 \bigskip
 \noindent Com o domínio preparado pelo \textit{geogrid}, podemos avançar para o \textit{ungrib}, que extrai os campos meteorológicos 
-          e oceanográficos de arquivos com formato \textit{GRIB}, e começaremos a criar os dados de SST. Abra o \textit{namelist.wps} 
+          e oceanográficos de arquivos com formato \textit{GRIB}. Começaremos, primeiramente, a criar os dados de SST. Abra o \textit{namelist.wps} 
           e na seção \textit{\&ungrib}, altere o \textit{prefix} para \textit{SST}, conforme a Figura \ref{ungribprefix} e salve.
 \bigskip
 
@@ -646,7 +646,7 @@ qsub qsub_ungrib.sh
 
 
 
-\subsection{\textit{metgrid}}
+\subsection{\textit{metgrid}}\label{metgridsecao}
 \bigskip
 \noindent Para interpolar os dados gerados pelo \textit{ungrib.exe},  abra o \textit{namelist.wps} e altere na guia \textit{fg\_name} os nomes utilizados no \textit{ungrib}. No caso anterior, foram utilizados \textit{PRES}, \textit{SFC} e \textit{SST}, como no exemplo da Figura \textcolor{bleu_cite}{\ref{fgname}}:
 \bigskip
@@ -675,7 +675,7 @@ qsub qsub_metgrid.sh
 \end{bashcode}
 \bigskip
 
-\subsection{\textit{real}}
+\subsection{\textit{real}}\label{realsecao}
 \bigskip
 
 \noindent Usaremos o programa \textit{real.exe} para gerar os arquivos para serem utilizados no WRF. Abra o arquivo \textit{namelist.input}, que se encontra na pasta do WRF (\textit{/home/nome.sobrenome/WRF/test/em\_real}) e modifique de acordo com o seu domínio e tempo de simulação escolhidos no \textit{namelist.wps}.
@@ -763,7 +763,7 @@ cp wrfbdy_d01 wrfinput_d01 wrflowinp_d01 /home/nome.sobrenome/COAWST/Projects/no
 \end{bashcode}
 \bigskip
 
-\section{Usando o WRF}
+\section{Usando o WRF}\label{wrfsecao2}
 \bigskip
 
 \noindent Com as condições do WRF prontas, é possível iniciar a simulação do seu projeto utilizando somente o WRF.

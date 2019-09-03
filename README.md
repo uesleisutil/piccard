@@ -1,4 +1,6 @@
-# Guia_COAWST
+# Guia prático para utilização do COAWST
+
+https://img.shields.io/github/last-commit/uesleisutil/coawst_guide
 
 Guia prático para utilização do COAWST, segunda edição.
 

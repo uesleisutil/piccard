@@ -52,7 +52,7 @@
 \BOOKMARK [2][-]{subsection.5.3.2}{Gerar a grade do ROMS}{section.5.3}% 52
 \BOOKMARK [2][-]{subsection.5.3.3}{O Simple Ocean Data Assimilation \(SODA\)}{section.5.3}% 53
 \BOOKMARK [2][-]{subsection.5.3.4}{Gerar as condi\347\365es do ROMS}{section.5.3}% 54
-\BOOKMARK [1][-]{section.5.4}{Compilando o ROMS com o modelo de gelo marinho}{chapter.5}% 55
+\BOOKMARK [1][-]{section.5.4}{Acoplando o modelo de gelo marinho ao ROMS}{chapter.5}% 55
 \BOOKMARK [0][-]{chapter.6}{Construindo o SWAN}{}% 56
 \BOOKMARK [0][-]{chapter.7}{Construindo os pesos entre grades com o SCRIP}{}% 57
 \BOOKMARK [1][-]{section.7.1}{Construindo os pesos}{chapter.7}% 58

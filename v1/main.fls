@@ -1,9 +1,9 @@
-PWD /media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST
+PWD /media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/v1
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex
+INPUT /media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/v1/main.tex
 OUTPUT main.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/book.cls

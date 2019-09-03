@@ -294,7 +294,7 @@ Este guia não usa o CSTM. Caso esteja interessado, há um estudo sobre a transf
 \item SWAN -> ROMS: direção da onda em superfície e no fundo, altura, comprimento, período, dissipação de energia e velocidade orbital inferior;
 \item ROMS -> SWAN: batimetria, elevação da superfície, altura da superfície do mar e correntes médias em profundidade;
 \item SWAN -> WRF: rugosidade da superfície do mar (calculado no WRF a partir da altura significativa da onda, comprimento e período);
-\item WRF -> SWAN: vento a 10m de altura.
+\item WRF -> SWAN: vento em 10m de altura.
 \end{itemize}
 \bigskip
 
@@ -343,13 +343,13 @@ Este guia não usa o CSTM. Caso esteja interessado, há um estudo sobre a transf
 \section{Materiais necessários para o uso deste guia}\index{Materiais}
 \bigskip
 
-\noindent Este guia utiliza um cluster com capacidade de paralelização de operações como exemplo para compilar. Para compilar o COAWST \textcolor{red}{v3.4}
-          em um computador sem comunicação paralela, utilize o manual original, disponível no repositório original do modelo. 
-          Veja como baixar o COAWST na seção \textcolor{bleu_cite}{\ref{coawstbaixa}}.
+\noindent Para compilar o COAWST, este guia utiliza um cluster com comunicação paralela. Caso opte pela compilação em 
+          em um computador com comunicação serial, utilize o manual de usuário original do COAWST como referência, disponível no repositório do sistema de modelagem. Neste caso, 
+          veja como baixar o COAWST na seção \textcolor{bleu_cite}{\ref{coawstbaixa}}.
 \bigskip
 
-\noindent Para gerar as condições e a grade do modelo oceânico ROMS, utilizamos o Ubuntu 18.04 LTS. Isso é importante pois sistemas
-          operacionais diferentes podem gerar conflitos ao utilizar o pacote \textit{model2roms}. que gera as os arquivos necessários para utilizar o ROMS.
+\noindent Para gerar as condições e a grade do modelo oceânico ROMS, utilizaremos o Ubuntu 18.04 LTS. É importante manter os mesmos sistemas
+          operacionais, pois podem ocorrer conflitos de versões com algumas bibliotecas utilizadas pelo pacote de ferramentas \textit{model2roms}.
 \bigskip
 
 \begin{tcolorbox}[enhanced,

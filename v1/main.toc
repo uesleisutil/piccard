@@ -109,7 +109,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.4}Gerar as condi\IeC {\c c}\IeC {\~o}es do ROMS}{65}{subsection.5.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Compilando o ROMS com o modelo de gelo marinho}{70}{section.5.4}
+\contentsline {section}{\numberline {5.4}Acoplando o modelo de gelo marinho ao ROMS}{70}{section.5.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Construindo o SWAN}{71}{chapter.6}
 \defcounter {refsection}{0}\relax 

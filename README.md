@@ -4,7 +4,7 @@
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>
 
 
-<h2>Guia prático para utilização do COAWST, segunda edição.<h2>
+<h2>Guia prático para utilização do COAWST, segunda edição.</h2>
 
 Notas da segunda edição:
 * renovada a estética do Guia;
@@ -28,4 +28,4 @@ Envie um comentário sobre sugestões, perguntas ou modificações e melhorias q
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.
 
 <h2>Referência bibliográfica da primeira versão</h2>
-SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST. São José dos Campos: INPE, 2018. 86 p. IBI: <8JMKD3MGP3W34R/3RQSQ2L>. (sid.inpe.br/mtc-m21c/2018/09.13.17.45-MAN). Disponível em: <http://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L>. 
+SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST. São José dos Campos: INPE, 2018. 86 p. IBI: 8JMKD3MGP3W34R/3RQSQ2L. (sid.inpe.br/mtc-m21c/2018/09.13.17.45-MAN). Disponível em: ttp://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L. 

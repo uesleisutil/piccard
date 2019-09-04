@@ -95,7 +95,7 @@ compile em_real
 \begin{itemize}
 \item \textbf{\textit{geogrid}}: Define o domínio do modelo e interpola os dados geográficos para a grade;
 \item \textbf{\textit{ungrib}}: Extrai os campos meteorológicos de arquivos \textit{.grib};
-\item \textbf\textit{{metgrid}}: Interpola os campos meteorológicos extraídos pelo ungrib para a grade do modelo definida pelo meogrid.
+\item \textbf\textit{{metgrid}}: Interpola os campos meteorológicos extraídos pelo ungrib para a grade do modelo definida pelo metrid.
 \end{itemize}
 \bigskip
 
@@ -702,7 +702,7 @@ auxinput4_interval = 360,
 \end{figure}
 \bigskip
 
-\noindent Inclua também, na seção \textit{\&physics}) (Figura \textcolor{bleu_cite}{\ref{physicsnamelist}} no \textit{namelist.input} a opção para atualizar a TSM:
+\noindent Inclua também, na seção \textit{\&physics} (Figura \textcolor{bleu_cite}{\ref{physicsnamelist}}) no \textit{namelist.input} a opção para atualizar a TSM:
 \bigskip
 
 \begin{bashcode}

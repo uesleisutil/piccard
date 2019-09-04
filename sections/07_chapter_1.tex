@@ -1,5 +1,5 @@
 % !TEX root = /media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex
-\chapterimage{header.jpg} % Chapter heading image
+\chapterimage{header.jpg} % Chapter heading imag
 \chapter{Introdução}
 \bigskip
 
@@ -63,8 +63,8 @@
           a velocidade ou expressividade.
 \bigskip
 
-\noindent A linguagem preza pela simplicidade e eficácia e possui uma ampla e ativa comunidade, o que facilita muito ao
-         usuário em caso de dúvidas, pois há na internet um extenso acervo de bibliotecas e documentação.
+\noindent A linguagem preza pela simplicidade e eficácia e possui uma ampla e ativa comunidade, o que facilita a busca
+          de informações pelo usuário, pois há na internet um extenso acervo de bibliotecas e documentação.
 \bigskip
 
 \noindent O Python Brasil (\textcolor{bleu_cite}{\href{http://python.org.br}{\textit{http://python.org.br}}}) oferece
@@ -92,14 +92,14 @@
 
 \noindent As equações hidrostáticas de \textit{momentum} utilizam um esquema de passo de tempo \textit{split-explicit}, 
           onde os modos barotrópico e baroclínico são resolvidos separadamente em distintos números finitos de passos
-          de tempo para resolver as equações de superfície livre e momentum integrado na vertical. A estrutura de passos
+          de tempo para resolver as equações de superfície livre e \textit{momentum} integrado na vertical. A estrutura de passos
           de tempo separados mantém a conservação de volume e a preservação de consistência que são necessárias para as equações 
           de traçadores (\cite{Shchepetkin2005,Haidvogel2008}).
 \bigskip
 
 \noindent A partir da grade, o modelo resolve as equações na horizontal através de coordenadas curvilíneas ortogonais do 
           tipo Arakawa-C (\cite{Arakawa1977}). Na vertical, as coordenadas seguem as feições do terreno e permitem ajustar a 
-          resolução ao longo da coluna d'água. Para garantir a conservação de momentum, a grade utiliza diferenças finitas de
+          resolução ao longo da coluna d'água. Para garantir a conservação de \textit{momentum}, a grade utiliza diferenças finitas de
           segunda ordem (\cite{Haidvogel2008}).
 \bigskip
 
@@ -151,12 +151,12 @@
 
 \noindent Para integrar no tempo as equações governantes, o Advanced Research WRF (ARW) utiliza modos de baixa freqüência que são integrados 
           utilizando o esquema de Runge-Kutta de terceira ordem, e os modos acústicos e de ondas de gravidade (alta frequência) integrados 
-          com passo de tempo menor. Dessa maneira, se mantém a estabilidade numérica, através de um esquema “forward-backward” para 
+          com menor passo de tempo. Dessa maneira, se mantém a estabilidade numérica, através de um esquema “forward-backward” para 
           os modos acústicos que se propagam horizontalmente, e de um esquema implícito para modos acústicos de propagação 
           vertical e oscilações de empuxo (\cite{Skamarock2008}).
 \bigskip
 
-\noindent O modelo WRF utiliza uma grade do tipo Arakawa-C (\cite{Arakawa1977}), onde as velocidades normais estão
+\noindent O modelo WRF utiliza uma grade do tipo Arakawa-C (\cite{Arakawa1977}), onde as velocidades normais são
           escalonadas a meio comprimento da grade das variáveis termodinâmicas, conforme via representação esquemática ilustrada
           na Figura \textcolor{bleu_cite}{\ref{gradeswrf}}.
 \bigskip
@@ -172,7 +172,7 @@
 \bigskip
 
 \noindent É importante ressaltar que o WRF, sem o acoplamento com outros modelos, simula a rugosidade da superfície 
-          baseada na Relação de rugosidade com o cisalhamento do vento proposta por \textcite{Charnock1955},
+          baseada na relação de rugosidade com o cisalhamento do vento proposta por \textcite{Charnock1955},
           como exemplificado na Equação \textcolor{bleu_cite}{\ref{equacao1}}:
 \bigskip
 

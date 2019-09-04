@@ -34,13 +34,14 @@ Para compilar o COAWST em um computador sem comunicação paralela, utilize o ma
 \bigskip
 
 \noindent Para iniciar o processo de requerimento de uma conta de usuário no Kerana, é necessário que o computador nas
-          dependências do INPE possuia IP fixo. É requerido do seu orientador ou supervisor o envio de um email para o \textit{Helpdesk} 
+          dependências do INPE possua um IP fixo. É requerido que seu orientador ou supervisor envie um e-mail para o \textit{Helpdesk} 
           do INPE  (\textcolor{bleu_cite}{\href{helpdesk.cptec@inpe.br}{\textit{helpdesk.cptec@inpe.br}}}) informando o endereço MAC, 
           \textit{hostname} do computador e motivo da requisição. Caso o computador já possua um IP fixo atribuído, também
            informe para que ocorra a troca.
 \bigskip
 
-\noindent Com o IP fixado, o seu supervisor ou orientador entrará novamente em contato com o \textit{Helpdesk} requisitando a abertura da conta no cluster Kerana. Será necessário completar o preenchimento de um formulário via email, como o exemplo a seguir:
+\noindent Com o IP fixado, o seu supervisor ou orientador entrará novamente em contato com o \textit{Helpdesk} requisitando a abertura da 
+          conta no cluster Kerana. Será necessário completar o preenchimento de um formulário via e-mail, como o exemplo a seguir:
 \bigskip
 \begin{enumerate}
 \item \textbf{Nome do solicitante};
@@ -286,7 +287,7 @@ $response = 42 ;
 \bigskip
 
 \begin{bashcode}
-nedit configure.detaults
+nedit configure.defaults
 \end{bashcode}
 \bigskip
 
@@ -356,8 +357,8 @@ Este guia utiliza o COAWST v 3.4.
 \bigskip
 
 
-\noindent Cada novo usuário deverá compilar o MCT antes de compilar o COAWST. O primeiro passo é utilizar o arquivo \textit{setup\_pgi.sh}. Este arquivo foi copiado do repositório anterior, sendo indispensável alterar os diretórios contidos nele.
-Portanto:
+\noindent Cada novo usuário deverá compilar o MCT antes de compilar o COAWST. O primeiro passo é utilizar o arquivo \textit{setup\_pgi.sh}. 
+          Este arquivo foi copiado do repositório anterior, é indispensável alterar os diretórios contidos nele. Portanto:
 \bigskip
 
 \begin{bashcode}
@@ -472,10 +473,12 @@ make install
 \section{Compilando o caso-teste Sandy}
 \bigskip
 
-\noindent Existem dentro do COAWST alguns casos-teste para serem compilados e trabalhados. Neste caso compilaremos o projeto do furacão Sandy, que acopla e aninha o WRF, ROMS e SWAN. Primeiramente, é necessário conhecer a estrutura das pastas e arquivos do COAWST.
+\noindent Existem dentro do COAWST alguns casos-teste para serem compilados e trabalhados. Neste caso compilaremos o projeto do furacão Sandy,
+          que acopla e aninha o WRF, o ROMS e o SWAN. Primeiramente, é necessário conhecer a estrutura das pastas e arquivos do COAWST.
 \bigskip
 
-\noindent A estrutura típica de diretórios do COAWST está exemplificada na Figura \textcolor{bleu_cite}{\ref{pastascoa}}:
+\noindent A estrutura típica de diretórios do COAWST está exemplificada na Figura \textcolor{bleu_cite}{\ref{pastascoa}}. \noindent Serão utilizadas principalmente as pastas
+          \textit{Projects} e \textit{Work}.
 \bigskip
 
 \begin{figure}[H]
@@ -485,8 +488,6 @@ make install
     \label{pastascoa}
 \end{figure}
 \bigskip
-
-\noindent Serão utilizadas principalmente as pastas \textit{Projects} e \textit{Work}.
 
 \subsection{Diretório Projects}\index{Pasta Projects}
 \bigskip
@@ -566,7 +567,9 @@ make install
 \subsection{Diretório Work}\index{Pasta Work}\label{workcoawstsec}
 \bigskip
 
-\noindent Para facilitar o gerenciamento das simulações, é sugerida, para cada novo usuário, a criação da pasta \textit{Work} no diretório principal do COAWST, com cada projeto inserido separadamente dentro dele. É nesta pasta que será simulado o caso teste.
+\noindent Para facilitar o gerenciamento das simulações, é sugerida, para cada novo usuário, a criação da pasta \textit{Work} no 
+          diretório principal do COAWST, com cada projeto inserido separadamente dentro dele. É nesta pasta que será simulado 
+          o caso teste.
 \bigskip
 
 \begin{bashcode}
@@ -577,7 +580,7 @@ mkdir Sandy
 \end{bashcode}
 \bigskip
 
-\noindent Dentro da pasta \textit{/scratch/nome.sobrenome/COAWST/Work/Sandy} deverão conter os seguintes arquivos:
+\noindent A \textit{/scratch/nome.sobrenome/COAWST/Work/Sandy} deverá conter os seguintes arquivos:
 \bigskip
 
 \begin{itemize}
@@ -630,7 +633,7 @@ ROOTDIR=/scratch/nome.sobrenome/COAWST
 \end{bashcode}
 \bigskip
 
-\noindent Abra os seguintes arquivos para realizar modificações nos próximos passos:
+\noindent Abra os seguintes arquivos para realizar as modificações dos próximos passos:
 \bigskip
 
 \begin{itemize}
@@ -654,7 +657,7 @@ OCN_name = Projects/Sandy/ocean_sandy.in
 \end{bashcode}
 \bigskip
 
-\noindent Por:
+\noindent E substitua por:
 \bigskip
 
 \begin{bashcode}
@@ -687,7 +690,7 @@ INITIAL HOTSTART SINGLE '/scratch/nome.sobrenome/COAWST/Projects/Sandy/Sandy_ini
 \end{bashcode}
 \bigskip
 
-\noindent E no arquivo \textit{ocean\_sandy.in} procure pelas linhas de comando abaixo e substitua:
+\noindent E no arquivo \textit{ocean\_sandy.in} procure pelas linhas de comando abaixo:
 \bigskip
 
 \begin{bashcode}
@@ -704,7 +707,7 @@ FRCNAME == Projects/Sandy/roms_narr_Oct2012.nc \
 \end{bashcode}
 \bigskip
 
-\noindent Por:
+\noindent E substitua por:
 \bigskip
 
 \begin{bashcode}[fontsize=\footnotesize]

@@ -1011,7 +1011,7 @@ ipython make_roms_grid.py --pylab
 \subsection{Introdução sobre as condições do ROMS}\index{Introdução sobre as condições do ROMS}
 \bigskip
 
-\noindent Utilizaremos o \textit{model2roms} para gerar as condições do ROMS. A toolbox oferece suporte aos dados do GLORYS12V1 (\cite{Fernandez2018}) e SODA3 ()\cite{Carton2018}), porém, utilizaremos apenas o GLORYS12V1 como exemplo.
+\noindent Utilizaremos o \textit{model2roms} para gerar as condições do ROMS. A toolbox oferece suporte aos dados do GLORYS12V1 (\cite{Fernandez2018}) e SODA3 (\cite{Carton2018}), porém, utilizaremos apenas o GLORYS12V1 como exemplo.
 
 \subsection{Global Ocean Physics Reanalysis (GLORYS)}\index{O Global Ocean Physics Reanalysis (GLORYS)}
 \bigskip
@@ -1198,7 +1198,7 @@ gedit forcingFilenames.py
 \begin{itemize}
     \item \textbf{self.compileall}: \textit{True} caso deseje que os arquivos em Fortran sejam recompilados cada vez que o \textit{model2roms} for executado;
     \item \textbf{self.createoceanforcing}: \textit{True} para criar as variáveis oceânicas;
-    \item \textbf{self.createatmosforcing}: \textit{True} para criar as forçantes atmosféricas. \textbf{Atualmente esta função encontra-se indisponível};
+    \item \textbf{self.createatmosforcing}: \textit{True} para criar as forçantes atmosféricas. \textbf{Atualmente esta função encontra-se em fase de testes e não está inteiramente disponível para uso};
     \item \textbf{self.writeice}: \textit{True} para criar as variáveis de gelo marinho.
     \item \textbf{self.set2DvarsToZero}: Cria os arquivos de gelo e altura do nível do mar com valores zerados. Como o GLORYS possui esses valores, é recomendado deixar \textit{False};
     \item \textbf{self.useesmf}: \textit{True} para usar o \textit{ESMF} para interpolar os dados do GLORYS para a grade do ROMS;

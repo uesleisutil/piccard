@@ -14,7 +14,7 @@ Notas da segunda edição:
 * adicionada a seção para o Budgell's Sea Ice Model;
 
 <h2>Guia prático para utilização do COAWST, primeira edição.</h2>
-O projeto da primeira edição est na pasta V1.
+O projeto da primeira edição está na pasta V1.
   
   
 <h2>Contato</h2>
@@ -29,3 +29,6 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 
 <h2>Referência bibliográfica da primeira versão</h2>
 SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST. São José dos Campos: INPE, 2018. 86 p. IBI: 8JMKD3MGP3W34R/3RQSQ2L. Disponível em: ttp://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L. 
+
+<h2>Referência bibliográfica da segunda versão</h2>
+SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST - 2ª Edição. São José dos Campos: INPE, 2019. 100 p. IBI: <8JMKD3MGPCW/3DT298SL>. ISBN: <978-85-17-00098-0>. Disponível em: <http://urlib.net/rep/8JMKD3MGP3W34R/3TUTUJB>

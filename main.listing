@@ -1,1 +1,1 @@
-qsub qsub_scrip.sh
+./limpa.sh

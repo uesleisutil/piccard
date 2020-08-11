@@ -1,0 +1,270 @@
+%----------------------------------------------------------------------------------------
+%	PREAMBLE FOR PACKAGES AND OTHER DOCUMENT CONFIGURATION
+%---------------------------------------------------------------------------------
+% !TEX root = /media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex
+
+\documentclass[11pt,fleqn,abntex2]{book} % Default font size and left-justified equations
+
+\usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,letterpaper]{geometry} % Page margins
+
+\usepackage{xcolor} % Required specifying colors by name
+\definecolor{ocre}{RGB}{52,177,201} % Define the orange color used for highlighting throughout the book
+
+% formatting of inline code snippets via verbatim like mac
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{textgreek}
+\lstdefinestyle{BashInputStyle}{
+  language=bash,
+  basicstyle=\small\sffamily\tiny,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=3pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{yellow!20},
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+\newcommand*{\Package}[1]{\texttt{#1}}%
+
+% Greek letter
+\usepackage{amsmath}
+
+% Degree
+\usepackage{gensymb}
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning}
+\usetikzlibrary{%
+    decorations.pathreplacing,%
+    decorations.pathmorphing,%
+    arrows,
+    arrows.meta,
+    positioning,
+    shapes,
+    shadows,
+    shapes.geometric,
+    automata
+    }
+
+% Equations
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+  % PDF Metadata
+\usepackage{hyperref}
+
+% Insert url mail
+\usepackage{url}
+
+% Images
+\usepackage{float}
+\usepackage{caption}
+
+% code highlighting
+\geometry{top=1.00in,left=1.00in,bottom=1.00in,right=1.00in}
+\usepackage{tcolorbox}
+\tcbuselibrary{minted,skins,breakable}
+
+\newtcblisting{bashcode}[1][]{
+  listing engine=minted,
+  colback=bashcodebg,
+  colframe=bashcodebg2,
+  listing only,
+  minted style=colorful,
+  minted language=text,
+  minted options={linenos=true,numbersep=3mm,texcl=true,#1},
+  left=5mm,enhanced,
+  overlay={\begin{tcbclipinterior}\fill[bashcodebg3!70]  (frame.south west)
+            rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}}
+}
+\definecolor{bashcodebg}{HTML}{e7f5f8}
+\definecolor{bashcodebg2}{HTML}{1ba1c1}
+\definecolor{bashcodebg3}{HTML}{016d9d}
+
+
+% Font Settings
+\usepackage{avant} % Use the Avantgarde font for headings
+%\usepackage{times} % Use the Times font for headings
+\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Symbol, Chancery and Computer Modern fonts
+
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[utf8]{inputenc} % Required for including letters with accents
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{csquotes}
+% Bibliography
+\usepackage[style=authoryear-comp,maxbibnames=99,maxcitenames=2,backend=biber,uniquelist=false]{biblatex}
+\addbibresource{refs.bib} % BibTeX bibliography file
+\renewcommand{\finalnamedelim}{\addspace\&\space}
+\renewcommand*{\nameyeardelim}{\addcomma\space}
+%\DeclareDelimFormat[cbx@textcite]{nameyeardelim}{\addspace}
+\definecolor{bleu_cite}{RGB}{12,127,172}
+
+\AtEveryCite{\color{bleu_cite}}
+\usepackage[nottoc,numbib]{tocbibind} % Insert the bibliography in the table of contents
+\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
+\setlength\bibitemsep{1.5\itemsep}
+
+% Index
+\usepackage{calc} % For simpler calculation - used for spacing the index letter headings correctly
+\usepackage{makeidx} % Required to make an index
+\makeindex % Tells LaTeX to create the files required for indexing
+
+% Disable vertical text alligment
+\raggedbottom
+\usepackage{subfiles}
+\usepackage{blindtext}
+\usepackage{fancyhdr}
+\usepackage[document]{ragged2e}
+% Fix comma in textcite because biber 3.3 has a bug
+\renewbibmacro*{textcite}{%
+  \ifnameundef{labelname}
+    {\iffieldundef{shorthand}
+       {\usebibmacro{cite:label}%
+        \setunit{%
+          \global\booltrue{cbx:parens}%
+          \addspace\bibopenparen}%
+        \ifnumequal{\value{citecount}}{1}
+          {\usebibmacro{prenote}}
+          {}%
+        \usebibmacro{cite:labelyear+extrayear}}
+       {\usebibmacro{cite:shorthand}}}
+    {\printnames{labelname}%
+     \setunit{%
+       \global\booltrue{cbx:parens}%
+       \addspace\bibopenparen}%
+     \ifnumequal{\value{citecount}}{1}
+       {\usebibmacro{prenote}}
+       {}%
+     \usebibmacro{citeyear}}}
+
+     \tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+
+
+% Insert flowchart 
+\usepackage[edges]{forest}
+\definecolor{foldercolor}{RGB}{124,166,198}
+\tikzset{pics/folder/.style={code={%
+    \node[inner sep=0pt, minimum size=#1](-foldericon){};
+    \node[folder style, inner sep=0pt, minimum width=0.3*#1, minimum height=0.6*#1, above right, xshift=0.05*#1] at (-foldericon.west){};
+    \node[folder style, inner sep=0pt, minimum size=#1] at (-foldericon.center){};}
+    },
+    pics/folder/.default={20pt},
+    folder style/.style={draw=bashcodebg!90!black,top color=bashcodebg!60,bottom color=bashcodebg}
+}
+
+\forestset{is file/.style={edge path'/.expanded={%
+        ([xshift=\forestregister{folder indent}]!u.parent anchor) |- (.child anchor)},
+        inner sep=0.5pt},
+    this folder size/.style={edge path'/.expanded={%
+        ([xshift=\forestregister{folder indent}]!u.parent anchor) |- (.child anchor) pic[solid]{folder=#1}}, inner ysep=0.6*#1},
+    folder tree indent/.style={before computing xy={l=#1}},
+    folder icons/.style={folder, this folder size=#1, folder tree indent=2*#1},
+    folder icons/.default={10pt},
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PREAMBLE END %%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Translate figure name
+\captionsetup[figure]{labelfont={bf},labelformat={default},labelsep=period,name={Figura}, justification = justified,
+singlelinecheck = false}
+\justifying
+
+% PDF metadata
+\hypersetup{
+pdftitle={Guia prático para configuração do COAWST - Segunda Edição},
+pdfauthor={Ueslei Adriano Sutil e Luciano Ponzi Pezzi},
+}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\subfile{sections/01_titlepage}
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+\subfile{sections/02_copyright}
+
+%-----------------------------------------------=----------------------------------------
+%	REVIEWRS
+%----------------------------------------------------------------------------------------
+\subfile{sections/03_reviewers.tex}
+
+%----------------------------------------------------------------------------------------
+%	NOTES
+%----------------------------------------------------------------------------------------
+\subfile{sections/04_notes.tex}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+\subfile{sections/05_tableofcontents.tex}
+
+%----------------------------------------------------------------------------------------
+%	ORGANIZATION
+%----------------------------------------------------------------------------------------
+%\subfile{sections/06_organization.tex}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 1
+%----------------------------------------------------------------------------------------
+\subfile{sections/07_chapter_1.tex}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 2
+%----------------------------------------------------------------------------------------
+\subfile{sections/08_chapter_2.tex}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 3
+%----------------------------------------------------------------------------------------
+\subfile{sections/09_chapter_3.tex}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 4
+%----------------------------------------------------------------------------------------
+\subfile{sections/10_chapter_4.tex}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 5
+%----------------------------------------------------------------------------------------
+\subfile{sections/11_chapter_5.tex}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 6
+%----------------------------------------------------------------------------------------
+\subfile{sections/12_chapter_6.tex}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 7
+%----------------------------------------------------------------------------------------
+\subfile{sections/13_chapter_7.tex}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 8
+%----------------------------------------------------------------------------------------
+\subfile{sections/14_chapter_8.tex}
+
+%-----------------------------------------------=----------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+\subfile{sections/15_acknowledgments.tex}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+\chapterimage{header.jpg}
+\printbibliography[ heading=bibintoc, title={Referências bibliográficas}]
+
+%----------------------------------------------------------------------------------------
+%	INDEX
+%----------------------------------------------------------------------------------------
+%\subfile{sections/14_index.tex}
+
+
+\end{document}

@@ -1,146 +1,54 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{11}{chapter.1}
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}% 
 \ttl@starttoc {default@1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Regional Ocean Modeling System}{12}{section.1.1}
+\contentsline {section}{\numberline {1.1}Regional Ocean Modeling System}{4}{section.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Budgell's Sea Ice Model}{13}{section.1.2}
+\contentsline {section}{\numberline {1.2}Budgell's Sea Ice Model}{5}{section.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Weather Research \& Forecasting Model}{13}{section.1.3}
+\contentsline {section}{\numberline {1.3}Weather Research \& Forecasting Model}{5}{section.1.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Simulating Waves Nearshore}{14}{section.1.4}
+\contentsline {section}{\numberline {1.4}Simulating Waves Nearshore}{6}{section.1.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Model Coupling Toolkit}{15}{section.1.5}
+\contentsline {section}{\numberline {1.5}Model Coupling Toolkit}{6}{section.1.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Spherical Coordinate Remapping Interpolation Package}{15}{section.1.6}
+\contentsline {section}{\numberline {1.6}Spherical Coordinate Remapping Interpolation Package}{7}{section.1.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.7}Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}{15}{section.1.7}
+\contentsline {section}{\numberline {1.7}Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}{7}{section.1.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.8}Materiais necess\IeC {\'a}rios para o uso deste guia}{16}{section.1.8}
+\contentsline {section}{\numberline {1.8}Materials needed to use this guide}{8}{section.1.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}COAWST no cluster Kerana}{19}{chapter.2}
+\contentsline {chapter}{\numberline {2}COAWST in a parallel cluster}{9}{chapter.2}% 
 \ttl@stoptoc {default@1}
 \ttl@starttoc {default@2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Sobre o Kerana}{19}{section.2.1}
+\contentsline {section}{\numberline {2.1}About our cluster Kerana}{9}{section.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Registrando uma conta de usu\IeC {\'a}rio}{19}{section.2.2}
+\contentsline {section}{\numberline {2.2}Registrando uma conta de usu\IeC {\'a}rio}{9}{section.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Acessando o cluster Kerana}{20}{section.2.3}
+\contentsline {section}{\numberline {2.3}Acessando o cluster Kerana}{10}{section.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Reposit\IeC {\'o}rio de arquivos}{21}{section.2.4}
+\contentsline {section}{\numberline {2.4}Reposit\IeC {\'o}rio de arquivos}{11}{section.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Ambiente do Kerana}{21}{section.2.5}
+\contentsline {section}{\numberline {2.5}Ambiente do Kerana}{11}{section.2.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Baixando o COAWST}{22}{section.2.6}
+\contentsline {section}{\numberline {2.6}Baixando o COAWST}{12}{section.2.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Automatizando a compila\IeC {\c c}\IeC {\~a}o do COAWST no Kerana}{22}{section.2.7}
+\contentsline {section}{\numberline {2.7}Automatizando a compila\IeC {\c c}\IeC {\~a}o do COAWST no Kerana}{12}{section.2.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Compilando o MCT}{24}{section.2.8}
+\contentsline {section}{\numberline {2.8}Compilando o MCT}{14}{section.2.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Compilando o caso-teste Sandy}{26}{section.2.9}
+\contentsline {section}{\numberline {2.9}Compilando o caso-teste Sandy}{16}{section.2.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.1}Diret\IeC {\'o}rio Projects}{26}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.1}Diret\IeC {\'o}rio Projects}{16}{subsection.2.9.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.2}Diret\IeC {\'o}rio Work}{28}{subsection.2.9.2}
+\contentsline {subsection}{\numberline {2.9.2}Diret\IeC {\'o}rio Work}{18}{subsection.2.9.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.3}Compilando o caso teste}{29}{subsection.2.9.3}
+\contentsline {subsection}{\numberline {2.9.3}Compilando o caso teste}{19}{subsection.2.9.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.10}Simulando o caso teste Sandy}{32}{section.2.10}
+\contentsline {section}{\numberline {2.10}Simulando o caso teste Sandy}{22}{section.2.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Caracter\IeC {\'\i }sticas do COAWST}{33}{chapter.3}
-\ttl@stoptoc {default@2}
-\ttl@starttoc {default@3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Arquivos estruturais dos modelos}{33}{section.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Modificando o n\IeC {\'u}mero de processadores}{34}{section.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}No ROMS}{34}{subsection.3.2.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}No WRF}{34}{subsection.3.2.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}No SWAN}{34}{subsection.3.2.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}No COAWST}{34}{subsection.3.2.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Modificando o intervalo de tempo do acoplamento entre os modelos}{35}{section.3.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Construindo o seu projeto no WRF}{37}{chapter.4}
-\ttl@stoptoc {default@3}
-\ttl@starttoc {default@4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Compilando o WRF no Kerana}{37}{section.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}WRF Preprocessing System (WPS)}{38}{section.4.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Download do WPS}{39}{subsection.4.2.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Compilando o WPS no Kerana}{39}{subsection.4.2.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Construindo o seu projeto utilizando o CFSR}{41}{section.4.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}\textit {geogrid}}{43}{subsection.4.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Utilizando o NCL para plotar o dom\IeC {\'\i }nio da grade}{45}{subsection.4.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}\textit {ungrib}}{47}{subsection.4.3.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}\textit {metgrid}}{49}{subsection.4.3.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.5}\textit {real}}{49}{subsection.4.3.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Usando o WRF}{51}{section.4.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Construindo o ROMS}{53}{chapter.5}
-\ttl@stoptoc {default@4}
-\ttl@starttoc {default@5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Instalando as bibliotecas do Python no computador pessoal}{53}{section.5.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Instalando manualmente}{53}{subsection.5.1.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Instalando com o Conda}{64}{subsection.5.1.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Instalando o Pyroms}{64}{section.5.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}\textit {model2roms}}{67}{section.5.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Introdu\IeC {\c c}\IeC {\~a}o sobre a grade do ROMS}{67}{subsection.5.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}ETOPO1 1 Arc-Minute Global Relief Model}{68}{subsection.5.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Gerando a grade do ROMS}{68}{section*.31}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Introdu\IeC {\c c}\IeC {\~a}o sobre as condi\IeC {\c c}\IeC {\~o}es do ROMS}{70}{subsection.5.3.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.4}Global Ocean Physics Reanalysis (GLORYS)}{70}{subsection.5.3.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.5}Gerando as condi\IeC {\c c}\IeC {\~o}es do ROMS}{74}{subsection.5.3.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Construindo o SWAN}{79}{chapter.6}
-\ttl@stoptoc {default@5}
-\ttl@starttoc {default@6}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Construindo o Budgell's Sea Ice Model}{81}{chapter.7}
-\ttl@stoptoc {default@6}
-\ttl@starttoc {default@7}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Construindo os pesos entre grades com o SCRIP}{83}{chapter.8}
-\ttl@stoptoc {default@7}
-\ttl@starttoc {default@8}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Construindo os pesos}{83}{section.8.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Executanto seu projeto no COAWST}{85}{section.8.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}\relax \fontsize {12}{14}\selectfont {Trabalhos do Laborat\IeC {\'o}rio de Estudos do Oceano e da Atmosfera}}{87}{chapter.9}
-\ttl@stoptoc {default@8}
-\ttl@starttoc {default@9}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Agradecimentos}{95}{chapter*.45}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Refer\IeC {\^e}ncias bibliogr\IeC {\'a}ficas}{97}{chapter*.46}
+\contentsline {chapter}{Bibliography}{23}{chapter*.9}% 
 \contentsfinish 

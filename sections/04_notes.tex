@@ -1,56 +1,52 @@
 % !TEX root = /media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex
 \chapterimage{header.jpg}
-\chapter*{Nota dos autores}
+\chapter*{Author's note}
 \bigskip
-\noindent Este guia foi desenvolvido para auxiliar usuários novos com a familiarização e utilização do sistema 
-          de modelagem regional acoplada (COAWST). A principal ideia é ensinar ao leitor as etapas necessárias 
-          para utilizar o COAWST, desde a sua instalação, simulação de um caso teste e a configuração de um 
-          projeto. Para atingir este objetivo, utilizamos diversas linguagens de programação, como Fortran, 
-          Python e MATLAB. Futuramente pretendemos adaptar todas as rotinas (scripts) para linguagem computacionais 
-          que sejam de uso livres e gratuitas.
+\noindent This guide is designed to assist new users to use the Coupled Ocean-Atmosphere-Wave-Sediment Transport System (COAWST)). The main idea behind this 
+guide is to teach the necessary steps to use COAWST, beginning with its installation, then a simulation of a test case and the configuration of a
+project. To achieve this goal, we use several programming languages, such as Fortran, Python and MATLAB. In the future we intend to adapt all scripts
+to a free programming language.
 \bigskip
 
-\noindent Quando começamos a escrever este guia, queríamos passar para o leitor a nossa experiência em utilizar o 
-          sistema de modelagem numérica considerado o estado da arte na área, de modo que fosse possível, ao longo 
-          da leitura, entender o funcionamento e a aplicação dele, unindo a teoria com a prática.
+\noindent When we started writing this guide, we wanted to pass on our experience of using a numerical modeling system that is considered the state of the art in our field, 
+throughout reading, understanding how it works and how to use the COAWST, allying theory with practice.
 \bigskip
 
-\noindent Porém, uma grande dificuldade neste processo foi a geração das condições de contorno e inicial do modelo 
-          regional oceânico, o Regional Ocean Modeling System (ROMS), que depende de softwares pagos. Para contornar este 
-          problema escolhemos trabalhar com o pacote \textit{model2roms}. Esse conjunto de rotinas foi desenvolvido 
-          em linguagem Python e Fortran por Trond Kristiansen 
-          (\textcolor{bleu_cite}{\href{http://www.trondkristiansen.com}{http://www.trondkristiansen.com}}).
+\noindent However, a major difficulty in this process was the generation of the boundary and initial conditions of the oceanic model, the Regional Ocean Modeling System (ROMS),
+which rely on paid software. To get around this problem we chosed to work with the \textit {model2roms} toolbox package. This set of routines was developed in Python and 
+Fortran language by Trond Kristiansen (\textcolor{bleu_cite} {\href{http://www.trondkristiansen.com}{http://www.trondkristiansen.com}}).
 \bigskip
 
-\noindent Destacamos, também, que em alguns capítulos o leitor encontrará como utilizar o COAWST em um cluster com
-          a arquitetura que está disponível para o uso do Laboratório de Estudos do Oceano e da Atmosfera (LOA) da Coordenação
-          Geral de Observação da Terra (OBT) do Instituto Nacional de Pesquisas Espaciais (INPE). Este é um sistema de 
-          computação de alta performance que permite o paralelismo de operações numéricas. Neste caso, o guia poderá servir 
-          somente como inspiração e valerá o conhecimento prévio do leitor em aplicar o COAWST no seu próprio sistema computacional.
+\noindent We emphasize that in some chapters, the reader will find how to use the COAWST in a cluster that is available for use by the Ocean and Atmosphere 
+Studies Laboratory (LOA) of the National Institute for Space Research (INPE). This is a system of high performance computing that allows parallel numerical operations. 
+In this case, the guide may serve only as inspiration and the reader's prior knowledge in applying COAWST in his own cluster system will be worthwhile.
 \bigskip
 
-\noindent Nesta segunda edição, destacamos a atualização para o COAWST v.3.4, a introdução de um capítulo sobre
-          o modelo de gelo marinho, e a renovação do pacote de ferramentas \textit{model2roms} para 
-          gerar os dados de entrada do modelo e a reorganização estrutural Guia.
+\noindent In this third edition, we highlight the update to COAWST v.3.6, a new chapter about how to compile the model in a computer without parallel architecture.
+\bigskip
+
+\noindent To cite the \textbf{third edition}, use the following:
+\bigskip
+
 \bigskip
 \pagebreak 
 
-\noindent Para citar a \textbf{primeira edição}, utilize a seguinte referência:
+\noindent To cite the \textbf{first edition}, use the following:
 \bigskip
 
-\noindent SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST. São José dos Campos: INPE, 2018. 86 p. IBI: <8JMKD3MGP3W34R/3RQSQ2L>. ISBN: <978-85-17-00093-5>. Disponível em: <\textcolor{bleu_cite}{\href{http://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L}{http://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L}}>. 
+\noindent SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST. São José dos Campos: INPE, 2018. 86 p. IBI: <8JMKD3MGP3W34R/3RQSQ2L>. ISBN: <978-85-17-00093-5>. Avaliable at: <\textcolor{bleu_cite}{\href{http://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L}{http://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L}}>. 
 \bigskip
 
-\noindent Para citar a \textbf{segunda edição}, utilize a seguinte referência:
+\noindent To cite the \textbf{second edition}, use the following:
 \bigskip
 
-\noindent SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST - 2ª Edição. São José dos Campos: INPE, 2019. 100 p. IBI: <8JMKD3MGPCW/3DT298SL>. ISBN: <978-85-17-00098-0>. Disponível em: <\textcolor{bleu_cite}{\href{http://urlib.net/rep/8JMKD3MGP3W34R/3TUTUJB}{http://urlib.net/rep/8JMKD3MGP3W34R/3TUTUJB}}>. 
+\noindent SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST - 2ª Edição. São José dos Campos: INPE, 2019. 100 p. IBI: <8JMKD3MGPCW/3DT298SL>. ISBN: <978-85-17-00098-0>. Avaliable at: <\textcolor{bleu_cite}{\href{http://urlib.net/rep/8JMKD3MGP3W34R/3TUTUJB}{http://urlib.net/rep/8JMKD3MGP3W34R/3TUTUJB}}>. 
 
 \bigskip
 \bigskip
 
-\noindent Desejamos uma boa leitura e sucesso na sua pesquisa.
+\noindent We wish you a good reading and success in your research.
 \begin{flushright}
-\noindent Os autores.
+\noindent The authors.
 \end{flushright}
 \bigskip

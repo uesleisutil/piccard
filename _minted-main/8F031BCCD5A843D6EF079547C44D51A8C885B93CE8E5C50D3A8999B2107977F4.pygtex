@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-sudo chmod 770 Anaconda2.sh
- ./Anaconda2.sh
-\end{Verbatim}

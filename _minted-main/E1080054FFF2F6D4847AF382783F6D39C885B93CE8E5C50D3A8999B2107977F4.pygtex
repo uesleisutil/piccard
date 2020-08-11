@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-cd /scratch/nome.sobrenome/COAWST
-cp \PYGZhy{}r WRF /scratch/nome.sobrenome
-\end{Verbatim}

@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-sudo apt\PYGZhy{}get install m4
-sudo apt\PYGZhy{}get install make
-sudo apt\PYGZhy{}get install perl
-\end{Verbatim}

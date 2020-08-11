@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-cp wrfbdy\PYGZus{}d01 wrfinput\PYGZus{}d01 wrflowinp\PYGZus{}d01 /home/nome.sobrenome/COAWST/Projects/nome\PYGZus{}do\PYGZus{}projeto
-\end{Verbatim}

@@ -1,8 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-export PYTHONPATH=\PYGZdl{}PYTHONPATH:/home/usuario/libsmodels/pyroms/lib/python2.7/site\PYGZhy{}packages
-export PYTHONPATH=\PYGZdl{}PYTHONPATH:/home/usuario/libsmodels/pyroms/lib/python2.7/site\PYGZhy{}packages
-export PYTHONPATH=\PYGZdl{}PYTHONPATH:/home/usuario/libsmodels/pyroms/lib/python2.7/site\PYGZhy{}packages
-export PYTHONPATH=\PYGZdl{}PYTHONPATH:/home/usuario/libsmodels/pyroms/lib
-export PYTHONPATH=\PYGZdl{}PYTHONPATH:/home/usuario/libsmodels/pyroms/lib/python2.7/site\PYGZhy{}packages/pyroms\PYGZus{}toolbox/Grid\PYGZus{}HYCOM
-export PYTHONPATH=\PYGZdl{}PYTHONPATH:/home/usuario/libsmodels/pyroms/examples
-\end{Verbatim}

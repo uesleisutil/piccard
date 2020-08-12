@@ -1,3 +1,4 @@
 \begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-put arquivo.tar.gz
+cd /scratch/name.surname/COAWST/Work/Sandy
+nedit run\PYGZus{}sandy.sh
 \end{Verbatim}

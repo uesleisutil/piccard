@@ -26,29 +26,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}About our cluster Kerana}{9}{section.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Registrando uma conta de usu\IeC {\'a}rio}{9}{section.2.2}% 
+\contentsline {section}{\numberline {2.2}Signing up a user account}{9}{section.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Acessando o cluster Kerana}{10}{section.2.3}% 
+\contentsline {section}{\numberline {2.3}Signing in to the Kerana cluster}{9}{section.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Reposit\IeC {\'o}rio de arquivos}{11}{section.2.4}% 
+\contentsline {section}{\numberline {2.4}File repository}{10}{section.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Ambiente do Kerana}{11}{section.2.5}% 
+\contentsline {section}{\numberline {2.5}Kerana environment}{11}{section.2.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Baixando o COAWST}{12}{section.2.6}% 
+\contentsline {section}{\numberline {2.6}Downloading COAWST}{11}{section.2.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Automatizando a compila\IeC {\c c}\IeC {\~a}o do COAWST no Kerana}{12}{section.2.7}% 
+\contentsline {section}{\numberline {2.7}Automating the compilation of COAWST in Kerana}{12}{section.2.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Compilando o MCT}{14}{section.2.8}% 
+\contentsline {section}{\numberline {2.8}Compiling the MCT}{13}{section.2.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Compilando o caso-teste Sandy}{16}{section.2.9}% 
+\contentsline {section}{\numberline {2.9}CCompiling the Sandy test case}{15}{section.2.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.1}Diret\IeC {\'o}rio Projects}{16}{subsection.2.9.1}% 
+\contentsline {subsection}{\numberline {2.9.1}Projects folder}{16}{subsection.2.9.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.2}Diret\IeC {\'o}rio Work}{18}{subsection.2.9.2}% 
+\contentsline {subsection}{\numberline {2.9.2}Work folder}{18}{subsection.2.9.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.3}Compilando o caso teste}{19}{subsection.2.9.3}% 
+\contentsline {subsection}{\numberline {2.9.3}Compiling the test case}{19}{subsection.2.9.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.10}Simulando o caso teste Sandy}{22}{section.2.10}% 
+\contentsline {section}{\numberline {2.10}Simulating the Sandy Test Case}{21}{section.2.10}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Bibliography}{23}{chapter*.9}% 
 \contentsfinish 

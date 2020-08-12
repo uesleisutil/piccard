@@ -2,8 +2,8 @@
 module load java
 module load netcdf
 
-export PATH=/scratch/nome.sobrenome/repositorio/Softs/nedit/5.5:\PYGZdl{}PATH
-export PATH=/scratch/nome.sobrenome/repositorio/Softs/bin:\PYGZdl{}PATH
+export PATH=/scratch/name.surname/repositorio/Softs/nedit/5.5:\PYGZdl{}PATH
+export PATH=/scratch/name.surname/repositorio/Softs/bin:\PYGZdl{}PATH
 
 export PHDF5=\PYGZdl{}\PYGZob{}HDF\PYGZus{}DIR\PYGZcb{}
 export WRFIO\PYGZus{}NCD\PYGZus{}LARGE\PYGZus{}FILE\PYGZus{}SUPPORT=1

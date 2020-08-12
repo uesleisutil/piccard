@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-READGRID COORDINATES 1 \PYGZsq{}/scratch/nome.sobrenome/COAWST/Projects/Sandy/Sandy\PYGZus{}swan\PYGZus{}coord.grd\PYGZsq{} 4 0 0 FREE
-READINP BOTTOM 1 \PYGZsq{}/scratch/nome.sobrenome/COAWST/Projects/Sandy/Sandy\PYGZus{}swan\PYGZus{}bathy.bot\PYGZsq{} 4 0 FREE
-\PYGZam{}READINP WIND 1 \PYGZsq{}/scratch/nome.sobrenome/COAWST/Projects/Sandy/swan\PYGZus{}namnarr\PYGZus{}30Sep10Nov2012.dat\PYGZsq{} 4 0 FREE
-INITIAL HOTSTART SINGLE \PYGZsq{}/scratch/nome.sobrenome/COAWST/Projects/Sandy/Sandy\PYGZus{}init.hot\PYGZsq{}
-\end{Verbatim}

@@ -9,16 +9,16 @@
 \BOOKMARK [1][-]{section.1.8}{Materials needed to use this guide}{chapter.1}% 9
 \BOOKMARK [0][-]{chapter.2}{COAWST in a parallel cluster}{}% 10
 \BOOKMARK [1][-]{section.2.1}{About our cluster Kerana}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.2}{Registrando uma conta de usu\341rio}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.3}{Acessando o cluster Kerana}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.4}{Reposit\363rio de arquivos}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.5}{Ambiente do Kerana}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.6}{Baixando o COAWST}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.7}{Automatizando a compila\347\343o do COAWST no Kerana}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.8}{Compilando o MCT}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.9}{Compilando o caso-teste Sandy}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.9.1}{Diret\363rio Projects}{section.2.9}% 20
-\BOOKMARK [2][-]{subsection.2.9.2}{Diret\363rio Work}{section.2.9}% 21
-\BOOKMARK [2][-]{subsection.2.9.3}{Compilando o caso teste}{section.2.9}% 22
-\BOOKMARK [1][-]{section.2.10}{Simulando o caso teste Sandy}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.2}{Signing up a user account}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Signing in to the Kerana cluster}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.4}{File repository}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.5}{Kerana environment}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.6}{Downloading COAWST}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.7}{Automating the compilation of COAWST in Kerana}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.8}{Compiling the MCT}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.9}{CCompiling the Sandy test case}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.9.1}{Projects folder}{section.2.9}% 20
+\BOOKMARK [2][-]{subsection.2.9.2}{Work folder}{section.2.9}% 21
+\BOOKMARK [2][-]{subsection.2.9.3}{Compiling the test case}{section.2.9}% 22
+\BOOKMARK [1][-]{section.2.10}{Simulating the Sandy Test Case}{chapter.2}% 23
 \BOOKMARK [0][-]{chapter*.9}{Bibliography}{}% 24

@@ -7,13 +7,10 @@
 \section{About our cluster Kerana}
 \bigskip
 
-\noindent A máquina CRAY XE, também chamada de Kerana, é um cluster com arquitetura massivamente paralela,
-contando com 84 nós de processamento e 2688 núcleos e está localizada nas dependências do CPTEC/INPE,
-em Cachoeira Paulista, São Paulo. Por contar com a habilidade de paralelizar operações através da interface
-MPI, o cluster é ideal para usar modelos numéricos com alta resolução espacial
-e temporal.
+\noindent The CRAY XE machine, also called Kerana, is a cluster with massively parallel architecture, with 84 processing nodes and 2688 cores and is located at CPTEC/INPE,
+in Cachoeira Paulista, São Paulo. For having the ability to parallelize operations through the MPI interface, the cluster is ideal for using numerical models with high spatial resolution
+and temporal.
 \bigskip
-
 
 \begin{tcolorbox}[enhanced,
   grow to left by   = 0cm,
@@ -25,45 +22,31 @@ e temporal.
   left              = 18mm,
   colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Para compilar o COAWST em um computador sem comunicação paralela, utilize o manual original, disponível no repositório original do modelo. Veja como baixar o COAWST na seção \textcolor{bleu_cite}{\ref{coawstbaixa}}.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+    To compile COAWST on a computer without parallel communication, see chapter \textcolor{bleu_cite}{\ref{coawstlinux}}.
 \end{tcolorbox}
 \bigskip
 
-\section{Registrando uma conta de usuário}
+\section{Signing up a user account}
 \bigskip
 
-\noindent Para iniciar o processo de requerimento de uma conta de usuário no Kerana, é necessário que o computador nas
-          dependências do INPE possua um IP fixo. É requerido que seu orientador ou supervisor envie um e-mail para o \textit{Helpdesk} 
-          do INPE  (\textcolor{bleu_cite}{\href{helpdesk.cptec@inpe.br}{\textit{helpdesk.cptec@inpe.br}}}) informando o endereço MAC, 
-          \textit{hostname} do computador e motivo da requisição. Caso o computador já possua um IP fixo atribuído, também
-           informe para que ocorra a troca.
+\noindent To start the process of applying for a user account in Kerana, it is necessary that the computer in the INPE's premises have a fixed IP. Your advisor or supervisor 
+is required to send an email to \textit{Helpdesk}(\textcolor{bleu_cite}{\href{helpdesk.cptec@inpe.br}{\textit{helpdesk.cptec@inpe.br}}}) informing the MAC address, hostname
+and reason for the request. If the computer already has a fixed IP assigned, it also need to be informed to be changed.
 \bigskip
 
-\noindent Com o IP fixado, o seu supervisor ou orientador entrará novamente em contato com o \textit{Helpdesk} requisitando a abertura da 
-          conta no cluster Kerana. Será necessário completar o preenchimento de um formulário via e-mail, como o exemplo a seguir:
-\bigskip
-\begin{enumerate}
-\item \textbf{Nome do solicitante};
-\item \textbf{Local de trabalho}:
-\item \textbf{Endereço de IP do equipamento de origem}:
-\item \textbf{Nome e endereço de IP do equipamento de destino}: acesso-hpc.cptec.inpe.br
-\item \textbf{Serviço/Porta}: ssh/2000
-\item \textbf{Volume diário de transferência de dados}:
-\item \textbf{Período de uso}:
-\item \textbf{Propósito do uso}:
-\item \textbf{Autorização das chefias dos departamentos}:
-\item \textbf{Ramal}:
-\end{enumerate}
+\noindent With the fixed IP configured, contact the \textit{Helpdesk}(\textcolor{bleu_cite}{\href{helpdesk.cptec@inpe.br}{\textit{helpdesk.cptec@inpe.br}}}) to request a form 
+to use Kerana.
 \bigskip
 
-\section{Acessando o cluster Kerana}\label{keranaacess}
+\section{Signing in to the Kerana cluster}\label{keranaacess}
 \bigskip
 
-\noindent O acesso será feito inteiramente pelo terminal do computador. Serão necessários dois comandos primários: um para acesso e manipulação de arquivos e pastas dentro do Kerana e outro para fazer \textit{download} e \textit{upload} de arquivos.
+\noindent Access will be done entirely through the computer terminal. You will need two primary commands: \textit{ssh} for accessing and manipulating files and folders and 
+\textit{sftp} to download and upload files.
 \bigskip
 
-\noindent Para acessar e modificar arquivos e pastas, digite no terminal, substituindo \textit{nome.sobrenome} pelo usuário fornecido pelo \textit{Helpdesk}:
+\noindent Para acessar e modificar arquivos e pastas, digite no terminal, substituindo \textit{name.surname} pelo usuário fornecido pelo \textit{Helpdesk}:
 \bigskip
 
 \begin{tcolorbox}[enhanced,
@@ -76,22 +59,22 @@ Para compilar o COAWST em um computador sem comunicação paralela, utilize o ma
   left              = 18mm,
   colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-A partir de agora, sempre que o guia mostrar o usuário \textit{nome.sobrenome}, altere para o seu nome de usuário fornecido pelo \textit{Helpdesk}.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+    From now on, whenever the guide shows the user as \textit{name.surname}, change to your username provided by the Helpdesk.
 \end{tcolorbox}
 \bigskip
 
 
 \begin{bashcode}
-ssh -Y nome.sobrenome@acesso-hpc.cptec.inpe.br -p 2000
+ssh -Y name.surname@acesso-hpc.cptec.inpe.br -p 2000
 \end{bashcode}
 \bigskip
 
-\noindent Para fazer \textit{download} e \textit{uploads}, digite:
+\noindent To do download and/or uploads, use:
 \bigskip
 
 \begin{bashcode}
-sftp -P2000 nome.sobrenome@acesso-hpc.cptec.inpe.br
+sftp -P2000 name.surname@acesso-hpc.cptec.inpe.br
 \end{bashcode}
 \bigskip
 
@@ -105,31 +88,31 @@ sftp -P2000 nome.sobrenome@acesso-hpc.cptec.inpe.br
   left              = 18mm,
   colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Não é possível fazer \textit{download} e \textit{upload} de vários arquivos ao mesmo tempo usando o \textit{sftp}. Uma dica é compactar em um único arquivo \textit{tar.gz} e depois descompactá-los.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+It is not possible to download and upload multiple files at the same time using \textit{sftp}. One tip is to compress into a single \textit{tar} file and then unzip them.
 \end{tcolorbox}
 \bigskip
 
-\noindent Para adicionar arquivos do seu computador para o Kerana:
+\noindent To add files from your computer to Kerana:
 \bigskip
 
 \begin{bashcode}
-put arquivo.tar.gz
+put file.tar.gz
 \end{bashcode}
 \bigskip
 
-\noindent Para extrair arquivos do Kerana para o seu computador:
+\noindent To extract Kerana files to your computer:
 \bigskip
 
 \begin{bashcode}
-get arquivo.tar.gz
+get file.tar.gz
 \end{bashcode}
 \bigskip
 
-\section{Repositório de arquivos}\label{reposit}
+\section{File repository}\label{reposit}
 \bigskip
 
-\noindent São necessários certos arquivos na área de cada usuário para facilitar a utilização do cluster. Você encontrará eles no diretório:
+\noindent Certain files are needed in each user's area to facilitate the use of the cluster. You will find them in the directory:
 \bigskip
 
 \begin{bashcode}
@@ -137,11 +120,11 @@ get arquivo.tar.gz
 \end{bashcode}
 \bigskip
 
-\noindent Para copiar os arquivos para sua área, digite:
+\noindent To copy the files to your area, type:
 \bigskip
 
 \begin{bashcode}
-cp -r /scratch/adriano.sutil/repositorio /scratch/nome.sobrenome
+cp -r /scratch/adriano.sutil/repositorio /scratch/name.surname
 \end{bashcode}
 \bigskip
 
@@ -155,15 +138,15 @@ cp -r /scratch/adriano.sutil/repositorio /scratch/nome.sobrenome
   left              = 18mm,
   colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-A partir de agora este guia utilizará os arquivos que estão dentro deste repositório, portanto é essencial que eles estejam em sua área.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+    From now on this guide will use the files that are inside this repository, so it is essential that they are in your area.
 \end{tcolorbox}
 \bigskip
 
-\section{Ambiente do Kerana}
+\section{Kerana environment}
 \bigskip
 
-\noindent É necessário ativar alguns módulos no cluster para compilar o COAWST. Neste caso, abra o arquivo chamado \textit{.bashrc} que se encontra na raiz do seu usuário.
+\noindent It is necessary to activate some modules in the cluster to compile COAWST. In this case, open the file \textit{.bashrc} which is located at the root directory of your user. 
 \bigskip
 
 \begin{bashcode}
@@ -171,7 +154,7 @@ vim .bashrc
 \end{bashcode}
 \bigskip
 
-\noindent Adicione os seguintes campos no final do arquivo, alterando somente o \textit{nome.sobrenome} para o seu nome de usuário:
+\noindent Add the following commands at the end of the file, changing only \textit{name.surname} to your username:
 \bigskip
 
 
@@ -179,8 +162,8 @@ vim .bashrc
 module load java
 module load netcdf
 
-export PATH=/scratch/nome.sobrenome/repositorio/Softs/nedit/5.5:$PATH
-export PATH=/scratch/nome.sobrenome/repositorio/Softs/bin:$PATH
+export PATH=/scratch/name.surname/repositorio/Softs/nedit/5.5:$PATH
+export PATH=/scratch/name.surname/repositorio/Softs/bin:$PATH
 
 export PHDF5=${HDF_DIR}
 export WRFIO_NCD_LARGE_FILE_SUPPORT=1
@@ -192,14 +175,14 @@ export LD_LIBRARY_PATH=/home/luciano.pezzi/local/lib:$LD_LIBRARY_PATH
 \end{bashcode}
 \bigskip
 
-\noindent Salve e digite no terminal:
+\noindent Save and type in the terminal:
 \bigskip
 
 \begin{bashcode}
 source .bashrc
 \end{bashcode}
 
-\section{Baixando o COAWST}\label{coawstbaixa}
+\section{Downloading COAWST}\label{coawstbaixa}
 \bigskip
 
 \begin{tcolorbox}[enhanced,
@@ -212,15 +195,15 @@ source .bashrc
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-O COAWST v3.4 já se encontra no repositório dentro do cluster Kerana, conforme discutido na Seção \textcolor{bleu_cite}{\ref{reposit}}.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+COAWST v3.6 is already in the repository within the Kerana cluster, as discussed in Section \textcolor{bleu_cite}{\ref{reposit}}.
 \end{tcolorbox}
 \bigskip
 
-\noindent Para baixar o COAWST, envie um email para o Dr. John Warner (\textcolor{bleu_cite}{\href{jcwarner@usgs.gov}{\textit{jcwarner@usgs.gov}}}), um dos idealizadores do sistema de modelagem regional acoplada.
+\noindent To download COAWST, send an email to Dr. John Warner (\textcolor{bleu_cite}{\href{jcwarner@usgs.gov}{\textit{jcwarner@usgs.gov}}}), one of the heads behind the coupled regional modeling.
 \bigskip
 
-\noindent Após ter o acesso liberado, com as credenciais de usuário e senha disponibilizadas pelo Dr. John Warner, digite no terminal o comando abaixo, alterando o \textit{myusrname} para o seu nome de usuário.
+\noindent After access is granted, with the user credentials and password provided by Dr. John Warner, type in the command the command below, changing the \ textit {myusrname} to your username.
 \bigskip
 
 \begin{bashcode}[fontsize=\footnotesize]
@@ -228,10 +211,10 @@ svn checkout --username myusrname https://coawstmodel.sourcerepo.com/coawstmodel
 \end{bashcode}
 \bigskip
 
-\noindent Adicione a pasta do COAWST na sua área de trabalho do Kerana através de \textit{sftp}, conforme a Seção \textcolor{bleu_cite}{\ref{keranaacess}}.
+\noindent Add the COAWST folder to your Kerana desktop using \textit{sftp}, as in the Section \textcolor{bleu_cite}{\ref{keranaacess}}.
 \bigskip
 
-\section{Automatizando a compilação do COAWST no Kerana}\label{autowrf}
+\section{Automating the compilation of COAWST in Kerana}\label{autowrf}
 \bigskip
 
 \begin{tcolorbox}[enhanced,
@@ -244,20 +227,20 @@ svn checkout --username myusrname https://coawstmodel.sourcerepo.com/coawstmodel
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Este guia utiliza o COAWST versão 3.4.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+  This guide uses COAWST version 3..
 \end{tcolorbox}
 \bigskip
 
-\noindent Para agilizar o processo, é possível automatizar alguns passos da compilação. Entre no diretório:
+\noindent To speed up the process, it is possible to automate some compilation steps. Enter the directory:
 \bigskip
 
 \begin{bashcode}
-cd /scratch/nome.sobrenome/COAWST/WRF/arch
+cd /scratch/name.surname/COAWST/WRF/arch
 \end{bashcode}
 \bigskip
 
-\noindent Abra o arquivo \textit{Config.pl}:
+\noindent Open the file \textit{Config.pl}:
 \bigskip
 
 \begin{bashcode}
@@ -265,7 +248,7 @@ nedit Config.pl
 \end{bashcode}
 \bigskip
 
-\noindent Procure pelas linhas:
+\noindent Look for the lines:
 \bigskip
 
 \begin{bashcode}[fontsize=\small]
@@ -274,7 +257,7 @@ $response = <STDIN> ;
 \end{bashcode}
 \bigskip
 
-\noindent E substitua o \textit{<STDIN>} por 42, como no exemplo abaixo:
+\noindent And replace \textit{<STDIN>} to 42, as in the example below:
 \bigskip
 
 \begin{bashcode}
@@ -283,7 +266,7 @@ $response = 42 ;
 \end{bashcode}
 \bigskip
 
-\noindent Abra o arquivo \textit{configure.defaults}:
+\noindent Open the file \textit{configure.defaults}:
 \bigskip
 
 \begin{bashcode}
@@ -291,7 +274,7 @@ nedit configure.defaults
 \end{bashcode}
 \bigskip
 
-\noindent Procure pela opção \textit{TRADEFLAG}, que está na linha 1262, aproximadamente:
+\noindent Look for the \textit{TRADEFLAG}, option, which is on line 1262, approximately:
 \bigskip
 
 \begin{bashcode}
@@ -299,7 +282,7 @@ TRADEFLAG = CONFIGURE_TRADEFLAG
 \end{bashcode}
 \bigskip
 
-\noindent E modifique por:
+\noindent And modify to:
 \bigskip
 
 \begin{bashcode}
@@ -307,18 +290,18 @@ TRADEFLAG = -traditional
 \end{bashcode}
 \bigskip
 
-\noindent Estas modificações selecionarão, na compilação, as configurações do cluster Kerana (\textit{CRAY CCE (ftn/gcc): Cray XE and XC (dmpar)}), dentre as disponíveis para usar o COAWST, como na Figura \textcolor{bleu_cite}{\ref{compskerana}}.
+\noindent These modifications will select the configurations of the Kerana cluster (\textit{CRAY CCE (ftn/gcc): Cray XE and XC (dmpar)}), among those available to use COAWST, as in Figure \textcolor{bleu_cite}{\ref{compskerana}}.
 \bigskip
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.80\textwidth]{linuxoptions.png}
-  \caption{Opções computacionais disponíveis para seleção na compilação do COAWST.}
+  \caption{Computational options available for selection when compiling COAWST.}
   \label{compskerana}
 \end{figure}
 \bigskip
 
-\noindent Agora, no mesmo arquivo, procure pelas seguintes linhas:
+\noindent Now, in the same file, look for the following lines:
 \bigskip
 
 \begin{bashcode}[fontsize=\footnotesize]
@@ -328,7 +311,7 @@ $response = <STDIN> ;
 \end{bashcode}
 \bigskip
 
-\noindent E modifique o \textit{<STDIN>} para o modo básico de aninhamento do modelo atmosférico WRF, como o exemplo a seguir:
+\noindent And change \textit{<STDIN>} to the basic WRF atmospheric model nesting mode, as in the following example:
 \bigskip
 
 \begin{bashcode}[fontsize=\footnotesize]
@@ -338,7 +321,7 @@ $response = 1 ;
 \end{bashcode}
 \bigskip
 
-\section{Compilando o MCT}
+\section{Compiling the MCT}
 \bigskip
 
 \begin{tcolorbox}[enhanced,
@@ -351,14 +334,14 @@ $response = 1 ;
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Este guia utiliza o COAWST v 3.4.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+    This guide uses COAWST v 3.6.
 \end{tcolorbox}
 \bigskip
 
 
-\noindent Cada novo usuário deverá compilar o MCT antes de compilar o COAWST. O primeiro passo é utilizar o arquivo \textit{setup\_pgi.sh}. 
-          Este arquivo foi copiado do repositório anterior, é indispensável alterar os diretórios contidos nele. Portanto:
+\noindent Each new user must compile the MCT before compiling COAWST. The first step is to use the \textit{setup\_pgi.sh} file. This file was copied from the previous 
+repository, it is essential to change the directories contained therein. So open the file:
 \bigskip
 
 \begin{bashcode}
@@ -366,7 +349,7 @@ nedit setup_pgi.sh
 \end{bashcode}
 \bigskip
 
-\noindent Caso necessário, altere os diretórios de acordo com o nome da sua pasta do COAWST e execute o arquivo para carregar os módulos necessários:
+\noindent If necessary, change the directories according to the name of your COAWST folder and execute the file to load the necessary modules:
 \bigskip
 
 \begin{bashcode}
@@ -374,28 +357,27 @@ source setup_pgi.sh
 \end{bashcode}
 \bigskip
 
-\noindent As bibliotecas serão ativadas, conforme apresentado na Figura \textcolor{bleu_cite}{\ref{modulos}}:
+\noindent The libraries will be activated, as shown in Figure \textcolor{bleu_cite}{\ref{modulos}}:
 \bigskip
 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{modules.png}
-    \caption{Módulos ativados no cluster com o arquivo \textit{setup\_pgi.sh} para o usuário adriano.sutil.}
+    \caption{Modules activated in the cluster with the file \textit{setup\_pgi.sh} with user adriano.sutil.}
     \label{modulos}
 \end{figure}
 \bigskip
 
-
-\noindent Entre na pasta do MCT:
+\noindent Enter the MCT folder directory:
 \bigskip
 
 \begin{bashcode}
-cd /home/nome.sobrenome/COAWST/Lib/MCT
+cd /home/name.surname/COAWST/Lib/MCT
 \end{bashcode}
 \bigskip
 
-\noindent Abra o arquivo \textit{Makefile.conf}:
+\noindent Open the file \textit{Makefile.conf}:
 \bigskip
 
 
@@ -404,7 +386,7 @@ nedit Makefile.conf
 \end{bashcode}
 \bigskip
 
-\noindent E modifique o arquivo conforme a seguir:
+\noindent And modify the file as follows:
 \bigskip
 
 \begin{tcolorbox}[enhanced,
@@ -417,8 +399,8 @@ nedit Makefile.conf
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Lembre-se de alterar o \textit{nome.sobrenome} dos diretórios!
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+    Remember to change the \textit{name.surname}!
 \end{tcolorbox}
 \bigskip
 
@@ -444,21 +426,21 @@ FORT_SIZE       =
 CRULE           = .c.o
 90RULE          = .F90.o
 F90RULECPP      = .F90RULECPP
-INSTALL         = /home/nome.sobrenome/COAWST/Lib/MCT/install-sh -c
-MKINSTALLDIRS   = /home/nome.sobrenome/COAWST/Lib/MCT/mkinstalldirs
-abs_top_builddir= /home/nome.sobrenome/COAWST/Lib/MCT/
-MCTPATH         = /home/nome.sobrenome/COAWST/Lib/MCT/mct
-MPEUPATH        = /home/nome.sobrenome/COAWST/Lib/MCT/mpeu
-EXAMPLEPATH     = /home/nome.sobrenome/COAWST/Lib/MCT/examples
+INSTALL         = /home/name.surname/COAWST/Lib/MCT/install-sh -c
+MKINSTALLDIRS   = /home/name.surname/COAWST/Lib/MCT/mkinstalldirs
+abs_top_builddir= /home/name.surname/COAWST/Lib/MCT/
+MCTPATH         = /home/name.surname/COAWST/Lib/MCT/mct
+MPEUPATH        = /home/name.surname/COAWST/Lib/MCT/mpeu
+EXAMPLEPATH     = /home/name.surname/COAWST/Lib/MCT/examples
 MPISERPATH      = 
-libdir          = /home/nome.sobrenome/COAWST/Lib/MCT/pgi/lib
-includedir      = /home/nome.sobrenome/COAWST/Lib/MCT/pgi/include
+libdir          = /home/name.surname/COAWST/Lib/MCT/pgi/lib
+includedir      = /home/name.surname/COAWST/Lib/MCT/pgi/include
 AR	      = ar cq
 RM	      = rm -f
 \end{bashcode}
 \bigskip
 
-\noindent Instale o MCT digitando no terminal os seguintes comandos:
+\noindent Install the MCT by typing the following commands:
 \bigskip
 
 \begin{bashcode}
@@ -466,34 +448,34 @@ make
 make install
 \end{bashcode}
 \bigskip
-\noindent Observe as mensagens que aparecem no terminal e busque por erros. Caso negativo, o MCT foi compilado com sucesso.
+\noindent Observe the messages that appear in the terminal and look for errors. If not, the MCT was successfully compiled.
 \bigskip
 
 
-\section{Compilando o caso-teste Sandy}
+\section{CCompiling the Sandy test case}
 \bigskip
 
-\noindent Existem dentro do COAWST alguns casos-teste para serem compilados e trabalhados. Neste caso compilaremos o projeto do furacão Sandy,
-          que acopla e aninha o WRF, o ROMS e o SWAN. Primeiramente, é necessário conhecer a estrutura das pastas e arquivos do COAWST.
+\noindent There are some test cases within COAWST to be compiled and worked on. In this case we’ll compile Hurricane Sandy’s project,
+which couples and nests WRF, ROMS and SWAN. First, it is necessary to know the structure of COAWST files and folders.
 \bigskip
 
-\noindent A estrutura típica de diretórios do COAWST está exemplificada na Figura \textcolor{bleu_cite}{\ref{pastascoa}}. \noindent Serão utilizadas principalmente as pastas
-          \textit{Projects} e \textit{Work}.
+\noindent The typical COAWST directory structure is exemplified in Figure \textcolor{bleu_cite}{\ref{pastascoa}}. Mainly, we will use the folders \textit{Projects} e \textit{Work} to work on.
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.50\textwidth]{estruturacoawst.png}
-    \caption{Representação da pasta principal do COAWST e as subpastas.}
+    \caption{
+Representation of the main COAWST folder and subfolders.}
     \label{pastascoa}
 \end{figure}
 \bigskip
 
-\subsection{Diretório Projects}\index{Pasta Projects}
+\subsection{Projects folder}\index{Pasta Projetcs}
 \bigskip
 
-\noindent Para organizar os projetos, no diretório \textit{COAWST/Projects/Sandy} estão todos os arquivos utilizados para simular o
-          caso Sandy. Deverão constar os seguintes arquivos:
+\noindent To organize the projects, in the directory \textit{COAWST/Projects/Sandy} are all the files used to simulate the
+Sandy case. The following files must be inside:
 \bigskip
 
 \begin{itemize}
@@ -564,23 +546,23 @@ make install
 \end{itemize}
 \bigskip
 
-\subsection{Diretório Work}\index{Pasta Work}\label{workcoawstsec}
+\subsection{Work folder}\index{Pasta Work}\label{workcoawstsec}
 \bigskip
 
-\noindent Para facilitar o gerenciamento das simulações, é sugerida, para cada novo usuário, a criação da pasta \textit{Work} no 
-          diretório principal do COAWST, com cada projeto inserido separadamente dentro dele. É nesta pasta que será simulado 
-          o caso teste.
+\noindent To make the management of simulations easier, it is suggested, for each new user, the creation of the \textit{Work} folder in
+main COAWST directory, with each project inserted separately within it. It is in this folder that will be simulated
+the test case.
 \bigskip
 
 \begin{bashcode}
-cd /scratch/nome.sobrenome/COAWST
+cd /scratch/name.surname/COAWST
 mkdir Work
 cd Work
 mkdir Sandy
 \end{bashcode}
 \bigskip
 
-\noindent A \textit{/scratch/nome.sobrenome/COAWST/Work/Sandy} deverá conter os seguintes arquivos:
+\noindent The folder \textit{/scratch/name.surname/COAWST/Work/Sandy} must contain the following files
 \bigskip
 
 \begin{itemize}
@@ -590,50 +572,52 @@ mkdir Sandy
 \end{itemize}
 \bigskip
 
-\noindent O arquivo \textit{run\_sandy.sh} é usado para iniciar a simulação, \textit{link.sh} gera links simbólicos na pasta \textit{Work}, que serão utilizados pelos modelos, e o \textit{limpa.sh} é utilizado para limpar a pasta caso ocorra um erro e seja necessário iniciar uma nova integração. Os arquivos se encontram dentro da pasta \textit{/repositorio/work\_coawst}.
+\noindent The file \textit{run\_sandy.sh} will be used to start the simulation, \textit{link.sh} creates symbolic links in the folder \textit{Work}, 
+that will be used by the models, and \textit{limpa.sh} is used to clear the folder if an error occurs and a new integration needs to be started. The files 
+are inside the folder \textit{/repositorio/work\_coawst}.
 \bigskip
 
-\noindent Portanto:
+\noindent Therefore:
 
 \bigskip
 
 \begin{bashcode}
-cd /scratch/nome.sobrenome/repositorio/work_coawst
-cp limpa.sh link.sh run_sandy.sh /scratch/nome.sobrenome/COAWST/Work/Sandy
+cd /scratch/name.surname/repositorio/work_coawst
+cp limpa.sh link.sh run_sandy.sh /scratch/name.surname/COAWST/Work/Sandy
 \end{bashcode}
 \bigskip
 
-\noindent Vá até o diretório \textit{/scratch/nome.sobrenome/COAWST/Work/Sandy} e abra o arquivo \textit{run\_sandy.sh}:
+\noindent Go to the directory \textit{/scratch/name.surname/COAWST/Work/Sandy} and open the file\textit{run\_sandy.sh}:
 \bigskip
 
 \begin{bashcode}
-cd /scratch/nome.sobrenome/COAWST/Work/Sandy
+cd /scratch/name.surname/COAWST/Work/Sandy
 nedit run_sandy.sh
 \end{bashcode}
 \bigskip
 
-\noindent Procure os comandos a seguir e modifique os diretórios de acordo com o seu nome de usuário:
+\noindent Search for the following commands and modify the directories according to your username:
 \bigskip
 
 \begin{bashcode}
-PBS -o /scratch/nome.sobrenome/COAWST/Work/Sandy/rws_total.out
-ROOTDIR=/scratch/nome.sobrenome/COAWST
+PBS -o /scratch/name.surname/COAWST/Work/Sandy/rws_total.out
+ROOTDIR=/scratch/name.surname/COAWST
 \end{bashcode}
 \bigskip
 
 
-\subsection{Compilando o caso teste}\index{Compilar o caso teste Sandy}
+\subsection{Compiling the test case}\index{Compilar o caso teste Sandy}
 \bigskip
 
-\noindent Vá para a pasta do projeto Sandy:
+\noindent Go to the Sandy project folde:
 \bigskip
 
 \begin{bashcode}
-/home/nome.sobrenome/COAWST/Projects/Sandy
+/home/name.surname/COAWST/Projects/Sandy
 \end{bashcode}
 \bigskip
 
-\noindent Abra os seguintes arquivos para realizar as modificações dos próximos passos:
+\noindent Open the following files to make changes to the next steps:
 \bigskip
 
 \begin{itemize}
@@ -649,7 +633,7 @@ nedit coupling_sandy.in swan_sandy.in swan_sandy_ref3.in ocean_sandy.in
 \end{bashcode}
 \bigskip
 
-\noindent No arquivo \textit{coupling\_sandy.in} procure pela linha de comando abaixo e substitua:
+\noindent Look for the command line below in the file \textit{coupling\_sandy.in}:
 \bigskip
 
 \begin{bashcode}
@@ -657,18 +641,18 @@ OCN_name = Projects/Sandy/ocean_sandy.in
 \end{bashcode}
 \bigskip
 
-\noindent E substitua por:
+\noindent And replace with:
 \bigskip
 
 \begin{bashcode}
-OCN_name = /scratch/nome.sobrenome/COAWST/Projects/Sandy/ocean_sandy.in
+OCN_name = /scratch/name.surname/COAWST/Projects/Sandy/ocean_sandy.in
 \end{bashcode}
 \bigskip
 
-\noindent Nos arquivos \textit{swan\_sandy.in} e \textit{swan\_sandy\_ref3.in} complete todos os caminhos dos diretórios abaixo:
+\noindent In the files\textit{swan\_sandy.in} and \textit{swan\_sandy\_ref3.in} complete all directory paths below:
 \bigskip
 
-\noindent Modifique:
+\noindent Modify:
 \bigskip
 
 \begin{bashcode}
@@ -679,18 +663,18 @@ INITIAL HOTSTART SINGLE 'Projects/Sandy/Sandy_init.hot'
 \end{bashcode}
 \bigskip
 
-\noindent Por:
+\noindent By:
 \bigskip
 
 \begin{bashcode}[fontsize=\scriptsize]
-READGRID COORDINATES 1 '/scratch/nome.sobrenome/COAWST/Projects/Sandy/Sandy_swan_coord.grd' 4 0 0 FREE
-READINP BOTTOM 1 '/scratch/nome.sobrenome/COAWST/Projects/Sandy/Sandy_swan_bathy.bot' 4 0 FREE
-&READINP WIND 1 '/scratch/nome.sobrenome/COAWST/Projects/Sandy/swan_namnarr_30Sep10Nov2012.dat' 4 0 FREE
-INITIAL HOTSTART SINGLE '/scratch/nome.sobrenome/COAWST/Projects/Sandy/Sandy_init.hot'
+READGRID COORDINATES 1 '/scratch/name.surname/COAWST/Projects/Sandy/Sandy_swan_coord.grd' 4 0 0 FREE
+READINP BOTTOM 1 '/scratch/name.surname/COAWST/Projects/Sandy/Sandy_swan_bathy.bot' 4 0 FREE
+&READINP WIND 1 '/scratch/name.surname/COAWST/Projects/Sandy/swan_namnarr_30Sep10Nov2012.dat' 4 0 FREE
+INITIAL HOTSTART SINGLE '/scratch/name.surname/COAWST/Projects/Sandy/Sandy_init.hot'
 \end{bashcode}
 \bigskip
 
-\noindent E no arquivo \textit{ocean\_sandy.in} procure pelas linhas de comando abaixo:
+\noindent In the file \textit{ocean\_sandy.in} look for the command lines like below:
 \bigskip
 
 \begin{bashcode}
@@ -707,33 +691,33 @@ FRCNAME == Projects/Sandy/roms_narr_Oct2012.nc \
 \end{bashcode}
 \bigskip
 
-\noindent E substitua por:
+\noindent And replace with:
 \bigskip
 
 \begin{bashcode}[fontsize=\footnotesize]
 MyAppCPP = Sandy
-VARNAME  = /scratch/nome.sobrenome/COAWST/ROMS/External/varinfo.dat
-GRDNAME == /scratch/nome.sobrenome/COAWST/Projects/Sandy/Sandy_roms_grid.nc \
-           /scratch/nome.sobrenome/COAWST/Projects/Sandy/Sandy_roms_grid_ref3.nc
-ININAME == /scratch/nome.sobrenome/COAWST/Projects/Sandy/Sandy_ini.nc \
-           /scratch/nome.sobrenome/COAWST/Projects/Sandy/Sandy_ini_ref3.nc
-NGCNAME =  /scratch/nome.sobrenome/COAWST/Projects/Sandy/Sandy_roms_contact.nc
-BRYNAME == /scratch/nome.sobrenome/COAWST/Projects/Sandy/Sandy_bdy.nc
-FRCNAME == /scratch/nome.sobrenome/COAWST/Projects/Sandy/roms_narr_Oct2012.nc \
-           /scratch/nome.sobrenome/COAWST/Projects/Sandy/roms_narr_ref3_Oct2012.nc
+VARNAME  = /scratch/name.surname/COAWST/ROMS/External/varinfo.dat
+GRDNAME == /scratch/name.surname/COAWST/Projects/Sandy/Sandy_roms_grid.nc \
+           /scratch/name.surname/COAWST/Projects/Sandy/Sandy_roms_grid_ref3.nc
+ININAME == /scratch/name.surname/COAWST/Projects/Sandy/Sandy_ini.nc \
+           /scratch/name.surname/COAWST/Projects/Sandy/Sandy_ini_ref3.nc
+NGCNAME =  /scratch/name.surname/COAWST/Projects/Sandy/Sandy_roms_contact.nc
+BRYNAME == /scratch/name.surname/COAWST/Projects/Sandy/Sandy_bdy.nc
+FRCNAME == /scratch/name.surname/COAWST/Projects/Sandy/roms_narr_Oct2012.nc \
+           /scratch/name.surname/COAWST/Projects/Sandy/roms_narr_ref3_Oct2012.nc
 \end{bashcode}
 \bigskip
 
-\noindent Volte para a pasta principal do COAWST e abra o arquivo \textit{coawst.bash}:
+\noindent Go back to the main COAWST folder and open the file \textit{coawst.bash}:
 \bigskip
 
 \begin{bashcode}
-cd /scratch/nome.sobrenome/COAWST
+cd /scratch/name.surname/COAWST
 nedit coawst.bash
 \end{bashcode}
 \bigskip
 
-\noindent Procure os seguintes comandos e modifique, se necessário:
+\noindent Search for the following commands and modify, if necessary:
 \bigskip
 
 \begin{bashcode}
@@ -743,7 +727,7 @@ export   MY_HEADER_DIR=${MY_PROJECT_DIR}/Projects/JOE_TC
 \end{bashcode}
 \bigskip
 
-\noindent Por:
+\noindent By:
 \bigskip
 
 \begin{bashcode}
@@ -753,7 +737,7 @@ export   MY_HEADER_DIR=${MY_PROJECT_DIR}/Projects/Sandy
 \end{bashcode}
 \bigskip
 
-\noindent Ative novamente os módulos no arquivo \textit{setup\_pgi.sh}, e depois compile o projeto com o comando:
+\noindent Activate the modules again into the file \textit{setup\_pgi.sh}, and then compile the project with the command:
 \bigskip
 
 \begin{bashcode}
@@ -761,7 +745,8 @@ export   MY_HEADER_DIR=${MY_PROJECT_DIR}/Projects/Sandy
 \end{bashcode}
 \bigskip
 
-\noindent Este comando criará o arquivo de texto \textit{coawst.pgi.sandy} onde será possível acompanhar a evolução da compilação. Abra o arquivo de texto com o comando a seguir e procure pela mensagem final, como na Figura \textcolor{bleu_cite}{\ref{compcoafinal}}.
+\noindent This command will create the text file \textit{coawst.pgi.sandy} where you can follow the progress of the compilation. Open the text file with the following 
+command and look for the final message, as in Figure \textcolor{bleu_cite}{\ref{compcoafinal}}.
 \bigskip
 
 \begin{bashcode}
@@ -772,12 +757,12 @@ nedit coawst.pgi.sandy
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.65\textwidth]{coawstfinal.png}
-    \caption{Mensagem final após compilar o COAWST.}
+    \caption{Final message after compiling COAWST.}
     \label{compcoafinal}
 \end{figure}
 \bigskip
 
-\noindent Caso queira acompanhar pelo terminal a evolução da compilação, utilize o comando:
+\noindent If you want to follow the progress of the compilation through the terminal, use the command:
 \bigskip
 
 \begin{bashcode}
@@ -795,24 +780,24 @@ tail -f coawst.pgi.sandy
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-O processo de compilação é longo!
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+The compilation process is long!
 \end{tcolorbox}
 \bigskip
 
 
-\noindent Pronto! No diretório principal do COAWST, será criado um arquivo chamado \textit{coawstM}. Neste arquivo estarão compiladas todas as informações do seu projeto. Agora com o COAWST compilado, iniciaremos o caso teste.
+\noindent Ready! In the main COAWST directory, a file called \textit{coawstM} will be created. In this file all the information about your project 
+will be compiled. Now with COAWST compiled, we will start the test case.
 \bigskip
 
-\section{Simulando o caso teste Sandy}\label{sandyexec}
+\section{Simulating the Sandy Test Case}\label{sandyexec}
 \bigskip
 
-\noindent Para simular o caso, busque pela pasta \textit{Work/Sandy}. Digite:
+\noindent To simulate the case, search for the file in \textit{Work/Sandy}. Type it:
 \bigskip
-
 
 \begin{bashcode}
-cd /scratch/nome.sobrenome/COAWST/Work/Sandy
+cd /scratch/name.surname/COAWST/Work/Sandy
 nedit run_sandy.sh
 \end{bashcode}
 \bigskip
@@ -827,12 +812,12 @@ nedit run_sandy.sh
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-A pasta \textit{Work} deverá conter os arquivos \textit{limpa.sh}, \textit{link.sh} e \textit{run\_sandy.sh}. Eles poderão ser encontrados na pasta usada como repositório. Relembre a Seção \textcolor{bleu_cite}{\ref{workcoawstsec}}.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+    The \textit{Work} folder should contain the files \textit{clean.sh}, \textit{link.sh} and \textit{run\_sandy.sh}. They can be found in the folder used as a repository. See Section \textcolor{bleu_cite} {\ref{workcoawstsec}}.
 \end{tcolorbox}
 \bigskip
 
-\noindent Ao abrir o arquivo, verifique se os diretórios estão de acordo com o seu nome de usuário e digite o comando abaixo para iniciar a integração.
+\noindent When opening the file, check if the directories are in accordance with your username and type the command below to start the integration.
 \bigskip
 
 \begin{bashcode}
@@ -850,12 +835,12 @@ qsub run_sandy.sh
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-O comando \textit{qsub} submeterá o seu \textit{job}. Ele enviará o script executado para um lote do cluster, reservando uma parte dos processadores para a sua simulação.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+ The command \textit{qsub} will submit you job. It will send the executed script to a batch of the cluster, reserving a part of the processors for its simulation.
 \end{tcolorbox}
 \bigskip
 
-\noindent O processo gerará dois arquivos para acompanhar a evolução da simulação: o \textit{log.out} e \textit{log.err}. Para abrir, utilize:
+\noindent The process will generate two files to follow the evolution of the simulation: \textit{log.out} and \textit{log.err}. To open, use:
 \bigskip
 
 \begin{bashcode}
@@ -863,7 +848,7 @@ nedit log.out log.err
 \end{bashcode}
 \bigskip
 
-\noindent Ou acompanhe diretamente no terminal com o comando:
+\noindent Or look directly at the terminal with the command:
 \bigskip
 
 \begin{bashcode}
@@ -871,7 +856,7 @@ tail -f log.out
 \end{bashcode}
 \bigskip
 
-\noindent As saídas das simulações serão armazenadas na pasta \textit{Work/Sandy}. Caso algum erro ocorra, limpe a área de trabalho com o comando:
+\noindent The outputs of the simulations will be stored in the \textit{Work/Sandy} folder. If an error occurs, clean the desktop with the command:
 \bigskip
 
 \begin{bashcode}
@@ -890,7 +875,7 @@ tail -f log.out
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-A simulação do caso teste Sandy poderá demorar 5 horas ao integrar usando 3 processadores.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+    The simulation of the test case Sandy may take several hours when integrating using 3 processors.
 \end{tcolorbox}
 \bigskip

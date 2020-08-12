@@ -1,3 +1,4 @@
 \begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-cd /home/nome.sobrenome/COAWST/Lib/MCT
+cd /scratch/name.surname/COAWST
+nedit coawst.bash
 \end{Verbatim}

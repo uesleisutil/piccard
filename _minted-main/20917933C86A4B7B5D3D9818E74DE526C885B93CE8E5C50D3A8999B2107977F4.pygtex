@@ -1,3 +1,3 @@
 \begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-sftp \PYGZhy{}P2000 nome.sobrenome@acesso\PYGZhy{}hpc.cptec.inpe.br
+sftp \PYGZhy{}P2000 name.surname@acesso\PYGZhy{}hpc.cptec.inpe.br
 \end{Verbatim}

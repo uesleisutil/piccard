@@ -1,3 +1,6 @@
 \begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-OCN\PYGZus{}name = /scratch/nome.sobrenome/COAWST/Projects/Sandy/ocean\PYGZus{}sandy.in
+cd /scratch/name.surname/COAWST
+mkdir Work
+cd Work
+mkdir Sandy
 \end{Verbatim}

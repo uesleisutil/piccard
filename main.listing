@@ -1,1 +1,1 @@
-./limpa.sh
+aprun -n 36 coawstM ./coupling.in 1> log.out 2> log.err

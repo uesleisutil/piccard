@@ -2053,6 +2053,14 @@
     <bcf:citekey order="43">Warner2010</bcf:citekey>
     <bcf:citekey order="44">Warner2010</bcf:citekey>
     <bcf:citekey order="45">Warner2008</bcf:citekey>
+    <bcf:citekey order="46">Sutil2019</bcf:citekey>
+    <bcf:citekey order="47">Endo2019</bcf:citekey>
+    <bcf:citekey order="48">Lima2019</bcf:citekey>
+    <bcf:citekey order="49">Pullen2017</bcf:citekey>
+    <bcf:citekey order="50">Mendonca2017</bcf:citekey>
+    <bcf:citekey order="51">Parise2015</bcf:citekey>
+    <bcf:citekey order="52">Dias2014</bcf:citekey>
+    <bcf:citekey order="53">Silveira2014</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

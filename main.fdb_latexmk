@@ -1,16 +1,16 @@
 # Fdb version 3
-["biber main"] 1597262621 "main.bcf" "main.bbl" "main" 1597262741
-  "main.bcf" 1597262741 94904 9888abcf0f8f14bab85ef8233edb2b49 "pdflatex"
+["biber main"] 1597262621 "main.bcf" "main.bbl" "main" 1597263025
+  "main.bcf" 1597263025 94904 9888abcf0f8f14bab85ef8233edb2b49 "pdflatex"
   "refs.bib" 1567714103 16589 8e177f275cb5530e42243c4b0e4a8330 ""
   (generated)
-  "main.bbl"
   "main.blg"
-["makeindex main.idx"] 1597262728 "main.idx" "main.ind" "main" 1597262741
-  "main.idx" 1597262741 586 bf3ad94cc0d01ee00119a9621251283c "pdflatex"
+  "main.bbl"
+["makeindex main.idx"] 1597262728 "main.idx" "main.ind" "main" 1597263025
+  "main.idx" 1597263025 586 bf3ad94cc0d01ee00119a9621251283c "pdflatex"
   (generated)
   "main.ind"
   "main.ilg"
-["pdflatex"] 1597262735 "/media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex" "main.pdf" "main" 1597262741
+["pdflatex"] 1597263019 "/media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex" "main.pdf" "main" 1597263025
   "/dev/null" 1597242840 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/etc/texmf/web2c/texmf.cnf" 1592237897 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex" 1597262721 9776 e3253cd6eceb0903b84787808583a02d ""
@@ -402,18 +402,18 @@
   "_minted-main/F63FC1DDEF5A37413C09E84A7EC6FAFEC885B93CE8E5C50D3A8999B2107977F4.pygtex" 1597181363 158 9ffc48632a8a783cef47b1fceb4340f5 ""
   "_minted-main/colorful.pygstyle" 1527014227 10235 9c8eab61d0de29a2d09a73c4a986cca9 ""
   "_minted-main/default-pyg-prefix.pygstyle" 1597181360 7889 3ce1fbc763e3e2c748310f4fe31722b6 ""
-  "main.aux" 1597262741 26155 8099609b90af75e63aa5eb050a403bd4 "pdflatex"
+  "main.aux" 1597263025 26155 8099609b90af75e63aa5eb050a403bd4 "pdflatex"
   "main.bbl" 1597262622 67524 c3dc8d72cc68dab43e14bff6a92e7c82 "biber main"
   "main.ind" 1597262729 686 350472cae9cc0ff897e4dbe72b2a41d3 "makeindex main.idx"
-  "main.listing" 1597262740 56 5a53eaa44340c049a9239599c2a9e5ab "pdflatex"
-  "main.out" 1597262741 2485 7f9921afc2882a6f256ffcf35dd3562b "pdflatex"
-  "main.run.xml" 1597262741 2349 0e4ddb101b9b4b4ffa95b4e04c4dfb93 "pdflatex"
+  "main.listing" 1597263024 56 5a53eaa44340c049a9239599c2a9e5ab "pdflatex"
+  "main.out" 1597263025 2485 7f9921afc2882a6f256ffcf35dd3562b "pdflatex"
+  "main.run.xml" 1597263025 2349 0e4ddb101b9b4b4ffa95b4e04c4dfb93 "pdflatex"
   "main.tex" 1597262721 9776 e3253cd6eceb0903b84787808583a02d ""
-  "main.toc" 1597262741 4422 d16a97c202965b5ab2ee3ff40747a7bf "pdflatex"
+  "main.toc" 1597263025 4422 d16a97c202965b5ab2ee3ff40747a7bf "pdflatex"
   "sections/01_titlepage.tex" 1597159812 793 711bd97e79e41d20dbd7db5a8a9208ce ""
-  "sections/02_copyright.tex" 1597262641 2768 98bbaf2901ef733cfd2438a95f0f2173 ""
+  "sections/02_copyright.tex" 1597263018 2810 52f80504381e620aeadca5b06fe8f512 ""
   "sections/03_reviewers.tex" 1597159346 1831 d2ce7c6454142ac5e17a864732d09d11 ""
-  "sections/04_notes.tex" 1597262628 3133 dc5c4e56ba84add2687efd9f2b25781e ""
+  "sections/04_notes.tex" 1597262911 3133 dc5c4e56ba84add2687efd9f2b25781e ""
   "sections/05_tableofcontents.tex" 1597161519 425 370f2f9c307a403a7b03a8a8bec9161d ""
   "sections/07_chapter_1.tex" 1597181797 20651 bea1f00aaadb3fe7771fb125e548cdc0 ""
   "sections/08_chapter_2.tex" 1597261983 28309 c0d9fca81d9d6a87d872158f16cb83b6 ""
@@ -422,13 +422,13 @@
   "sections/15_acknowledgments.tex" 1597262674 1654 77a9760c92eff5762828049715453895 ""
   "structure.tex" 1597173014 14509 243301e6645a83eb963c0ef9b374f572 ""
   (generated)
-  "main.out"
-  "main.listing"
-  "main.ptc"
-  "main.toc"
   "main.aux"
+  "main.bcf"
+  "main.toc"
+  "main.out"
+  "main.run.xml"
+  "main.ptc"
   "main.idx"
+  "main.listing"
   "main.pdf"
   "main.log"
-  "main.bcf"
-  "main.run.xml"

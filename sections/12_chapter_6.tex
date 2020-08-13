@@ -1,102 +1,101 @@
-% !TEX root = /media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex
 \chapterimage{header.jpg}
 \bigskip
-\chapter{Construindo o SWAN}
+\chapter{Building the SWAN}
 
-\noindent O SWAN utiliza o arquivo \textit{SWAN.EDT} para ler os  arquivos de grade (\textit{swan\_coord.grd}) e
-          de batimetria (\textit{swan\_bathy.bot}). Também é possivel definir uma grade numérica dentro do próprio
-          \textit{SWAN.EDT} e indicar o arquivo de batimetria que será lido e associado com a grade definida.
+\noindent SWAN uses the \textit{SWAN.EDT} file to read the grid (\textit{swan\_coord.grd}) and bathymetry (\textit{swan\_bathy.bot}) files. 
+It is also possible to define a numerical grid within the \textit{SWAN.EDT} and indicate the bathymetry file that will be read and associated 
+with the defined grid.
 \bigskip
 
-\noindent Como exemplo, serão criados os arquivos do SWAN a partir da grade do ROMS, porém sem a introdução de dados iniciais, 
-          pois a implementação de uma grade dentro do \textit{SWAN.EDT} não é trivial    
+\noindent As an example, SWAN files will be created from the ROMS grid, but without the introduction of initial data,
+as the implementation of a grid inside \textit{SWAN.EDT} is not trivial.
 \bigskip
 
-\noindent Para as condições de fronteiras do SWAN, os campos de vento serão provenientes do WRF, via acoplamento, logo
-          as ondas geradas estão associados aos sistemas atmosféricos representados nestas simulações. Sem as informações 
-          de contorno, as ondas simuladas serão geradas apenas dentro do límite do domínio, desconsiderando a energia que 
-          está saindo ou entrando na grade.
+\noindent For SWAN boundary conditions, the wind fields will come from the WRF, as soon as
+the waves generated are associated with the atmospheric systems represented in these simulations. Without the information
+the boundary files information, the simulated waves will be generated only within the boundary of the domain, disregarding the energy that
+is leaving or entering the grid.
 \bigskip
 
-\noindent Utilizaremos o script do MATLAB, \textit{make\_swan.m}, para gerar os arquivos. O script está localizado em:  
+\noindent We will use the MATLAB script, \textit{make\_swan.m}, to generate the files. The script is located at:
 \bigskip
 
 \begin{bashcode}
-/home/nome.sobrenome/repositorio/SWAN_scripts
+/home/name.surname/repositorio/SWAN_scripts
 \end{bashcode}
 \bigskip
 
-\noindent Conforme a Figura \textcolor{bleu_cite}{\ref{makeswan}}, o script possui a seguinte construção:
+\noindent As shown in Figure \textcolor{bleu_cite}{\ref{makeswan}}, the script has the following construction:
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.47\textwidth]{makeswan.png}
-    \caption{O script \textit{make\_swan.m}.}
+    \caption{\textit{make\_swan.m} script.}
     \label{makeswan}
 \end{figure}
 \bigskip
 
-\noindent Para gerar os dois arquivos do SWAN, procure no script a variável \textit{ncfile} e altere o diretório 
-          para o caminho onde está sua grade do ROMS.
+\noindent To generate the two SWAN files, look in the script for the variable \textit{ncfile} and change the directory
+to the path where your ROMS grid is.
 \bigskip
 
-\noindent Execute o script e serão criados os dois arquivos: \textit {swan\_coord.grd} e \textit{swan\_bathy.bot}. 
-           Os dois arquivos deverão ser colocados dentro da sua pasta de projetos.
+\noindent Run the script and the two files will be created: \textit{swan\_coord.grd} and \textit{swan\_bathy.bot}.
+The two files must be placed inside your project folder.
 \bigskip
 
-\chapter{Construindo o Budgell's Sea Ice Model}
+\chapter{Building the Budgell's Sea Ice Model}
 \bigskip
 
-\noindent O modelo de gelo marinho está integralmente acoplado ao ROMS, de modo que, após gerada as condições do 
-          ROMS com os dados de gelo (Veja a Seção \textcolor{bleu_cite}{\ref{model2romssec}}), para ativar o modelo 
-          de gelo marinho basta modificar o arquivo \textit{.h} do ROMS no seu projeto e acrescentar as seguintes 
-          opções (Figura \textcolor{bleu_cite}{\ref{hiceroms}}):
+\noindent The sea ice model is fully coupled to ROMS, so that, after generating the conditions of the
+ROMS with ice data (See Section \textcolor{bleu_cite}{\ref{model2romssec}}), to activate the sea ice model 
+just modify the ROMS \textit{.h} file in your project. According to \textcite{hedstrom2018}, you can
+add the following options into the \textit{.h} file, as shown in Figure \textcolor{bleu_cite}{\ref{hiceroms}}:
 \bigskip
 
 \begin{itemize}
-    \item \textbf{ICE\_MODEL}: define o modelo de gelo marinho;
+    \item \textbf{ICE\_MODEL}: defines the sea ice model;
     \item \textbf{ANA\_ICE}: define condições iniciais analíticas para o gelo marinho;
-    \item \textbf{ICE\_THERMO}: define a termodinâmica do gelo;  
-    \item \textbf{ICE\_MK}: define a termodinâmica de gelo proposta por \textcite{Mellor1989}. Atualmente é a única opção disponível;
-    \item \textbf{ICE\_MOMENTUM}: define a componente de \textit{momentum} do gelo;
-    \item \textbf{ICE\_MOM\_BULK}: defina para computar o estresse entre água e gelo;
-    \item \textbf{ICE\_EVP}: define a reologia proposta por \textcite{Hunke1997} e \textcite{Hunke2001};
-    \item \textbf{ICE\_STRENGTH\_QUAD}: defina para ativar a força quadrática do gelo proposta por \textcite{Overland1988};
-    \item \textbf{ICE\_ADVECT}: defina para ativar a advecão dos traçadores do gelo.
-    \item \textbf{ICE\_SMOLAR}: defina para usar \textit{MPDATA} como traçador do gelo. Atualmente é a única opção disponível;   
-    \item \textbf{ICE\_UPWIND}: defina para adveção do vento;
-    \item \textbf{ICE\_BULK\_FLUXES}: defina para computar a parametrização de fluxos de calor Bulk para o gelo;
-    \item \textbf{ICE\_DIAGS}: define o diagnóstico do gelo marinho.
+    \item \textbf{ICE\_THERMO}: defined the ice thermodynamics;
+    \item \textbf{ICE\_MK}: defined the \textcite{Mellor1989} ice thermodynamics. Currently, is the only choice;
+    \item \textbf{ICE\_MOMENTUM}: defines the momentum component of the ice;
+    \item \textbf{ICE\_MOM\_BULK}: defines the alternate ice-water stress computation;
+    \item \textbf{ICE\_EVP}: defines the elastic-viscous-plastic rheology from \textcite{Hunke1997} and \textcite{Hunke2001};
+    \item \textbf{ICE\_QUAD\_STRENGTH}: defines the quadratic ice strength from \textcite{Overland1988};
+    \item \textbf{ICE\_ADVECT}: defines the advection of ice tracers;
+    \item \textbf{ICE\_SMOLAR}: defines the MPDATA use for ice tracers. Currently, it is the only option;
+    \item \textbf{ICE\_UPWIND}: defines the upwind advection;
+    \item \textbf{ICE\_BULK\_FLUXES}: define the ice part of bulk flux computation;
+    \item \textbf{ICE\_DIAGS}: defines the diagnosis of sea ice;
+    \item \textbf{ICE\_SHOREFAST} : define the simple shorefast-ice algorithm from \textcite{Budgell2005}.
+    \item \textbf{ICE\_I\_O}: define to allow light into the ice as heat;
+    \item \textbf{ICE\_CONVSNOW}: defines the conversion of flooded snow to ice.
 \end{itemize}
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.3\textwidth]{hiceroms.png}
-    \caption{Captura de tela do arquivo \textit{.h} do ROMS.}
+    \caption{Screenshot of ROMS \textit{.h} file}
     \label{hiceroms}
 \end{figure}
 \bigskip
 
-\noindent Para ter mais informações sobre o modelo, recomenda-se a leitura de \textcite{hedstrom2018}.
+\noindent For more information about the model, it is recommended to read \textcite{hedstrom2018}.
 \bigskip
 
-\noindent Obtenha o arquivo \textit{.in} para o modelo de gelo marinho. Copie o arquivo \textit{ice.in} dentro do 
-          repositório do Kerana e adicione ao seu projeto.
+\noindent Get the \textit{.in} file for the sea ice model. Copy the file \textit{ice.in} into the Kerana repository and add it to your project.
 \bigskip
 
 \begin{bashcode}
-    /home/nome.sobrenome/repositorio/ICE_scripts
+    /home/name.surname/repositorio/ICE_scripts
 \end{bashcode}
 \bigskip
     
-\noindent Modifique o arquivo \textit{.in} do ROMS, apontando o diretório do arquivo \textit{ice.in} do 
-          modelo de gelo marinho. Procure pela variável \textit{IPARNAM} e adicione o diretório:
+\noindent Modify the ROMS \textit{.in} file, pointing to the \textit{ice.in} into the variable \textit{IPARNAM}:
 \bigskip
 
 \begin{bashcode}
 nedit ocean.in
 IPARNAM =  ice.in
 \end{bashcode}
-

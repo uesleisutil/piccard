@@ -40,7 +40,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.8}Compiling the MCT}{19}{section.2.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}CCompiling the Sandy test case}{21}{section.2.9}% 
+\contentsline {section}{\numberline {2.9}Compiling the Sandy test case}{21}{section.2.9}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.9.1}Projects folder}{22}{subsection.2.9.1}% 
 \defcounter {refsection}{0}\relax 
@@ -50,29 +50,71 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.10}Simulating the Sandy Test Case}{27}{section.2.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Caracter\IeC {\'\i }sticas do COAWST}{29}{chapter.3}% 
+\contentsline {chapter}{\numberline {3}COAWST features}{29}{chapter.3}% 
 \ttl@stoptoc {default@2}
 \ttl@starttoc {default@3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Arquivos estruturais dos modelos}{29}{section.3.1}% 
+\contentsline {section}{\numberline {3.1}Structural model files}{29}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Modificando o n\IeC {\'u}mero de processadores}{30}{section.3.2}% 
+\contentsline {section}{\numberline {3.2}Modifying the number of processors}{30}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}No ROMS}{30}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.1}ROMS}{30}{subsection.3.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}No WRF}{30}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.2}WRF}{30}{subsection.3.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}No SWAN}{30}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.3}SWAN}{30}{subsection.3.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}No COAWST}{30}{subsection.3.2.4}% 
+\contentsline {subsection}{\numberline {3.2.4}COAWST}{30}{subsection.3.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Modificando o intervalo de tempo do acoplamento entre os modelos}{31}{section.3.3}% 
+\contentsline {section}{\numberline {3.3}Modifying the coupling time interval between models}{31}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}\relax \fontsize {12}{14}\selectfont {Papers of the Ocean and Atmospheric Studies Laboratory}}{33}{chapter.4}% 
+\contentsline {chapter}{\numberline {4}Construindo o seu projeto no WRF}{33}{chapter.4}% 
 \ttl@stoptoc {default@3}
 \ttl@starttoc {default@4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acknowledgments}{41}{chapter*.17}% 
+\contentsline {section}{\numberline {4.1}Compilando o WRF no Kerana}{33}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{43}{chapter*.18}% 
+\contentsline {section}{\numberline {4.2}WRF Preprocessing System (WPS)}{34}{section.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Download do WPS}{35}{subsection.4.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Compilando o WPS no Kerana}{35}{subsection.4.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Construindo o seu projeto utilizando o CFSR}{37}{section.4.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}\textit {geogrid}}{39}{subsection.4.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Utilizando o NCL para plotar o dom\IeC {\'\i }nio da grade}{41}{subsection.4.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}\textit {ungrib}}{43}{subsection.4.3.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.4}\textit {metgrid}}{45}{subsection.4.3.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.5}\textit {real}}{45}{subsection.4.3.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Usando o WRF}{47}{section.4.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Building the SWAN}{49}{chapter.5}% 
+\ttl@stoptoc {default@4}
+\ttl@starttoc {default@5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Building the Budgell's Sea Ice Model}{51}{chapter.6}% 
+\ttl@stoptoc {default@5}
+\ttl@starttoc {default@6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Building the weights between grids with SCRIP}{53}{chapter.7}% 
+\ttl@stoptoc {default@6}
+\ttl@starttoc {default@7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Building the weights}{53}{section.7.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Executing your project}{55}{section.7.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}\relax \fontsize {12}{14}\selectfont {Papers of the Ocean and Atmospheric Studies Laboratory}}{57}{chapter.8}% 
+\ttl@stoptoc {default@7}
+\ttl@starttoc {default@8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acknowledgments}{65}{chapter*.34}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{67}{chapter*.35}% 
 \contentsfinish 

@@ -1,1 +1,2 @@
-aprun -n 36 coawstM ./coupling.in 1> log.out 2> log.err
+cd /home/nome.sobrenome/repositorio/WPS_scripts
+mv qsub_geogrid.sh qsub_ungrib.sh qsub_metgrid.sh /home/nome.sobrenome/COAWST/WPS

@@ -263,6 +263,34 @@
       \verb 10.1016/j.pocean.2014.03.009
       \endverb
     \endentry
+    \entry{duda2006}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=2c04e4385af1db014f2d4f144da0f21e}{%
+           family={Duda},
+           familyi={D\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {National Center for Atmospheric Research}%
+      }
+      \strng{namehash}{2c04e4385af1db014f2d4f144da0f21e}
+      \strng{fullhash}{2c04e4385af1db014f2d4f144da0f21e}
+      \strng{bibnamehash}{2c04e4385af1db014f2d4f144da0f21e}
+      \strng{authorbibnamehash}{2c04e4385af1db014f2d4f144da0f21e}
+      \strng{authornamehash}{2c04e4385af1db014f2d4f144da0f21e}
+      \strng{authorfullhash}{2c04e4385af1db014f2d4f144da0f21e}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{2006 WRF-ARW Summer tutorial}
+      \field{title}{The WRF Preprocessing System}
+      \field{year}{2008}
+    \endentry
     \entry{Endo2019}{article}{}
       \name{author}{4}{}{%
         {{uniquename=0,uniquepart=base,hash=4e0d3fb630e434edaae438122d9493ae}{%
@@ -996,6 +1024,40 @@
       \verb 10.1357/002224017821836770
       \endverb
     \endentry
+    \entry{Overland1988}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=4bcd6fa6f21a1ec138e21db2d95fa0b8}{%
+           family={Overland},
+           familyi={O\bibinitperiod},
+           given={J.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=83f193c7489eb4d03ca41066ebccc7f8}{%
+           family={Pease},
+           familyi={P\bibinitperiod},
+           given={C.\bibnamedelimi H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{af7a6fa53ea1c273c818548d2319a21e}
+      \strng{fullhash}{af7a6fa53ea1c273c818548d2319a21e}
+      \strng{bibnamehash}{af7a6fa53ea1c273c818548d2319a21e}
+      \strng{authorbibnamehash}{af7a6fa53ea1c273c818548d2319a21e}
+      \strng{authornamehash}{af7a6fa53ea1c273c818548d2319a21e}
+      \strng{authorfullhash}{af7a6fa53ea1c273c818548d2319a21e}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Geophysical Research}
+      \field{title}{Modeling ice dynamics of coastal seas.}
+      \field{volume}{96}
+      \field{year}{1988}
+      \field{pages}{619\bibrangedash 637}
+      \range{pages}{19}
+    \endentry
     \entry{Parise2015}{article}{}
       \name{author}{4}{}{%
         {{uniquename=0,uniquepart=base,hash=daa75a34d4eaae59721ba25bebb67292}{%
@@ -1211,6 +1273,349 @@
       \field{year}{2018}
       \field{pages}{1}
       \range{pages}{1}
+    \endentry
+    \entry{Saha2006}{misc}{}
+      \name{author}{52}{}{%
+        {{uniquename=0,uniquepart=base,hash=2389b437598d0ccb2b3c0cffdb2c1fc5}{%
+           family={{Saha}},
+           familyi={S\bibinitperiod},
+           given={Suranjana},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1fcda93ebf5568778d198cfa2a3b0a8b}{%
+           family={{Moorthi}},
+           familyi={M\bibinitperiod},
+           given={Shrinivas},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0ff071e7a304c22c68d04da0df2996d2}{%
+           family={{Pan}},
+           familyi={P\bibinitperiod},
+           given={Hua-Lu},
+           giveni={H\bibinithyphendelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5f91ea73fe0372aa73bc57c9e46ded8e}{%
+           family={{Wu}},
+           familyi={W\bibinitperiod},
+           given={Xingren},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fcd6114a30fda9801eef65b9d374f56b}{%
+           family={{Wang}},
+           familyi={W\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a96cbefed991f7dad65b788aa81461e3}{%
+           family={{Nadiga}},
+           familyi={N\bibinitperiod},
+           given={Sudhir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=711d61f425081f8d81226165a3759fb3}{%
+           family={{Tripp}},
+           familyi={T\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f031d3f8f2f3600613c32222eb177a0c}{%
+           family={{Kistler}},
+           familyi={K\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=72aaf558ba1887fac373c7ea6805c6b3}{%
+           family={{Woollen}},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d55b04cd35364c4d381cb1e653ead533}{%
+           family={{Behringer}},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b2128d98a4c97de7db9f51f9b5042c97}{%
+           family={{Liu}},
+           familyi={L\bibinitperiod},
+           given={Haixia},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=dcc9b888d68662d5653f4ad27b6e4b50}{%
+           family={{Stokes}},
+           familyi={S\bibinitperiod},
+           given={Diane},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=504c7b7387d1ce34827d72d6aa4845d7}{%
+           family={{Grumbine}},
+           familyi={G\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8d0b8ed597fd8937dfe71aa28b09e945}{%
+           family={{Gayno}},
+           familyi={G\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2f3ea981fa5a715a69118b48e576a9f5}{%
+           family={{Wang}},
+           familyi={W\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=da27837709da2eaf8519eca06c6c1c8f}{%
+           family={{Hou}},
+           familyi={H\bibinitperiod},
+           given={Yu-Tai},
+           giveni={Y\bibinithyphendelim T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=403310dba34842a06bde710ab6586576}{%
+           family={{Chuang}},
+           familyi={C\bibinitperiod},
+           given={Hui-Ya},
+           giveni={H\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c75c1dd624cf0f89a294cb439c3c488b}{%
+           family={{Juang}},
+           familyi={J\bibinitperiod},
+           given={Hann-Ming\bibnamedelima H.},
+           giveni={H\bibinithyphendelim M\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a11093590f4f94537a0cc76d9a7f6709}{%
+           family={{Sela}},
+           familyi={S\bibinitperiod},
+           given={Joe},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4cdc1753e811ecb477170758431d0245}{%
+           family={{Iredell}},
+           familyi={I\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1362d7c0945d40ef620f2cca88e9977b}{%
+           family={{Treadon}},
+           familyi={T\bibinitperiod},
+           given={Russ},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f87c57702b620e374226a088c9f2f5e4}{%
+           family={{Kleist}},
+           familyi={K\bibinitperiod},
+           given={Daryl},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fa5acac06c13135008d195dc8f050b80}{%
+           family={{Van Delst}},
+           familyi={V\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=312af26207ea916102fe04181198e50b}{%
+           family={{Keyser}},
+           familyi={K\bibinitperiod},
+           given={Dennis},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8750af9a009c938e98a162e579d41585}{%
+           family={{Derber}},
+           familyi={D\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ebe9b2ac50ca01aac2ffbf4911f4676b}{%
+           family={{Ek}},
+           familyi={E\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fc7254266d720f57f1141f43e234b58a}{%
+           family={{Meng}},
+           familyi={M\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ce4802dd85a4f574b11dfc5086a8c638}{%
+           family={{Wei}},
+           familyi={W\bibinitperiod},
+           given={Helin},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=986cc1dba5655a70f8745082e8efadbe}{%
+           family={{Yang}},
+           familyi={Y\bibinitperiod},
+           given={Rongqian},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=51b1cfbfe5e1da847bf1693096a8c425}{%
+           family={{Lord}},
+           familyi={L\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=835db8c07b08c4a209eb1e09a8597402}{%
+           family={{van den Dool}},
+           familyi={v\bibinitperiod},
+           given={Huug},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3aecf2a0d37debb8b53de0473eeb718b}{%
+           family={{Kumar}},
+           familyi={K\bibinitperiod},
+           given={Arun},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4558712a329f1eba40cba6f462b27acc}{%
+           family={{Wang}},
+           familyi={W\bibinitperiod},
+           given={Wanqiu},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=21694c0d94bb54eb286c902425f1188c}{%
+           family={{Long}},
+           familyi={L\bibinitperiod},
+           given={Craig},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=48ae821aeccfb067b783757359179444}{%
+           family={{Chelliah}},
+           familyi={C\bibinitperiod},
+           given={Muthuvel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a308b02c6bd71dcfee26fb907c5adfb4}{%
+           family={{Xue}},
+           familyi={X\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3da157c812f2c481cd3432bfcebe3534}{%
+           family={{Huang}},
+           familyi={H\bibinitperiod},
+           given={Boyin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6adae6efb8ebb182b1e21e8518684ee6}{%
+           family={{Schemm}},
+           familyi={S\bibinitperiod},
+           given={Jae-Kyung},
+           giveni={J\bibinithyphendelim K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=baffdfe71da3d2196f5c5d6dda6d58c0}{%
+           family={{Ebisuzaki}},
+           familyi={E\bibinitperiod},
+           given={Wesley},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=acc67e2abb0a6d0149fa3bac6be35c6f}{%
+           family={{Lin}},
+           familyi={L\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=99fa9b54ce6c85a7473ce8943819520c}{%
+           family={{Xie}},
+           familyi={X\bibinitperiod},
+           given={Pingping},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2a15276cbfb36ae3fee7c1062d93a84a}{%
+           family={{Chen}},
+           familyi={C\bibinitperiod},
+           given={Mingyue},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=750b02a47bd54be821c15ae3baabc120}{%
+           family={{Zhou}},
+           familyi={Z\bibinitperiod},
+           given={Shuntai},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0495369f6da0a8311d0f8b08cd321b66}{%
+           family={{Higgins}},
+           familyi={H\bibinitperiod},
+           given={Wayne},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=99fc0473557d1327c4dfd2aa49532604}{%
+           family={{Zou}},
+           familyi={Z\bibinitperiod},
+           given={Cheng-Zhi},
+           giveni={C\bibinithyphendelim Z\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6a63717ff266d0c3bca599d5ba4aa4d3}{%
+           family={{Liu}},
+           familyi={L\bibinitperiod},
+           given={Quanhua},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7608dbf6c54dadf166f77046db3c64a6}{%
+           family={{Chen}},
+           familyi={C\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bc341d60cfd591fba40fd652ec920f0b}{%
+           family={{Han}},
+           familyi={H\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=317fc12699bc319381baba1134a79779}{%
+           family={{Cucurull}},
+           familyi={C\bibinitperiod},
+           given={Lidia},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ce22651c768f1dcd9a33b20be294ca5a}{%
+           family={{Reynolds}},
+           familyi={R\bibinitperiod},
+           given={Richard\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7b99bf58f3c1e8fbdcb03a52493dd1ff}{%
+           family={{Rutledge}},
+           familyi={R\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=02dc2a5dc19812859b130eb377887f68}{%
+           family={{Goldberg}},
+           familyi={G\bibinitperiod},
+           given={Mitch},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boulder, CO}%
+      }
+      \list{publisher}{2}{%
+        {Research Data Archive at the National Center for Atmospheric Research, Computational}%
+        {Information Systems Laboratory}%
+      }
+      \strng{namehash}{b6c37fb1b18886cb12c1834b296f9d66}
+      \strng{fullhash}{42ccd4ccb29739e2d77a021e891fa3b1}
+      \strng{bibnamehash}{42ccd4ccb29739e2d77a021e891fa3b1}
+      \strng{authorbibnamehash}{42ccd4ccb29739e2d77a021e891fa3b1}
+      \strng{authornamehash}{b6c37fb1b18886cb12c1834b296f9d66}
+      \strng{authorfullhash}{42ccd4ccb29739e2d77a021e891fa3b1}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{NCEP Climate Forecast System Reanalysis (CFSR) 6-hourly Products, January 1979 to December 2010}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb https://doi.org/10.5065/D69K487J
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.5065/D69K487J
+      \endverb
     \endentry
     \entry{Shchepetkin2005}{article}{}
       \name{author}{2}{}{%
@@ -1475,6 +1880,35 @@
       \range{pages}{11}
       \verb{doi}
       \verb 10.11137/2019_1_525_535
+      \endverb
+    \endentry
+    \entry{Ncl2017}{software}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=f9d42537271e17846762aa4de308f2fc}{%
+           family={{UCAR}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{f9d42537271e17846762aa4de308f2fc}
+      \strng{fullhash}{f9d42537271e17846762aa4de308f2fc}
+      \strng{bibnamehash}{f9d42537271e17846762aa4de308f2fc}
+      \strng{authorbibnamehash}{f9d42537271e17846762aa4de308f2fc}
+      \strng{authornamehash}{f9d42537271e17846762aa4de308f2fc}
+      \strng{authorfullhash}{f9d42537271e17846762aa4de308f2fc}
+      \field{sortinit}{U}
+      \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The NCAR Command Language}
+      \field{version}{6.4.0}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.5065/D6WD3XH5
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.5065/D6WD3XH5
       \endverb
     \endentry
     \entry{Warner2010}{article}{}

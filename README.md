@@ -35,9 +35,6 @@ Second edition notes:
 Submit a comment, suggestions or modifications and improvements you would like to see. I would love to see this project go much further, so your
 email will be very useful.
 
-<h2>License</h2>
-This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-
 <h2>To cite the third version</h2>
 Under construction.
 
@@ -46,3 +43,6 @@ SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST - 2ª Ediç
 
 <h2>To cite the first version</h2>
 SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST. São José dos Campos: INPE, 2018. 86 p. IBI: 8JMKD3MGP3W34R/3RQSQ2L. Avaliable at: ttp://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L. 
+
+<h2>License</h2>
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.

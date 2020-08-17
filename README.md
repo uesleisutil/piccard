@@ -23,7 +23,8 @@ Second edition notes:
 * added section for Budgell's Sea Ice Model;
 
 <h2>COAWST configuration guide, first edition.</h2>
-**The first edition project is in the V1 folder.**
+
+**The first edition project is in the V2 folder.**
   
 <h2>Contact</h2>
 <ul>

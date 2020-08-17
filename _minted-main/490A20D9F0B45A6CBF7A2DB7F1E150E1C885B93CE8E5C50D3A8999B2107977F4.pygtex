@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-WRF\PYGZus{}DIR  = /scratch/nome.sobrenome/WRF
-SFC      = ftn
-SCC      = gcc
-DM\PYGZus{}CC    = gcc
-DM\PYGZus{}FC    = ftn
-FFLAGS   =
-F77FLAGS =
-\end{Verbatim}

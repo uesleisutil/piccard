@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+mkdir lib
+cd lib
+mkdir python2.7
+cd python2.7
+mkdir site\PYGZhy{}packages
+\end{Verbatim}

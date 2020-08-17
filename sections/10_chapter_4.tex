@@ -1,29 +1,30 @@
 % !TEX root = /media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex
 \chapterimage{header.jpg}
-\chapter{Construindo o seu projeto no WRF}\index{Construindo o WRF}
+\chapter{Building the WRF}\index{Construindo o WRF}
 \bigskip 
-\noindent Agora que aprendemos como simular um caso teste e mudar a taxa de acoplamento e o número de processadores, iniciaremos o processo de criação de uma grade especifica e das condições iniciais e de contorno (lateral) do WRF usando o NCEP Climate Forecast System Reanalysis (CFSR; \cite{Saha2006}).
+\noindent Now that we have learned how to simulate a test case and change the coupling rate and number of processors, we will begin 
+the process of creating a specific grid and the initial and boundary conditions for the WRF using the NCEP Climate Forecast System Reanalysis (CFSR; \cite{Saha2006}).
 \bigskip
 
-\section{Compilando o WRF no Kerana}
+\section{Compiling WRF in Kerana cluster}
 \bigskip
-\noindent É recomendado copiar a pasta do WRF que está dentro do COAWST para a sua área de trabalho, a fim de evitar conflitos nas simulações, caso opte por integrar o WRF sem acoplamento e para utilizar o WRF Preprocessing System (WPS). Portanto:
-\bigskip
+\noindent It is recommended to copy the WRF folder inside COAWST to your work root area, in order to avoid conflicts
+if you choose to use the WRF without coupling to the COAWST model. Therefore:\bigskip
 
 \begin{bashcode}
-cd /scratch/nome.sobrenome/COAWST
-cp -r WRF /scratch/nome.sobrenome
+cd /scratch/name.surname/COAWST
+cp -r WRF /scratch/nome.dsobrenome
 \end{bashcode}
 \bigskip
 
-\noindent Ative os módulos do arquivo \textit{setup\_pgi.sh} com o comando:
+\noindent Activate the modules in the \textit{setup\_pgi.sh} file with the command:
 \bigskip
 \begin{bashcode}
 source setup_pgi.sh
 \end{bashcode}
 \bigskip
 
-\noindent Entre na pasta cópia do WRF (\textit{/home/nome.sobrenome/WRF}) e execute:
+\noindent Enter the copy folder of the WRF (\textit{/home/name.surname/WRF}) and run:
 \bigskip
 
 \begin{bashcode}
@@ -41,15 +42,16 @@ source setup_pgi.sh
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-O próximo passo pode ser automatizado. Caso opte pela compilação automatizada, veja a Seção \textcolor{bleu_cite}{\ref{autowrf}}.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+The next step can be automated. If you choose the automated compilation, see Section \textcolor{bleu_cite}{\ref{autowrf}}.
 \end{tcolorbox}
 \bigskip
 
-\noindent Caso tenha automatizado o processo de compilação, conforme apresentado na Seção \textcolor{bleu_cite}{\ref{autowrf}}, serão gerados os arquivos \textit{real.exe}, \textit{wrf.exe}, \textit{tc.exe} e \textit{ndown.exe}. Caso escolha a opção manual no cluster Kerana, procure pela opção \textit{Cray XC CLE/Linux x86\_64, Cray compiler with gcc  (dmpar)}.
+\noindent If you have automated the compilation process, as shown in Section \textcolor{bleu_cite}{\ref{autowrf}}, the files \textit{real.exe}, \textit {wrf.exe},
+\textit{tc.exe} and \textit{ndown.exe} will be created. If you choose the manual option on the Kerana cluster, look down for the option \textit{Cray XC CLE / Linux x86 \_64, Cray compiler with gcc (dmpar)}.
 \bigskip
 
-\noindent Na opção seguinte, aparecerá a seguinte mensagem:
+\noindent In the next option, the following message will appear:
 \bigskip
 
 \begin{bashcode}
@@ -57,7 +59,7 @@ Compile for nesting? (1=basic, 2=preset moves, 3=vortex following) [default 1]:
 \end{bashcode}
 \bigskip
 
-\noindent Escolha a opção 1.
+\noindent Choose option 1.
 \bigskip
 
 \begin{tcolorbox}[enhanced,
@@ -70,12 +72,12 @@ Compile for nesting? (1=basic, 2=preset moves, 3=vortex following) [default 1]:
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Fim do processo automatizado de compilação.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+End of the automated build process.
 \end{tcolorbox}
 \bigskip
 
-\noindent Digite:
+\noindent Type:
 \bigskip
 
 \begin{bashcode}
@@ -83,82 +85,85 @@ compile em_real
 \end{bashcode}
 \bigskip
 
-\noindent Será gerado o \textit{real.exe}, \textit{wrf.exe}, \textit{tc.exe} e \textit{ndown.exe} no diretório \textit{/home/nome.sobrenome/WRF/test/em\_real}.
+\noindent The \textit{real.exe}, \textit{wrf.exe}, \textit{tc.exe} and \textit{ndown.exe} will be generated in the \textit{/home/name.surname/WRF/test/em\_real}.
 \bigskip
 
 \section{WRF Preprocessing System (WPS)}\label{wpssecao}
 \bigskip
 
-\noindent Para construir as condições iniciais e de contorno do WRF, usaremos WRF Preprocessing System (WPS). O WPS é um conjunto de três programas que preparam os dados de entrada para as simulações. Ele é composto pelos seguintes módulos:
+\noindent To build the initial and boundary conditions of the WRF, we will use WRF Preprocessing System (WPS). The WPS is a set of three programs that 
+prepare the input data for the simulations. It consists of the following modules:
 \bigskip
 
 \begin{itemize}
-\item \textbf{\textit{geogrid}}: Define o domínio do modelo e interpola os dados geográficos para a grade;
-\item \textbf{\textit{ungrib}}: Extrai os campos meteorológicos de arquivos \textit{.grib};
-\item \textbf\textit{{metgrid}}: Interpola os campos meteorológicos extraídos pelo ungrib para a grade do modelo definida pelo metrid.
+\item \textbf{\textit{geogrid}}: Defines the model domain and interpolates the geographic data for the grid;
+\item \textbf{\textit{ungrib}}: Extract weather fields from \textit{.grib} files;
+\item \textbf{\textit{metgrid}}: Interpolates the weather fields extracted by ungrib to the model grid defined by metrid.
 \end{itemize}
 \bigskip
 
-\noindent O WPS é controlado pelo arquivo de texto \textit{namelist.wps} e está esquematizado na Figura \textcolor{bleu_cite}{\ref{wpsdetalha}}.
+\noindent WPS is controlled by the \textit{namelist.wps} file and is outlined in Figure \textcolor{bleu_cite}{\ref{wpsdetalha}}.
 \bigskip
 
-\noindent Para mais informações sobre o WPS, acesse:  \textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}{\textit{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}}}.
+\noindent For more information about WPS, visit: \textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}{\textit{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}}}.
 \bigskip
 
-\noindent Após criar estes arquivos, é utilizado o \textit{real} para interpolar os campos meteorológicos para os níveis \texteta.
+\noindent After creating these files, the \textit{real.exe} is used to interpolate the meteorological fields to \texteta level.
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.65\textwidth]{image002.png}
-    \caption{Construção de uma simulação \textit{real} usando o WPS. \newline Fonte: \textcite{duda2006}}.
+    \caption{WPS schemeatic. \newline Author: \textcite{duda2006}}.
     \label{wpsdetalha}
 \end{figure}
 \bigskip
 
-\subsection{Download do WPS}
+\subsection{Downloading WPS}
 \bigskip
 
-\noindent O WPS está incluído no pacote do COAWST, entretanto o \textit{download} do WPS, pode ser feito na página do WRF (\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}{\textit{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}}}). Baixe-o e adicione o arquivo \textit{tar.gz} no cluster (de preferência dentro da pasta do COAWST) com o \textit{sftp}:
+\noindent WPS is included in the COAWST package, however WPS can be downloaded by visiting 
+\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}{\textit{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}}}). 
+Download it and add the  \textit{tar.gz} file inside the cluster (preferably within the COAWST folder)) with \textit{sftp}:
 \bigskip
 
 \begin{bashcode}
-sftp -P2000 nome.sobrenome@acesso-hpc.cptec.inpe.br
+sftp -P2000 name.surname@acesso-hpc.cptec.inpe.br
 cd COAWST
 put WPSV3.9.0.1.tar.gz
 \end{bashcode}
 \bigskip
 
-\noindent Para descompactar, saia do \textit{sftp}, entre no cluster e digite:
+\noindent To unzip, use \textit{ssh} to enter the cluster and type:
 \bigskip
 
 \begin{bashcode}
-ssh -Y nome.sobrenome@acesso-hpc.cptec.inpe.br -p 2000
+ssh -Y name.surname@acesso-hpc.cptec.inpe.br -p 2000
 cd COAWST
 tar -xvzf WPSV3.9.0.1.tar.gz
 \end{bashcode}
 \bigskip
 
-\subsection{Compilando o WPS no Kerana}\label{wpsker}
+\subsection{Compiling WPS in the Kerana cluster}\label{wpsker}
 \bigskip
 
 \begin{tcolorbox}[enhanced,
-  grow to left by=0cm,%   equivalent to negative mdframed 'leftmargin'
-  grow to right by=0cm,%  equivalent to negativ mdframed 'rightmargin'
-  enlarge top by=0cm,%     equivalent to mdframed 'skipabove'
-  enlarge bottom by=0cm,%  equivalent to mdframed 'skipbeow'
-  tcbox raise base,
-  boxrule=1.0pt,
-  left=18mm,
-  colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Como dito anteriormente, na Seção \textcolor{bleu_cite}{\ref{wpsker}}, o WPS está incluído com o COAWST. Sugere-se usar esta versão para gerar os arquivos de entrada do WRF.
+    grow to left by=0cm,%   equivalent to negative mdframed 'leftmargin'
+    grow to right by=0cm,%  equivalent to negative mdframed 'rightmargin'
+    enlarge top by=0cm,%     equivalent to mdframed 'skipabove'
+    enlarge bottom by=0cm,%  equivalent to mdframed 'skipbelow'
+    tcbox raise base,
+    boxrule=1.0pt,
+    left=18mm,
+    colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
+    overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+      As stated earlier in Section \textcolor{bleu_cite}{\ref{wpsker}}, WPS is included with COAWST. We recommend o use this version.
 \end{tcolorbox}
 \bigskip
 
-\noindent Para compilar o WPS e gerar os executáveis do programa, é necessário ativar as bibliotecas com o \textit{setup\_pgi.sh}, 
-          que se encontram dentro do diretório \textit{/home/nome.sobrenome/repositorio}. Ative-os com o comando:
+\noindent To compile the WPS and generate the executables, it is necessary to activate the libraries with \textit{setup\_pgi.sh},
+found in the directory \textit{/home/name.surname/repository}. Activate them with the command:
 \bigskip
 
 \begin{bashcode}
@@ -166,7 +171,7 @@ source setup_pgi.sh
 \end{bashcode}
 \bigskip
 
-\noindent Dentro da pasta do WPS, digite o seguinte comando:
+\noindent Inside the WPS folder, enter the following command:
 \bigskip
 
 \begin{bashcode}
@@ -174,10 +179,12 @@ source setup_pgi.sh
 \end{bashcode}
 \bigskip
 
-\noindent Será perguntado qual a máquina e o compilador que será utilizado. Escolha a opção \textit{Cray XE/XC CLE/Linux x86\_64, PGI compiler (serial)}. Neste caso, será gerada uma mensagem que o Fortran não é compatível com o C e com o NetCDF, porém ignore.
+\noindent You will be asked which machine and compiler will be used. Choose the option 
+\textit{Cray XE / XC CLE / Linux x86 \_64, PGI compiler (serial)}. In this case, a message will be generated that Fortran is not compatible 
+with C and NetCDF, but ignore it.
 \bigskip
 
-\noindent Abra o arquivo \textit{configure.wps}:
+\noindent Open \textit{configure.wps} file:
 \bigskip
 
 \begin{bashcode}
@@ -185,7 +192,7 @@ nedit configure.wps
 \end{bashcode}
 \bigskip
 
-\noindent Modifique:
+\noindent Modify:
 \bigskip
 
 \begin{bashcode}
@@ -200,11 +207,11 @@ F77FLAGS = -N255 -f fixed -h byteswapio
 \end{bashcode}
 \bigskip
 
-\noindent Por:
+\noindent By:
 \bigskip
 
 \begin{bashcode}
-WRF_DIR  = /scratch/nome.sobrenome/WRF
+WRF_DIR  = /scratch/name.surname/WRF
 SFC      = ftn
 SCC      = gcc
 DM_CC    = gcc
@@ -214,7 +221,7 @@ F77FLAGS =
 \end{bashcode}
 \bigskip
 
-\noindent Salve as modificações e inicie a compilação com o comando:
+\noindent Save the changes and start the compilation with the command:
 \bigskip
 
 \begin{bashcode}
@@ -222,7 +229,8 @@ F77FLAGS =
 \end{bashcode}
 \bigskip
 
-\noindent Deverá gerar os executáveis \textit{metgrid.exe} e \textit{geogrid.exe}. Porém, é possível que o \textit{ungrib.exe} não seja gerado. Neste caso, repita:
+\noindent You should generate the executables \textit{metgrid.exe} and \textit{geogrid.exe}. However, it is possible that \textit{ungrib.exe} 
+is not generated. In this case, repeat:
 \bigskip
 
 \begin{bashcode}
@@ -230,10 +238,10 @@ F77FLAGS =
 \end{bashcode}
 \bigskip
 
-\noindent Escolha a opção \textit{Linux x86\_64, PGI compiler (dmpar)}.
+\noindent Choose the option \textit{Linux x86\_64, PGI compiler (dmpar)}.
 \bigskip
 
-\noindent Abra novamente o \textit{configure.wps} e modifique:
+\noindent Open \textit{configure.wps} file again, modify:
 \bigskip
 
 \begin{bashcode}
@@ -245,11 +253,11 @@ DMCC    = mpicc
 \end{bashcode}
 \bigskip
 
-\noindent Por:
+\noindent By:
 \bigskip
 
 \begin{bashcode}
-WRF_DIR = /home/nome.sobrenome/WRF
+WRF_DIR = /home/name.surname/WRF
 SFC     = ftn
 SCC     = gcc
 DMFC    = ftn
@@ -257,89 +265,91 @@ DMCC    = gcc
 \end{bashcode}
 \bigskip
 
-\noindent O instalador gerará somente o \textit{ungrib.exe}
+\noindent The installer will generate only the \textit{ungrib.exe}.
 
-\section{Construindo o seu projeto utilizando o CFSR}
+\section{Building your project using CFSR}
 \bigskip
 
-\noindent Uma opção de banco de dados para alimentar as simulações do modelo regional atmosférico é utilizar os dados do 
-          NCEP Climate Forecast System Reanalysis (CFSR) (\textcolor{bleu_cite}{\href{http://rda.ucar.edu/datasets/ds093.0}{\textit{http://rda.ucar.edu/datasets/ds093.0}}}). 
-          Esse banco de dados é uma reanálise, de janeiro de 1979 a dezembro de 2010, onde um modelo acoplado (atmosfera-oceano-superfície terrestre e gelo marinho)
-          assimila dados orbitais, de cruzeiros de pesquisa, boias oceanográficas e estações meteorológicas. Esta base de dados 
-          possui resolução vertical com 38 níveis, que se estendem desde a superfície até 1 hPa, com resolução temporal de 6 horas
-          e horizontal de 0,5\degree para níveis de pressão e de 0,312\degree para variáveis na superfície.
+\noindent A database as option to use for simulations is the NCEP Climate Forecast System Reanalysis (CFSR)
+ (\textcolor{bleu_cite}{\href{http://rda.ucar.edu/datasets/ds093.0}{\textit{http://rda.ucar.edu/datasets/ds093.0}}}).
+This database is a reanalysis, from January 1979 to December 2010, where a coupled model (atmosphere-ocean-land surface and sea ice)
+assimilates orbital data, research cruises, oceanographic buoys and weather stations. This database
+has vertical resolution with 38 levels, extending from the surface to 1 hPa, with a 6-hour temporal resolution
+and horizontal of 0.5\degree for pressure levels data and 0.312\degree for variables on the surface.
 \bigskip
 
-\noindent Para acessar aos dados é necessário se cadastrar no site. Após feito isto, entre no link do banco de dados, 
-          clique na guia \textit{Data Acess} e clique em \textit{Get a subset}.
+\noindent To access the data it is necessary to register on the site. After doing this, enter the database link,
+click on the\textit{Data Acess} and then, \textit{Get a subset}.
 \bigskip
 
-\noindent Na próxima página, como observado na Figura \textcolor{bleu_cite}{\ref{detalhacfsr}}, escolha as datas de ínicio 
-          e fim dos dados e selecione em \textit{Parameter presets} os três parâmetros do WRF (\textit{Pressure}, 
-          \textit{Surface} e \textit{SST}). Só poderá ser baixado um parâmetro por vez.
+\noindent On the next page, as seen in Figure \textcolor{bleu_cite}{\ref{detalhacfsr}}, write the temporal selection,
+and select in \textit {Parameter presets} one of the three parameters of the WRF presets: (\textit{Pressure},
+\textit{Surface} and \textit{SST}). 
+\bigskip
+
+\begin{tcolorbox}[enhanced,
+    grow to left by=0cm,%   equivalent to negative mdframed 'leftmargin'
+    grow to right by=0cm,%  equivalent to negative mdframed 'rightmargin'
+    enlarge top by=0cm,%     equivalent to mdframed 'skipabove'
+    enlarge bottom by=0cm,%  equivalent to mdframed 'skipbelow'
+    tcbox raise base,
+    boxrule=1.0pt,
+    left=18mm,
+    colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
+    overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+      Only one parameter (\textit{Pressure}, \textit{Surface} and \textit{SST}) can be downloaded at a time, therefore you need to repeat this step three times.
+\end{tcolorbox}
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{1.png}
-    \caption{Exemplo da página de dados do CFSR.}
+    \caption{Screenshot of the CFSR data page.}
     \label{detalhacfsr}
 \end{figure}
 \bigskip
 
-\noindent Baixe os dados (em formato \textit{grib}) e separe-os em três pastas de acordo com os parâmetros de cada um: 
-          SST, Surface e Pressure. Compacte-os e coloque no cluster:
+\noindent Download the data (as \textit{GRIB}) and separate it into three folders according to the parameters of each one:
+SST, Surface and Pressure. Compress them and put them in the cluster:
 \bigskip
 
 \begin{bashcode}
 tar -cvzf SST.tar.gz SST/
 tar -cvzf Pressure.tar.gz Pressure/
 tar -cvzf Surface.tar.gz Surface/
-ssh -Y nome.sobrenome@acesso-hpc.cptec.inpe.br -p 2000
-mkdir Dados_CFSR
+ssh -Y name.surname@acesso-hpc.cptec.inpe.br -p 2000
+mkdir Data_CFSR
 exit
-sftp -P2000 nome.sobrenome@acesso-hpc.cptec.inpe.br
-cd Dados_CFSR
+sftp -P2000 name.surname@acesso-hpc.cptec.inpe.br
+cd Data_CFSR
 put SST.tar.gz
 put Pressure.tar.gz
 put Surface.tar.gz
 exit
-ssh -Y nome.sobrenome@acesso-hpc.cptec.inpe.br -p 2000
-cd Dados_CFSR
+ssh -Y name.surname@acesso-hpc.cptec.inpe.br -p 2000
+cd Data_CFSR
 tar -xvzf SST.tar.gz
 tar -xvzf Pressure.tar.gz
 tar -xvzf Surface.tar.gz
 \end{bashcode}
 \bigskip
 
-
-\begin{tcolorbox}[enhanced,
-  grow to left by=0cm,%   equivalent to negative mdframed 'leftmargin'
-  grow to right by=0cm,%  equivalent to negative mdframed 'rightmargin'
-  enlarge top by=0cm,%     equivalent to mdframed 'skipabove'
-  enlarge bottom by=0cm,%  equivalent to mdframed 'skipbelow'
-  tcbox raise base,
-  boxrule=1.0pt,
-  left=18mm,
-  colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Você pode criar uma pasta de dados do CFSR na sua área. Não é preciso colocar os dados em uma pasta específica. No caso acima, os dados estão dentro da pasta Dados\_CFSR.
-\end{tcolorbox}
-\bigskip
-
 \subsection{\textit{geogrid}}\label{geowps}
 \bigskip
 
-\noindent Como dito anteriormente, o \textit{geogrid} gera o domínio da grade através de dados geográficos. Os dados podem ser obtidos nesse site: (\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}{\textit{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}}}), ou então no repositório do guia a partir do diretório:
+\noindent As previously mentioned, \ textit {geogrid} generates the grid domain using geographic data. The data can be obtained from this website:
+\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}{\textit{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}}}, 
+or directly from the guide repository:
 \bigskip
 
 \begin{bashcode}
-/scratch/nome.sobrenome/repositorio/COAWST/WPS/geog
+/scratch/name.surname/repositorio/COAWST/WPS/geog
 \end{bashcode}
 \bigskip
 
-\noindent Com os dados do CFSR e do \textit{geogrid} em mãos, entre no diretório do WPS e abra o \textit{namelist.wps}. A estrutura do arquivo está exemplificada na Figura \textcolor{bleu_cite}{\ref{namelistwps}}:
+\noindent With the CFSR and \textit{geogrid} data in hand, enter into the WPS directory and open \textit{namelist.wps}. 
+The file structure is shown in Figure \textcolor{bleu_cite}{\ref{namelistwps}}:
 \bigskip
 
 \begin{bashcode}
@@ -350,44 +360,48 @@ nedit namelist.wps
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{image3411.png}
-    \caption{Exemplo do \textit{namelist.wps}.}
+    \caption{\textit{namelist.wps} example.}
     \label{namelistwps}
 \end{figure}
 \bigskip
 
-\noindent Altere os diretórios \textit{geog\_data\_path}, para o diretório onde estão os dados geográficos do geog, o \textit{geog\_data\_res} caso queira utilizar outros dados geográficos e o \textit{opt\_geogrid\_tbl\_path}, que é o diretório do próprio \textit{geogrid}.
+\noindent Change the \textit{geog\_data\_path} path to the directory where geographic data is located (\textit{geog folder}), 
+\textit{geog\_data\_res} if you want to use other geographic data and \textit{opt\_geogrid\_tbl\_path}, which is the 
+\textit{geogrid} directory.
+
 \bigskip
 
-\noindent O WPS utiliza um marco central definido pelos pontos de latitude (\textit{ref\_lat}) e (\textit{ref\_lon}) de referência. 
-          Ele gerará a grade a partir desse ponto e através da resolução espacial escolhida. 
-          No caso da Figura \textcolor{bleu_cite}{\ref{namelistwps}}, será preparada uma simulação iniciando no 
-          dia 15 de março de 2004 até 05 de abril de 2004, com 6 km de resolução espacial (\textit{dx} e \textit{dy} = 6000),
-          em projeção lambertiana, com 600 pontos de grade. Ou seja, utilizando como referência -35\degree de latitude e -45\degree de longitude,
-          será criada uma grade com 600 pontos na direção oeste-leste (\textit{e\_we}) e 600 pontos na direção sul-norte (\textit{e\_sn}), com cada 
-          ponto possuindo um espaçamento de 6000 metros entre eles.
+\noindent The WPS uses a ground zero point defined by the user as the latitude and longitude degrees in \textit{ref\_lat} and \textit{ref\_lon}).
+It will generate the grid from that point and through the chosen spatial resolution. Take as example the Figure
+\textcolor{bleu_cite}{\ref{namelistwps}}: a simulation will be prepared with 6 km of spatial resolution (\textit{dx} and \textit{dy} = 6000),
+in Lambert projection, with 600 grid points. Using as reference latitude -35\degree longitude -45\degree, a grid will be created with 
+600 points in the west-east direction (\textit{e\_we}) and 600 points in the south-north direction (\textit{e\_sn}), with each
+point having a spacing of 6000 meters (6 km) between them.
 \bigskip
 
-\noindent Para iniciar o \textit{geogrid}, é necessário o arquivo com extensão Shell (\textit{.sh}), que submete a execução do programa no Kerana. Ele se encontra no diretório \textit{/repositorio/WPS\_scripts}. Logo, mova o conteúdo da pasta para o diretório do WPS com os comandos:
+\noindent To start \textit{geogrid}, you need a file with a Shell extension (\textit{.sh}), which submits program to be executed in the cluster.
+ It can be found in the \textit{/repository/WPS\_scripts} directory. Move the contents of the folder to the WPS directory with the commands:
 \bigskip
 
 \begin{bashcode}[fontsize=\footnotesize]
-cd /home/nome.sobrenome/repositorio/WPS_scripts
-mv qsub_geogrid.sh qsub_ungrib.sh qsub_metgrid.sh /home/nome.sobrenome/COAWST/WPS
+cd /home/name.surname/repositorio/WPS_scripts
+mv qsub_geogrid.sh qsub_ungrib.sh qsub_metgrid.sh /home/name.surname/COAWST/WPS
 \end{bashcode}
 \bigskip
 
-\noindent A estrutura do arquivo \textit{qsub\_geogrid.sh} está demonstrada na Figura \textcolor{bleu_cite}{\ref{qsubgeonedit}}. Modifique o diretório de acordo com seu usuário.
+\noindent The structure of the \textit{qsub\_geogrid.sh} file is shown in Figure \textcolor{bleu_cite}{\ref{qsubgeonedit}}. 
+Modify the directory according to your user.
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{qsubgeonedit.png}
-    \caption{Exemplo da estrutura do arquivo \textit{qsub\_geodrid.sh}.}
+    \caption{\textit{qsub\_geodrid.sh} example.}
     \label{qsubgeonedit}
 \end{figure}
 \bigskip
 
-\noindent Para executar o \textit{geogrid}, utilize o comando \textit{qsub}:
+\noindent To run \textit{geogrid}, use \textit{qsub} command:
 \bigskip
 
 \begin{bashcode}
@@ -395,18 +409,21 @@ qsub qsub_geodrid.sh
 \end{bashcode}
 \bigskip
 
-\noindent Serão gerados dois arquivos para acompanhar a evolução do programa: \textit{log.err} e \textit{log.out}. Procure pela mensagem final de conclusão do programa, conforme a Figura \textcolor{bleu_cite}{\ref{qsubgeofinal}}, no arquivo \textit{log.out}.
+\noindent Two files will be generated: \textit{log.err} e \textit{log.out}. you can follow how the program is being executed and search for errors. 
+The program completion message is showned in Figure \textcolor{bleu_cite}{\ref{qsubgeofinal}}, in the file \textit{log.out}.
+
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.55\textwidth]{qsubgeo.png}
-    \caption{Exemplo de conclusão do \textit{geogrid}.}
+    \caption{Example of completion of \textit{geogrid}.}
     \label{qsubgeofinal}
 \end{figure}
 \bigskip
 
-\noindent Ao concluir a execução do \textit{geogrid}, será gerado o arquivo \textit{geo\_em\_d01.nc}. É possível visualizar o arquivo NetCDF com o Ncview:
+\noindent When completing the execution of \textit{geogrid}, the file \textit{geo\_em\_d01.nc} will be generated.
+ You can view the NetCDF file with Ncview:
 \bigskip
 
 \begin{bashcode}
@@ -415,21 +432,24 @@ ncview geo_em_d01.nc
 \end{bashcode}
 \bigskip
 
-\noindent Será sempre necessário executar o \textit{geogrid} até encontrar um domínio que seja adequado para o seu projeto, pois o WPS não possui interface gráfica. Uma solução para contornar o problema é utilizar o NCAR Command Language versão 6.4 (NCL; \cite{Ncl2017}) para plotar o domínio escolhido no \textit{namelist.wps}.  Este será o tema da próxima subseção.
+\noindent You will always need to run \textit{geogrid} until you find a domain that is suitable for your project, 
+since WPS does not have a graphical interface. One solution to work around the problem is to use NCAR Command Language version 6.4 
+(NCL; \cite{Ncl2017}) to plot the image of the chosen domain. This will be the subject of the next subsection.
+
 \bigskip
 
-\subsection{Utilizando o NCL para plotar o domínio da grade}
+\subsection{Using the NCL to plot the grid domain}
 \bigskip
 
-\noindent Para instalar o NCL na sua área, mova a pasta \textit{NCL} que se encontra dentro do repositório:
+\noindent To install the NCL, move the \textit{NCL} folder inside the repository:
 \bigskip
 
 \begin{bashcode}
-mv /scratch/nome.sobrenome/repositorio/NCL /scratch/nome.sobrenome
+mv /scratch/name.surname/repositorio/NCL /scratch/name.surname
 \end{bashcode}
 \bigskip
 
-\noindent Abra o \textit{.bashrc}:
+\noindent Open the \textit{.bashrc} file:
 \bigskip
 
 \begin{bashcode}
@@ -438,16 +458,16 @@ nedit .bashrc
 \end{bashcode}
 \bigskip
 
-\noindent Adicione as seguintes linhas de comando, alterando para o seu nome de usuário:
+\noindent Add the following command lines, changing to your username:
 \bigskip
 
 \begin{bashcode}
-export NCARG_ROOT=/scratch/nome.sobrenome/NCL
+export NCARG_ROOT=/scratch/name.surname/NCL
 export PATH=$NCARG_ROOT/bin:$PATH
 \end{bashcode}
 \bigskip
 
-\noindent Salve e execute os comandos \textit{source} e de inicialização do NCL.
+\noindent Save the file, reload the modules inside \textit{.bashrc} and then execute NCL.
 \bigskip
 
 \begin{bashcode}
@@ -456,36 +476,37 @@ ncl
 \end{bashcode}
 \bigskip
 
-\noindent Verifique se o NCL foi inicializado como na Figura \ref{nclinit}.
+\noindent Check if the NCL has been initialized as in Figure \ref{nclinit}.
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{nclinit.png}
-    \caption{Exemplo de inicialização do NCL.}
+    \caption{Example of NCL initialization.}
     \label{nclinit}
 \end{figure}
 \bigskip
 
 
-\noindent Entre no repositório e abra o arquivo \textit{plotgrids.ncl}. O código gera a imagem do domínio a partir dos dados do arquivo \textit{namelist.wps} do WPS.
+\noindent Enter the repository and open the \textit{plotgrids.ncl} file. 
+This script generates the domain image from the data in the WPS \textit{namelist.wps} file.
 \bigskip
 
 \begin{bashcode}
-cd /scratch/nome.sobrenome/repositorio
+cd /scratch/name.surname/repositorio
 nedit plotgrids.ncl
 \end{bashcode}
 \bigskip
 
-\noindent Modifique o diretório do \textit{namelist.wps} de acordo com a sua área de usuário:
+\noindent Modify the \textit{namelist.wps} directory according to your user area:
 \bigskip
 
 \begin{bashcode}
-filename = "/home/nome.sobrenome/COAWST/WPS/namelist.wps"
+filename = "/home/name.surname/COAWST/WPS/namelist.wps"
 \end{bashcode}
 \bigskip
 
-\noindent Execute o código com o comando:
+\noindent Run the code with the command:
 \bigskip
 
 \begin{bashcode}
@@ -493,54 +514,34 @@ ncl plotgrids.ncl
 \end{bashcode}
 \bigskip
 
-\noindent O código buscará os pontos de grade e a resolução do domínio através do arquivo \textit{namelist.wps} e mostrará na tela, como apresentado na Figura \textcolor{bleu_cite}{\ref{nclgrids}}. Repita o processo até encontrar um domínio adequado à sua necessidade.
+\noindent The code will search for the grid points and the domain resolution through the file \textit{namelist.wps} and show it on the screen, 
+as shown in Figure \textcolor{bleu_cite}{\ref{nclgrids}}. Repeat the process until you find a domain that suits your needs.
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.65\textwidth]{wps_domain_new.png}
-    \caption{Exemplo da figura gerada pelo script \textit{plotgrids.ncl}. Neste exemplo foram gerados três domínios.}
+    \caption{Figure generated by the \textit{plotgrids.ncl} file. In this example, three domains were generated.}
     \label{nclgrids}
 \end{figure}
 \bigskip
 
-
-\noindent Conforme a seção \textcolor{bleu_cite}{\ref{geowps}}, para executar o \textit{geogrid}, é necessário utilizar o comando \textit{qsub}. Abra o arquivo \textit{qsub\_geogrid.sh} e mude os diretórios para o seu nome de usuário e salve. Digite o comando para executar o programa:
-\bigskip
-
-\begin{bashcode}
-qsub qsub_geogrid.sh
-\end{bashcode}
-\bigskip
-
-\noindent Com a execução do \textit{geogrid}, serão gerados dois arquivos para acompanhar a evolução do programa: \textit{log.err} e \textit{log.out}:
-\bigskip
-
-\begin{bashcode}
-nedit log.err log.out &
-\end{bashcode}
-\bigskip
-
-\noindent Ao executar o \textit{geogrid} com sucesso, uma mensagem final aparecerá no arquivo \textit{log.out}, conforme a Figura \textcolor{bleu_cite}{\ref{qsubgeofinal}}. Será gerado o arquivo \textit{geo\_em\_d01.nc}
-\bigskip
-
-
 \subsection{\textit{ungrib}}\label{ungribsecao}
 \bigskip
-\noindent Com o domínio preparado pelo \textit{geogrid}, podemos avançar para o \textit{ungrib}, que extrai os campos meteorológicos 
-          e oceanográficos de arquivos com formato \textit{GRIB}. Começaremos, primeiramente, a criar os dados de SST. Abra o \textit{namelist.wps} 
-          e na seção \textit{\&ungrib}, altere o \textit{prefix} para \textit{SST}, conforme a Figura \ref{ungribprefix} e salve.
+\noindent With the domain prepared by \textit{geogrid}, we can proceed to \textit{ungrib}, which extracts the data from the
+ \textit {Grib} files. We will start creating the SST data. Open \textit{namelist.wps}
+and  change the \textit{prefix} to \textit{SST}, in the \textit{\& ungrib} section, as shown in Figure \ref{ungribprefix}.
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.45\textwidth]{ungribprefix.png}
-    \caption{Exemplo da seção \textit{\&ungrib} do \textit{namelist.wps}.}
+    \caption{ \textit{\&ungrib} example.}
     \label{ungribprefix}
 \end{figure}
 \bigskip
 
-\noindent Importe a \textit{Variable Table} de SST do WPS através de um link simbólico. Digite no terminal:
+\noindent Import the Variable Table for SST through a symbolic link. Type in the terminal:
 \bigskip
 
 \begin{bashcode}
@@ -558,20 +559,21 @@ ln -sf ungrib/Variable_Tables/Vtable.SST Vtable
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-A \textit{Vtable} é utilizada para ler os arquivos em formato \textit{grib}. É importante utilizar a \textit{Vtable} correspondente para o banco de dados escolhido. Você pode consultá-las em \textit{WPS/ungrib/Variable\_Tables}
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+The \textit{Vtable} is used to read the files in \textit{Grib} format. It is mandatory to use the corresponding \textit{Vtable} to the chosen 
+database. You can consult them at \textit{WPS/ungrib/Variable\_Tables}.
 \end{tcolorbox}
 \bigskip
 
-\noindent Crie diversos links simbólicos com os dados de SST do CFSR através do arquivo \textit{link\_grib.csh} apontando o diretório dos dados:
+\noindent Create the symbolic links with the SST data through the \textit{link\_grib.csh} file:
 \bigskip
 
 \begin{bashcode}
-./link_grib.csh /scratch/nome.sobrenome/Dados_CFSR/SST/*
+./link_grib.csh /scratch/name.surname/Dados_CFSR/SST/*
 \end{bashcode}
 \bigskip
 
-\noindent Abra o arquivo \textit{qsub\_ungrib.sh} e modifique o diretório de acordo com o seu usuário e  digite:
+\noindent Open the \textit{qsub\_ungrib.sh} file and modify the path according to your user and type:
 \bigskip
 
 \begin{bashcode}
@@ -589,26 +591,30 @@ qsub qsub_ungrib.sh
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-O arquivo \textit{qsub\_ungrib.sh} se encontra dentro da pasta \textit{/repositorio/WPS\_scripts}.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+    The \textit{qsub\_ungrib.sh} file is located in the \textit{/repository/WPS\_scripts} folder.
 \end{tcolorbox}
 \bigskip
 
-\noindent Serão criados diversos arquivos com inicial \textit{SST:} seguido da data escolhida para a integração. Para checar o sucesso ao executar o ungrib, procure pela mensagem da Figura \textcolor{bleu_cite}{\ref{ungribsucess}} ao final do arquivo \textit{log.out}.
+\noindent Several files will be created with the initial \textit {SST:} followed by the date chosen for simulation. 
+To check if everything went well, look for the message in Figure \textcolor{bleu_cite}{\ref{ungribsucess}} at the end of the file
+\textit{log.out}.
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.45\textwidth]{qsubung.png}
-    \caption{Mensagem final no arquivo \textit{log.out} ao executar o \textit{ungrib}.}
+    \caption{Final message in the \textit{log.out} file when running \textit{ungrib}.}
     \label{ungribsucess}
 \end{figure}
 \bigskip
 
-\noindent Seguiremos para os dados de superfície do CFSR. Altere o \textit{prefix} no \textit{namelist.wps} (Figura \textcolor{bleu_cite}{\ref{ungribprefix}}). Modifique \textit{SST} por \textit{SFC} e salve a modificação.
+\noindent We will proceed to the CFSR surface data. Change the \textit{prefix} in \textit{namelist.wps} (Figure \textcolor{bleu_cite}{\ref{ungribprefix}}). 
+Modify \textit{SST} by \textit{SFC} and save the modification.
+
 \bigskip
 
-\noindent Importe a \textit{Variable Table} do CFSR no WPS com o comando de criação de link simbólico:
+\noindent Import the CFSR \textit{Variable Table} with the symbolic link creation command:
 \bigskip
 
 \begin{bashcode}
@@ -616,50 +622,52 @@ ln -sf ungrib/Variable_Tables/Vtable.CFSR Vtable
 \end{bashcode}
 \bigskip
 
-\noindent Crie os links simbólicos dos dados de superfície do CFSR com o comando abaixo e execute o \textit{ungrib} mais uma vez:
+\noindent Create the symbolic links to the CFSR surface data with the command below and run \textit{ungrib} again:
 \bigskip
 
 \begin{bashcode}
-./link_grib.csh /scratch/nome.sobrenome/Dados_CFSR/Surface/*
+./link_grib.csh /scratch/name.surname/Dados_CFSR/Surface/*
 qsub qsub_ungrib.sh
 \end{bashcode}
 \bigskip
 
-\noindent Procure pela mensagem final conforme identificada na Figura \textcolor{bleu_cite}{\ref{ungribsucess}}.
+\noindent Look for the final message as shown in Figure \textcolor{bleu_cite}{\ref{ungribsucess}}.
 \bigskip
 
-\noindent Altere o \textit{prefix} do \textit{namelist.wps} (Figura \textcolor{bleu_cite}{\ref{ungribprefix}}), substitua \textit{SFC} por \textit{PRES} e salve o arquivo.
+\noindent Change the \textit{prefix} of \textit{namelist.wps} (Figure \textcolor{bleu_cite}{\ref{ungribprefix}}), replace \textit {SFC} with \textit{PRES} and save the file.
 \bigskip
 
-\noindent Crie os links simbólicos para os dados de pressão e execute o \textit{ungrib}:
+\noindent Create the symbolic links to the pressure data and run \textit{ungrib}:
 \bigskip
 
 \begin{bashcode}
-./link_grib.csh /scratch/nome.sobrenome/Dados_CFSR/Pressure/*
+./link_grib.csh /scratch/name.surname/Dados_CFSR/Pressure/*
 qsub qsub_ungrib.sh
 \end{bashcode}
 \bigskip
 
-\noindent Por fim, procure pela mensagem final conforme identificada na Figura \textcolor{bleu_cite}{\ref{ungribsucess}}. Ao finalizar estes passos, constarão diversos arquivos com as iniciais \textit{SST}, \textit{PRES}, \textit{SFC} seguidos com as datas do período de integração escolhidas.
+\noindent Finally, look for the final message as identified in Figure \textcolor{bleu_cite}{\ref{ungribsucess}}. 
+At the end of these steps, there will be several files with the initials \textit {SST}, \textit {PRES}, \textit {SFC} followed by the
+dates of the chosen period.
 \bigskip
-
-
 
 
 \subsection{\textit{metgrid}}\label{metgridsecao}
 \bigskip
-\noindent Para interpolar os dados gerados pelo \textit{ungrib.exe},  abra o \textit{namelist.wps} e altere na guia \textit{fg\_name} os nomes utilizados no \textit{ungrib}. No caso anterior, foram utilizados \textit{PRES}, \textit{SFC} e \textit{SST}, como no exemplo da Figura \textcolor{bleu_cite}{\ref{fgname}}:
+\noindent To interpolate the data generated by \textit{ungrib.exe}, open \textit{namelist.wps} and change on the \textit{fg\_name} tab the 
+names used in \textit {ungrib}. In the previous case, \textit {PRES}, \textit{SFC} and \textit{SST} were used, as in the example in 
+Figure \textcolor{bleu_cite}{\ref{fgname}}:
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{fgname.png}
-    \caption{Exemplo da guia do \textit{metgrid} no \textit{namelist.wps}.}
+    \caption{\textit{metgrid} example.}
     \label{fgname}
 \end{figure}
 \bigskip
 
-\noindent Abra e mude o diretório do arquivo \textit{qsub\_metgrid.sh} e execute:
+\noindent Open and then change the \textit{qsub\_metgrid.sh} file path and run:
 \bigskip
 
 \begin{bashcode}
@@ -667,21 +675,40 @@ qsub qsub_metgrid.sh
 \end{bashcode}
 \bigskip
 
-\noindent Mova os arquivos gerados pelo \textit{metgrid} (\textit{met\_em.d01*}) para o diretório dos casos reais do WRF:
+\noindent Move the files generated by \textit{metgrid} (\textit {met\_em.d01*}) to the real WRF case directory:
 \bigskip
 
 \begin{bashcode}
- mv met_em.d01* /home/nome.sobrenome/WRF/test/em_real
+ mv met_em.d01* /home/name.surname/WRF/test/em_real
 \end{bashcode}
 \bigskip
+
+
+\begin{tcolorbox}[enhanced,
+    grow to left by=0cm,%   equivalent to negative mdframed 'leftmargin'
+    grow to right by=0cm,%  equivalent to negative mdframed 'rightmargin'
+    enlarge top by=0cm,%     equivalent to mdframed 'skipabove'
+    enlarge bottom by=0cm,%  equivalent to mdframed 'skipbelow'
+    tcbox raise base,
+    boxrule=1.0pt,
+    left=18mm,
+    colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
+    overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+If you are an experienced user, you can create symbolic links pointing to the \textit{met} files instead of moving them.
+  \end{tcolorbox}
+  \bigskip
 
 \subsection{\textit{real}}\label{realsecao}
 \bigskip
 
-\noindent Usaremos o programa \textit{real.exe} para gerar os arquivos para serem utilizados no WRF. Abra o arquivo \textit{namelist.input}, que se encontra na pasta do WRF (\textit{/home/nome.sobrenome/WRF/test/em\_real}) e modifique de acordo com o seu domínio e tempo de simulação escolhidos no \textit{namelist.wps}.
+\noindent We will use the \textit{real.exe} program to generate the files that will be used in WRF. Open the file \textit{namelist.input}, 
+which is in the WRF folder (\textit{/home/name.surname/WRF/test/em\_real}), and modify it according to your chosed domain and simulation time in 
+\textit{namelist.wps}.
 \bigskip
 
-\noindent Para que o WRF faça a integração da TSM, é necessário incluir as seguintes variáveis ao final da seção \textit{\&time\_control} (Figura \textcolor{bleu_cite}{\ref{timecontrolnamelist}}):
+\noindent For the WRF to simulate the SST, it is necessary to include the following variables at the end of the section 
+\textit{\&time\_control} (Figure \textcolor{bleu_cite}{\ref{timecontrolnamelist}}):
 \bigskip
 
 \begin{bashcode}
@@ -691,18 +718,21 @@ auxinput4_interval = 360,
 \end{bashcode}
 \bigskip
 
-\noindent O \textit{io\_form\_auxinput4} se refere ao formato final do arquivo \textit{wrflowinp} que será gerado pelo \textit{real}, o \textit{auxinput4\_inname} é o nome do arquivo de condição de fronteira para a TSM e o \textit{auxinput4\_interval} é o intervalo de tempo, em minutos, do arquivo de fronteira.
+\noindent The \textit{io\_form\_auxinput4} refers to the final format of the textit{wrflowinp} file that will be generated by 
+the \textit{real}. The \textit{auxinput4\_inname} is the name of the boundary condition file for SST and \textit{auxinput4\_interval} 
+is the time interval, in minutes, of the boundary file.
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.70\textwidth]{namelisttimecontrol.png}
-    \caption{Exemplo da guia \textit{\&time\_control} no \textit{namelist.input}.}
+    \caption{\textit{\&time\_control} example.}
     \label{timecontrolnamelist}
 \end{figure}
 \bigskip
 
-\noindent Inclua também, na seção \textit{\&physics} (Figura \textcolor{bleu_cite}{\ref{physicsnamelist}}) no \textit{namelist.input} a opção para atualizar a TSM:
+\noindent Also, in the \textit{\&physics} (Figure \textcolor{bleu_cite}{\ref{physicsnamelist}}) in the \textit{namelist.input} 
+the option to update the SST:
 \bigskip
 
 \begin{bashcode}
@@ -713,17 +743,19 @@ sst_update = 1,
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.70\textwidth]{physics.png}
-    \caption{Exemplo da guia \textit{\&physics} no \textit{namelist.input} com \textit{sst\_update} = 1 para atualizar a TSM ao longo do tempo.}
+    \caption{\textit{\&physics} example.}
     \label{physicsnamelist}
 \end{figure}
 \bigskip
 
-\noindent Após concluir as modificações, é preciso utilizar o arquivo \textit{qsub\_real.sh} para submeter a operação. O arquivo está localizado no diretório \textit{/repositorio/WRF\_scripts}. Mova o arquivo para a pasta \textit{em\_real} do WRF, mude o diretório de acordo com o seu usuário e execute:
+\noindent After completing the modifications, you must use the file \textit{qsub\_real.sh} to submit the job.
+The file is located in the \textit{/repository/WRF\_scripts} directory. Move the file to the \textit{em\_real} folder, change the directory 
+according to your user and execute:
 \bigskip
 
 \begin{bashcode}
-cd /home/nome.sobrenome/repositorio/WRF_scripts
-mv qsub_real.sh /home/nome.sobrenome/WRF/test/em_real
+cd /home/name.surname/repositorio/WRF_scripts
+mv qsub_real.sh /home/name.surname/WRF/test/em_real
 qsub qsub_real.sh
 \end{bashcode}
 \bigskip
@@ -738,48 +770,53 @@ qsub qsub_real.sh
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-O arquivo \textit{qsub\_real.sh} se encontra dentro da pasta \textit{/repositorio/WRF\_scripts}.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+The \textit{qsub\_real.sh} file is located in the \textit{/repository/WRF\_scripts} folder.
 \end{tcolorbox}
 \bigskip
 
-\noindent Para atestar o sucesso em executar o \textit{real}, procure no final do arquivo \textit{log.out} pela mensagem de sucesso conforme exemplificada na Figura \textcolor{bleu_cite}{\ref{realfinish}}.
+\noindent To certify success in running \textit{real}, look at the end of the \textit{log.out} file for the success message as shown 
+in Figure \textcolor{bleu_cite}{\ref{realfinish}}.
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.70\textwidth]{realsucess.png}
-    \caption{Exemplo da finalização com sucesso do \textit{real}.}
+    \caption{Successful completion of\textit{real}.}
     \label{realfinish}
 \end{figure}
 \bigskip
 
 
-\noindent Ao completar o \textit{real}, serão gerados três arquivos: \textit{wrfbdy\_d01}, \textit{wrfinput\_d01} e \textit{wrflowinp\_d01} caso tenha escolhido somente um domínio, isto é, sem aninhamento. Após isso, as condições do WRF estão prontas para serem copiadas para a sua pasta de projetos no COAWST:
+\noindent Upon completing \textit{real}, three files will be generated: \textit{wrfbdy\_d01}, \textit{wrfinput\_d01} and 
+\textit{wrflowinp\_d01}, if you have chosen only one domain. After that, the WRF conditions are ready to be copied to your project
+folder in COAWST:
 \bigskip
 
 \begin{bashcode}[fontsize=\scriptsize]
-cp wrfbdy_d01 wrfinput_d01 wrflowinp_d01 /home/nome.sobrenome/COAWST/Projects/nome_do_projeto
+cp wrfbdy_d01 wrfinput_d01 wrflowinp_d01 /home/name.surname/COAWST/Projects/project_name
 \end{bashcode}
 \bigskip
 
-\section{Usando o WRF}\label{wrfsecao2}
+\section{Using the WRF}\label{wrfsecao2}
 \bigskip
 
-\noindent Com as condições do WRF prontas, é possível iniciar a simulação do seu projeto utilizando somente o WRF.
+\noindent With the files ready, it is possible to start the simulation of your project using only the WRF.
 \bigskip
 
-\noindent Para executar a simulação no cluster, é necessário utilizar o arquivo \textit{qsub\_wrf.sh}. Ele está localizado no diretório \textit{/repositorio/WRF\_scripts}. Mova o arquivo para a pasta \textit{em\_real} do WRF, modique o diretório de acordo com o seu usuário e salve:
+\noindent To run the simulation on the cluster, it is necessary to use the file \textit{qsub\_wrf.sh}. It is located in the 
+\textit{/repository/WRF\_scripts} directory. Move the file to the WRF \textit{in\_real} folder, modify the directory according
+to your user and save:
 \bigskip
 
 \begin{bashcode}
-cd /home/nome.sobrenome/repositorio/WRF_scripts
-mv qsub_wrf.sh /home/nome.sobrenome/WRF/test/em_real
+cd /home/name.surname/repositorio/WRF_scripts
+mv qsub_wrf.sh /home/name.surname/WRF/test/em_real
 nedit qsub_wrf.sh
 \end{bashcode}
 \bigskip
 
-\noindent Para iniciar a simulação, execute:
+\noindent To start the simulation, type:
 \bigskip
 
 \begin{bashcode}
@@ -797,12 +834,13 @@ qsub qsub_wrf.sh
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-O arquivo \textit{qsub\_wrf.sh} se encontra dentro da pasta \textit{/repositorio/WRF\_scripts}.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+The \textit{qsub\_wrf.sh} file is located in the \textit{/repository/WRF\_scripts} folder.
 \end{tcolorbox}
 \bigskip
 
-\noindent Acompanhe a evolução da simulação a partir dos arquivos \textit{log.out} e \textit{log.err}. Caso opte pela informação ser atualizada pelo terminal, digite:
+\noindent Follow the evolution of the job with the \textit{log.out} and \textit {log.err} files. If you want to have the information 
+updated by the terminal, type:
 \bigskip
 
 \begin{bashcode}

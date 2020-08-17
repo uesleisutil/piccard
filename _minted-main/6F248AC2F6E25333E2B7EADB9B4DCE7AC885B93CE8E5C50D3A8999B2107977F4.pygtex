@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+./link\PYGZus{}grib.csh /scratch/name.surname/Dados\PYGZus{}CFSR/Surface/*
+qsub qsub\PYGZus{}ungrib.sh
+\end{Verbatim}

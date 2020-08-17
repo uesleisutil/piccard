@@ -1,0 +1,129 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{11}{chapter.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Regional Ocean Modeling System}{12}{section.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Budgell's Sea Ice Model}{13}{section.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Weather Research \& Forecasting Model}{13}{section.1.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Simulating Waves Nearshore}{14}{section.1.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Model Coupling Toolkit}{14}{section.1.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Spherical Coordinate Remapping Interpolation Package}{15}{section.1.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.7}Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}{15}{section.1.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.8}Materials needed to use this guide}{16}{section.1.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}COAWST in a parallel cluster}{17}{chapter.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}About our cluster Kerana}{17}{section.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Signing up a user account}{17}{section.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Signing in to the Kerana cluster}{17}{section.2.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}File repository}{18}{section.2.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Kerana environment}{19}{section.2.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Downloading COAWST}{19}{section.2.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Automating the compilation of COAWST in Kerana}{20}{section.2.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.8}Compiling the MCT}{21}{section.2.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.9}Compiling the Sandy test case}{23}{section.2.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.1}Projects folder}{24}{subsection.2.9.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.2}Work folder}{26}{subsection.2.9.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.3}Compiling the test case}{27}{subsection.2.9.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.10}Simulating the Sandy Test Case}{29}{section.2.10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}COAWST features}{31}{chapter.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Structural model files}{31}{section.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Modifying the number of processors}{32}{section.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}ROMS}{32}{subsection.3.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}WRF}{32}{subsection.3.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.3}SWAN}{32}{subsection.3.2.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.4}COAWST}{32}{subsection.3.2.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Modifying the coupling time interval between models}{33}{section.3.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Building the WRF}{35}{chapter.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Compiling WRF in Kerana cluster}{35}{section.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}WRF Preprocessing System (WPS)}{36}{section.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Downloading WPS}{37}{subsection.4.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Compiling WPS in the Kerana cluster}{37}{subsection.4.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Building your project using CFSR}{39}{section.4.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}\textit {geogrid}}{40}{subsection.4.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Using the NCL to plot the grid domain}{43}{subsection.4.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}\textit {ungrib}}{45}{subsection.4.3.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.4}\textit {metgrid}}{46}{subsection.4.3.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.5}\textit {real}}{47}{subsection.4.3.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Using the WRF}{49}{section.4.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Construindo o ROMS}{51}{chapter.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Instalando as bibliotecas do Python no computador pessoal}{51}{section.5.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}Instalando manualmente}{51}{subsection.5.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.2}Instalando com o Conda}{62}{subsection.5.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Instalando o Pyroms}{62}{section.5.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}\textit {model2roms}}{65}{section.5.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Introdu\IeC {\c c}\IeC {\~a}o sobre a grade do ROMS}{65}{subsection.5.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.2}ETOPO1 1 Arc-Minute Global Relief Model}{66}{subsection.5.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Gerando a grade do ROMS}{66}{section*.31}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.3}Introdu\IeC {\c c}\IeC {\~a}o sobre as condi\IeC {\c c}\IeC {\~o}es do ROMS}{68}{subsection.5.3.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.4}Global Ocean Physics Reanalysis (GLORYS)}{68}{subsection.5.3.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.5}Gerando as condi\IeC {\c c}\IeC {\~o}es do ROMS}{72}{subsection.5.3.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Building the SWAN}{77}{chapter.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Building the Budgell's Sea Ice Model}{79}{chapter.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Building the weights between grids with SCRIP}{81}{chapter.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Building the weights}{81}{section.8.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Executing your project}{83}{section.8.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}\relax \fontsize {12}{14}\selectfont {Papers of the Ocean and Atmospheric Studies Laboratory}}{85}{chapter.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acknowledgments}{93}{chapter*.45}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{95}{chapter*.46}% 
+\contentsfinish 

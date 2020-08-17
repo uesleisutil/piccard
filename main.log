@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.15)  13 AUG 2020 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.15)  17 AUG 2020 18:41
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2191,7 +2191,7 @@ Package ragged2e Info: ABD: executing \RaggedRight on input line 171.
  ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 171.
  (./sections/01_titlepage.tex
-<Pictures/snow1.jpg, id=236, 1257.69875pt x 1588.93625pt>
+<Pictures/snow1.jpg, id=280, 1257.69875pt x 1588.93625pt>
 File: Pictures/snow1.jpg Graphic file (type jpg)
 <use Pictures/snow1.jpg>
 Package pdftex.def Info: Pictures/snow1.jpg  used on input line 8.
@@ -2259,7 +2259,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )) (./sections/02_copyright.tex [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Pictures/snow1.jpg>]
-<Pictures/loa.jpg, id=243, 1999.47pt x 992.70876pt>
+<Pictures/loa.jpg, id=287, 1999.47pt x 992.70876pt>
 File: Pictures/loa.jpg Graphic file (type jpg)
 <use Pictures/loa.jpg>
 Package pdftex.def Info: Pictures/loa.jpg  used on input line 8.
@@ -2276,23 +2276,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--53
 
  []
 
-<Pictures/cnpq.png, id=252, 739.76375pt x 234.8775pt>
+<Pictures/cnpq.png, id=296, 739.76375pt x 234.8775pt>
 File: Pictures/cnpq.png Graphic file (type png)
 <use Pictures/cnpq.png>
 Package pdftex.def Info: Pictures/cnpq.png  used on input line 57.
 (pdftex.def)             Requested size: 126.83586pt x 40.26912pt.
-<Pictures/capes.jpg, id=254, 150.5625pt x 150.5625pt>
+<Pictures/capes.jpg, id=298, 150.5625pt x 150.5625pt>
 File: Pictures/capes.jpg Graphic file (type jpg)
 <use Pictures/capes.jpg>
 Package pdftex.def Info: Pictures/capes.jpg  used on input line 59.
 (pdftex.def)             Requested size: 65.76541pt x 65.76753pt.
-<Pictures/inpe.jpg, id=255, 194.4063pt x 157.0668pt>
+<Pictures/inpe.jpg, id=299, 194.4063pt x 157.0668pt>
 File: Pictures/inpe.jpg Graphic file (type jpg)
 <use Pictures/inpe.jpg>
 Package pdftex.def Info: Pictures/inpe.jpg  used on input line 61.
 (pdftex.def)             Requested size: 70.46037pt x 56.92746pt.
 ) (./sections/03_reviewers.tex [2 <./Pictures/loa.jpg> <./Pictures/cnpq.png> <./Pictures/capes.jpg> <./Pictures/inpe.jpg>]
-<Pictures/header.jpg, id=266, 2142.0025pt x 1033.8625pt>
+<Pictures/header.jpg, id=310, 2142.0025pt x 1033.8625pt>
 File: Pictures/header.jpg Graphic file (type jpg)
 <use Pictures/header.jpg>
 Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
@@ -2330,11 +2330,19 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
 ]
 LaTeX Font Info:    Font shape `T1/pag/m/it' in size <10> not available
 (Font)              Font shape `T1/pag/m/sl' tried instead on input line 78.
-)
+LaTeX Font Info:    Font shape `T1/pag/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/pag/b/it' tried instead on input line 100.
+LaTeX Font Info:    Font shape `T1/pag/b/it' in size <10.95> not available
+(Font)              Font shape `T1/pag/db/it' tried instead on input line 100.
+LaTeX Font Info:    Font shape `T1/pag/db/it' in size <10.95> not available
+(Font)              Font shape `T1/pag/db/sl' tried instead on input line 100.
+ [8])
 \tf@toc=\write12
 \openout12 = `main.toc'.
 
-) (./sections/07_chapter_1.tex [8]
+) (./sections/07_chapter_1.tex [9] [10
+
+]
 Chapter 1.
 \c@ttl@toc@default=\count549
 File: Pictures/header.jpg Graphic file (type jpg)
@@ -2345,10 +2353,8 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 17.
 LaTeX Font Info:    Font shape `T1/pag/m/it' in size <9> not available
 (Font)              Font shape `T1/pag/m/sl' tried instead on input line 52.
-[9
-
-] [10]
-<Pictures/grid_new.png, id=462, 952.55875pt x 443.6575pt>
+[11] [12]
+<Pictures/grid_new.png, id=537, 952.55875pt x 443.6575pt>
 File: Pictures/grid_new.png Graphic file (type png)
 <use Pictures/grid_new.png>
 Package pdftex.def Info: Pictures/grid_new.png  used on input line 144.
@@ -2368,14 +2374,14 @@ LaTeX Font Info:    Try loading font information for U+eur on input line 147.
 File: ueur.fd 2013/01/14 v3.01 Euler Roman
 ) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
-) [11 <./Pictures/grid_new.png>]
+) [13 <./Pictures/grid_new.png>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 156.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 156.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 156.
- [12]
+ [14]
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <9> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 258.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <9> not available
@@ -2384,25 +2390,25 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 297.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 303.
- [13]
+ [15]
 
-LaTeX Warning: Reference `coawstbaix' on page 14 undefined on input line 321.
+LaTeX Warning: Reference `coawstbaix' on page 16 undefined on input line 321.
 
-) (./sections/08_chapter_2.tex [14]
+) (./sections/08_chapter_2.tex [16]
 Chapter 2.
 File: Pictures/header.jpg Graphic file (type jpg)
 <use Pictures/header.jpg>
 Package pdftex.def Info: Pictures/header.jpg  used on input line 4.
 (pdftex.def)             Requested size: 614.295pt x 296.4996pt.
 
-LaTeX Warning: Reference `coawstlinux' on page 15 undefined on input line 26.
+LaTeX Warning: Reference `coawstlinux' on page 17 undefined on input line 26.
 
 
 Underfull \hbox (badness 6944) in paragraph at lines 33--37
 \T1/ptm/m/n/10.95 (+20) premises have a fixed IP. Your ad-vi-sor or su-per-vi-sor is re-quired to send an email to
  []
 
-[15
+[17
 
 ]
 \openout4 = `main.listing'.
@@ -2431,7 +2437,7 @@ Package microtype Info: Loading generic protrusion settings for font family
  (./_minted-main/56A4A1ECF5D99AF8E7B5DF4275723B8DC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
- (./_minted-main/5B5A4E4E2E95AD0F77D52DAC099740C7C885B93CE8E5C50D3A8999B2107977F4.pygtex) [16]
+ (./_minted-main/5B5A4E4E2E95AD0F77D52DAC099740C7C885B93CE8E5C50D3A8999B2107977F4.pygtex) [18]
 \openout4 = `main.listing'.
 
  (./_minted-main/E5A7255FCF2B8AB81EF1E6CC7DDF7BDFC885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2443,7 +2449,7 @@ Package microtype Info: Loading generic protrusion settings for font family
  (./_minted-main/594A4153159CB3435C25F5CAE03A1FA6C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
- (./_minted-main/B6807801FA7C5096D11F7DDFBA35D07AC885B93CE8E5C50D3A8999B2107977F4.pygtex) [17]
+ (./_minted-main/B6807801FA7C5096D11F7DDFBA35D07AC885B93CE8E5C50D3A8999B2107977F4.pygtex) [19]
 \openout4 = `main.listing'.
 
  (./_minted-main/A37CEFF5F0FFFF6527AC5C22D608F6BBC885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2465,12 +2471,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 \openout4 = `main.listing'.
 
  (./_minted-main/53C07AC4A8F6E737EF075E146EDA90D9C885B93CE8E5C50D3A8999B2107977F4.pygtex)
-<Pictures/linuxoptions.png, id=558, 761.84625pt x 201.75375pt>
+<Pictures/linuxoptions.png, id=634, 761.84625pt x 201.75375pt>
 File: Pictures/linuxoptions.png Graphic file (type png)
 <use Pictures/linuxoptions.png>
 Package pdftex.def Info: Pictures/linuxoptions.png  used on input line 298.
 (pdftex.def)             Requested size: 375.80544pt x 99.519pt.
- [18]
+ [20]
 \openout4 = `main.listing'.
 
  (./_minted-main/3AEC9B6F1ED4A7A890A4A95EF57D2A25C885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2483,12 +2489,12 @@ Package pdftex.def Info: Pictures/linuxoptions.png  used on input line 298.
 \openout4 = `main.listing'.
 
  (./_minted-main/54DCA5E37D2E5A21397D9CEE4B2506BEC885B93CE8E5C50D3A8999B2107977F4.pygtex)
-<Pictures/modules.png, id=566, 762.59906pt x 417.81094pt>
+<Pictures/modules.png, id=642, 762.59906pt x 417.81094pt>
 File: Pictures/modules.png Graphic file (type png)
 <use Pictures/modules.png>
 Package pdftex.def Info: Pictures/modules.png  used on input line 366.
 (pdftex.def)             Requested size: 399.29463pt x 218.76112pt.
- [19 <./Pictures/linuxoptions.png>]
+ [21 <./Pictures/linuxoptions.png>]
 \openout4 = `main.listing'.
 
  (./_minted-main/D0A9755FC50838F842426370269590DBC885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2497,16 +2503,16 @@ Package pdftex.def Info: Pictures/modules.png  used on input line 366.
  (./_minted-main/3EA06B20F9D923841BE48B08B5338544C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
- (./_minted-main/0B1B95B5C62D5A94859A3D27145A5922C885B93CE8E5C50D3A8999B2107977F4.pygtex) [20 <./Pictures/modules.png>]
+ (./_minted-main/0B1B95B5C62D5A94859A3D27145A5922C885B93CE8E5C50D3A8999B2107977F4.pygtex) [22 <./Pictures/modules.png>]
 \openout4 = `main.listing'.
 
- (./_minted-main/E7E5A9FE6B458F1101315E918847735CC885B93CE8E5C50D3A8999B2107977F4.pygtex) [21]
-<Pictures/estruturacoawst.png, id=584, 425.33907pt x 443.40656pt>
+ (./_minted-main/E7E5A9FE6B458F1101315E918847735CC885B93CE8E5C50D3A8999B2107977F4.pygtex) [23]
+<Pictures/estruturacoawst.png, id=659, 425.33907pt x 443.40656pt>
 File: Pictures/estruturacoawst.png Graphic file (type png)
 <use Pictures/estruturacoawst.png>
 Package pdftex.def Info: Pictures/estruturacoawst.png  used on input line 467.
 (pdftex.def)             Requested size: 234.8775pt x 244.85541pt.
- [22 <./Pictures/estruturacoawst.png>] [23]
+ [24 <./Pictures/estruturacoawst.png>] [25]
 \openout4 = `main.listing'.
 
  (./_minted-main/9F9AD42A466C80B4860C2C5D06D9CF1EC885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2521,7 +2527,7 @@ Package pdftex.def Info: Pictures/estruturacoawst.png  used on input line 467.
  (./_minted-main/87970B0D3DBBC3B12E96C73A85704871C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
- (./_minted-main/23296B4F45CC6D1A7D84F32B09D60141C885B93CE8E5C50D3A8999B2107977F4.pygtex) [24]
+ (./_minted-main/23296B4F45CC6D1A7D84F32B09D60141C885B93CE8E5C50D3A8999B2107977F4.pygtex) [26]
 \openout4 = `main.listing'.
 
  (./_minted-main/0DD445E747F7E4876DF921133B7CA7B3C885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2548,7 +2554,7 @@ Package microtype Info: Loading generic protrusion settings for font family
  (./_minted-main/137EF64800AF02D91E1BE984B07E5DEFC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
- (./_minted-main/75C6FD713F0C4F856C4EAC5BD5E3CD9DC885B93CE8E5C50D3A8999B2107977F4.pygtex) [25]
+ (./_minted-main/75C6FD713F0C4F856C4EAC5BD5E3CD9DC885B93CE8E5C50D3A8999B2107977F4.pygtex) [27]
 \openout4 = `main.listing'.
 
  (./_minted-main/6BE84E314CD1EA437A44AC9F4EB53042C885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2563,11 +2569,11 @@ Package microtype Info: Loading generic protrusion settings for font family
  (./_minted-main/DED7702E7D8DA948CD895622E0636088C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
- (./_minted-main/F2E22CF4493C7F2E1A60AB67FD7FE38BC885B93CE8E5C50D3A8999B2107977F4.pygtex) [26]
+ (./_minted-main/F2E22CF4493C7F2E1A60AB67FD7FE38BC885B93CE8E5C50D3A8999B2107977F4.pygtex) [28]
 \openout4 = `main.listing'.
 
  (./_minted-main/181790F7390718EF3CBEBFB55BBFDBC5C885B93CE8E5C50D3A8999B2107977F4.pygtex)
-<Pictures/coawstfinal.png, id=611, 369.63094pt x 121.95563pt>
+<Pictures/coawstfinal.png, id=687, 369.63094pt x 121.95563pt>
 File: Pictures/coawstfinal.png Graphic file (type png)
 <use Pictures/coawstfinal.png>
 Package pdftex.def Info: Pictures/coawstfinal.png  used on input line 759.
@@ -2580,7 +2586,7 @@ Package pdftex.def Info: Pictures/coawstfinal.png  used on input line 759.
  (./_minted-main/C3715FBEE7BDFBB97F0EE3D9440BFAD4C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
- (./_minted-main/5B70BC3D88D9BD61D0A644311B8C36A9C885B93CE8E5C50D3A8999B2107977F4.pygtex) [27 <./Pictures/coawstfinal.png>]
+ (./_minted-main/5B70BC3D88D9BD61D0A644311B8C36A9C885B93CE8E5C50D3A8999B2107977F4.pygtex) [29 <./Pictures/coawstfinal.png>]
 \openout4 = `main.listing'.
 
  (./_minted-main/D5BE629E200FADF1DB24F1705BFAC066C885B93CE8E5C50D3A8999B2107977F4.pygtex)
@@ -2589,7 +2595,7 @@ Package pdftex.def Info: Pictures/coawstfinal.png  used on input line 759.
  (./_minted-main/A9C3D813F3205F34FEE4929BA985BECBC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
- (./_minted-main/598A48C4978A6DB8BF3E1D73B5FB00A7C885B93CE8E5C50D3A8999B2107977F4.pygtex)) (./sections/09_chapter_3.tex [28]
+ (./_minted-main/598A48C4978A6DB8BF3E1D73B5FB00A7C885B93CE8E5C50D3A8999B2107977F4.pygtex)) (./sections/09_chapter_3.tex [30]
 Chapter 3.
 File: Pictures/header.jpg Graphic file (type jpg)
 <use Pictures/header.jpg>
@@ -2610,37 +2616,37 @@ Underfull \hbox (badness 1210) in paragraph at lines 32--38
 \T1/ptm/m/n/10.95 (+20) de-scrip-tion, the in-put data, the grid and the ini-tial and bound-ary con-di-tions, the wave physics
  []
 
-[29
+[31
 
 ]
-<Pictures/roms_proc.png, id=632, 743.77875pt x 109.40875pt>
+<Pictures/roms_proc.png, id=709, 743.77875pt x 109.40875pt>
 File: Pictures/roms_proc.png Graphic file (type png)
 <use Pictures/roms_proc.png>
 Package pdftex.def Info: Pictures/roms_proc.png  used on input line 53.
 (pdftex.def)             Requested size: 375.80544pt x 55.28185pt.
-<Pictures/wrf_proc.png, id=634, 228.10219pt x 24.09pt>
+<Pictures/wrf_proc.png, id=711, 228.10219pt x 24.09pt>
 File: Pictures/wrf_proc.png Graphic file (type png)
 <use Pictures/wrf_proc.png>
 Package pdftex.def Info: Pictures/wrf_proc.png  used on input line 68.
 (pdftex.def)             Requested size: 234.8775pt x 24.80634pt.
-<Pictures/taxa_acopl.png, id=636, 399.74344pt x 65.49469pt>
+<Pictures/taxa_acopl.png, id=713, 399.74344pt x 65.49469pt>
 File: Pictures/taxa_acopl.png Graphic file (type png)
 <use Pictures/taxa_acopl.png>
 Package pdftex.def Info: Pictures/taxa_acopl.png  used on input line 90.
 (pdftex.def)             Requested size: 375.80544pt x 61.57599pt.
- [30 <./Pictures/roms_proc.png> <./Pictures/wrf_proc.png> <./Pictures/taxa_acopl.png>]
+ [32 <./Pictures/roms_proc.png> <./Pictures/wrf_proc.png> <./Pictures/taxa_acopl.png>]
 \openout4 = `main.listing'.
 
  (./_minted-main/42CB675B7EF4EB51DA4D52E1282A55D4C885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
  (./_minted-main/5A53EAA44340C049A9239599C2A9E5ABC885B93CE8E5C50D3A8999B2107977F4.pygtex)
-<Pictures/coupltime.png, id=647, 588.69937pt x 99.37125pt>
+<Pictures/coupltime.png, id=723, 588.69937pt x 99.37125pt>
 File: Pictures/coupltime.png Graphic file (type png)
 <use Pictures/coupltime.png>
 Package pdftex.def Info: Pictures/coupltime.png  used on input line 158.
 (pdftex.def)             Requested size: 446.26582pt x 75.32884pt.
-) (./sections/10_chapter_4.tex [31 <./Pictures/coupltime.png>] [32
+) (./sections/10_chapter_4.tex [33 <./Pictures/coupltime.png>] [34
 
 ]
 Chapter 4.
@@ -2650,10 +2656,700 @@ Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
 (pdftex.def)             Requested size: 614.295pt x 296.4996pt.
 \openout4 = `main.listing'.
 
-(./_minted-main/E1080054FFF2F6D4847AF382783F6D39C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+(./_minted-main/A4FE33F884559FED516DBF10C831CB3FC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
  (./_minted-main/54DCA5E37D2E5A21397D9CEE4B2506BEC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 \openout4 = `main.listing'.
 
- (./_minted-main/469F92E4B1AAEAABAF
+ (./_minted-main/469F92E4B1AAEAABAF641A01620888C3C885B93CE8E5C50D3A8999B2107977F4.pygtex) [35]
+\openout4 = `main.listing'.
+
+ (./_minted-main/E1DC1684D3B6A78688AABE90308D5EABC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/0B5FFBB99CF089799434C352BCA039DCC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/image002.png, id=745, 290.58563pt x 142.28156pt>
+File: Pictures/image002.png Graphic file (type png)
+<use Pictures/image002.png>
+Package pdftex.def Info: Pictures/image002.png  used on input line 116.
+(pdftex.def)             Requested size: 305.33789pt x 149.51509pt.
+ [36]
+Underfull \hbox (badness 3701) in paragraph at lines 125--129
+\T1/ptm/m/n/10.95 (+20) WPS is in-cluded in the COAWST pack-age, how-ever WPS can be down-loaded by vis-it-ing
+ []
+
+\openout4 = `main.listing'.
+
+(./_minted-main/C211FF5F240329A8505D594851AB26BEC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/8B1218892C4722B411FAD730774D8A36C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/54DCA5E37D2E5A21397D9CEE4B2506BEC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/469F92E4B1AAEAABAF641A01620888C3C885B93CE8E5C50D3A8999B2107977F4.pygtex) [37 <./Pictures/image002.png>]
+\openout4 = `main.listing'.
+
+ (./_minted-main/EA33974DA6A93B2C98E41A04665C8A2CC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/18E42D9F9F1523AAA338DE728C3F9BA2C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/F83E70659A91443AB0577D85ED9D087FC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/46C178FB62DE797E81A4FEB66C0B1F39C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/469F92E4B1AAEAABAF641A01620888C3C885B93CE8E5C50D3A8999B2107977F4.pygtex) [38]
+\openout4 = `main.listing'.
+
+ (./_minted-main/D3D03E1DD41ADEF1A441DB16603AD016C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/D1EB5858E9A4169AEFFF89A25315AC6FC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/1.png, id=768, 745.28438pt x 373.395pt>
+File: Pictures/1.png Graphic file (type png)
+<use Pictures/1.png>
+Package pdftex.def Info: Pictures/1.png  used on input line 307.
+(pdftex.def)             Requested size: 446.26582pt x 223.58292pt.
+ [39]
+\openout4 = `main.listing'.
+
+ (./_minted-main/FB19BB3E46E20FCE04D75F05211BD283C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/811E00392A606D6B97A060625B9D8956C885B93CE8E5C50D3A8999B2107977F4.pygtex) [40 <./Pictures/1.png>]
+\openout4 = `main.listing'.
+
+ (./_minted-main/21F4B921FC3A28C8595255EBDA40998BC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/image3411.png, id=780, 1265.528pt x 599.038pt>
+File: Pictures/image3411.png Graphic file (type png)
+<use Pictures/image3411.png>
+Package pdftex.def Info: Pictures/image3411.png  used on input line 362.
+(pdftex.def)             Requested size: 446.26582pt x 211.23862pt.
+\openout4 = `main.listing'.
+
+ (./_minted-main/3024E05CE9D1573305F65BC50ADF6393C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/qsubgeonedit.png, id=783, 469.755pt x 286.06876pt>
+File: Pictures/qsubgeonedit.png Graphic file (type png)
+<use Pictures/qsubgeonedit.png>
+Package pdftex.def Info: Pictures/qsubgeonedit.png  used on input line 398.
+(pdftex.def)             Requested size: 446.26582pt x 271.76376pt.
+ [41 <./Pictures/image3411.png>]
+\openout4 = `main.listing'.
+
+ (./_minted-main/719215566DE793AD5AD3C4D9DFF3287EC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/qsubgeo.png, id=791, 401.24907pt x 70.01157pt>
+File: Pictures/qsubgeo.png Graphic file (type png)
+<use Pictures/qsubgeo.png>
+Package pdftex.def Info: Pictures/qsubgeo.png  used on input line 419.
+(pdftex.def)             Requested size: 258.36668pt x 45.08392pt.
+\openout4 = `main.listing'.
+
+ (./_minted-main/D4C0E5B15D10D47F15E16B4F25F0495FC885B93CE8E5C50D3A8999B2107977F4.pygtex) [42 <./Pictures/qsubgeonedit.png> <./Pictures/qsubgeo.png>]
+\openout4 = `main.listing'.
+
+ (./_minted-main/47157BD8A337A09224F324ECECCC3BCAC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/760B5EC2D3F4B351D2343E4E4BB9D0C1C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/2445CDF0BB8D7FE3CF2664E9B9694C20C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/7B491E6197187BDF08241B6A2354CFDAC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/nclinit.png, id=803, 374.14781pt x 79.79813pt>
+File: Pictures/nclinit.png Graphic file (type png)
+<use Pictures/nclinit.png>
+Package pdftex.def Info: Pictures/nclinit.png  used on input line 484.
+(pdftex.def)             Requested size: 446.26582pt x 95.18497pt.
+\openout4 = `main.listing'.
+
+ (./_minted-main/D120A295237AAA51AFE4961DBE6D1E24C885B93CE8E5C50D3A8999B2107977F4.pygtex) [43 <./Pictures/nclinit.png>]
+\openout4 = `main.listing'.
+
+ (./_minted-main/0D8155B12BD104F09D9A157A088D6480C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/7BD7FCB4C1B80702F5BDBDA8D09234BCC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/wps_domain_new.png, id=813, 1016.79875pt x 947.54pt>
+File: Pictures/wps_domain_new.png Graphic file (type png)
+<use Pictures/wps_domain_new.png>
+Package pdftex.def Info: Pictures/wps_domain_new.png  used on input line 523.
+(pdftex.def)             Requested size: 305.33789pt x 284.5389pt.
+<Pictures/ungribprefix.png, id=815, 164.11313pt x 57.21375pt>
+File: Pictures/ungribprefix.png Graphic file (type png)
+<use Pictures/ungribprefix.png>
+Package pdftex.def Info: Pictures/ungribprefix.png  used on input line 538.
+(pdftex.def)             Requested size: 211.38832pt x 73.69601pt.
+ [44 <./Pictures/wps_domain_new.png>]
+\openout4 = `main.listing'.
+
+ (./_minted-main/97A7A2894790D3691989CCE3FB82217CC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+Underfull \hbox (badness 5374) in paragraph at lines 563--565
+[]\T1/ptm/m/n/10.95 (+20) The \T1/ptm/m/it/10.95 (+20) Vtable \T1/ptm/m/n/10.95 (+20) is used to read the files in \T1/ptm/m/it/10.95 (+20) Grib \T1/ptm/m/n/10.95 (+20) for-mat. It is manda-tory to use 
+ []
+
+
+Underfull \hbox (badness 4505) in paragraph at lines 563--565
+\T1/ptm/m/n/10.95 (+20) the cor-re-spond-ing \T1/ptm/m/it/10.95 (+20) Vtable \T1/ptm/m/n/10.95 (+20) to the cho-sen database. You can con-sult them at 
+ []
+
+\openout4 = `main.listing'.
+
+(./_minted-main/64B45A510C7CC9B9EDE67248DADFECDFC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/067F6D943CFFD15AC50748116A00237EC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/qsubung.png, id=823, 389.95688pt x 57.21375pt>
+File: Pictures/qsubung.png Graphic file (type png)
+<use Pictures/qsubung.png>
+Package pdftex.def Info: Pictures/qsubung.png  used on input line 606.
+(pdftex.def)             Requested size: 211.38832pt x 31.01456pt.
+ [45 <./Pictures/ungribprefix.png> <./Pictures/qsubung.png>]
+\openout4 = `main.listing'.
+
+ (./_minted-main/B054E680C682EC0AF2A2E85EADC2626FC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/6F248AC2F6E25333E2B7EADB9B4DCE7AC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/EBE1D507BD8037F882FF140B9774E0D2C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/fgname.png, id=837, 233.37187pt x 52.69687pt>
+File: Pictures/fgname.png Graphic file (type png)
+<use Pictures/fgname.png>
+Package pdftex.def Info: Pictures/fgname.png  used on input line 664.
+(pdftex.def)             Requested size: 234.8775pt x 53.03926pt.
+\openout4 = `main.listing'.
+
+ (./_minted-main/EF30340D5A178116DA6C8A76E9AEAA2BC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/3298ABE7BCEFA3D59D6EC8E0E89F4C22C885B93CE8E5C50D3A8999B2107977F4.pygtex) [46 <./Pictures/fgname.png>]
+\openout4 = `main.listing'.
+
+ (./_minted-main/24FEC393E09FAAB76E3B4C99B93BF786C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/namelisttimecontrol.png, id=845, 467.49657pt x 364.36125pt>
+File: Pictures/namelisttimecontrol.png Graphic file (type png)
+<use Pictures/namelisttimecontrol.png>
+Package pdftex.def Info: Pictures/namelisttimecontrol.png  used on input line 728.
+(pdftex.def)             Requested size: 328.82707pt x 256.2965pt.
+ [47]
+\openout4 = `main.listing'.
+
+ (./_minted-main/2AEAD5FCD395591487CDB8A0EB4406D0C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/physics.png, id=852, 320.69812pt x 200.24812pt>
+File: Pictures/physics.png Graphic file (type png)
+<use Pictures/physics.png>
+Package pdftex.def Info: Pictures/physics.png  used on input line 745.
+(pdftex.def)             Requested size: 328.82707pt x 205.32898pt.
+ [48 <./Pictures/namelisttimecontrol.png> <./Pictures/physics.png>]
+\openout4 = `main.listing'.
+
+ (./_minted-main/3EFDC33187386DF3BE2606C3F8D08285C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/realsucess.png, id=861, 478.78876pt x 123.46124pt>
+File: Pictures/realsucess.png Graphic file (type png)
+<use Pictures/realsucess.png>
+Package pdftex.def Info: Pictures/realsucess.png  used on input line 784.
+(pdftex.def)             Requested size: 328.82707pt x 84.79272pt.
+\openout4 = `main.listing'.
+
+ (./_minted-main/3B942A766CD4192FB0AD56E85154021AC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/BE65F4806E8BB18C5CEE865F4A9D47FDC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/E2B049EB006B85F36A2159E2ACC418FDC885B93CE8E5C50D3A8999B2107977F4.pygtex) [49 <./Pictures/realsucess.png>]
+\openout4 = `main.listing'.
+
+ (./_minted-main/A9C3D813F3205F34FEE4929BA985BECBC885B93CE8E5C50D3A8999B2107977F4.pygtex)) (./sections/11_chapter_5.tex [50]
+Chapter 5.
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
+(pdftex.def)             Requested size: 614.295pt x 296.4996pt.
+\openout4 = `main.listing'.
+
+(./_minted-main/8AB754EA9FB88C29B0A8AEE033EDA2E5C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/3FDED2F0C584A68732C7C083708F39B9C885B93CE8E5C50D3A8999B2107977F4.pygtex) [51
+
+]
+\openout4 = `main.listing'.
+
+ (./_minted-main/35B2E228E785208AF91A0606AC018075C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/7910E9E9AFE2A6C560B0FAA005ED67CBC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/E628218EAA383264356A30F42B9F2647C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/594A4153159CB3435C25F5CAE03A1FA6C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/AF4B66630488A250241199FCC4311FB9C885B93CE8E5C50D3A8999B2107977F4.pygtex) [52]
+\openout4 = `main.listing'.
+
+ (./_minted-main/1ED429560AF5DE74FE9138C5C6F67BBCC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/419943C5C1541A5F888A8CE64DD8CB95C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/762F2E6D5B85B7B872CBFED6BD181EF7C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/1FA04D53EC5B3AA22DE4E942115F1B99C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/1FA04D53EC5B3AA22DE4E942115F1B99C885B93CE8E5C50D3A8999B2107977F4.pygtex) [53]
+Underfull \hbox (badness 8113) in paragraph at lines 183--185
+\T1/ptm/m/n/10.95 (+20) Instale o \T1/ptm/m/it/10.95 (+20) Curl 7.50.3 \T1/ptm/m/n/10.95 (+20) ([][]\T1/ptm/m/it/10.95 (+20) http://curl.haxx.se/download.html[][]\T1/ptm/m/n/10.95 (+20) ). Baixe-o, de-scom-pacte na pasta
+ []
+
+\openout4 = `main.listing'.
+
+(./_minted-main/9439F0178FB068E1D73CD6F69CF80BA4C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/49CF72D89DC973255B2EFF628DF5D6DAC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/DA79A8EA64A583192BE909D3C9A198BAC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/A3785CCCDCF74F85A2061A293F124694C885B93CE8E5C50D3A8999B2107977F4.pygtex) [54]
+\openout4 = `main.listing'.
+
+ (./_minted-main/D8C848CDE0D6C1E4CAE483754B25B87AC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/DA79A8EA64A583192BE909D3C9A198BAC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/1EF6811535BF373F88AF77CC2B0A5BFBC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/D8C848CDE0D6C1E4CAE483754B25B87AC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/485F875B13C0C2757CFE8BAF03BD781AC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/2441504B04F655AB892BEC85430F763AC885B93CE8E5C50D3A8999B2107977F4.pygtex) [55]
+\openout4 = `main.listing'.
+
+ (./_minted-main/D8C848CDE0D6C1E4CAE483754B25B87AC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/BABB8C1DABDA1300C2F446E718287178C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/BD2F1F8BC0D45370BC1CE5E2295D6E6BC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+Underfull \hbox (badness 1112) in paragraph at lines 339--341
+\T1/ptm/m/n/10.95 (+20) Instale o \T1/ptm/m/it/10.95 (+20) Udunits 2.1.24 \T1/ptm/m/n/10.95 (+20) ([][]\T1/ptm/m/it/10.95 (+20) ftp://ftp.unidata.ucar.edu/pub/udunits/[][]\T1/ptm/m/n/10.95 (+20) ). Baixe-o, de-scom-pacte na pasta
+ []
+
+\openout4 = `main.listing'.
+
+(./_minted-main/BABB8C1DABDA1300C2F446E718287178C885B93CE8E5C50D3A8999B2107977F4.pygtex) [56]
+\openout4 = `main.listing'.
+
+ (./_minted-main/0A4DEFFC3F92BE9AEF16FB4F99D86DA4C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/0956A19A9AFA7883D1D260FC76D3FD78C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/40918183DF0C6700E8B9BB403EBED289C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/674D63911C18647936D9A892870B210DC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/93B4B45A1597A572A42997441C0EF557C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/9D71E6B146CAEC47E087E644ECC3D4C7C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/860050E10CC1E0E3F06FB7637F12AF57C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/2441B17A9E0D6B7B3ACB004555F18638C885B93CE8E5C50D3A8999B2107977F4.pygtex) [57]
+\openout4 = `main.listing'.
+
+ (./_minted-main/49309F476861EB518745F4BA0628F412C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/562E6B48013991300EDB74BA1E13AD59C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/FE42503B911E5BD8E13D4844A6BBE03FC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/BCCC7B7DDA4814A69E853FFB648BAD10C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/429E00769DFEC1330E7F7C84058DD1BEC885B93CE8E5C50D3A8999B2107977F4.pygtex) [58]
+\openout4 = `main.listing'.
+
+ (./_minted-main/A973653A32BADE98764DF15BE8AA898EC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/C72AC3A0045CC8F7395711E8D2659414C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/E6464E45CCADEA11BBD3323458ECCBDEC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/C01FB05A48782E89B9DF772D2E9FF2ECC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/43D094DF4F81700B87D55033C0AD92D5C885B93CE8E5C50D3A8999B2107977F4.pygtex) [59]
+\openout4 = `main.listing'.
+
+ (./_minted-main/1B42539A056C1F4110958011062E6AA8C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/0633081F5439C663A78B1DDA503BEF89C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/DBA86801D2BFC6605E16CC7F7BD1BA08C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/BC8AFBE3A77D24F90754D40D7EBC5BDBC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/FEFA77A9009D77C0D0A80B26F4628FDEC885B93CE8E5C50D3A8999B2107977F4.pygtex) [60]
+\openout4 = `main.listing'.
+
+ (./_minted-main/DE4EBAD83F7E15861BD70E6CBC7BE93FC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/9C3CCAA981891D231903181F1F94BFB6C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/2C2B14D2E6D975AEB68563DC42C50984C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/3D6F5D2905D69580DE3415DAF0E9E6F8C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/3E3034830014200D5D1C588EEB6A1C0BC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/594A4153159CB3435C25F5CAE03A1FA6C885B93CE8E5C50D3A8999B2107977F4.pygtex) [61]
+\openout4 = `main.listing'.
+
+ (./_minted-main/8F031BCCD5A843D6EF079547C44D51A8C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/4AC664770D5738A34E342FAE97BC3628C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/3B506B5C538713171823AE73C7E962D0C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/13DCA8ED77BB6A320F58F9884BBBBC6CC885B93CE8E5C50D3A8999B2107977F4.pygtex) [62]
+\openout4 = `main.listing'.
+
+ (./_minted-main/4912F87158A48AA101193B7BFE1E5FB6C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/2AE734D6716A00E9CF0C595FE2B0B77AC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/C982E14731D35E4B89828043B16AABD1C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/8594752F976DDE865FAFB9BE3D233E82C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/28650E63B0E3DF125583DD2FEBC91E29C885B93CE8E5C50D3A8999B2107977F4.pygtex) [63]
+\openout4 = `main.listing'.
+
+ (./_minted-main/64E77C74346E85CA7DAE8B9D3A39E0DDC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/944C6D5C163ED55F61C36BCB80077C7DC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/E320608B3CEAF317BF02B4175290058DC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/CE3BAFAB0AAF6DCCC8F0B4A27A1C5E45C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/C0DAE35119CF86A965EC52EF6671EB15C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/594A4153159CB3435C25F5CAE03A1FA6C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/3AFD2F32EE5131687603A6957551FA21C885B93CE8E5C50D3A8999B2107977F4.pygtex) [64]
+LaTeX Font Info:    Font shape `T1/pag/bx/it' in size <12> not available
+(Font)              Font shape `T1/pag/b/it' tried instead on input line 862.
+LaTeX Font Info:    Font shape `T1/pag/b/it' in size <12> not available
+(Font)              Font shape `T1/pag/db/it' tried instead on input line 862.
+LaTeX Font Info:    Font shape `T1/pag/db/it' in size <12> not available
+(Font)              Font shape `T1/pag/db/sl' tried instead on input line 862.
+\openout4 = `main.listing'.
+
+ (./_minted-main/6C3A78B9910103F3652682C9099EEB1CC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/353D8986888DD4D1E1948485E29D0C73C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/9BA5CEBEADA8AFDAD166BB1F566F7B0AC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/etopo1.png, id=951, 1204.5pt x 615.80063pt>
+File: Pictures/etopo1.png Graphic file (type png)
+<use Pictures/etopo1.png>
+Package pdftex.def Info: Pictures/etopo1.png  used on input line 910.
+(pdftex.def)             Requested size: 399.29463pt x 204.13567pt.
+LaTeX Font Info:    Font shape `T1/pag/m/it' in size <10.95> not available
+(Font)              Font shape `T1/pag/m/sl' tried instead on input line 915.
+ [65]
+LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10> not available
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 934.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 934.
+\openout4 = `main.listing'.
+
+ (./_minted-main/8759F3A474D792FCEE13212DFA2CC175C885B93CE8E5C50D3A8999B2107977F4.pygtex) [66 <./Pictures/etopo1.png>]
+<Pictures/makegrid.png, id=968, 1494.58376pt x 903.375pt>
+File: Pictures/makegrid.png Graphic file (type png)
+<use Pictures/makegrid.png>
+Package pdftex.def Info: Pictures/makegrid.png  used on input line 997.
+(pdftex.def)             Requested size: 469.75502pt x 283.93054pt.
+ [67 <./Pictures/makegrid.png>]
+\openout4 = `main.listing'.
+
+ (./_minted-main/F391832866ABE11DA894731385B1B231C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+Underfull \hbox (badness 4181) in paragraph at lines 1022--1024
+\T1/ptm/m/n/10.95 (+20) O GLO-RYS pode ser baix-ado no site: [][]\T1/ptm/m/it/10.95 (+20) http://marine.copernicus.eu/services-portfolio/access-to-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1022--1024
+\T1/ptm/m/it/10.95 (+20) products/?option=com_csw&view=details&product_id=GLOBAL_REANALYSIS_PHY_001_030[][]\T1/ptm/m/n/10.95 (+20) .
+ []
+
+<Pictures/glorys1.png, id=979, 966.61125pt x 929.4725pt>
+File: Pictures/glorys1.png Graphic file (type png)
+<use Pictures/glorys1.png>
+Package pdftex.def Info: Pictures/glorys1.png  used on input line 1030.
+(pdftex.def)             Requested size: 328.82707pt x 316.18666pt.
+[68]
+<Pictures/glorys2.png, id=989, 537.00626pt x 928.46875pt>
+File: Pictures/glorys2.png Graphic file (type png)
+<use Pictures/glorys2.png>
+Package pdftex.def Info: Pictures/glorys2.png  used on input line 1057.
+(pdftex.def)             Requested size: 281.85587pt x 487.31172pt.
+ [69 <./Pictures/glorys1.png>]
+<Pictures/glorys3.png, id=998, 934.49126pt x 616.3025pt>
+File: Pictures/glorys3.png Graphic file (type png)
+<use Pictures/glorys3.png>
+Package pdftex.def Info: Pictures/glorys3.png  used on input line 1068.
+(pdftex.def)             Requested size: 281.85587pt x 185.88899pt.
+ [70 <./Pictures/glorys2.png>]
+\openout4 = `main.listing'.
+
+ (./_minted-main/CCF2B5690000B8A6C43D559D54DA6FC2C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/F39C36119735960772D510E8A7810B3EC885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/BCD4C151FA3189920585DE84C9CF3EF5C885B93CE8E5C50D3A8999B2107977F4.pygtex) [71 <./Pictures/glorys3.png>]
+\openout4 = `main.listing'.
+
+ (./_minted-main/F5FF5BE6AD993FD68CC1DA8002E5F0B7C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/0E7090E2F0640AA3A86477AAEDD3F239C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/forcingfilename.png, id=1011, 500.87125pt x 328.22626pt>
+File: Pictures/forcingfilename.png Graphic file (type png)
+<use Pictures/forcingfilename.png>
+Package pdftex.def Info: Pictures/forcingfilename.png  used on input line 1155.
+(pdftex.def)             Requested size: 281.85587pt x 184.71194pt.
+<Pictures/abrevi.png, id=1013, 431.6125pt x 58.2175pt>
+File: Pictures/abrevi.png Graphic file (type png)
+<use Pictures/abrevi.png>
+Package pdftex.def Info: Pictures/abrevi.png  used on input line 1166.
+(pdftex.def)             Requested size: 281.85587pt x 38.01857pt.
+<Pictures/m2rgriddir.png, id=1015, 598.235pt x 43.16125pt>
+File: Pictures/m2rgriddir.png Graphic file (type png)
+<use Pictures/m2rgriddir.png>
+Package pdftex.def Info: Pictures/m2rgriddir.png  used on input line 1177.
+(pdftex.def)             Requested size: 281.85587pt x 20.33517pt.
+ [72 <./Pictures/forcingfilename.png> <./Pictures/abrevi.png>]
+<Pictures/glorysdirm2r.png, id=1026, 534.99875pt x 71.26625pt>
+File: Pictures/glorysdirm2r.png Graphic file (type png)
+<use Pictures/glorysdirm2r.png>
+Package pdftex.def Info: Pictures/glorysdirm2r.png  used on input line 1189.
+(pdftex.def)             Requested size: 281.85587pt x 37.5469pt.
+ [73 <./Pictures/m2rgriddir.png> <./Pictures/glorysdirm2r.png>]
+<Pictures/m2roptions.png, id=1037, 642.4pt x 926.46124pt>
+File: Pictures/m2roptions.png Graphic file (type png)
+<use Pictures/m2roptions.png>
+Package pdftex.def Info: Pictures/m2roptions.png  used on input line 1243.
+(pdftex.def)             Requested size: 234.8775pt x 338.72807pt.
+\openout4 = `main.listing'.
+
+ (./_minted-main/19C33865FF07C574B3B74574221FD15DC885B93CE8E5C50D3A8999B2107977F4.pygtex) [74 <./Pictures/m2roptions.png>]) (./sections/12_chapter_6.tex [75] [76
+
+]
+Chapter 6.
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
+(pdftex.def)             Requested size: 614.295pt x 296.4996pt.
+\openout4 = `main.listing'.
+
+(./_minted-main/229E02F101C999257DE0C4EB385F8106C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/makeswan.png, id=1052, 355.3275pt x 313.9228pt>
+File: Pictures/makeswan.png Graphic file (type png)
+<use Pictures/makeswan.png>
+Package pdftex.def Info: Pictures/makeswan.png  used on input line 33.
+(pdftex.def)             Requested size: 220.78543pt x 195.06601pt.
+ [77] [78 <./Pictures/makeswan.png>]
+Chapter 7.
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 47.
+(pdftex.def)             Requested size: 614.295pt x 296.4996pt.
+<Pictures/hiceroms.png, id=1071, 293.095pt x 279.0425pt>
+File: Pictures/hiceroms.png Graphic file (type png)
+<use Pictures/hiceroms.png>
+Package pdftex.def Info: Pictures/hiceroms.png  used on input line 78.
+(pdftex.def)             Requested size: 140.92793pt x 134.1688pt.
+[79
+
+]
+\openout4 = `main.listing'.
+
+ (./_minted-main/ECEC33F101CF3031C2DE0F623822F6E9C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/962C192554697F7EA447D365B536D677C885B93CE8E5C50D3A8999B2107977F4.pygtex)) (./sections/13_chapter_7.tex [80 <./Pictures/hiceroms.png>]
+Chapter 8.
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
+(pdftex.def)             Requested size: 614.295pt x 296.4996pt.
+\openout4 = `main.listing'.
+
+(./_minted-main/91B65BE0B1C3DD057C2F8544B1993319C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+<Pictures/scripin.png, id=1088, 791.20593pt x 612.03656pt>
+File: Pictures/scripin.png Graphic file (type png)
+<use Pictures/scripin.png>
+Package pdftex.def Info: Pictures/scripin.png  used on input line 23.
+(pdftex.def)             Requested size: 305.33789pt x 236.19046pt.
+ [81
+
+]
+\openout4 = `main.listing'.
+
+ (./_minted-main/D88EEB8D20AE420E4352F9AE35B7B067C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/EA1923C0E90F1E5E64918F13B0257573C885B93CE8E5C50D3A8999B2107977F4.pygtex)
+\openout4 = `main.listing'.
+
+ (./_minted-main/50E1EA9E29040747A21D8336B058E5D1C885B93CE8E5C50D3A8999B2107977F4.pygtex) [82 <./Pictures/scripin.png>]
+<Pictures/scripqsub.png, id=1100, 831.105pt x 350.81062pt>
+File: Pictures/scripqsub.png Graphic file (type png)
+<use Pictures/scripqsub.png>
+Package pdftex.def Info: Pictures/scripqsub.png  used on input line 79.
+(pdftex.def)             Requested size: 305.33789pt x 128.88254pt.
+\openout4 = `main.listing'.
+
+ (./_minted-main/2BD2EDD2C2AA93D92ABF1F500A8A26C9C885B93CE8E5C50D3A8999B2107977F4.pygtex)) (./sections/14_chapter_8.tex [83 <./Pictures/scripqsub.png>] [84
+
+]
+Chapter 9.
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
+(pdftex.def)             Requested size: 614.295pt x 296.4996pt.
+[85] [86] [87] [88] [89] [90]
+Underfull \hbox (badness 2027) in paragraph at lines 209--210
+\T1/ptm/m/n/10.95 (+20) Avaliable at: [][]\T1/ptm/m/it/10.95 (+20) http://www.iag.usp.br/pos/meteorologia/biblio/modeling-spawning-strategies-and-larval-
+ []
+
+[91]) (./sections/15_acknowledgments.tex [92]
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
+(pdftex.def)             Requested size: 614.295pt x 296.4996pt.
+) [93
+
+] [94
+
+]
+File: Pictures/header.jpg Graphic file (type jpg)
+<use Pictures/header.jpg>
+Package pdftex.def Info: Pictures/header.jpg  used on input line 257.
+(pdftex.def)             Requested size: 614.295pt x 296.4996pt.
+ [95]
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
+[][]\T1/ptm/m/n/10.95 (+20) Kristiansen, T. (2019). \T1/ptm/m/it/10.95 (+20) Model2roms Python Tool-box for ROMS\T1/ptm/m/n/10.95 (+20) .
+ []
+
+[96] [97]
+
+Package biblatex Warning: No driver for entry type 'software'.
+(biblatex)                Using fallback driver on input line 257.
+
+\tf@ptc=\write13
+\openout13 = `main.ptc'.
+
+[98]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 265.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 34611CE3C640A443DD06D03810979E65;4514.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
+ ) 
+Here is how much of TeX's memory you used:
+ 64327 strings out of 492609
+ 1393961 string characters out of 6131462
+ 1942531 words of memory out of 5000000
+ 66186 multiletter control sequences out of 15000+600000
+ 674287 words of font info for 388 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 157i,12n,191p,1674b,2961s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagdo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagko8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (98 pages, 6161447 bytes).
+PDF statistics:
+ 1352 PDF objects out of 1440 (max. 8388607)
+ 1074 compressed objects within 11 object streams
+ 247 named destinations out of 1000 (max. 500000)
+ 77621 words of extra memory for PDF output out of 89155 (max. 10000000)
+

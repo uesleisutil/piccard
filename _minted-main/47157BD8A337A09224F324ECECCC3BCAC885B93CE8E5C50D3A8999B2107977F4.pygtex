@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+mv /scratch/name.surname/repositorio/NCL /scratch/name.surname
+\end{Verbatim}

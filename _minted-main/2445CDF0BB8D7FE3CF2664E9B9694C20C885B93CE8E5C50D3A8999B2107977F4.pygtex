@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+export NCARG\PYGZus{}ROOT=/scratch/name.surname/NCL
+export PATH=\PYGZdl{}NCARG\PYGZus{}ROOT/bin:\PYGZdl{}PATH
+\end{Verbatim}

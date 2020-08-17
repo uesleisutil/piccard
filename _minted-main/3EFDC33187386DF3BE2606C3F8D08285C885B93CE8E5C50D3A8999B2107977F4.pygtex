@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+cd /home/name.surname/repositorio/WRF\PYGZus{}scripts
+mv qsub\PYGZus{}real.sh /home/name.surname/WRF/test/em\PYGZus{}real
+qsub qsub\PYGZus{}real.sh
+\end{Verbatim}

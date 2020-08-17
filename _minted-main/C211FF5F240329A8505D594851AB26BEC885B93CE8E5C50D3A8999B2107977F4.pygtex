@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+sftp \PYGZhy{}P2000 name.surname@acesso\PYGZhy{}hpc.cptec.inpe.br
+cd COAWST
+put WPSV3.9.0.1.tar.gz
+\end{Verbatim}

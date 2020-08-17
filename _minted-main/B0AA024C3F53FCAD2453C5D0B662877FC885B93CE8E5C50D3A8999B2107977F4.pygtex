@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-WRF\PYGZus{}DIR = /home/nome.sobrenome/WRF
-SFC     = ftn
-SCC     = gcc
-DMFC    = ftn
-DMCC    = gcc
-\end{Verbatim}

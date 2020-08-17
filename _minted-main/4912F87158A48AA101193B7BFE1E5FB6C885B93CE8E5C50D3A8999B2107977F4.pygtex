@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+cd ../bathy\PYGZus{}smoother/external/lp\PYGZus{}solve\PYGZus{}5.5/lp\PYGZus{}solve/
+sh ccc
+cp bin/ux64/lp\PYGZus{}solve /home/usuario/libsmodels/bin/
+cd ../lpsolve55
+sh ccc
+cp bin/ux64/* /home/usuario/libsmodels/lib/
+\end{Verbatim}

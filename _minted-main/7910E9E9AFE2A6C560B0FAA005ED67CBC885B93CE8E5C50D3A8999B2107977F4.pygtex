@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+./configure \PYGZhy{}\PYGZhy{}prefix=/home/usuario/libsmodels
+sudo make
+sudo make check
+sudo make install
+\end{Verbatim}

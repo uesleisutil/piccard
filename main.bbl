@@ -19,6 +19,40 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{Amante2009}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=d052052543d672d9f738b685d7b844b6}{%
+           family={Amante},
+           familyi={A\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=aed5da1bcd986106f3121c6e2d155767}{%
+           family={Eakins},
+           familyi={E\bibinitperiod},
+           given={B.\bibnamedelimi W.},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1e8454fc0ca0946efc6bacee63559b2c}
+      \strng{fullhash}{1e8454fc0ca0946efc6bacee63559b2c}
+      \strng{bibnamehash}{1e8454fc0ca0946efc6bacee63559b2c}
+      \strng{authorbibnamehash}{1e8454fc0ca0946efc6bacee63559b2c}
+      \strng{authornamehash}{1e8454fc0ca0946efc6bacee63559b2c}
+      \strng{authorfullhash}{1e8454fc0ca0946efc6bacee63559b2c}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NOAA Techinal Memorandum NESDIS NGDC}
+      \field{title}{ETOPO-1 1 Arc-Minute Global Relief Model: Procedures, Data Source and Analysis.}
+      \field{volume}{24}
+      \field{year}{2009}
+      \field{pages}{19}
+      \range{pages}{1}
+    \endentry
     \entry{Arakawa1977}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,uniquepart=base,hash=1d5a6752c9802eab954c68d988d17663}{%
@@ -55,6 +89,134 @@
       \verb{doi}
       \verb 10.1016/B978-0-12-460817-7.50009-4
       \endverb
+    \endentry
+    \entry{Becker2009}{article}{}
+      \name{author}{17}{}{%
+        {{uniquename=0,uniquepart=base,hash=0fef0cf55870892b98ddead618e160a6}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5ad3ef4fe7085ee258280d35e9c53c19}{%
+           family={Sandwell},
+           familyi={S\bibinitperiod},
+           given={D.\bibnamedelimi T.},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=33ae514753dd7f74bf4c82e0d76808a3}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi H.\bibnamedelimi F.},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=44e12b5ad292ca1bb07f877e517e729c}{%
+           family={Braud},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c508e1367852c474a8d809274fb2dbf7}{%
+           family={Binder},
+           familyi={B\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6f0c80dc28b714b469ac91fdf89f906f}{%
+           family={Depner},
+           familyi={D\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=15a760eedc8c198b556eca127135b72d}{%
+           family={Fabre},
+           familyi={F\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0,
+           suffix={D.\bibnamedelimi abd\bibnamedelima Factor},
+           suffixi={D\bibinitperiod\bibinitdelim a\bibinitperiod\bibinitdelim F\bibinitperiod},
+           suffixun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6d4af05c2df9ff51a3347dcfa0b37da2}{%
+           family={Ingalls},
+           familyi={I\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5fe16ea765ff64376107d712a5d7bce0}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={S.\bibnamedelimi -H.},
+           giveni={S\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=583b23d16e426b94dd84e47d6fb90183}{%
+           family={Ladner},
+           familyi={L\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=007d82c4cb4e4f68ef197681394d5cba}{%
+           family={Marks},
+           familyi={M\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6567cf068239f4196799ddb3cdde11f0}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=33c3db0e7dfd9801f18fe75a9bbc260c}{%
+           family={Pharaoh},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6823ca79c02bbdb2c36e1ddcb554ee91}{%
+           family={Trimmer},
+           familyi={T\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cf24125175af75b48f24d7ea76a727f3}{%
+           family={Von\bibnamedelima Rosenberg},
+           familyi={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f5354699da5d3b96015c612f6091a3dc}{%
+           family={Wallace},
+           familyi={W\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f53689b7f5e4f35777fc5d8aa231de71}{%
+           family={Weatherall},
+           familyi={W\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0d5affbb4938b74b2d27de4f71dbd6de}
+      \strng{fullhash}{1520823d518a5d65fc5a8a17ee6a45ac}
+      \strng{bibnamehash}{1520823d518a5d65fc5a8a17ee6a45ac}
+      \strng{authorbibnamehash}{1520823d518a5d65fc5a8a17ee6a45ac}
+      \strng{authornamehash}{0d5affbb4938b74b2d27de4f71dbd6de}
+      \strng{authorfullhash}{1520823d518a5d65fc5a8a17ee6a45ac}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Marine Geodesy}
+      \field{number}{4}
+      \field{title}{Global Bathymetry and Elevation Data at 30 Arc Seconds Resolution: SRTM30 PLUS}
+      \field{volume}{55}
+      \field{year}{2009}
+      \field{pages}{355\bibrangedash 371}
+      \range{pages}{17}
     \endentry
     \entry{Booij1996}{article}{}
       \name{author}{3}{}{%
@@ -180,6 +342,49 @@
       \range{pages}{18}
       \verb{doi}
       \verb 10.1007/s10236-005-0008-3
+      \endverb
+    \endentry
+    \entry{Carton2018}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=baac97e74bcff9c6baa119a82dbf660f}{%
+           family={Carton},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a0abeb742fe2617bfaa3c68fd996f1b5}{%
+           family={Chepurin},
+           familyi={C\bibinitperiod},
+           given={G.\bibnamedelimi A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5ecc04ab7cd8350e63b66dc42451fa3e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0178b1c423126110c48651893ec0b720}
+      \strng{fullhash}{ff39f8c8dcaffc1bb00de204c5d95a03}
+      \strng{bibnamehash}{ff39f8c8dcaffc1bb00de204c5d95a03}
+      \strng{authorbibnamehash}{ff39f8c8dcaffc1bb00de204c5d95a03}
+      \strng{authornamehash}{0178b1c423126110c48651893ec0b720}
+      \strng{authorfullhash}{ff39f8c8dcaffc1bb00de204c5d95a03}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Geophysical Research}
+      \field{title}{SODA3: a new ocean climate reanalysis}
+      \field{volume}{123}
+      \field{year}{2009}
+      \field{pages}{6967\bibrangedash 6983}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1175/JCLI-D-18-0149.1
       \endverb
     \endentry
     \entry{Charnock1955}{article}{}
@@ -338,6 +543,40 @@
       \verb{doi}
       \verb 10.1038/s41598-019-45042-0
       \endverb
+    \endentry
+    \entry{Fernandez2018}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=49ff17618671e2eabefac13cb6720ac1}{%
+           family={Fernandez},
+           familyi={F\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cdba09db5a0221b93fe78f4dcff74739}{%
+           family={Lellouche},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a3c11381c7c96659af9d56b702944502}
+      \strng{fullhash}{a3c11381c7c96659af9d56b702944502}
+      \strng{bibnamehash}{a3c11381c7c96659af9d56b702944502}
+      \strng{authorbibnamehash}{a3c11381c7c96659af9d56b702944502}
+      \strng{authornamehash}{a3c11381c7c96659af9d56b702944502}
+      \strng{authorfullhash}{a3c11381c7c96659af9d56b702944502}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Copernicus Product User Manual}
+      \field{title}{Product User Manual for the Global Ocean Physcal Reanalysis Product GLORYS12V1}
+      \field{volume}{4}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 15}
+      \range{pages}{15}
     \endentry
     \entry{Haidvogel2008}{article}{}
       \name{author}{20}{}{%
@@ -690,6 +929,32 @@
       \verb{doi}
       \verb 10.1175/1520-0493(1999)127<2204:FASOCR>2.0.CO;2
       \endverb
+    \endentry
+    \entry{Trond2019}{misc}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=a815c873b767d0098d4908b0a277ee46}{%
+           family={Kristiansen},
+           familyi={K\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a815c873b767d0098d4908b0a277ee46}
+      \strng{fullhash}{a815c873b767d0098d4908b0a277ee46}
+      \strng{bibnamehash}{a815c873b767d0098d4908b0a277ee46}
+      \strng{authorbibnamehash}{a815c873b767d0098d4908b0a277ee46}
+      \strng{authornamehash}{a815c873b767d0098d4908b0a277ee46}
+      \strng{authorfullhash}{a815c873b767d0098d4908b0a277ee46}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/trondkr/model2roms}}
+      \field{note}{Accessed: 2019-09-25}
+      \field{title}{Model2roms Python Toolbox for ROMS}
+      \field{year}{2019}
     \endentry
     \entry{Larson2005}{article}{}
       \name{author}{3}{}{%

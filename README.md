@@ -7,23 +7,23 @@
 
 Third edition notes:
 * renewed the aesthetics of the guide;
-* update to COAWST v3.6;
+* updated to COAWST v3.6;
 * translated it to english;
-* added a section to use COAWST in your own computer (*planned*)
+* added a section to use COAWST in your own computer (***planned***).
 
 <h2>COAWST configuration guide, second edition.</h2>
 
-The second edition project is in the V2 folder.
+**The second edition project is in the V2 folder.**
 
 Second edition notes:
 * renewed the aesthetics of the guide;
-* update to COAWST v3.4;
+* updated to COAWST v3.4;
 * added the reviewers section;
 * reformulated the ROMS section, using the model2roms toolbox by Trond Kristiansen;
 * added section for Budgell's Sea Ice Model;
 
 <h2>COAWST configuration guide, first edition.</h2>
-The first edition project is in the V1 folder.
+**The first edition project is in the V1 folder.**
   
 <h2>Contact</h2>
 <ul>

@@ -590,11 +590,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagd8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/avantgar/pagk8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagk8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagko8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagdo8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/avantgar/pagko8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagko8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/avantgar/pagdo8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagdo8r.tfm
 OUTPUT main.toc
 INPUT sections/07_chapter_1.tex
 INPUT sections/07_chapter_1.tex
@@ -1222,6 +1219,7 @@ INPUT _minted-main/FB19BB3E46E20FCE04D75F05211BD283C885B93CE8E5C50D3A8999B210797
 INPUT _minted-main/FB19BB3E46E20FCE04D75F05211BD283C885B93CE8E5C50D3A8999B2107977F4.pygtex
 INPUT _minted-main/FB19BB3E46E20FCE04D75F05211BD283C885B93CE8E5C50D3A8999B2107977F4.pygtex
 INPUT _minted-main/FB19BB3E46E20FCE04D75F05211BD283C885B93CE8E5C50D3A8999B2107977F4.pygtex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagdo8t.tfm
 OUTPUT main.listing
 INPUT main.listing
 INPUT ./main.listing
@@ -1229,6 +1227,8 @@ INPUT _minted-main/811E00392A606D6B97A060625B9D8956C885B93CE8E5C50D3A8999B210797
 INPUT _minted-main/811E00392A606D6B97A060625B9D8956C885B93CE8E5C50D3A8999B2107977F4.pygtex
 INPUT _minted-main/811E00392A606D6B97A060625B9D8956C885B93CE8E5C50D3A8999B2107977F4.pygtex
 INPUT _minted-main/811E00392A606D6B97A060625B9D8956C885B93CE8E5C50D3A8999B2107977F4.pygtex
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/avantgar/pagdo8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagdo8r.tfm
 OUTPUT main.listing
 INPUT main.listing
 INPUT ./main.listing
@@ -1946,7 +1946,6 @@ INPUT _minted-main/3AFD2F32EE5131687603A6957551FA21C885B93CE8E5C50D3A8999B210797
 INPUT _minted-main/3AFD2F32EE5131687603A6957551FA21C885B93CE8E5C50D3A8999B2107977F4.pygtex
 INPUT _minted-main/3AFD2F32EE5131687603A6957551FA21C885B93CE8E5C50D3A8999B2107977F4.pygtex
 INPUT _minted-main/3AFD2F32EE5131687603A6957551FA21C885B93CE8E5C50D3A8999B2107977F4.pygtex
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagdo8t.tfm
 OUTPUT main.listing
 INPUT main.listing
 INPUT ./main.listing
@@ -1971,11 +1970,6 @@ INPUT _minted-main/9BA5CEBEADA8AFDAD166BB1F566F7B0AC885B93CE8E5C50D3A8999B210797
 INPUT Pictures/etopo1.png
 INPUT ./Pictures/etopo1.png
 INPUT ./Pictures/etopo1.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagko8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/avantgar/pagko8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagko8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/avantgar/pagdo8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagdo8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagd8t.tfm
 OUTPUT main.listing
 INPUT main.listing
@@ -2160,8 +2154,8 @@ INPUT ./main.out
 INPUT main.run.xml
 OUTPUT main.run.xml
 INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb

@@ -114,7 +114,7 @@ prepare the input data for the simulations. It consists of the following modules
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.65\textwidth]{image002.png}
-    \caption{WPS schemeatic. \newline Author: \textcite{duda2006}}.
+    \caption{WPS schemeatic. \newline Author: \textcite{duda2006}.}
     \label{wpsdetalha}
 \end{figure}
 \bigskip
@@ -123,8 +123,8 @@ prepare the input data for the simulations. It consists of the following modules
 \bigskip
 
 \noindent WPS is included in the COAWST package, however WPS can be downloaded by visiting 
-\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}{\textit{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}}}). 
-Download it and add the  \textit{tar.gz} file inside the cluster (preferably within the COAWST folder)) with \textit{sftp}:
+\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}{\textit{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}}}. 
+Download it and add the \textit{tar.gz} file inside the cluster with \textit{sftp}:
 \bigskip
 
 \begin{bashcode}
@@ -158,7 +158,7 @@ tar -xvzf WPSV3.9.0.1.tar.gz
     colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
     overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
       rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-      As stated earlier in Section \textcolor{bleu_cite}{\ref{wpsker}}, WPS is included with COAWST. We recommend o use this version.
+      As stated earlier in Section \textcolor{bleu_cite}{\ref{wpsker}}, WPS is included with COAWST. We recommend to use this version.
 \end{tcolorbox}
 \bigskip
 
@@ -371,7 +371,7 @@ nedit namelist.wps
 
 \bigskip
 
-\noindent The WPS uses a ground zero point defined by the user as the latitude and longitude degrees in \textit{ref\_lat} and \textit{ref\_lon}).
+\noindent The WPS uses a ground zero point defined by the user as the latitude and longitude degrees in \textit{ref\_lat} and \textit{ref\_lon}.
 It will generate the grid from that point and through the chosen spatial resolution. Take as example the Figure
 \textcolor{bleu_cite}{\ref{namelistwps}}: a simulation will be prepared with 6 km of spatial resolution (\textit{dx} and \textit{dy} = 6000),
 in Lambert projection, with 600 grid points. Using as reference latitude -35\degree longitude -45\degree, a grid will be created with 
@@ -476,7 +476,7 @@ ncl
 \end{bashcode}
 \bigskip
 
-\noindent Check if the NCL has been initialized as in Figure \ref{nclinit}.
+\noindent Check if the NCL has been initialized as in Figure \textcolor{bleu_cite}{\ref{nclinit}}.
 \bigskip
 
 \begin{figure}[H]
@@ -489,7 +489,7 @@ ncl
 
 
 \noindent Enter the repository and open the \textit{plotgrids.ncl} file. 
-This script generates the domain image from the data in the WPS \textit{namelist.wps} file.
+This script generates the domain image from the data in the \textit{namelist.wps} file.
 \bigskip
 
 \begin{bashcode}
@@ -530,7 +530,7 @@ as shown in Figure \textcolor{bleu_cite}{\ref{nclgrids}}. Repeat the process unt
 \bigskip
 \noindent With the domain prepared by \textit{geogrid}, we can proceed to \textit{ungrib}, which extracts the data from the
  \textit {Grib} files. We will start creating the SST data. Open \textit{namelist.wps}
-and  change the \textit{prefix} to \textit{SST}, in the \textit{\& ungrib} section, as shown in Figure \ref{ungribprefix}.
+and  change the \textit{prefix} to \textit{SST}, in the \textit{\& ungrib} section, as shown in Figure \textcolor{bleu_cite}{\ref{ungribprefix}}.
 \bigskip
 
 \begin{figure}[H]
@@ -662,7 +662,7 @@ Figure \textcolor{bleu_cite}{\ref{fgname}}:
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{fgname.png}
-    \caption{\textit{metgrid} example.}
+    \caption{\textit{\&metgrid} example.}
     \label{fgname}
 \end{figure}
 \bigskip
@@ -775,14 +775,14 @@ The \textit{qsub\_real.sh} file is located in the \textit{/repository/WRF\_scrip
 \end{tcolorbox}
 \bigskip
 
-\noindent To certify success in running \textit{real}, look at the end of the \textit{log.out} file for the success message as shown 
+\noindent To check if \textit{real} succeeded, look at the end of the \textit{log.out} file for the success message as shown 
 in Figure \textcolor{bleu_cite}{\ref{realfinish}}.
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.70\textwidth]{realsucess.png}
-    \caption{Successful completion of\textit{real}.}
+    \caption{Successful completion of \textit{real}.}
     \label{realfinish}
 \end{figure}
 \bigskip

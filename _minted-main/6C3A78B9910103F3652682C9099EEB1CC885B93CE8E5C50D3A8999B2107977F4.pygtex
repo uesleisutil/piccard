@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-cd /home/usuario
-git clone https://github.com/usutil/model2roms
-\end{Verbatim}

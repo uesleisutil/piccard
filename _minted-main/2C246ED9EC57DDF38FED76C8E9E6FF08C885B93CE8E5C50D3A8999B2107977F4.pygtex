@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+export F77=gfortran
+export FC=gfortran
+export CC=gcc
+export CXX=g++
+export FFLAGS=\PYGZdq{}\PYGZhy{}m64 \PYGZhy{}fdefault\PYGZhy{}integer\PYGZhy{}8\PYGZdq{}
+export FCFLAGS=\PYGZdq{}\PYGZhy{}m64 \PYGZhy{}fdefault\PYGZhy{}integer\PYGZhy{}8\PYGZdq{}
+export CFLAGS=\PYGZhy{}m64
+export CXXFLAGS=\PYGZhy{}m64
+./configure \PYGZhy{}\PYGZhy{}prefix=\PYGZdl{}HOME/libsmodels
+sudo make
+sudo make check
+sudo make install
+\end{Verbatim}

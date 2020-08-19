@@ -8,8 +8,8 @@
 \usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,letterpaper]{geometry} % Page margins
 
 \usepackage{xcolor} % Required specifying colors by name
-\definecolor{ocre}{RGB}{52, 201, 57} % Define the orange color used for highlighting throughout the book
-\definecolor{bashcodebg1}{HTML}{e7f5f8}
+\definecolor{ocre}{RGB}{201, 74, 52} % Define the orange color used for highlighting throughout the book
+\definecolor{bashcodebg1}{HTML}{ffdbc9}
 % formatting of inline code snippets via verbatim like mac
 \usepackage{xcolor}
 \usepackage{listings}
@@ -78,9 +78,9 @@
   overlay={\begin{tcbclipinterior}\fill[bashcodebg3!70]  (frame.south west)
             rectangle ([xshift=5mm]frame.north west);\end{tcbclipinterior}}
 }
-\definecolor{bashcodebg}{HTML}{E8F9E7}
-\definecolor{bashcodebg2}{HTML}{1BC34D}
-\definecolor{bashcodebg3}{HTML}{029F31}
+\definecolor{bashcodebg}{HTML}{f0d1a3}
+\definecolor{bashcodebg2}{HTML}{fa6a16}
+\definecolor{bashcodebg3}{HTML}{d45800}
 
 
 % Font Settings
@@ -98,7 +98,7 @@
 \renewcommand{\finalnamedelim}{\addspace\&\space}
 \renewcommand*{\nameyeardelim}{\addcomma\space}
 %\DeclareDelimFormat[cbx@textcite]{nameyeardelim}{\addspace}
-\definecolor{bleu_cite}{RGB}{50, 168, 82}
+\definecolor{bleu_cite}{RGB}{227, 72, 0}
 
 \AtEveryCite{\color{bleu_cite}}
 \usepackage[nottoc,numbib]{tocbibind} % Insert the bibliography in the table of contents
@@ -145,7 +145,7 @@
 
 % Insert flowchart 
 \usepackage[edges]{forest}
-\definecolor{foldercolor}{RGB}{124,166,198}
+\definecolor{foldercolor}{RGB}{198, 163, 124}
 \tikzset{pics/folder/.style={code={%
     \node[inner sep=0pt, minimum size=#1](-foldericon){};
     \node[folder style, inner sep=0pt, minimum width=0.3*#1, minimum height=0.6*#1, above right, xshift=0.05*#1] at (-foldericon.west){};

@@ -48,16 +48,16 @@ The two files must be placed inside your project folder.
 \bigskip
 
 \noindent The sea ice model is fully coupled to ROMS, so that, after generating the conditions of the
-ROMS with ice data (See Section \textcolor{bleu_cite}{\ref{model2romssec}}), to activate the sea ice model 
+ROMS with ice data (see Section \textcolor{bleu_cite}{\ref{model2romssec}}), to activate the sea ice model 
 just modify the ROMS \textit{.h} file in your project. According to \textcite{hedstrom2018}, you can
 add the following options into the \textit{.h} file, as shown in Figure \textcolor{bleu_cite}{\ref{hiceroms}}:
 \bigskip
 
 \begin{itemize}
     \item \textbf{ICE\_MODEL}: defines the sea ice model;
-    \item \textbf{ANA\_ICE}: define condições iniciais analíticas para o gelo marinho;
-    \item \textbf{ICE\_THERMO}: defined the ice thermodynamics;
-    \item \textbf{ICE\_MK}: defined the \textcite{Mellor1989} ice thermodynamics. Currently, is the only choice;
+    \item \textbf{ANA\_ICE}: defines initial analytical conditions for sea ice;
+    \item \textbf{ICE\_THERMO}: defines the ice thermodynamics;
+    \item \textbf{ICE\_MK}: defines the \textcite{Mellor1989} ice thermodynamics. Currently, is the only choice;
     \item \textbf{ICE\_MOMENTUM}: defines the momentum component of the ice;
     \item \textbf{ICE\_MOM\_BULK}: defines the alternate ice-water stress computation;
     \item \textbf{ICE\_EVP}: defines the elastic-viscous-plastic rheology from \textcite{Hunke1997} and \textcite{Hunke2001};
@@ -67,8 +67,8 @@ add the following options into the \textit{.h} file, as shown in Figure \textcol
     \item \textbf{ICE\_UPWIND}: defines the upwind advection;
     \item \textbf{ICE\_BULK\_FLUXES}: define the ice part of bulk flux computation;
     \item \textbf{ICE\_DIAGS}: defines the diagnosis of sea ice;
-    \item \textbf{ICE\_SHOREFAST} : define the simple shorefast-ice algorithm from \textcite{Budgell2005}.
-    \item \textbf{ICE\_I\_O}: define to allow light into the ice as heat;
+    \item \textbf{ICE\_SHOREFAST} : defines the simple shorefast-ice algorithm from \textcite{Budgell2005};
+    \item \textbf{ICE\_I\_O}: defines to allow light into the ice as heat;
     \item \textbf{ICE\_CONVSNOW}: defines the conversion of flooded snow to ice.
 \end{itemize}
 \bigskip

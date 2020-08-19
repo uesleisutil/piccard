@@ -18,7 +18,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.7}Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}{15}{section.1.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.8}Materials needed to use this guide}{16}{section.1.8}% 
+\contentsline {section}{\numberline {1.8}Requirements to use this guide}{16}{section.1.8}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}COAWST in a parallel cluster}{17}{chapter.2}% 
 \ttl@stoptoc {default@1}
@@ -94,53 +94,53 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.4}Using the WRF}{49}{section.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Construindo o ROMS}{51}{chapter.5}% 
+\contentsline {chapter}{\numberline {5}Building the ROMS}{51}{chapter.5}% 
 \ttl@stoptoc {default@4}
 \ttl@starttoc {default@5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Instalando as bibliotecas do Python no computador pessoal}{51}{section.5.1}% 
+\contentsline {section}{\numberline {5.1}Installing Python libraries on the personal computer}{51}{section.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Instalando manualmente}{51}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Installing manually}{51}{subsection.5.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Instalando com o Conda}{62}{subsection.5.1.2}% 
+\contentsline {subsection}{\numberline {5.1.2}Using Conda to install ROMS libraries}{62}{subsection.5.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Instalando o Pyroms}{62}{section.5.2}% 
+\contentsline {section}{\numberline {5.2}Installing Pyroms}{62}{section.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}\textit {model2roms}}{65}{section.5.3}% 
+\contentsline {section}{\numberline {5.3}\textit {The model2roms toolbox}}{65}{section.5.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Introdu\IeC {\c c}\IeC {\~a}o sobre a grade do ROMS}{65}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.1}Introduction to the ROMS grid}{65}{subsection.5.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}ETOPO1 1 Arc-Minute Global Relief Model}{66}{subsection.5.3.2}% 
+\contentsline {subsection}{\numberline {5.3.2}ETOPO1 1 Arc-Minute Global Relief Model}{65}{subsection.5.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Gerando a grade do ROMS}{66}{section*.31}% 
+\contentsline {subsubsection}{Creating the ROMS grid}{66}{section*.31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Introdu\IeC {\c c}\IeC {\~a}o sobre as condi\IeC {\c c}\IeC {\~o}es do ROMS}{68}{subsection.5.3.3}% 
+\contentsline {subsection}{\numberline {5.3.3}Introduction to ROMS forcing files}{68}{subsection.5.3.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.4}Global Ocean Physics Reanalysis (GLORYS)}{68}{subsection.5.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.5}Gerando as condi\IeC {\c c}\IeC {\~o}es do ROMS}{72}{subsection.5.3.5}% 
+\contentsline {subsection}{\numberline {5.3.5}Creating ROMS forcing files}{71}{subsection.5.3.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Building the SWAN}{77}{chapter.6}% 
+\contentsline {chapter}{\numberline {6}Building the SWAN}{75}{chapter.6}% 
 \ttl@stoptoc {default@5}
 \ttl@starttoc {default@6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Building the Budgell's Sea Ice Model}{79}{chapter.7}% 
+\contentsline {chapter}{\numberline {7}Building the Budgell's Sea Ice Model}{77}{chapter.7}% 
 \ttl@stoptoc {default@6}
 \ttl@starttoc {default@7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Building the weights between grids with SCRIP}{81}{chapter.8}% 
+\contentsline {chapter}{\numberline {8}Building the weights between grids with SCRIP}{79}{chapter.8}% 
 \ttl@stoptoc {default@7}
 \ttl@starttoc {default@8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Building the weights}{81}{section.8.1}% 
+\contentsline {section}{\numberline {8.1}Building the weights}{79}{section.8.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Executing your project}{83}{section.8.2}% 
+\contentsline {section}{\numberline {8.2}Running your simulation}{81}{section.8.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}\relax \fontsize {12}{14}\selectfont {Papers of the Ocean and Atmospheric Studies Laboratory}}{85}{chapter.9}% 
+\contentsline {chapter}{\numberline {9}\relax \fontsize {12}{14}\selectfont {Papers of the Ocean and Atmospheric Studies Laboratory}}{83}{chapter.9}% 
 \ttl@stoptoc {default@8}
 \ttl@starttoc {default@9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acknowledgments}{93}{chapter*.45}% 
+\contentsline {chapter}{Acknowledgments}{91}{chapter*.45}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{95}{chapter*.46}% 
+\contentsline {chapter}{Bibliography}{93}{chapter*.46}% 
 \contentsfinish 

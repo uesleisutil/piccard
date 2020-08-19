@@ -12,30 +12,15 @@ in Cachoeira Paulista, São Paulo. For having the ability to parallelize operati
 and temporal.
 \bigskip
 
-\begin{tcolorbox}[enhanced,
-  grow to left by   = 0cm,
-  grow to right by  = 0cm,
-  enlarge top by    = 0cm,
-  enlarge bottom by = 0cm,
-  tcbox raise base,
-  boxrule           = 1.0pt,
-  left              = 18mm,
-  colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-    To compile COAWST on a computer without parallel communication, see chapter \textcolor{bleu_cite}{\ref{coawstlinux}}.
-\end{tcolorbox}
-\bigskip
-
 \section{Signing up a user account}
 \bigskip
 
 \noindent To start the process of applying for a user account in Kerana, it is necessary that the computer in the INPE's premises have a fixed IP. Your advisor or supervisor 
-is required to send an email to \textit{Helpdesk}(\textcolor{bleu_cite}{\href{helpdesk.cptec@inpe.br}{\textit{helpdesk.cptec@inpe.br}}}) informing the MAC address, hostname
+is required to send an email to \textit{Helpdesk} (\textcolor{bleu_cite}{\href{helpdesk.cptec@inpe.br}{\textit{helpdesk.cptec@inpe.br}}}) informing the MAC address, hostname
 and reason for the request. If the computer already has a fixed IP assigned, it also need to be informed to be changed.
 \bigskip
 
-\noindent With the fixed IP configured, contact the \textit{Helpdesk}(\textcolor{bleu_cite}{\href{helpdesk.cptec@inpe.br}{\textit{helpdesk.cptec@inpe.br}}}) to request a form 
+\noindent With the fixed IP configured, contact the \textit{Helpdesk} (\textcolor{bleu_cite}{\href{helpdesk.cptec@inpe.br}{\textit{helpdesk.cptec@inpe.br}}}) to request a form 
 to use Kerana.
 \bigskip
 
@@ -70,7 +55,7 @@ ssh -Y name.surname@acesso-hpc.cptec.inpe.br -p 2000
 \end{bashcode}
 \bigskip
 
-\noindent To do download and/or uploads, use:
+\noindent To download and/or upload, use:
 \bigskip
 
 \begin{bashcode}
@@ -228,7 +213,7 @@ svn checkout --username myusrname https://coawstmodel.sourcerepo.com/coawstmodel
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
     rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-  This guide uses COAWST version 3..
+  This guide uses COAWST v3.6.
 \end{tcolorbox}
 \bigskip
 
@@ -290,7 +275,7 @@ TRADEFLAG = -traditional
 \end{bashcode}
 \bigskip
 
-\noindent These modifications will select the configurations of the Kerana cluster (\textit{CRAY CCE (ftn/gcc): Cray XE and XC (dmpar)}), among those available to use COAWST, as in Figure \textcolor{bleu_cite}{\ref{compskerana}}.
+\noindent These modifications will select the configurations of the Kerana cluster (\textit{CRAY CCE (ftn/gcc): Cray XE and XC (dmpar)}), among those available to use COAWST, as shown in Figure \textcolor{bleu_cite}{\ref{compskerana}}.
 \bigskip
 
 \begin{figure}[H]
@@ -562,7 +547,7 @@ mkdir Sandy
 \end{bashcode}
 \bigskip
 
-\noindent The folder \textit{/scratch/name.surname/COAWST/Work/Sandy} must contain the following files
+\noindent The folder \textit{/scratch/name.surname/COAWST/Work/Sandy} must contain the following files.
 \bigskip
 
 \begin{itemize}
@@ -649,7 +634,7 @@ OCN_name = /scratch/name.surname/COAWST/Projects/Sandy/ocean_sandy.in
 \end{bashcode}
 \bigskip
 
-\noindent In the files\textit{swan\_sandy.in} and \textit{swan\_sandy\_ref3.in} complete all directory paths below:
+\noindent In the files \textit{swan\_sandy.in} and \textit{swan\_sandy\_ref3.in} complete all directory paths below:
 \bigskip
 
 \noindent Modify:
@@ -746,7 +731,7 @@ export   MY_HEADER_DIR=${MY_PROJECT_DIR}/Projects/Sandy
 \bigskip
 
 \noindent This command will create the text file \textit{coawst.pgi.sandy} where you can follow the progress of the compilation. Open the text file with the following 
-command and look for the final message, as in Figure \textcolor{bleu_cite}{\ref{compcoafinal}}.
+command and look for the final message, as shown in Figure \textcolor{bleu_cite}{\ref{compcoafinal}}.
 \bigskip
 
 \begin{bashcode}
@@ -786,14 +771,14 @@ The compilation process is long!
 \bigskip
 
 
-\noindent Ready! In the main COAWST directory, a file called \textit{coawstM} will be created. In this file all the information about your project 
+\noindent We finished! In the main COAWST directory, a file called \textit{coawstM} will be created. In this file all the information about your project 
 will be compiled. Now with COAWST compiled, we will start the test case.
 \bigskip
 
 \section{Simulating the Sandy Test Case}\label{sandyexec}
 \bigskip
 
-\noindent To simulate the case, search for the file in \textit{Work/Sandy}. Type it:
+\noindent To simulate the case, search for the \textit{run\_sandy.sh} file in \textit{Work/Sandy}. Type it:
 \bigskip
 
 \begin{bashcode}
@@ -836,7 +821,7 @@ qsub run_sandy.sh
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
     rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
- The command \textit{qsub} will submit you job. It will send the executed script to a batch of the cluster, reserving a part of the processors for its simulation.
+ The command \textit{qsub} will submit you job. It will send the executed script to a batch of the cluster, reserving a part of the processors for your simulation.
 \end{tcolorbox}
 \bigskip
 
@@ -876,6 +861,6 @@ tail -f log.out
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
     rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-    The simulation of the test case Sandy may take several hours when integrating using 3 processors.
+    The simulation of the may take several hours when integrating using 3 processors.
 \end{tcolorbox}
 \bigskip

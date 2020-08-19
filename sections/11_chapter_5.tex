@@ -1,14 +1,18 @@
 % !TEX root = /media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex
 \chapterimage{header.jpg}
-\chapter{Construindo o ROMS}\index{Contruindo o ROMS}
+\chapter{Building the ROMS}\index{Building the ROMS}
 \bigskip
-\section{Instalando as bibliotecas do Python no computador pessoal}
-\bigskip
-
-\noindent Antes de gerar os arquivos de condições de forçamento e contorno oceânico e a grade para o ROMS, é necessário instalar as bibliotecas e dependências. Nesta seção serão disponibilizados os endereços para baixá-las, bem como os comandos no terminal via \textit{apt-get}.
+\section{Installing Python libraries on the personal computer}
 \bigskip
 
-\noindent Existem duas maneiras de instalar as bibliotecas necessárias: manualmente, e através do Anaconda. Este último é uma plataforma gratuita e de código aberto em Python e R e possui um gerenciador de pacotes chamado Conda, que facilita a instalação de bibliotecas. Neste guia, apresentarei as duas opções. Pela praticidade, sugiro instalar usando o Conda (Seção \textcolor{bleu_cite}{\ref{condasec}}), porém cuidado para conflito de versões, pois os repositórios do Conda são atualizados constantemente.
+\noindent Before generating the ROMS files, it is necessary to install the libraries and modules. 
+In this chapter, we address how to download them, as well as the commands in the terminal to install through \textit{apt-get}.
+\bigskip
+
+\noindent There are two ways to install the required libraries: manually, and through Anaconda. 
+Anaconda is a free and open source platform for Python and R and has a package manager called Conda, which makes easy 
+to install the libraries. In this guide, I will present both options. For convenience, I suggest installing using Conda 
+(Section \textcolor{bleu_cite}{\ref{condasec}}), but beware of version conflicts, as the Conda repositories are constantly updated.
 \bigskip
 
 \begin{tcolorbox}[enhanced,
@@ -21,14 +25,30 @@
   left              = 18mm,
   colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-A construção do ROMS deverá ser feita no seu próprio computador e não mais no Kerana, como feito anteriormente com o WRF.
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+ROMS files must be builded on your own computer and no longer on Kerana cluster, as previously done with WRF.
 \end{tcolorbox}
 \bigskip
 
-\subsection{Instalando manualmente}\index{Instalação manual}
+\subsection{Installing manually}\index{Instalação manual}
 \bigskip
-\noindent Abra o terminal, e crie uma pasta na sua \textit{home} chamada \textit{libsmodels}. Nela serão adiconados os arquivos baixados e as bibliotecas.
+\begin{tcolorbox}[enhanced,
+    grow to left by   = 0cm,
+    grow to right by  = 0cm,
+    enlarge top by    = 0cm,
+    enlarge bottom by = 0cm,
+    tcbox raise base,
+    boxrule           = 1.0pt,
+    left              = 18mm,
+    colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
+    overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+Consider installing libraries with Anaconda will be faster than installing manually. See Section \textcolor{bleu_cite}{\ref{condasec}}.
+  \end{tcolorbox}
+\bigskip
+
+\noindent Open the terminal, and create a folder in your \textit{\$HOME} called \textit{libsmodels}. The downloaded files 
+and libraries will be placed in it.
 \bigskip
 
 \begin{bashcode}
@@ -36,7 +56,7 @@ sudo mkdir libsmodels
 \end{bashcode}
 \bigskip
 
-\noindent Caso não tenha o \textit{gfortran} e o \textit{g++} instalados, instale via \textit{apt-get}.
+\noindent If you do not have \textit{gfortran} and \textit{g ++} installed, install via \textit{apt-get}.
 \bigskip
 \begin{bashcode}
 sudo apt-get install
@@ -44,7 +64,9 @@ sudo apt-get install g++
 \end{bashcode}
 \bigskip
 
-\noindent A seguir, baixe o OpenMPI 2.0.1 (\textcolor{bleu_cite}{\href{https://www.open-mpi.org/software/ompi/v2.0/}{\textit{https://www.open-mpi.org/software/ompi/v2.0/}}}), extraia o arquivo dentro da pasta \textit{libsmodels} e digite no terminal:
+\noindent Next, download OpenMPI 2.0.1 
+(\textcolor{bleu_cite}{\href{https://www.open-mpi.org/software/ompi/v2.0/}{\textit{https://www.open-mpi.org/software/ompi/v2.0/}}}),
+extract the file into the \textit{libsmodels} folder and type in the terminal:
 \bigskip
 
 \begin{bashcode}
@@ -60,45 +82,31 @@ export CXXFLAGS=-m64
 \end{bashcode}
 \bigskip
 
-\noindent Entre na pasta do OpenMPI e digite:
-\bigskip
-
-\begin{tcolorbox}[enhanced,
-  grow to left by   = 0cm,
-  grow to right by  = 0cm,
-  enlarge top by    = 0cm,
-  enlarge bottom by = 0cm,
-  tcbox raise base,
-  boxrule           = 1.0pt,
-  left              = 18mm,
-  colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Altere o nome do computador abaixo (\textit{usuario}) pelo nome do seu computador.
-\end{tcolorbox}
+\noindent Enter the OpenMPI folder and type:
 \bigskip
 
 \begin{bashcode}
-./configure --prefix=/home/usuario/libsmodels
+./configure --prefix=$HOME/libsmodels
 sudo make
 sudo make check
 sudo make install
 \end{bashcode}
 \bigskip
 
-\noindent Volte até a sua \textit{/home/usuario} e abra o arquivo oculto \textit{.bashrc} através do comando \textit{gedit .bashrc} e nas linhas finais do arquivo escreva:
+\noindent Go back to your \textit{\$HOME} and open the hidden file \textit{.bashrc} using \textit{gedit} and
+write the following in the final lines of the file:
 \bigskip
 
 \begin{bashcode}
-cd /home/usuario
+cd $HOME
 gedit .bashrc
-export PATH=/home/usuario/libsmodels/bin:$PATH
-export LD_LIBRARY_PATH=/home/usuario/libsmodels/lib:$LD_LIBRARY_PATH
-export PATH=/home/usuario/libsmodels/include:$PATH
+export PATH=$HOME/libsmodels/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/libsmodels/lib:$LD_LIBRARY_PATH
+export PATH=$HOME/libsmodels/include:$PATH
 \end{bashcode}
 \bigskip
 
-\noindent Salve o arquivo e digite o comando a seguir para atualizar o terminal e aplicar as mudanças.
+\noindent Save the file and enter the following command to update the terminal and apply the changes.
 \bigskip
 
 \begin{bashcode}
@@ -106,7 +114,7 @@ source .bashrc
 \end{bashcode}
 \bigskip
 
-\noindent Teste a instalação do OpenMPI está correta, digite no terminal:
+\noindent Test the installation of OpenMPI is correct, type in the terminal:
 \bigskip
 
 \begin{bashcode}
@@ -114,7 +122,7 @@ ompi_info -a grep 'Fort integer size'
 \end{bashcode}
 \bigskip
 
-\noindent O resultado deverá ser:
+\noindent The result should be:
 \bigskip
 
 \begin{bashcode}
@@ -122,7 +130,8 @@ Fort integer size: 8
 \end{bashcode}
 \bigskip
 
-\noindent Caso não tenha instalado no seu computador, será necessário instalar o \textit{m4}, \textit{make} e \textit{perl}. Para checar se o seu computador já possui estes programas instalados:
+\noindent If you have not installed it on your computer, you will need to install the \textit{m4}, \textit{make} e \textit{perl}. 
+To check if your computer already has these programs installed:
 \bigskip
 
 \begin{bashcode}
@@ -132,7 +141,7 @@ which perl
 \end{bashcode}
 \bigskip
 
-\noindent Caso a resposta seja negativa, instale a partir dos comandos a seguir:
+\noindent If not, install from the following commands:
 \bigskip
 
 \begin{bashcode}
@@ -142,7 +151,8 @@ sudo apt-get install perl
 \end{bashcode}
 \bigskip
 
-\noindent Instale o \textit{szip 2.1} (\textcolor{bleu_cite}{\href{https://www.hdfgroup.org/HDF5/release/obtain5.html}{\textit{https://www.hdfgroup.org/HDF5/release/obtain5.html}}}). Baixe-o, descompacte na pasta \textit{/home/usuario/libsmodels} e entre na pasta do \textit{szip} digite:
+\noindent Install the \textit{szip 2.1} (\textcolor{bleu_cite}{\href{https://www.hdfgroup.org/HDF5/release/obtain5.html}{\textit{https://www.hdfgroup.org/HDF5/release/obtain5.html}}}).
+Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{szip} folder and type the following:
 \bigskip
 
 \begin{bashcode}
@@ -154,14 +164,15 @@ export FFLAGS="-m64 -fdefault-integer-8"
 export FCFLAGS="-m64 -fdefault-integer-8"
 export CFLAGS=-m64
 export CXXFLAGS=-m64
-./configure --prefix=/home/usuario/libsmodels
+./configure --prefix=$HOME/libsmodels
 sudo make
 sudo make check
 sudo make install
 \end{bashcode}
 \bigskip
 
-\noindent Instale o \textit{zlib 1.2.8} (\textcolor{bleu_cite}{\href{http://zlib.net/}{\textit{http://zlib.net/}}}). Baixe-o, descompacte na pasta \textit{/home/usuario/libsmodels} e entre na pasta do \textit{zlib} digite:
+\noindent Install the \textit{zlib 1.2.8} (\textcolor{bleu_cite}{\href{http://zlib.net/}{\textit{http://zlib.net/}}}). 
+Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{zlib} folder and type the following:
 \bigskip
 
 \begin{bashcode}
@@ -173,14 +184,15 @@ export FFLAGS="-m64 -fdefault-integer-8"
 export FCFLAGS="-m64 -fdefault-integer-8"
 export CFLAGS=-m64
 export CXXFLAGS=-m64
-./configure --prefix=/home/usuario/libsmodels
+./configure --prefix=$HOME/libsmodels
 sudo make
 sudo make check
 sudo make install
 \end{bashcode}
 \bigskip
 
-\noindent Instale o \textit{Curl 7.50.3} (\textcolor{bleu_cite}{\href{http://curl.haxx.se/download.html}{\textit{http://curl.haxx.se/download.html}}}). Baixe-o, descompacte na pasta \textit{/home/usuario/libsmodels} e entre na pasta do \textit{Curl} digite:
+\noindent Install the \textit{Curl 7.50.3} (\textcolor{bleu_cite}{\href{http://curl.haxx.se/download.html}{\textit{http://curl.haxx.se/download.html}}}). 
+Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{Curl} folder and type the following:
 \bigskip
 
 \begin{bashcode}
@@ -192,14 +204,14 @@ export FFLAGS="-m64 -fdefault-integer-8"
 export FCFLAGS="-m64 -fdefault-integer-8"
 export CFLAGS=-m64
 export CXXFLAGS=-m64
-./configure --prefix=/home/usuario/libsmodels/
+./configure --prefix=$HOME/libsmodels/
 sudo make
 sudo make check
 sudo make install
 \end{bashcode}
 \bigskip
 
-\noindent Instale as bibliotecas necessárias para usar o HDF5. Digite:
+\noindent Install the libraries needed to use HDF5. Type it:
 \bigskip
 
 \begin{bashcode}
@@ -207,29 +219,45 @@ sudo apt-get install libgtk2.0-dev
 \end{bashcode}
 \bigskip
 
-\noindent Instale o \textit{HDF5 1.8.9} (\textcolor{bleu_cite}{\href{https://www.hdfgroup.org/HDF5/release/obtain5.html}{\textit{https://www.hdfgroup.org/HDF5/release/obtain5.html}}}). Baixe-o, descompacte na pasta \textit{/home/usuario/libsmodels} e entre, via terminal, na pasta do \textit{HDF5} digite:
+\noindent Install the \textit{HDF5 1.8.9} (\textcolor{bleu_cite}{\href{https://www.hdfgroup.org/HDF5/release/obtain5.html}{\textit{https://www.hdfgroup.org/HDF5/release/obtain5.html}}}). 
+Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{HDF5} folder and type the following:
 \bigskip
 
 \begin{bashcode}
 export FC=gfortran
 export CC=gcc
 export CXX=g++
-export LDFLAGS=-L/home/usuario/libsmodels/lib
-export CPPFLAGS=-I/home/usuario/libsmodels/include
+export LDFLAGS=-L$HOME/libsmodels/lib
+export CPPFLAGS=-I$HOME/libsmodels/include
 \end{bashcode}
 \bigskip
 
-\noindent No mesmo diretório, digite:
+\noindent In the same directory, type:
+\bigskip
+
+\begin{tcolorbox}[enhanced,
+    grow to left by   = 0cm,
+    grow to right by  = 0cm,
+    enlarge top by    = 0cm,
+    enlarge bottom by = 0cm,
+    tcbox raise base,
+    boxrule           = 1.0pt,
+    left              = 18mm,
+    colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
+    overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+Type everything from the box below in the same command line!
+  \end{tcolorbox}
 \bigskip
 
 \begin{bashcode}[fontsize=\footnotesize]
 ./configure --enable-fortran=yes --enable-fortran2003=yes --enable-cxx=yes
---with-szlib=/home/usuario/libsmodels --with-zlib=/home/usuario/libsmodels --enable-hl
---enable-shared --prefix=/home/usuario/libsmodels
+--with-szlib=$HOME/libsmodels --with-zlib=$HOME/libsmodels --enable-hl
+--enable-shared --prefix=$HOME/libsmodels
 \end{bashcode}
 \bigskip
 
-\noindent Complete a instalação do \textit{HDF5} com os comandos abaixo:
+\noindent Complete the installation of \textit{HDF5} with the commands below:
 \bigskip
 
 \begin{bashcode}
@@ -239,28 +267,45 @@ sudo make install
 \end{bashcode}
 \bigskip
 
-\noindent O próximo passo é instalar o \textit{NetCDF-C 4.4.1} (\textcolor{bleu_cite}{\href{https://www.unidata.ucar.edu/downloads/netcdf/index.jsp}{\textit{https://www.unidata.ucar.edu/downloads/netcdf/index.jsp}}}). Baixe-o, descompacte na pasta \textit{/home/usuario/libsmodels} e na pasta do \textit{NetCDF-C} digite:
+\noindent The next step is to install the \textit{NetCDF-C 4.4.1} (\textcolor{bleu_cite}{\href{https://www.unidata.ucar.edu/downloads/netcdf/index.jsp}{\textit{https://www.unidata.ucar.edu/downloads/netcdf/index.jsp}}}). 
+Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{NetCDF} folder and type the following:
 \bigskip
 
 \begin{bashcode}[fontsize=\scriptsize]
 export FC=gfortran
 export CC=gcc
 export CXX=g++
-export LDFLAGS=-L/home/usuario/libsmodels/lib
-export CPPFLAGS=-I/home/usuario/libsmodels/include
+export LDFLAGS=-L$HOME/libsmodels/lib
+export CPPFLAGS=-I$HOME/libsmodels/include
 \end{bashcode}
 \bigskip
 
-\noindent Na mesma linha de comando, digite:
+\noindent Then type:
 \bigskip
+
+\begin{tcolorbox}[enhanced,
+    grow to left by   = 0cm,
+    grow to right by  = 0cm,
+    enlarge top by    = 0cm,
+    enlarge bottom by = 0cm,
+    tcbox raise base,
+    boxrule           = 1.0pt,
+    left              = 18mm,
+    colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
+    overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+Type everything from the box below in the same command line!
+  \end{tcolorbox}
+\bigskip
+
 
 \begin{bashcode}[fontsize=\scriptsize]
-./configure --prefix=/home/usuario/libsmodels --enable-netcdf4 --enable-shared --enable-dap
---with-hdf5=/home/usuario/libsmodels 
+./configure --prefix=$HOME/libsmodels --enable-netcdf4 --enable-shared --enable-dap
+--with-hdf5=$HOME/libsmodels 
 \end{bashcode}
 \bigskip
 
-\noindent Complete a instalação do \textit{NetCDF-C} com os comandos abaixo:
+\noindent Complete the installation of \textit{NetCDF-C} with the commands below:
 \bigskip
 
 \begin{bashcode}
@@ -270,7 +315,8 @@ sudo make install
 \end{bashcode}
 \bigskip
 
-\noindent Instale agora o \textit{NetCDF-Fortran 4.2} (\textcolor{bleu_cite}{\href{https://www.unidata.ucar.edu/downloads/netcdf/index.jsp}{\textit{https://www.unidata.ucar.edu/downloads/netcdf/index.jsp}}}). Baixe-o, descompacte na pasta \textit{/home/usuario/libsmodels} e na pasta do \textit{NetCDF-Fortran} digite:
+\noindent Install the \textit{NetCDF-Fortran 4.2} (\textcolor{bleu_cite}{\href{https://www.unidata.ucar.edu/downloads/netcdf/index.jsp}{\textit{https://www.unidata.ucar.edu/downloads/netcdf/index.jsp}}}). 
+Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{NetCDF-Fortran} folder and type the following:
 \bigskip
 
 \begin{bashcode}[fontsize=\scriptsize]
@@ -278,22 +324,37 @@ export FC=gfortran
 export F77=gfortran
 export CC=gcc
 export CXX=g++
-export LDFLAGS=-L/home/usuario/libsmodels/lib
-export CPPFLAGS=-I/home/usuario/libsmodels/include
+export LDFLAGS=-L$HOME/libsmodels/lib
+export CPPFLAGS=-I$HOME/libsmodels/include
 export LIBS='-lnetcdf -lhdf5 -lhdf5_hl -lz'
 \end{bashcode}
 \bigskip
 
-\noindent Na mesma linha de comando, digite:
+\noindent Type:
+\bigskip
+
+\begin{tcolorbox}[enhanced,
+    grow to left by   = 0cm,
+    grow to right by  = 0cm,
+    enlarge top by    = 0cm,
+    enlarge bottom by = 0cm,
+    tcbox raise base,
+    boxrule           = 1.0pt,
+    left              = 18mm,
+    colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
+    overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+Type everything from the box below in the same command line!
+  \end{tcolorbox}
 \bigskip
 
 \begin{bashcode}
-./configure --prefix=/home/usuario/libsmodels --enable-netcdf4 --enable-shared
---with-hdf5=/home/usuario/libsmodels --enable-dap
+./configure --prefix=$HOME/libsmodels --enable-netcdf4 --enable-shared
+--with-hdf5=$HOME/libsmodels --enable-dap
 \end{bashcode}
 \bigskip
 
-\noindent Termine a instalação do \textit{NetCDF-Fortran}:
+\noindent Finish installing the \textit{NetCDF-Fortran}:
 \bigskip
 
 \begin{bashcode}
@@ -303,7 +364,8 @@ sudo make install
 \end{bashcode}
 \bigskip
 
-\noindent Instale o \textit{JasPer 1.900.1} (\textcolor{bleu_cite}{\href{http://www.linuxfromscratch.org/blfs/view/svn/general/jasper.html}{\textit{http://www.linuxfromscratch.org/blfs/view/svn/general/jasper.html}}}). Baixe-o, descompacte na pasta \textit{/home/usuario/libsmodels} e na pasta do JasPer digite:
+\noindent Install the \textit{JasPer 1.900.1} (\textcolor{bleu_cite}{\href{http://www.linuxfromscratch.org/blfs/view/svn/general/jasper.html}{\textit{http://www.linuxfromscratch.org/blfs/view/svn/general/jasper.html}}}). 
+Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{Jasper} folder and type the following:
 \bigskip
 
 \begin{bashcode}
@@ -311,14 +373,15 @@ export FC=gfortran
 export F77=gfortran
 export CC=gcc
 export CXX=g++
-./configure --prefix=/home/usuario/libsmodels
+./configure --prefix=$HOME/libsmodels
 sudo make
 sudo make check
 sudo make install
 \end{bashcode}
 \bigskip
 
-\noindent Instale o \textit{libpng 1.6.24} (\textcolor{bleu_cite}{\href{http://sourceforge.net/projects/libpng/?source=typ\_redirect}{\textit{http://sourceforge.net/projects/libpng/?source=typ\_redirect}}}). Baixe-o, descompacte na pasta \textit{/home/usuario/libsmodels} e na pasta do \textit{libpng} digite:
+\noindent Instal the \textit{libpng 1.6.24} (\textcolor{bleu_cite}{\href{http://sourceforge.net/projects/libpng/?source=typ\_redirect}{\textit{http://sourceforge.net/projects/libpng/?source=typ\_redirect}}}).
+Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{libpng} folder and type the following:
 \bigskip
 
 \begin{bashcode}[fontsize=\scriptsize]
@@ -326,17 +389,18 @@ export FC=gfortran
 export F77=gfortran
 export CC=gcc
 export CXX=g++
-export LDFLAGS=-L/home/usuario/libsmodels/lib
-export CPPFLAGS=-I/home/usuario/libsmodels/include
+export LDFLAGS=-L$HOME/libsmodels/lib
+export CPPFLAGS=-I$HOME/libsmodels/include
 export LIBS='-lz'
-./configure --with-zlib=/home/usuario/libsmodels --prefix=/home/usuario/libsmodels
+./configure --with-zlib=$HOME/libsmodels --prefix=$HOME/libsmodels
 sudo make
 sudo make check
 sudo make install
 \end{bashcode}
 \bigskip
 
-\noindent Instale o \textit{Udunits 2.1.24} (\textcolor{bleu_cite}{\href{ftp://ftp.unidata.ucar.edu/pub/udunits/}{\textit{ftp://ftp.unidata.ucar.edu/pub/udunits/}}}).  Baixe-o, descompacte na pasta \textit{/home/usuario/libsmodels} e entre na pasta do \textit{Udunits} digite:
+\noindent Install the \textit{Udunits 2.1.24} (\textcolor{bleu_cite}{\href{ftp://ftp.unidata.ucar.edu/pub/udunits/}{\textit{ftp://ftp.unidata.ucar.edu/pub/udunits/}}}).  
+Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{Udunits} folder and type the following:
 \bigskip
 
 \begin{bashcode}
@@ -344,14 +408,14 @@ export FC=gfortran
 export F77=gfortran
 export CC=gcc
 export CXX=g++
-./configure --prefix=/home/usuario/libsmodels
+./configure --prefix=$HOME/libsmodels
 sudo make
 sudo make check
 sudo make install
 \end{bashcode}
 \bigskip
 
-\noindent Instale o NetCDF4 para Python. Neste caso, baixe primeiramente o Git e use-o para baixar.
+\noindent Install NetCDF4 for Python. In this case, download Git first and use it to download.
 \bigskip
 
 \begin{bashcode}
@@ -359,7 +423,7 @@ sudo apt-get install git
 \end{bashcode}
 \bigskip
 
-\noindent Clone o repositório do \textit{NetCDF4-Python} com o comando:
+\noindent Clone the \textit{NetCDF4-Python} repository with the command:
 \bigskip
 
 \begin{bashcode}
@@ -371,16 +435,16 @@ git clone https://github.com/Unidata/netcdf4-python
 \bigskip
 
 \begin{bashcode}
-ncconfig    = /home/usuario/libsmodels/bin/nc-config
-netCDF4_dir = /home/usuario/libsmodels
-HDF5_dir    = /home/usuario/libsmodels
-szip_dir    = /home/usuario/libsmodels
-jpeg_dir    = /home/usuario/libsmodels
-curl_dir    = /home/usuario/libsmodels
+ncconfig    = $HOME/libsmodels/bin/nc-config
+netCDF4_dir = $HOME/libsmodels
+HDF5_dir    = $HOME/libsmodels
+szip_dir    = $HOME/libsmodels
+jpeg_dir    = $HOME/libsmodels
+curl_dir    = $HOME/libsmodels
 \end{bashcode}
 \bigskip
 
-\noindent Modifique o nome do arquivo \textit{setup.cfg.template} para setup.cfg:
+\noindent Change the file name \textit{setup.cfg.template} to setup.cfg:
 \bigskip
 
 \begin{bashcode}
@@ -388,7 +452,7 @@ mv setup.cfg.template setup.cfg
 \end{bashcode}
 \bigskip
 
-\noindent Crie na pasta \textit{libsmodels}, as subpastas \textit{lib/python2.7/site-packages}:
+\noindent Create inside the \textit{libsmodels} folder, the \textit{lib/python2.7/site-packages} subfolders:
 \bigskip
 
 \begin{bashcode}
@@ -400,16 +464,16 @@ mkdir site-packages
 \end{bashcode}
 \bigskip
 
-\noindent Volte para a pasta principal do \textit{NetCDF4-Python} e compile:
+\noindent Go back to the \textit{NetCDF4-Python} main folder and compile:
 \bigskip
 
 \begin{bashcode}
 python setup.py build
-python setup.py install --prefix=/home/usario/libsmodels
+python setup.py install --prefix=$HOME/libsmodels
 \end{bashcode}
 \bigskip
 
-\noindent Caso queira conferir se a instalação ocorreu com sucesso, tente importar a biblioteca no Python. Digite no terminal:
+\noindent If you want to check if the installation was successful, try to import the library into Python. Type in the terminal:
 \bigskip
 
 \begin{bashcode}
@@ -418,16 +482,17 @@ import netCDF4
 \end{bashcode}
 \bigskip
 
-\noindent Instale agora o \textit{mpi4py} (\textcolor{bleu_cite}{\href{https://pypi.python.org/pypi/mpi4py}{\textit{https://pypi.python.org/pypi/mpi4py}}}), extraia e digite:
+\noindent Install the \textit{mpi4py} (\textcolor{bleu_cite}{\href{https://pypi.python.org/pypi/mpi4py}{\textit{https://pypi.python.org/pypi/mpi4py}}}). 
+Extract and type:
 \bigskip
 
 \begin{bashcode}
 python setup.py build
-python setup.py install --prefix=/home/usuario/libsmodels
+python setup.py install --prefix=$HOME/libsmodels
 \end{bashcode}
 \bigskip
 
-\noindent Para testar a instalação, digite:
+\noindent To test the installation, type:
 \bigskip
 
 \begin{bashcode}
@@ -435,7 +500,8 @@ mpiexec -n 5 python demo/helloworld.py
 \end{bashcode}
 \bigskip
 
-\noindent Instale agora o \textit{ESMF} e \textit{ESMPy} (\textcolor{bleu_cite}{\textit{https://www.earthsystemcog.org/projects/esmpy/releases}}). Primeiro digite os comandos a seguir para instalar os arquivos de bibliotecas necessárias:
+\noindent Install the \textit{ESMF} e \textit{ESMPy} (\textcolor{bleu_cite}{\textit{https://www.earthsystemcog.org/projects/esmpy/releases}}). 
+First, type the following commands to install the necessary library files:
 \bigskip
 
 \begin{bashcode}
@@ -446,21 +512,21 @@ sudo pip install nose
 \end{bashcode}
 \bigskip
 
-\noindent Dentro da pasta do ESMF, digite no terminal:
+\noindent Inside the ESMF folder, type in the terminal:
 \bigskip
 
 \begin{bashcode}[fontsize=\footnotesize]
 export ESMF_F90COMPILER=gfortran
 export ESMF_NETCDF_LIBS="-lnetcdff -lnetcdf"
-export ESMF_DIR=/home/usuario/libsmodels/packages/esmp.ESMF_6_3_0rp1_ESMP_01/esmf
+export ESMF_DIR=$HOME/libsmodels/packages/esmp.ESMF_6_3_0rp1_ESMP_01/esmf
 export ESMF_NETCDF="local"
 export ESMF_COMPILER=gfortran
 export ESMF_COMM=openmpi
 export ESMF_TESTEXHAUSTIVE=on
 export ESMF_TESTSHAREDOBJ=on
-export ESMF_NETCDF_INCLUDE=/home/usuario/libsmodels/include
-export ESMF_NETCDF_LIBPATH=/home/usuario/libsmodels/lib
-export ESMF_INSTALL_PREFIX=/home/usuario/libsmodels/ESMF
+export ESMF_NETCDF_INCLUDE=$HOME/libsmodels/include
+export ESMF_NETCDF_LIBPATH=$HOME/libsmodels/lib
+export ESMF_INSTALL_PREFIX=$HOME/libsmodels/ESMF
 make
 make check
 make all_tests
@@ -468,7 +534,7 @@ make install
 \end{bashcode}
 \bigskip
 
-\noindent Entre na pasta \textit{scr/addon/ESMPy}:
+\noindent Enter in the \textit{scr/addon/ESMPy} folder:
 \bigskip
 
 \begin{bashcode}
@@ -476,25 +542,40 @@ cd src/addon/ESMPy/
 \end{bashcode}
 \bigskip
 
-\noindent Na mesma linha de comando, digite:
+\noindent Type:
+\bigskip
+
+\begin{tcolorbox}[enhanced,
+    grow to left by   = 0cm,
+    grow to right by  = 0cm,
+    enlarge top by    = 0cm,
+    enlarge bottom by = 0cm,
+    tcbox raise base,
+    boxrule           = 1.0pt,
+    left              = 18mm,
+    colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
+    overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+Type everything from the box below in the same command line!
+  \end{tcolorbox}
 \bigskip
 
 \begin{bashcode}[fontsize=\footnotesize]
 python setup.py build
---ESMFMKFILE=/home/usuario/libsmodels/ESMF/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
+--ESMFMKFILE=$HOME/libsmodels/ESMF/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
 \end{bashcode}
 \bigskip
 
-\noindent Complete a instalação:
+\noindent Complete the installation:
 \bigskip
 
 \begin{bashcode}
-python setup.py install --prefix=/home/usuario/libsmodels
+python setup.py install --prefix=$HOME/libsmodels
 python setup.py test
 \end{bashcode}
 \bigskip
 
-\noindent Instale o Octant, utilizando o Git:
+\noindent Install Octant, using Git:
 \bigskip
 
 \begin{bashcode}
@@ -502,7 +583,7 @@ git clone https://github.com/hetland/octant
 \end{bashcode}
 \bigskip
 
-\noindent Na pasta \textit{octant/external}, exclua tudo e baixe os seguintes arquivos:
+\noindent In the \textit{octant/external} folder, delete everything and download the following files:
 \bigskip
 
 \begin{bashcode}
@@ -514,7 +595,8 @@ git clone https://github.com/sakov/nn-c
 \end{bashcode}
 \bigskip
 
-\noindent Renomeie as pastas para, respectivamente: \textit{gridgen}, \textit{gridutils}, \textit{csa} e \textit{nn}. Entre na pasta \textit{nn/nn}, exporte as bibliotecas e instale o \textit{nn}:
+\noindent Rename the folders to, respectivamente: \textit{gridgen}, \textit{gridutils}, \textit{csa} and \textit{nn}. 
+Enter the \textit{nn/nn} folder, export the libraries and install \textit{nn}:
 \bigskip
 
 \begin{bashcode}
@@ -523,13 +605,13 @@ export FC=gfortran
 export F77=gfortran
 export CC=gcc
 export CXX=g++
-./configure --prefix=/home/usuario/libsmodels
+./configure --prefix=$HOME/libsmodels
 make
 make install
 \end{bashcode}
 \bigskip
 
-\noindent Instale o \textit{csa} da mesma maneira que foi instalado o nn:
+\noindent Install \textit{csa} in the same way as \textit{nn} was installed:
 \bigskip
 
 \begin{bashcode}
@@ -538,21 +620,21 @@ export FC=gfortran
 export F77=gfortran
 export CC=gcc
 export CXX=g++
-./configure --prefix=/home/usuario/libsmodels
+./configure --prefix=$HOME/libsmodels
 make
 make install
 \end{bashcode}
 \bigskip
 
-\noindent Ainda na pasta do \textit{csa}, copie o arquivo \textit{csa.o} para a pasta \textit{/home/usuario/libsmodels/lib}:
+\noindent In the \textit{csa} folder, copy the \textit{csa.o} file to the \textit{\$HOME/libsmodels/lib} folder:
 \bigskip
 
 \begin{bashcode}
-cp csa.o /home/usuario/libsmodels/lib
+cp csa.o $HOME/libsmodels/lib
 \end{bashcode}
 \bigskip
 
-\noindent Instale o \textit{gridutils}:
+\noindent Install the \textit{gridutils}:
 \bigskip
 
 \begin{bashcode}[fontsize=\scriptsize]
@@ -561,37 +643,38 @@ export FC=gfortran
 export F77=gfortran
 export CC=gcc
 export CXX=g++
-LDFLAGS=-L/home/usuario/libsmodels/lib
-./configure --prefix=/home/usuario/libsmodels CPPFLAGS=-I/home/usuario/libsmodels/include
+LDFLAGS=-L$HOME/libsmodels/lib
+./configure --prefix=$HOME/libsmodels CPPFLAGS=-I$HOME/libsmodels/include
 make
 make install
 \end{bashcode}
 \bigskip
 
-\noindent Instale o \textit{gridgen}:
+\noindent Install the \textit{gridgen}:
 \bigskip
+
 \begin{bashcode}[fontsize=\scriptsize]
 cd ../../gridgen/
 export FC=gfortran
 export F77=gfortran
 export CC=gcc
 export CXX=g++
-LDFLAGS=-L/home/usuario/libsmodels/lib
-./configure -prefix=/home/usuario/libsmodels CPPFLAGS=-I/home/usuario/libsmodels/include
+LDFLAGS=-L$HOME/libsmodels/lib
+./configure -prefix=$HOME/libsmodels CPPFLAGS=-I$HOME/libsmodels/include
 \end{bashcode}
 \bigskip
 
-\noindent Abra o arquivo \textit{makefile} e altere no arquivo de acordo com o que está abaixo:
+\noindent Open the file \textit{makefile} and change the file as shown below:
 \bigskip
 
 \begin{bashcode}
-CFLAGS = -g -O2 -Wall -I/home/usuario/libsmodels/include
-LDFLAGS = -L/home/usuario/libsmodels/lib
-LIBS = -lgu -lm -L/home/usuario/libsmodels/lib
+CFLAGS = -g -O2 -Wall -I$HOME/libsmodels/include
+LDFLAGS = -L$HOME/libsmodels/lib
+LIBS = -lgu -lm -L$HOME/libsmodels/lib
 \end{bashcode}
 \bigskip
 
-\noindent Salve o arquivo, feche e digite no terminal:
+\noindent Save the file, close and type in the terminal:
 \bigskip
 
 \begin{bashcode}
@@ -602,7 +685,8 @@ make install
 \end{bashcode}
 \bigskip
 
-\noindent Dentro da pasta \textit{/home/usuario/libsmodels/octant/octant}, modifique o arquivo \textit{grid.py} como o exemplo abaixo (aproximadamente na linha 898).
+\noindent Inside the folder \textit{\$HOME/libsmodels/octant/octant}, modify the file \textit{grid.py} like the 
+example below (it is approximately on row 898).
 \bigskip
 
 \begin{tcolorbox}[enhanced,
@@ -615,14 +699,14 @@ make install
   left=18mm,
   colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Observe atentamente a indentação do Python dentro dos arquivos!
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+Pay close attention to the Python indentation inside the files!
 \end{tcolorbox}
 \bigskip
 
 
 \begin{bashcode}[fontsize=\footnotesize]
-self._libgridgen = np.ctypeslib.load_library('libgridgen.so', '/home/usuario/libsmodels/lib')
+self._libgridgen = np.ctypeslib.load_library('libgridgen.so', '$HOME/libsmodels/lib')
 print octant.__path__[0]
 self._libgridgen = np.ctypeslib.load_library('_gridgen', octant.__path__[0])
 \end{bashcode}
@@ -636,34 +720,34 @@ python setup.py build --fcompiler=gfortran
 \end{bashcode}
 \bigskip
 
-\noindent Em \textit{/home/usuario/libsmodels/octant/octant}, abra o arquivo \textit{csa.py} e modifique como abaixo:
+\noindent In \textit{\$HOME/libsmodels/octant/octant}, open the file \textit{csa.py} and modify as below:
 \bigskip
 
 \begin{bashcode}
-_csa = np.ctypeslib.load_library('csa.o', '/home/usuario/libsmodels/libs')
+_csa = np.ctypeslib.load_library('csa.o', '$HOME/libsmodels/libs')
 \end{bashcode}
 \bigskip
 
-\noindent Por fim, em \textit{/home/usuario/libsmodels/octant}, digite:
+\noindent Finally, in \textit{\$HOME/libsmodels/octant}, type:
 \bigskip
 
 \begin{bashcode}
-python setup.py install --prefix=/home/usuario/pythonmodels/octant
+python setup.py install --prefix=$HOME/libsmodels/octant
 \end{bashcode}
 \bigskip
 
-\noindent Exporte os diretórios no \textit{.bashrc}. Lembre-se: o \textit{.bashrc} encontra-se na sua \textit{/home/usuario}.
+\noindent Export the paths in \textit{.bashrc}. Remember the: \textit{.bashrc} file is in your \textit{\$HOME}.
 \bigskip
 
 \begin{bashcode}[fontsize=\scriptsize]
-export PYTHONPATH=$PYTHONPATH:/home/usuario/libmodels/octant
-export PYTHONPATH=$PYTHONPATH:/home/usuario/libmodels/octant/include
-export PYTHONPATH=$PYTHONPATH:/home/usuario/libmodels/octant/lib/python2.7/site-packages
-export PYTHONPATH=$PYTHONPATH:/home/usuario/libmodels/octant/lib
+export PYTHONPATH=$PYTHONPATH:$HOME/libmodels/octant
+export PYTHONPATH=$PYTHONPATH:$HOME/libmodels/octant/include
+export PYTHONPATH=$PYTHONPATH:$HOME/libmodels/octant/lib/python2.7/site-packages
+export PYTHONPATH=$PYTHONPATH:$HOME/libmodels/octant/lib
 \end{bashcode}
 \bigskip
 
-\noindent Atualize o \textit{.bashrc} do terminal. Digite:
+\noindent Update the terminal with the new \textit{.bashrc}. Type:
 \bigskip
 
 \begin{bashcode}
@@ -671,9 +755,13 @@ source .bashrc
 \end{bashcode}
 \bigskip
 
-\subsection{Instalando com o Conda}\label{condasec}
+\subsection{Using Conda to install ROMS libraries}\label{condasec}
 \bigskip
-\noindent O Anaconda, é uma distribuição para Python e R que fornece suporte a várias bibliotecas e pacotes utilizados neste guia, facilitando a instalação. Para baixar o Anaconda acesse: \textcolor{bleu_cite}{\href{https://www.continuum.io/downloads}{\textit{https://www.continuum.io/downloads}}}. Para instalar basta entrar no diretório onde está o arquivo de instalação, mudar as permissões de instalação do arquivo e seguir as instruções do instalador:
+\noindent Anaconda is a distribution for Python and R that supports the various libraries and packages used in this guide, 
+making installation easier. To download Anaconda go to
+\textcolor{bleu_cite}{\href{https://www.continuum.io/downloads}{\textit{https://www.continuum.io/downloads}}}. 
+To install, just enter the directory where the installation file is located, change the installation permissions of the file and 
+follow the installer's instructions:
 \bigskip
 
 \begin{bashcode}
@@ -682,7 +770,7 @@ source .bashrc
 \end{bashcode}
 \bigskip
 
-\noindent A seguir, digite os seguintes comandos no terminal para instalar as bibliotecas necessários para construir um projeto no ROMS usando o Python:
+\noindent Next, enter the following commands on the terminal to install the libraries needed to build a project on ROMS using Python:
 \bigskip
 
 \begin{bashcode}
@@ -705,13 +793,15 @@ conda install -c conda-forge esmf
 \end{bashcode}
 \bigskip
 
-\section{Instalando o Pyroms}\index{Instalando o Pyroms}
+\section{Installing Pyroms}\index{Instalando o Pyroms}
 \bigskip
 
-\noindent Com as bibliotecas básicas já instaladas, nesta seção será mostrado como instalar o PYROMS. Ele é uma coleção de ferramentas para ajudar com arquivos de entrada e saída do ROMS. Foi originalmente iniciado por Rob Hetland como um projeto no GoogleCode e reescrito por Frederic Castruccio. Será seguido o mesmo esquema da seção anterior, com o endereço para baixar a biblioteca e os comandos que deverão ser digitados no terminal.
+\noindent With the libraries already installed, this section will show you how to install Pyroms. 
+It is a collection of tools to create ROMS files. It was originally started by Rob Hetland as a project on GoogleCode and 
+rewritten by Frederic Castruccio.
 \bigskip
 
-\noindent Baixe o PyROMS dentro do seu \textit{libsmodels}:
+\noindent Download PyROMS inside your \textit{libsmodels} folder:
 \bigskip
 
 \begin{bashcode}
@@ -719,7 +809,7 @@ git clone https://github.com/ESMG/pyroms.git
 \end{bashcode}
 \bigskip
 
-\noindent Por fim, entre no diretório \textit{/home/usuario/libsmodels/pyroms/pyroms\_toolbox}, digite.
+\noindent Enter the directory \textit{\$HOME/libsmodels/pyroms/pyroms\_toolbox} and type.
 \bigskip
 
 \begin{bashcode}
@@ -728,24 +818,24 @@ export F77=gfortran
 export CC=gcc
 export CXX=g++
 python setup.py build --fcompiler=gfortran
-python setup.py install --prefix=/home/usuario/libsmodels/pyroms
+python setup.py install --prefix=$HOME/libsmodels/pyroms
 \end{bashcode}
 \bigskip
 
-\noindent Instale o bathy\_smoother:
+\noindent Install the bathy\_smoother:
 \bigskip
 
 \begin{bashcode}
 cd ../bathy_smoother/external/lp_solve_5.5/lp_solve/
 sh ccc
-cp bin/ux64/lp_solve /home/usuario/libsmodels/bin/
+cp bin/ux64/lp_solve $HOME/libsmodels/bin/
 cd ../lpsolve55
 sh ccc
-cp bin/ux64/* /home/usuario/libsmodels/lib/
+cp bin/ux64/* $HOME/libsmodels/lib/
 \end{bashcode}
 \bigskip
 
-\noindent Entre no diretório a seguir e abra o \textit{setup.py}:
+\noindent Enter the following directory and open the \textit{setup.py}:
 \bigskip
 
 \begin{bashcode}
@@ -754,25 +844,25 @@ gedit setup.py
 \end{bashcode}
 \bigskip
 
-\noindent Mude os caminhos descritos abaixo no arquivo \textit{setup.py}. Lembre-se da indentação.
+\noindent Change the paths as described below, in the file \textit{setup.py}. Remember the indentation!
 \bigskip
 
 \begin{bashcode}[fontsize=\scriptsize]
-include_dirs=['../..','/usr/include','/home/usuario/libsmodels/include'],
-library_dirs=['/home/usuario/libsmodels/pyroms/lib/','/home/usuario/libsmodels/lib'],
+include_dirs=['../..','/usr/include','$HOME/libsmodels/include'],
+library_dirs=['$HOME/libsmodels/pyroms/lib/','$HOME/libsmodels/lib'],
 \end{bashcode}
 \bigskip
 
-\noindent Instale:
+\noindent Install:
 \bigskip
 
 \begin{bashcode}
 python setup.py build
-python setup.py install --prefix=/home/usuario/libsmodels/pyroms
+python setup.py install --prefix=$HOME/libsmodels/pyroms
 \end{bashcode}
 \bigskip
 
-\noindent Entre no diretório do bathy\_smoother, como exemplificado abaixo e digite no terminal:
+\noindent Enter the bathy\_smoother directory and type in the terminal:
 \bigskip
 
 \begin{bashcode}
@@ -782,27 +872,28 @@ export F77=gfortran
 export CC=gcc
 export CXX=g++
 python setup.py build --fcompiler=gfortran
-python setup.py install --prefix=/home/usuario/libsmodels/pyroms
+python setup.py install --prefix=$HOME/libsmodels/pyroms
 \end{bashcode}
 \bigskip
 
-\noindent Instale o Pyroms. Para isso use o comando para alterar o diretório:
+\noindent Install Pyroms.
 \bigskip
 
 \begin{bashcode}
 cd ../pyroms/pyroms/
+python setup.py install --prefix=$HOME/libsmodels/pyroms
 \end{bashcode}
 \bigskip
 
-\noindent Abra o arquivo \textit{hgrid.py} e mude na linha ~1028 como abaixo:
+\noindent Open the file \textit{hgrid.py} and change the line ~1028 as below:
 \bigskip
 
 \begin{bashcode}[fontsize=\scriptsize]
-self._libgridgen = np.ctypeslib.load_library('libgridgen.so', '/home/usuario/libsmodels/lib')
+self._libgridgen = np.ctypeslib.load_library('libgridgen.so', '$HOME/libsmodels/lib')
 \end{bashcode}
 \bigskip
 
-\noindent Ainda no arquivo \textit{hgrid.py}, adicione a seguinte biblioteca na linha ~21:
+\noindent In the file \textit{hgrid.py}, add the following library at line ~21:
 \bigskip
 
 \begin{bashcode}
@@ -810,7 +901,7 @@ from numpy import amin
 \end{bashcode}
 \bigskip
 
-\noindent Salve, feche o \textit{hgrid.py} e digite:
+\noindent Save, close \textit{hgrid.py} and type:
 \bigskip
 
 \begin{bashcode}
@@ -820,37 +911,39 @@ export F77=gfortran
 export CC=gcc
 export CXX=g++
 python setup.py build --fcompiler=gfortran
-python setup.py install --prefix=/home/usuario/libsmodels/pyroms
+python setup.py install --prefix=$HOME/libsmodels/pyroms
 \end{bashcode}
 \bigskip
 
 \noindent Coloque os caminhos no seu \textit{.bashrc}:
 \bigskip
 
-\begin{bashcode}[fontsize=\tiny]
-export PYTHONPATH=$PYTHONPATH:/home/usuario/libsmodels/pyroms/lib/python2.7/site-packages
-export PYTHONPATH=$PYTHONPATH:/home/usuario/libsmodels/pyroms/lib/python2.7/site-packages
-export PYTHONPATH=$PYTHONPATH:/home/usuario/libsmodels/pyroms/lib/python2.7/site-packages
-export PYTHONPATH=$PYTHONPATH:/home/usuario/libsmodels/pyroms/lib
-export PYTHONPATH=$PYTHONPATH:/home/usuario/libsmodels/pyroms/lib/python2.7/site-packages/pyroms_toolbox/Grid_HYCOM
-export PYTHONPATH=$PYTHONPATH:/home/usuario/libsmodels/pyroms/examples
+\begin{bashcode}[fontsize=\scriptsize]
+export PYTHONPATH=$PYTHONPATH:$HOME/libsmodels/pyroms/lib/python2.7/site-packages
+export PYTHONPATH=$PYTHONPATH:$HOME/libsmodels/pyroms/lib/python2.7/site-packages
+export PYTHONPATH=$PYTHONPATH:$HOME/libsmodels/pyroms/lib/python2.7/site-packages
+export PYTHONPATH=$PYTHONPATH:$HOME/libsmodels/pyroms/lib
+export PYTHONPATH=$PYTHONPATH:$HOME/libsmodels/pyroms/lib/python2.7/site-packages/pyroms_toolbox/Grid_HYCOM
+export PYTHONPATH=$PYTHONPATH:$HOME/libsmodels/pyroms/examples
 \end{bashcode}
 \bigskip
 
-\noindent Atualize o \textit{.bashrc}:
+\noindent Update the terminal with the new\textit{.bashrc}:
 \bigskip
 \begin{bashcode}
 source .bashrc
 \end{bashcode}
 \bigskip
 
-\noindent Vá até \textit{/home/usuario/libsmodels/pyroms/lib/python2.7/site-packages/bathy\_smoother/} e apague o arquivo lpsolve55.so.
+\noindent Go to \textit{\$HOME/libsmodels/pyroms/lib/python2.7/site-packages/bathy\_smoother/} and delete the file lpsolve55.so.
 \bigskip
 
-\noindent Por fim, vá na pasta agora do \textit{pyroms\_toolbox/} e abra o \textit{\_\_init\_\_.py} e comente a linha que importa \textit{from move\_river\_t import move\_river\_t} (~linha 51), depois na pasta \textit{Grid\_HYCOM} no arquivo \textit{flood\_fast.py} e comente na linha ~9 o \textit{import creep}.
+\noindent Go to the \textit{pyroms\_toolbox/} folder and open \textit{\_\_init\_\_.py} file. Add a comment or erase the content
+on the row that imports the \textit{from move\_river\_t import move\_river\_t} (row ~51). Then ,in the folder \textit{Grid\_HYCOM},
+open the file \textit{flood\_fast.py} and comment or erase the content on row ~9 (\textit{import creep}).
 \bigskip
 
-\noindent Salve e tente importar o pyroms\_toolbox:
+\noindent Save and import pyroms\_toolbox using Python:
 \bigskip
 
 \begin{bashcode}
@@ -859,22 +952,24 @@ import pyroms_toolbox
 \end{bashcode}
 \bigskip 
 
-\section{\textit{model2roms}}\index{O model2roms}\label{model2romssec}
+\section{\textit{The model2roms toolbox}}\index{O model2roms}\label{model2romssec}
 \bigskip
 
-\noindent Nesta seção será mostrado como instalar o model2roms, programa utilizado para gerar as condições e grade do ROMS. O \textit{model2roms} é composto por vários códigos para criação dos arquivos de entrada do ROMS. Foi originalmente iniciado por Trond Kristiansen (\textcolor{bleu_cite}{\cite{Trond2019}}) e foi adaptado para as necessidades do LOA-INPE. Será seguido o mesmo esquema da seção anterior, com o endereço para baixar a biblioteca e os comandos que deverão ser digitados no terminal.
+\noindent In this section, you will be introduced to install model2roms, the toolbox used to generate ROMS forcing files and its grid. 
+It was created and is being updated by Trond Kristiansen (\textcolor{bleu_cite}{\cite{Trond2019}}) and we adapted to the needs of 
+LOA-INPE. 
 \bigskip
 
-\noindent Para baixar o \textit{model2roms}, entre na \textit{home} do seu computador e baixe o \textit{model2roms} utilizando o Github:
+\noindent To download \textit{model2roms}, enter \textit{home} on your computer and download using Github:
 \bigskip
 
 \begin{bashcode}
-cd /home/usuario
+cd $HOME
 git clone https://github.com/usutil/model2roms
 \end{bashcode}
 \bigskip
 
-\noindent Altere o nome da pasta de \textit{model2roms-master} para \textit{model2roms}:
+\noindent Change the folder name from \textit{model2roms-master} to \textit{model2roms}:
 \bigskip
 
 \begin{bashcode}
@@ -882,13 +977,15 @@ mv model2roms-master model2roms
 \end{bashcode}
 \bigskip
 
-\subsection{Introdução sobre a grade do ROMS}\index{Gerar a grade do ROMS}
+\subsection{Introduction to the ROMS grid}\index{Gerar a grade do ROMS}
 \bigskip
 
-\noindent Para gerar a grade do ROMS, usaremos o código \textit{make\_roms\_grid.py}, localizado no diretório \textit{model2roms/grid}.  O código oferece suporte aos dados do SRTM30\_plus (\cite{Becker2009}), porém, para fins práticos, exemplificaremos apenas os dados do ETOPO1, que será discutido na próxima subseção.
+\noindent To generate the ROMS grid, we will use the code \textit{make\_roms\_grid.py}, located in the \textit{model2roms/grid} 
+directory. The code supports the SRTM30\_plus data (\cite{Becker2009}), however, for practical purposes, we will exemplify 
+only the data from ETOPO1 (\cite{Amante2009}), which will be discussed in the next subsection.
 \bigskip
 
-\noindent Caso seja necessário, instale o basemap para utilizar o código:
+\noindent Install basemap to use the code, if you have not previously installed
 \bigskip
 
 \begin{bashcode}
@@ -899,21 +996,26 @@ conda install -c anaconda basemap
 \subsection{ETOPO1 1 Arc-Minute Global Relief Model}\index{O ETOPO1 1 Arc-Minute Global Relief Model}
 \bigskip
 
-\noindent O ETOPO1 (\cite{Amante2009}; Figura \textcolor{bleu_cite}{\ref{etopo1}}) é produzido pelo National Geophysical Data Center e fornece duas camadas de informações de relevo. As camadas incluem batimetria sobre os oceanos e alguns dos principais lagos da Terra. A topografia terrestre e a batimetria oceânica baseiam-se na topografia SRTM30 e através de vários cruzeiros batimétricos. 
+\noindent The ETOPO1 (\cite{Amante2009}; Figure \textcolor{bleu_cite}{\ref{etopo1}}) 
+is produced by the National Geophysical Data Center and provides two layers of relief information.
+The layers include bathymetry over the oceans and some of the main lakes on Earth.
+ Terrestrial topography and ocean bathymetry are based on SRTM30 topography and through various bathymetric cruises
 \bigskip
 
-\noindent Acesse o site: \textcolor{bleu_cite}{\href{https://www.ngdc.noaa.gov/mgg/global/global.html}{\textit{https://www.ngdc.noaa.gov/mgg/global/global.html}}}.
-\bigskip
+\noindent Visit the site \textcolor{bleu_cite}{\href{https://www.ngdc.noaa.gov/mgg/global/global.html}{\textit{https://www.ngdc.noaa.gov/mgg/global/global.html}}} 
+and subset your area of interes on the ETOPO1 website map and download the data in NetCDF format.
+
+\bigskip  
    
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{etopo1.png}
-    \caption{Apresentação do site do ETOPO1.}
+    \caption{ETOPO1 webpage.}
     \label{etopo1}
 \end{figure}
 \bigskip
 
-\noindent Delimite no mapa do site do ETOPO1 a sua área de interesse e baixe os dados no formato NetCDF. 
+
 \bigskip
 
 \begin{tcolorbox}[enhanced,
@@ -926,39 +1028,40 @@ conda install -c anaconda basemap
     left              = 18mm,
     colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
     overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-  O código \textit{make\_roms\_grid.py} não permite a seleção dos limites de latitude e longitude da grade, portanto, ao baixar os dados do ETOPO1, seja o mais preciso possível no recorte da sua área.
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+The script \textit{make\_roms\_grid.py} does not allow the selection of the latitude and longitude limits of the grid, therefore, be as accurate as possible when subseting of your area.
+
 \end{tcolorbox}
 \bigskip
 
-\subsubsection{Gerando a grade do ROMS}\index{Gerando a grade do ROMS}
+\subsubsection{Creating the ROMS grid}\index{Gerando a grade do ROMS}
 
-\noindent Entre no diretório do \textit{model2roms} e procure pela subpasta \textit{grid}. Abra o código \textit{make\_roms\_grid.py}.
+\noindent Enter the \textit{model2roms} directory and look for the \textit{grid} subfolder. Open the code \textit{make\_roms\_grid.py}.
 \bigskip
 
 \begin{bashcode}
-cd /home/usuario/model2roms/grid
+cd $HOME/model2roms/grid
 gedit make_roms_grid.py
 \end{bashcode}
 \bigskip
 
-\noindent Conforme a Figura \textcolor{bleu_cite}{\ref{fazgrade}}, as variáveis que serão modificadas são:
+\noindent As Figure \textcolor{bleu_cite}{\ref{fazgrade}} shown, the variables that will be modified are:
 \bigskip
 
 \begin{itemize}
-\item \textbf{grd\_name}: Nome da grade;
-\item \textbf{grd\_final}: O nome do arquivo NetCDF da grade;
-\item \textbf{etopo1\_dir}: O diretório onde está localizado o arquivo NetCDF do ETOPO1;
-\item\textbf{srtm\_dir}: O diretório onde está localizado o arquivo NetCDF do SRTM\_30\_PLUS; 
-\item \textbf{hmin}: Valor mínimo de h;
-\item \textbf{theta\_b}: Parâmetro de controle das coordenadas próximas ao fundo oceânico;
-\item \textbf{theta\_s}: Parâmetro de controle das coordenadas próximas à superfície;
-\item \textbf{Tcline}: Profundidade crítica, em metros, controlando o alongamento das coordenadas seguidoras do terreno. Pode ser interpretado como a largura da superfície onde a resolução vertical é melhor;
-\item \textbf{N}: Número de camadas Sigma;
-\item \textbf{rmax}: Fator de suavização da topografia;
-\item \textbf{intrp\_method}: Método de interpolação da grade: Interpolação linear (\textit{linear}) ou por Vizinho Próximo (\textit{nn});
-\item \textbf{grid\_resolution}: Resolução da grade;
-\item\textbf{max\_depth}: Profundidade máxima da grade.
+\item \textbf{grd\_name}: Grid name;
+\item \textbf{grd\_final}: The NetCDF file name of the grid;
+\item \textbf{etopo1\_dir}: The directory where the ETOPO1 NetCDF file is located;
+\item\textbf{srtm\_dir}: The directory where the SRTM\_30\_PLUS NetCDF file is located; 
+\item \textbf{hmin}: Value of \textit{h} parameter;
+\item \textbf{theta\_b}: Control parameter for coordinates close to the ocean floor;
+\item \textbf{theta\_s}: Control parameter for coordinates close to the surface;
+\item \textbf{Tcline}: Critical depth, in meters, controlling the elongation of the coordinates following the terrain. It can be interpreted as the width of the surface where vertical resolution is best;
+\item \textbf{N}: Number of Sigma layers;
+\item \textbf{rmax}: Topography smoothing factor;
+\item \textbf{intrp\_method}: Grid interpolation method: Linear (\textit{linear}) or Near Neighbor (\textit{nn});
+\item \textbf{grid\_resolution}: Grid resolution;
+\item\textbf{max\_depth}: Maximum grid depth.
 \end{itemize}
 \bigskip
 
@@ -972,9 +1075,8 @@ gedit make_roms_grid.py
     left              = 18mm,
     colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
     overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-  Em \textit{grid\_resolution}, é necessário colocar o numerador para fazer o cálculo do ETOPO1. Por exemplo: como o ETOPO1 possui 1/60° de resolução espacial, caso a resolução espacial escolhida seja de 1/12°, o valor de \textit{grid\_resolution} será 5, pois 5/60° será 1/12°.
-\end{tcolorbox}
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+      In \textit{grid\_resolution}, it is necessary to place the numerator to do the ETOPO1 calculation. For example: as ETOPO1 has 1/60° of spatial resolution, if the chosen spatial resolution is 1/12°, the value of \textit{grid\_resolution} will be 5, because 5/60° is the same as 1/12° .\end{tcolorbox}
 \bigskip
 
 \begin{tcolorbox}[enhanced,
@@ -987,20 +1089,20 @@ gedit make_roms_grid.py
     left              = 18mm,
     colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
     overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-  Como não utilizaremos os dados do SRTM\_30\_PLUS, a variável \textit{srtm\_dir} não precisa ser modificada.
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+As we do not use the data from SRTM\_30\_PLUS, the variable \textit{srtm\_dir} does not need to be modified.
 \end{tcolorbox}
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{makegrid.png}
-    \caption{Captura de tela do código \textit{make\_grid.py}, que se encontra dentro da pasta \textit{model2roms/grid}.}
+    \caption{Screenshot of the \textit{make\_grid.py} file, which is located in the \textit{model2roms/grid} folder.}
     \label{fazgrade}
 \end{figure}
 \bigskip
 
-\noindent Após realizar as modificações, basta apenas executar o código. Digite:
+\noindent After making the changes, just run the code. Type it:
 \bigskip
 
 \begin{bashcode}
@@ -1008,40 +1110,50 @@ ipython make_roms_grid.py --pylab
 \end{bashcode}
 \bigskip
 
-\subsection{Introdução sobre as condições do ROMS}\index{Introdução sobre as condições do ROMS}
+\subsection{Introduction to ROMS forcing files}\index{Introdução sobre as condições do ROMS}
 \bigskip
 
-\noindent Utilizaremos o \textit{model2roms} para gerar as condições do ROMS. A toolbox oferece suporte aos dados do GLORYS12V1 (\cite{Fernandez2018}) e SODA3 (\cite{Carton2018}), porém, utilizaremos apenas o GLORYS12V1 como exemplo.
+\noindent We will use \textit{model2roms} to generate the ROMS conditions. The toolbox supports data from GLORYS12V1 (\cite{Fernandez2018}) 
+and SODA3 (\cite{Carton2018}), however, we will only use GLORYS12V1 as an example.
 
 \subsection{Global Ocean Physics Reanalysis (GLORYS)}\index{O Global Ocean Physics Reanalysis (GLORYS)}
 \bigskip
 
-\noindent  O GLORYS é uma reanálise global do oceano com resolução espacial de 1/12°, resolução temporal diária ou mensal e 50 níveis verticais. Ele é baseado no atual sistema CMEMS de previsão global do tempo e é forçado pelo ERA-Interim do ECMWF a partir do modelo NEMO. É utilizado um filtro de Kalman de ordem reduzida para assimilar os dados de altimetria do mar, temperatura da superfície do mar, concentração de gelo marinho obtidos a partir de sensoriamento remoto e os dados \textit{in situ} de perfis verticais de temperatura e salinidade. Além disso, um esquema 3D-VAR fornece uma correção para os desvios de temperatura e salinidade. 
+\noindent GLORYS is a global reanalysis of the ocean with a spatial resolution of 1/12° with daily or monthly temporal resolution and 
+50 vertical levels. It is based on the current CMEMS global weather forecasting system and is forced by ECMWF's ERA-Interim from the NEMO model.
+A Kalman filter with reduced order is used to assimilate the sea altimetry, sea surface temperature, sea ice concentration data obtained 
+from remote sensing and the \textit{in situ} data of vertical temperature and salinity profiles .
+In addition, a 3D-VAR scheme provides a correction for temperature and salinity deviations.
 \bigskip
 
-\noindent O GLORYS pode ser baixado no site: \textcolor{bleu_cite}{\href{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}{\textit{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}}}.
+\noindent GLORYS can be downloaded from the website: 
+\textcolor{bleu_cite}{\href{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}{\textit{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}}}.
 \bigskip
 
-\noindent Ao tentar baixar, o site avisará que será necessário criar uma conta no Copernicus. Faça o cadastro e escolha o conjunto de dados diários do GLORYS, conforme a Figura \textcolor{bleu_cite}{\ref{glorys1}}.
+\noindent When you try to download, the site will warn you that you will need to create a Copernicus account.
+Register and choose the GLORYS daily data set, as shown in Figure \textcolor{bleu_cite}{\ref{glorys1}}.
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{glorys1.png}
-    \caption{Captura de tela do site do GLORYS.}
+    \caption{Screenshot from GLORYS webpage.}
     \label{glorys1}
 \end{figure}
 \bigskip
 
-\noindent Clique em \textit{Dowload product} e, na próxima página (Figura \textcolor{bleu_cite}{\ref{glorys2}}), selecione a área conforme os limites de latitude e longitude da grade escolhida. Também escolha o período dos dados que serão baixados e caso pretenda utilizar o modelo de gelo marinho no ROMS, selecione todas as variáveis, com excessão de: 
+\noindent Click on \textit{Dowload product} and, on the next page (Figure \textcolor{bleu_cite}{\ref{glorys2}}), select the area according to 
+the latitude and longitude limits of the chosen grid. Also choose the period of data to be downloaded and if you want to use the sea 
+ice model in ROMS, select all variables, with the exception of:
 \bigskip
+
 \begin{itemize}
     \item \textit{ bottomT - Sea floor potential temperature};
     \item \textit{mlotst - Density ocean mixed layer thickness}.
 \end{itemize}
 \bigskip
 
-\noindent Caso escolha não utilizar o modelo de gelo marinho, não selecione as variáveis:
+\noindent If you choose to not use the sea ice model, do not select the variables:
 \bigskip
 
 \begin{itemize}
@@ -1054,31 +1166,34 @@ ipython make_roms_grid.py --pylab
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{glorys2.png}
-    \caption{Captura de tela do site do GLORYS.}
+    \includegraphics[width=0.5\textwidth]{glorys2.png}
+    \caption{Another screenshot from the GLORYS webpage.}
     \label{glorys2}
 \end{figure}
 \bigskip
 
-\noindent O servidor do Copernicus libera para download arquivos com no máximo 1024 mb. Caso o período selecionado apresente um tamanho de arquivo maior, como por exemplo na Figura \textcolor{bleu_cite}{\ref{glorys3}}, será necessário retornar ao passo anterior e particionar os arquivos em datas menores ou então baixar o arquivo completo clicando em \textit{FTP ACCESS} (Figura \textcolor{bleu_cite}{\ref{glorys3}})
+\noindent The Copernicus server allow files for download with a maximum of 1024 mb. 
+If the selected period has a larger file size, as for example in Figure \textcolor{bleu_cite}{\ref{glorys3}}, it will be necessary to 
+return to the previous step and partition the files into smaller pieces or download the complete file by clicking on \textit{FTP ACCESS}
+(Figure \textcolor{bleu_cite}{\ref{glorys3}}).
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{glorys3.png}
-    \caption{Mensagem de erro ao tentar realizar o \textit{download} de um arquivo maior que 1024 mb.}
+    \caption{Error message when trying to download a text larger than 1024 mb.}
     \label{glorys3}
 \end{figure}
 \bigskip
 
-
-\noindent Caso opte por particionar as datas ou baixar os arquivos por \textit{FTP}, será necessário criar um novo arquivo com todas as datas escolhidas concatenadas. Neste caso, é necessário utilizar o \textit{Climate Data Operators} (CDO). 
+\noindent If you choose to partition the files or download the files by \textit{FTP}, you will need to create a new file with 
+all the concatenated chosen dates. In this case, it is necessary to use \textit{Climate Data Operators} (CDO).
 \bigskip
 
-\noindent Existem duas maneiras de  instalar o CDO: pelo \textit{Conda} ou por \textit{apt-get}.
+\noindent There are two ways to install CDO: by \textit{Conda} or by \textit{apt-get}.
 \bigskip
 
-\noindent Pelo \textit{Conda}, digite:
+\noindent If you choose to use \textit{Conda}, type:
 \bigskip
 
 \begin{bashcode}
@@ -1086,7 +1201,7 @@ conda install -c conda-forge cdo
 \end{bashcode}
 \bigskip
 
-\noindent Por \textit{apt-get}:
+\noindent If you choose to use \textit{apt-get}, type:
 \bigskip
 
 \begin{bashcode}
@@ -1094,7 +1209,7 @@ sudo apt-get install cdo
 \end{bashcode}
 \bigskip
 
-\noindent Após a instalação, entre no diretório onde estão localizados todos os arquivos do GLORYS e digite:
+\noindent After installation, enter the directory where all GLORYS files are located and type:
 \bigskip
 
 \begin{bashcode}
@@ -1102,14 +1217,14 @@ cdo cat glorys* glorys.nc
 \end{bashcode}
 \bigskip
 
-\noindent Onde: 
+\noindent Where: 
 \bigskip
 
 \begin{itemize}
-    \item  \textit{cdo} significa o comando do programa;
-    \item \textit{cat} a concatenação de todos os arquivos;
-    \item \textit{glorys*} que serão concatenados todos os arquvis chamados \textit{glorys} dentro da pasta; 
-    \item \textit{glorys.nc} o arquivo final criado pela concatenação do \textit{CDO}.
+    \item  \textit{cdo} means the program command;
+    \item \textit{cat} means the concatenation command of all files;
+    \item \textit{glorys*} means that all files called \textit{glorys} will be concatenated within the folder;
+    \item \textit{glorys.nc} means the final file name created by concatenating with \textit{CDO}.
 \end{itemize}
 \bigskip
 
@@ -1123,17 +1238,18 @@ cdo cat glorys* glorys.nc
     left              = 18mm,
     colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
     overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATENÇÃO} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-  Para facilitar os próximos passos, coloque o arquivo do GLORYS dentro do diretório \textit{/home/usuario/model2roms/input}
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+  Para facilitar os próximos passos, coloque o arquivo do GLORYS dentro do diretório \textit{\$HOME/model2roms/input}
 \end{tcolorbox}
 
-\subsection{Gerando as condições do ROMS}\index{Gerando as condições do ROMS}
+\subsection{Creating ROMS forcing files}\index{Gerando as condições do ROMS}
 \bigskip
 
-\noindent Ao abrir a pasta do \textit{model2roms} é possível observar diversos códigos. Começaremos com o código o \textit{compile.py}, que compilará diversos arquivos em linguagem Fortran90 para Python.
+\noindent When opening the \textit{model2roms} folder, it is possible to observe several script files. 
+We will start with the file \textit{compile.py}, which will compile several files in Fortran90. 
 \bigskip
 
-\noindent Compile os arquivos com o comando:
+\noindent Compile the files with the command:
 \bigskip
 
 \begin{bashcode}
@@ -1141,11 +1257,12 @@ ipython compile.py --pylab
 \end{bashcode}
 \bigskip
 
-\noindent Caso o nome do seu arquivo do \textit{GLORYS} seja diferente de \textit{glorys.nc}, abra o código \textit{forcingFilenames.py} (Figura \textcolor{bleu_cite}{\ref{forcingfilename}}) e na linha 15, altere \textit{'glorys.nc'} para o nome do arquivo criado.
+\noindent If your \textit{GLORYS} file name is different from \textit{glorys.nc}, open the code \textit{forcingFilenames.py} 
+(Figure \textcolor{bleu_cite}{\ref{forcingfilename}}) and in row 15, change \textit{'glorys.nc'} to the name of the created file.
 \bigskip
 
 \begin{bashcode}
-cd /home/usuario/model2roms
+cd $HOME/model2roms
 gedit forcingFilenames.py
 \end{bashcode}
 \bigskip
@@ -1153,100 +1270,102 @@ gedit forcingFilenames.py
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{forcingfilename.png}
-    \caption{Captura de tela do código \textit{forcingFilename.py}.}
+    \caption{Screenshot of the \textit{forcingFilename.py} file.}
     \label{forcingfilename}
 \end{figure}
 \bigskip
 
-\noindent Abra o arquivo \textit{configM2R.py} e, na linha 16 (Figura \textcolor{bleu_cite}{\ref{abrev}}), altere a abreviação \textit{SuaAbreviaçãoAqui} da definição \textit{defineabbreviation} para o nome de sua escolha.
+\noindent Open the file \textit{configM2R.py} and, in row 16 (Figure \textcolor{bleu_cite}{\ref{abrev}}), change the abbreviation \textit{SuaAbreviaçãoAqui} 
+of the \textit{defineabbreviation} to the name of your choice.
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{abrevi.png}
-    \caption{Captura de tela da definição \textit{defineabbreviation} no código \textit{configM2R.py}.}
+    \caption{Screenshot of the \textit{defineabbreviation} in the code \textit{configM2R.py}.}
     \label{abrev}
 \end{figure}
 \bigskip
 
-\noindent Na linha 63 (Figura \textcolor{bleu_cite}{\ref{gradediretoriom2r}}), altere o diretório da grade \textit{Minha\_Grade.nc} para o diretório da grade escolhida e a abreviação \textit{SuaAbreviaçãoAqui} pelo nome escolhido no passo anterior.
+\noindent In row 63 (Figure \textcolor{bleu_cite}{\ref{gradediretoriom2r}}), change the grid directory \textit{Minha\_Grade.nc} to your 
+grid directory and the abbreviation \textit{SuaAbreviaçãoAqui} by the name chosen in the previous step.
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{m2rgriddir.png}
-    \caption{Captura de tela do código \textit{configM2R.py}.}
+    \caption{Screenshot of the \textit{configM2R.py} code.
+    }
     \label{gradediretoriom2r}
 \end{figure}
 \bigskip
 
-\noindent Na linha 67 (Figura \textcolor{bleu_cite}{\ref{glorysdirm2r}}), altere o diretório do arquivo do \textit{GLORYS} para o caminho escolhido.
+\noindent On row 67 (Figure \textcolor{bleu_cite}{\ref{glorysdirm2r}}), change the \textit{GLORYS} file directory to your chosen path.
 \bigskip
-
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{glorysdirm2r.png}
-    \caption{Captura de tela do código \textit{configM2R.py}.}
+    \caption{Screenshot of the \textit{configM2R.py} code.}
     \label{glorysdirm2r}
 \end{figure}
 \bigskip
 
-\noindent A partir da linha 76 (Figura \textcolor{bleu_cite}{\ref{m2roptions}}), modifique de acordo com o seu projeto:
+\noindent From row 76 (Figure \textcolor{bleu_cite}{\ref{m2roptions}}), modify according to your project: 
 \bigskip
 
 \begin{itemize}
-    \item \textbf{self.compileall}: \textit{True} caso deseje que os arquivos em Fortran sejam recompilados cada vez que o \textit{model2roms} for executado;
-    \item \textbf{self.createoceanforcing}: \textit{True} para criar as variáveis oceânicas;
-    \item \textbf{self.createatmosforcing}: \textit{True} para criar as forçantes atmosféricas. \textbf{Atualmente esta função encontra-se em fase de testes e não está inteiramente disponível para uso};
-    \item \textbf{self.writeice}: \textit{True} para criar as variáveis de gelo marinho.
-    \item \textbf{self.set2DvarsToZero}: Cria os arquivos de gelo e altura do nível do mar com valores zerados. Como o GLORYS possui esses valores, é recomendado deixar \textit{False};
-    \item \textbf{self.useesmf}: \textit{True} para usar o \textit{ESMF} para interpolar os dados do GLORYS para a grade do ROMS;
-    \item \textbf{self.usefilter}: \textit{True} para aplicar um filtro para suavizar os campos 2D.
-    \item \textbf{self.myformat}: O formato para escrever os arquivos de entrada do ROMS. Por padrão \textit{NETCDF};
-    \item \textbf{self.timefrequencyofinputdata}: A frequência dos dados de entrada. No caso do GLORYS, escrever \textit{'day'};
-    \item \textbf{self.indatatype}: O nome do dado utilizado para gerar as condições. \textit{'GLORYS} ou \textit{SODA3};
-    \item \textbf{self.authorname}: O nome do usuário que está utilizando o \textit{model2roms};
-    \item \textbf{self.authoremail}: O email do usuário que está utilizando o \textit{model2roms};
-    \item \textbf{self.ingridtype}: Interpolará a grade do GLORYS, que é em coordenada \textit{'ZLEVEL'};
-    \item \textbf{self.grdtype}: O tipo de grade do GLORYS, que é \textit{'regular'};
-    \item \textbf{self.lonname}: O nome da variável de longitude do GLORYS, que é \textit{'longitude'};
-    \item \textbf{self.latname}: O nome da variável de latitude do GLORYS, que é \textit{'latitude'};
-    \item \textbf{self.depthname}: O nome da variável de profundidade do GLORYS, que é \textit{'depth'};
-    \item \textbf{self.lonname\_u}: O nome da variável de longitude em U do GLORYS, que é \textit{'longitude'};
-    \item \textbf{self.latname\_u}: O nome da variável de latitude em U do GLORYS, que é \textit{'latitude'};
-    \item \textbf{self.lonname\_v}: O nome da variável de longitude em V do GLORYS, que é \textit{'longitude'};
-    \item \textbf{self.latname\_v}: O nome da variável de latitude em V do GLORYS, que é \textit{'latitude'};
-    \item \textbf{self.timename}: O nome da variável de tempo do GLORYS, que é \textit{'time'};
-    \item \textbf{self.realm}: O ambiente em que está sendo executado o 'textit{model2roms}, neste caso, \textit{'ocean'};
-    \item \textbf{self.fillvaluein}: O valor de \textit{fillvalue} do arquivo NetCDF. Por definição, \textit{-1.e20};
-    \item \textbf{self.outgrid}: O nome da abreviação utilizada na definição \textit{defineabbreviation};
-    \item \textbf{self.outgridtype}: Se \textit{"ROMS"}, criará as saídas no formato padrão do ROMS;
-    \item \textbf{self.nlevels}: O número de níveis verticais da grade. Deverá ser o mesmo que o escolhido no código \textit{make\_roms\_grid.py};
-    \item \textbf{self.vstretching}: Deverá ser o mesmo que o escolhido no código \textit{make\_roms\_grid.py};
-    \item \textbf{self.vtransform}: Deverá ser o mesmo que o escolhido no código \textit{make\_roms\_grid.py};
-    \item \textbf{self.theta\_s}: Deverá ser o mesmo que o escolhido no código \textit{make\_roms\_grid.py};
-    \item \textbf{self.theta\_b}: Deverá ser o mesmo que o escolhido no código \textit{make\_roms\_grid.py}.
-    \item \textbf{self.tcline}: Deverá ser o mesmo que o escolhido no código \textit{make\_roms\_grid.py}.   
-    \item \textbf{self.hc}: Deverá ser o mesmo que o escolhido no código \textit{make\_roms\_grid.py}.
-    \item \textbf{self.start\_year}: O ano inicial dos dados do GLORYS;
-    \item \textbf{self.end\_year}: O ano final dos dados do GLORYS;  
-    \item \textbf{self.start\_month}: O mês inicial dos dados do GLORYS;  
-    \item \textbf{self.end\_month}: O mês final dos dados do GLORYS;  
-    \item \textbf{self.start\_day}: O dia inicial dos dados do GLORYS;  
-    \item \textbf{self.end\_day}: O dia final dos dados do GLORYS;    
+    \item \textbf{self.compileall}: Set as \textit{True} if you want the Fortran files to be recompiled each time \textit{model2roms} is executed;
+    \item \textbf{self.createoceanforcing}: Set as \textit{True} to create the hydrodynamic variables;
+    \item \textbf{self.createatmosforcing}: Set as \textit{True} to create atmospheric forces. \textbf{Currently this function is in the testing phase and is not entirely available for use};
+    \item \textbf{self.writeice}: Set as \textit{True} to create the sea ice variables;
+    \item \textbf{self.set2DvarsToZero}: Creates the ice and sea level files with zero values. Since GLORYS has these values, it is recommended to leave it as \textit{False};
+    \item \textbf{self.useesmf}: Set as \textit{True} to use \textit{ESMF} to interpolate the GLORYS data to the ROMS grid;
+    \item \textbf{self.usefilter}: Set as \textit{True} to apply a filter to smooth out 2D fields.
+    \item \textbf{self.myformat}: The extension for writing ROMS input files. It is, by default, \textit{NETCDF};
+    \item \textbf{self.timefrequencyofinputdata}: The time frequency of the input data. If using GLORYS, write \textit{'day'};
+    \item \textbf{self.indatatype}: The name of the data used to generate the forcing files. \textit{'GLORYS} or \textit{SODA3};
+    \item \textbf{self.authorname}: The name of the user using \textit{model2roms};
+    \item \textbf{self.authoremail}: The email of the user using \textit{model2roms};
+    \item \textbf{self.ingridtype}: It will interpolate the GLORYS grid, which is in \textit{'ZLEVEL'} coordinate;
+    \item \textbf{self.grdtype}: The GLORYS grid type, which is \textit{'regular'};
+    \item \textbf{self.lonname}: The name of the GLORYS longitude variable, which is \textit{'longitude'};
+    \item \textbf{self.latname}: The name of the GLORYS latitude variable, which is \textit{'latitude'};
+    \item \textbf{self.depthname}: The name of the GLORYS depth variable, which is \textit{'depth'};
+    \item \textbf{self.lonname\_u}: The name of the GLORYS U-longitude variable, which is \textit{'longitude'};
+    \item \textbf{self.latname\_u}: The name of the GLORYS U-latitude variable, which is \textit{'latitude'};
+    \item \textbf{self.lonname\_v}: The name of the GLORYS V-longitude variable, which is \textit{'longitude'};
+    \item \textbf{self.latname\_v}: The name of the GLORYS U-latitude variable, which is \textit{'latitude'};
+    \item \textbf{self.timename}: The name of the GLORYS time variable, which is \textit{'time'};
+    \item \textbf{self.realm}: The realm in which \textit{model2roms} is being executed, in this case, \textit{'ocean'};
+    \item \textbf{self.fillvaluein}: The \textit{fillvalue} value of the NetCDF file. By convention, \textit{-1.e20};
+    \item \textbf{self.outgrid}: The name of the abbreviation used in the definition \textit{defineabbreviation};
+    \item \textbf{self.outgridtype}: If \textit{"ROMS"}, it will create the output in the standard ROMS format;
+    \item \textbf{self.nlevels}: The number of vertical levels in the grid. It must be the same as the one chosen in the code \textit{make\_roms\_grid.py};
+    \item \textbf{self.vstretching}: It must be the same as the one chosen in the code \textit{make\_roms\_grid.py};
+    \item \textbf{self.vtransform}: It must be the same as the one chosen in the code \textit{make\_roms\_grid.py};
+    \item \textbf{self.theta\_s}: It must be the same as the one chosen in the code \textit{make\_roms\_grid.py};
+    \item \textbf{self.theta\_b}: It must be the same as the one chosen in the code \textit{make\_roms\_grid.py};
+    \item \textbf{self.tcline}: It must be the same as the one chosen in the code \textit{make\_roms\_grid.py};   
+    \item \textbf{self.hc}: It must be the same as the one chosen in the code \textit{make\_roms\_grid.py};
+    \item \textbf{self.start\_year}: The initial year of GLORYS data;
+    \item \textbf{self.end\_year}: The final year of GLORYS data;
+    \item \textbf{self.start\_month}: The initial month of GLORYS data;
+    \item \textbf{self.end\_month}: The final month of GLORYS data;
+    \item \textbf{self.start\_day}: The initial day of GLORYS data;
+    \item \textbf{self.end\_day}: The final day of GLORYS data;
 \end{itemize}
 \bigskip
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{m2roptions.png}
-    \caption{Captura de tela do código \textit{configM2R.py}.}
+    \caption{Screenshot of the \textit{configM2R.py} code.}
     \label{m2roptions}
 \end{figure}
 \bigskip
 
-\noindent Execute o \textit{model2roms} com o comando:
+\noindent Run \textit{model2roms} with the command:
 \bigskip
 
 \begin{bashcode}
@@ -1254,7 +1373,6 @@ ipython runM2R.py
 \end{bashcode}
 \bigskip
 
-\noindent Ao finalizar, serão criados os arquivos inicial, de fronteira e o climatológico que deverão ser adicionados na sua pasta de projetos, dentro da Kerana.
-
+\noindent At the end, the initial, boundary and climatological files will be created, which should be added to your project folder, in the Kerana cluster.
 \bigskip
    

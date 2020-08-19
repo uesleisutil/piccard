@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+./configure \PYGZhy{}\PYGZhy{}enable\PYGZhy{}fortran=yes \PYGZhy{}\PYGZhy{}enable\PYGZhy{}fortran2003=yes \PYGZhy{}\PYGZhy{}enable\PYGZhy{}cxx=yes
+\PYGZhy{}\PYGZhy{}with\PYGZhy{}szlib=\PYGZdl{}HOME/libsmodels \PYGZhy{}\PYGZhy{}with\PYGZhy{}zlib=\PYGZdl{}HOME/libsmodels \PYGZhy{}\PYGZhy{}enable\PYGZhy{}hl
+\PYGZhy{}\PYGZhy{}enable\PYGZhy{}shared \PYGZhy{}\PYGZhy{}prefix=\PYGZdl{}HOME/libsmodels
+\end{Verbatim}

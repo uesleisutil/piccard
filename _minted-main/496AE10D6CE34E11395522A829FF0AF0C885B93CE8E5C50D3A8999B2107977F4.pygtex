@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+export FC=gfortran
+export F77=gfortran
+export CC=gcc
+export CXX=g++
+./configure \PYGZhy{}\PYGZhy{}prefix=\PYGZdl{}HOME/libsmodels
+sudo make
+sudo make check
+sudo make install
+\end{Verbatim}

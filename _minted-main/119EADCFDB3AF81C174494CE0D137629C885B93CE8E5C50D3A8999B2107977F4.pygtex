@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+python setup.py build
+python setup.py install \PYGZhy{}\PYGZhy{}prefix=\PYGZdl{}HOME/libsmodels/pyroms
+\end{Verbatim}

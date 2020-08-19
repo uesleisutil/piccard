@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+cd ../../gridgen/
+export FC=gfortran
+export F77=gfortran
+export CC=gcc
+export CXX=g++
+LDFLAGS=\PYGZhy{}L\PYGZdl{}HOME/libsmodels/lib
+./configure \PYGZhy{}prefix=\PYGZdl{}HOME/libsmodels CPPFLAGS=\PYGZhy{}I\PYGZdl{}HOME/libsmodels/include
+\end{Verbatim}

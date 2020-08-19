@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+cd ../../../../../bathy\PYGZus{}smoother/
+export FC=gfortran
+export F77=gfortran
+export CC=gcc
+export CXX=g++
+python setup.py build \PYGZhy{}\PYGZhy{}fcompiler=gfortran
+python setup.py install \PYGZhy{}\PYGZhy{}prefix=\PYGZdl{}HOME/libsmodels/pyroms
+\end{Verbatim}

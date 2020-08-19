@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+cd \PYGZdl{}HOME/model2roms/grid
+gedit make\PYGZus{}roms\PYGZus{}grid.py
+\end{Verbatim}

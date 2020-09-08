@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-export PYTHONPATH=\PYGZdl{}PYTHONPATH:\PYGZdl{}HOME/libmodels/octant
-export PYTHONPATH=\PYGZdl{}PYTHONPATH:\PYGZdl{}HOME/libmodels/octant/include
-export PYTHONPATH=\PYGZdl{}PYTHONPATH:\PYGZdl{}HOME/libmodels/octant/lib/python2.7/site\PYGZhy{}packages
-export PYTHONPATH=\PYGZdl{}PYTHONPATH:\PYGZdl{}HOME/libmodels/octant/lib
-\end{Verbatim}

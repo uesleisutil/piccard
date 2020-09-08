@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-export FC=gfortran
-export CC=gcc
-export CXX=g++
-export LDFLAGS=\PYGZhy{}L\PYGZdl{}HOME/libsmodels/lib
-export CPPFLAGS=\PYGZhy{}I\PYGZdl{}HOME/libsmodels/include
-\end{Verbatim}

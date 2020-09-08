@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-python setup.py install \PYGZhy{}\PYGZhy{}prefix=\PYGZdl{}HOME/libsmodels
-python setup.py test
-\end{Verbatim}

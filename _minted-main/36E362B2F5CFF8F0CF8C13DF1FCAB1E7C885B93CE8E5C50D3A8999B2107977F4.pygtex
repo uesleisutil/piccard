@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-python setup.py build
-\PYGZhy{}\PYGZhy{}ESMFMKFILE=\PYGZdl{}HOME/libsmodels/ESMF/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
-\end{Verbatim}

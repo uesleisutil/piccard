@@ -1,8 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-ncconfig    = \PYGZdl{}HOME/libsmodels/bin/nc\PYGZhy{}config
-netCDF4\PYGZus{}dir = \PYGZdl{}HOME/libsmodels
-HDF5\PYGZus{}dir    = \PYGZdl{}HOME/libsmodels
-szip\PYGZus{}dir    = \PYGZdl{}HOME/libsmodels
-jpeg\PYGZus{}dir    = \PYGZdl{}HOME/libsmodels
-curl\PYGZus{}dir    = \PYGZdl{}HOME/libsmodels
-\end{Verbatim}

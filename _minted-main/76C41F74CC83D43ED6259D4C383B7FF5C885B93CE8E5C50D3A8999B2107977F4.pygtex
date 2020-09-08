@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+pip install \PYGZhy{}e pyroms/pyroms
+pip install \PYGZhy{}e pyroms/pyroms\PYGZus{}toolbox
+pip install \PYGZhy{}e pyroms/bathy\PYGZus{}smoother
+\end{Verbatim}

@@ -47,715 +47,8 @@ Consider installing libraries with Anaconda will be faster than installing manua
   \end{tcolorbox}
 \bigskip
 
-\noindent Open the terminal, and create a folder in your \textit{\$HOME} called \textit{libsmodels}. The downloaded files 
-and libraries will be placed in it.
-\bigskip
 
-\begin{bashcode}
-sudo mkdir libsmodels
-\end{bashcode}
-\bigskip
-
-\noindent If you do not have \textit{gfortran} and \textit{g ++} installed, install via \textit{apt-get}.
-\bigskip
-\begin{bashcode}
-sudo apt-get install
-sudo apt-get install g++
-\end{bashcode}
-\bigskip
-
-\noindent Next, download OpenMPI 2.0.1 
-(\textcolor{bleu_cite}{\href{https://www.open-mpi.org/software/ompi/v2.0/}{\textit{https://www.open-mpi.org/software/ompi/v2.0/}}}),
-extract the file into the \textit{libsmodels} folder and type in the terminal:
-\bigskip
-
-\begin{bashcode}
-export F77=gfortran
-export FC=gfortran
-export FC=gfortran
-export CC=gcc
-export CXX=g++
-export FFLAGS="-m64 -fdefault-integer-8"
-export FCFLAGS="-m64 -fdefault-integer-8"
-export CFLAGS=-m64
-export CXXFLAGS=-m64
-\end{bashcode}
-\bigskip
-
-\noindent Enter the OpenMPI folder and type:
-\bigskip
-
-\begin{bashcode}
-./configure --prefix=$HOME/libsmodels
-sudo make
-sudo make check
-sudo make install
-\end{bashcode}
-\bigskip
-
-\noindent Go back to your \textit{\$HOME} and open the hidden file \textit{.bashrc} using \textit{gedit} and
-write the following in the final lines of the file:
-\bigskip
-
-\begin{bashcode}
-cd $HOME
-gedit .bashrc
-export PATH=$HOME/libsmodels/bin:$PATH
-export LD_LIBRARY_PATH=$HOME/libsmodels/lib:$LD_LIBRARY_PATH
-export PATH=$HOME/libsmodels/include:$PATH
-\end{bashcode}
-\bigskip
-
-\noindent Save the file and enter the following command to update the terminal and apply the changes.
-\bigskip
-
-\begin{bashcode}
-source .bashrc
-\end{bashcode}
-\bigskip
-
-\noindent Test the installation of OpenMPI is correct, type in the terminal:
-\bigskip
-
-\begin{bashcode}
-ompi_info -a grep 'Fort integer size'
-\end{bashcode}
-\bigskip
-
-\noindent The result should be:
-\bigskip
-
-\begin{bashcode}
-Fort integer size: 8
-\end{bashcode}
-\bigskip
-
-\noindent If you have not installed it on your computer, you will need to install the \textit{m4}, \textit{make} e \textit{perl}. 
-To check if your computer already has these programs installed:
-\bigskip
-
-\begin{bashcode}
-which m4
-which make
-which perl
-\end{bashcode}
-\bigskip
-
-\noindent If not, install from the following commands:
-\bigskip
-
-\begin{bashcode}
-sudo apt-get install m4
-sudo apt-get install make
-sudo apt-get install perl
-\end{bashcode}
-\bigskip
-
-\noindent Install the \textit{szip 2.1} (\textcolor{bleu_cite}{\href{https://www.hdfgroup.org/HDF5/release/obtain5.html}{\textit{https://www.hdfgroup.org/HDF5/release/obtain5.html}}}).
-Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{szip} folder and type the following:
-\bigskip
-
-\begin{bashcode}
-export F77=gfortran
-export FC=gfortran
-export CC=gcc
-export CXX=g++
-export FFLAGS="-m64 -fdefault-integer-8"
-export FCFLAGS="-m64 -fdefault-integer-8"
-export CFLAGS=-m64
-export CXXFLAGS=-m64
-./configure --prefix=$HOME/libsmodels
-sudo make
-sudo make check
-sudo make install
-\end{bashcode}
-\bigskip
-
-\noindent Install the \textit{zlib 1.2.8} (\textcolor{bleu_cite}{\href{http://zlib.net/}{\textit{http://zlib.net/}}}). 
-Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{zlib} folder and type the following:
-\bigskip
-
-\begin{bashcode}
-export F77=gfortran
-export FC=gfortran
-export CC=gcc
-export CXX=g++
-export FFLAGS="-m64 -fdefault-integer-8"
-export FCFLAGS="-m64 -fdefault-integer-8"
-export CFLAGS=-m64
-export CXXFLAGS=-m64
-./configure --prefix=$HOME/libsmodels
-sudo make
-sudo make check
-sudo make install
-\end{bashcode}
-\bigskip
-
-\noindent Install the \textit{Curl 7.50.3} (\textcolor{bleu_cite}{\href{http://curl.haxx.se/download.html}{\textit{http://curl.haxx.se/download.html}}}). 
-Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{Curl} folder and type the following:
-\bigskip
-
-\begin{bashcode}
-export F77=gfortran
-export FC=gfortran
-export CC=gcc
-export CXX=g++
-export FFLAGS="-m64 -fdefault-integer-8"
-export FCFLAGS="-m64 -fdefault-integer-8"
-export CFLAGS=-m64
-export CXXFLAGS=-m64
-./configure --prefix=$HOME/libsmodels/
-sudo make
-sudo make check
-sudo make install
-\end{bashcode}
-\bigskip
-
-\noindent Install the libraries needed to use HDF5. Type it:
-\bigskip
-
-\begin{bashcode}
-sudo apt-get install libgtk2.0-dev
-\end{bashcode}
-\bigskip
-
-\noindent Install the \textit{HDF5 1.8.9} (\textcolor{bleu_cite}{\href{https://www.hdfgroup.org/HDF5/release/obtain5.html}{\textit{https://www.hdfgroup.org/HDF5/release/obtain5.html}}}). 
-Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{HDF5} folder and type the following:
-\bigskip
-
-\begin{bashcode}
-export FC=gfortran
-export CC=gcc
-export CXX=g++
-export LDFLAGS=-L$HOME/libsmodels/lib
-export CPPFLAGS=-I$HOME/libsmodels/include
-\end{bashcode}
-\bigskip
-
-\noindent In the same directory, type:
-\bigskip
-
-\begin{tcolorbox}[enhanced,
-    grow to left by   = 0cm,
-    grow to right by  = 0cm,
-    enlarge top by    = 0cm,
-    enlarge bottom by = 0cm,
-    tcbox raise base,
-    boxrule           = 1.0pt,
-    left              = 18mm,
-    colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
-    overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Type everything from the box below in the same command line!
-  \end{tcolorbox}
-\bigskip
-
-\begin{bashcode}[fontsize=\footnotesize]
-./configure --enable-fortran=yes --enable-fortran2003=yes --enable-cxx=yes
---with-szlib=$HOME/libsmodels --with-zlib=$HOME/libsmodels --enable-hl
---enable-shared --prefix=$HOME/libsmodels
-\end{bashcode}
-\bigskip
-
-\noindent Complete the installation of \textit{HDF5} with the commands below:
-\bigskip
-
-\begin{bashcode}
-sudo make
-sudo make check
-sudo make install
-\end{bashcode}
-\bigskip
-
-\noindent The next step is to install the \textit{NetCDF-C 4.4.1} (\textcolor{bleu_cite}{\href{https://www.unidata.ucar.edu/downloads/netcdf/index.jsp}{\textit{https://www.unidata.ucar.edu/downloads/netcdf/index.jsp}}}). 
-Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{NetCDF} folder and type the following:
-\bigskip
-
-\begin{bashcode}[fontsize=\scriptsize]
-export FC=gfortran
-export CC=gcc
-export CXX=g++
-export LDFLAGS=-L$HOME/libsmodels/lib
-export CPPFLAGS=-I$HOME/libsmodels/include
-\end{bashcode}
-\bigskip
-
-\noindent Then type:
-\bigskip
-
-\begin{tcolorbox}[enhanced,
-    grow to left by   = 0cm,
-    grow to right by  = 0cm,
-    enlarge top by    = 0cm,
-    enlarge bottom by = 0cm,
-    tcbox raise base,
-    boxrule           = 1.0pt,
-    left              = 18mm,
-    colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
-    overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Type everything from the box below in the same command line!
-  \end{tcolorbox}
-\bigskip
-
-
-\begin{bashcode}[fontsize=\scriptsize]
-./configure --prefix=$HOME/libsmodels --enable-netcdf4 --enable-shared --enable-dap
---with-hdf5=$HOME/libsmodels 
-\end{bashcode}
-\bigskip
-
-\noindent Complete the installation of \textit{NetCDF-C} with the commands below:
-\bigskip
-
-\begin{bashcode}
-sudo make
-sudo make check
-sudo make install
-\end{bashcode}
-\bigskip
-
-\noindent Install the \textit{NetCDF-Fortran 4.2} (\textcolor{bleu_cite}{\href{https://www.unidata.ucar.edu/downloads/netcdf/index.jsp}{\textit{https://www.unidata.ucar.edu/downloads/netcdf/index.jsp}}}). 
-Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{NetCDF-Fortran} folder and type the following:
-\bigskip
-
-\begin{bashcode}[fontsize=\scriptsize]
-export FC=gfortran
-export F77=gfortran
-export CC=gcc
-export CXX=g++
-export LDFLAGS=-L$HOME/libsmodels/lib
-export CPPFLAGS=-I$HOME/libsmodels/include
-export LIBS='-lnetcdf -lhdf5 -lhdf5_hl -lz'
-\end{bashcode}
-\bigskip
-
-\noindent Type:
-\bigskip
-
-\begin{tcolorbox}[enhanced,
-    grow to left by   = 0cm,
-    grow to right by  = 0cm,
-    enlarge top by    = 0cm,
-    enlarge bottom by = 0cm,
-    tcbox raise base,
-    boxrule           = 1.0pt,
-    left              = 18mm,
-    colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
-    overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Type everything from the box below in the same command line!
-  \end{tcolorbox}
-\bigskip
-
-\begin{bashcode}
-./configure --prefix=$HOME/libsmodels --enable-netcdf4 --enable-shared
---with-hdf5=$HOME/libsmodels --enable-dap
-\end{bashcode}
-\bigskip
-
-\noindent Finish installing the \textit{NetCDF-Fortran}:
-\bigskip
-
-\begin{bashcode}
-sudo make
-sudo make check
-sudo make install
-\end{bashcode}
-\bigskip
-
-\noindent Install the \textit{JasPer 1.900.1} (\textcolor{bleu_cite}{\href{http://www.linuxfromscratch.org/blfs/view/svn/general/jasper.html}{\textit{http://www.linuxfromscratch.org/blfs/view/svn/general/jasper.html}}}). 
-Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{Jasper} folder and type the following:
-\bigskip
-
-\begin{bashcode}
-export FC=gfortran
-export F77=gfortran
-export CC=gcc
-export CXX=g++
-./configure --prefix=$HOME/libsmodels
-sudo make
-sudo make check
-sudo make install
-\end{bashcode}
-\bigskip
-
-\noindent Instal the \textit{libpng 1.6.24} (\textcolor{bleu_cite}{\href{http://sourceforge.net/projects/libpng/?source=typ\_redirect}{\textit{http://sourceforge.net/projects/libpng/?source=typ\_redirect}}}).
-Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{libpng} folder and type the following:
-\bigskip
-
-\begin{bashcode}[fontsize=\scriptsize]
-export FC=gfortran
-export F77=gfortran
-export CC=gcc
-export CXX=g++
-export LDFLAGS=-L$HOME/libsmodels/lib
-export CPPFLAGS=-I$HOME/libsmodels/include
-export LIBS='-lz'
-./configure --with-zlib=$HOME/libsmodels --prefix=$HOME/libsmodels
-sudo make
-sudo make check
-sudo make install
-\end{bashcode}
-\bigskip
-
-\noindent Install the \textit{Udunits 2.1.24} (\textcolor{bleu_cite}{\href{ftp://ftp.unidata.ucar.edu/pub/udunits/}{\textit{ftp://ftp.unidata.ucar.edu/pub/udunits/}}}).  
-Download, unzip it in the \textit{\$HOME/libsmodels} folder, enter the \textit{Udunits} folder and type the following:
-\bigskip
-
-\begin{bashcode}
-export FC=gfortran
-export F77=gfortran
-export CC=gcc
-export CXX=g++
-./configure --prefix=$HOME/libsmodels
-sudo make
-sudo make check
-sudo make install
-\end{bashcode}
-\bigskip
-
-\noindent Install NetCDF4 for Python. In this case, download Git first and use it to download.
-\bigskip
-
-\begin{bashcode}
-sudo apt-get install git
-\end{bashcode}
-\bigskip
-
-\noindent Clone the \textit{NetCDF4-Python} repository with the command:
-\bigskip
-
-\begin{bashcode}
-git clone https://github.com/Unidata/netcdf4-python
-\end{bashcode}
-\bigskip
-
-\noindent Entre na pasta do NetCDF4-Python e modifique o arquivo \textit{setup.cfg.template} e salve:
-\bigskip
-
-\begin{bashcode}
-ncconfig    = $HOME/libsmodels/bin/nc-config
-netCDF4_dir = $HOME/libsmodels
-HDF5_dir    = $HOME/libsmodels
-szip_dir    = $HOME/libsmodels
-jpeg_dir    = $HOME/libsmodels
-curl_dir    = $HOME/libsmodels
-\end{bashcode}
-\bigskip
-
-\noindent Change the file name \textit{setup.cfg.template} to setup.cfg:
-\bigskip
-
-\begin{bashcode}
-mv setup.cfg.template setup.cfg
-\end{bashcode}
-\bigskip
-
-\noindent Create inside the \textit{libsmodels} folder, the \textit{lib/python2.7/site-packages} subfolders:
-\bigskip
-
-\begin{bashcode}
-mkdir lib
-cd lib
-mkdir python2.7
-cd python2.7
-mkdir site-packages
-\end{bashcode}
-\bigskip
-
-\noindent Go back to the \textit{NetCDF4-Python} main folder and compile:
-\bigskip
-
-\begin{bashcode}
-python setup.py build
-python setup.py install --prefix=$HOME/libsmodels
-\end{bashcode}
-\bigskip
-
-\noindent If you want to check if the installation was successful, try to import the library into Python. Type in the terminal:
-\bigskip
-
-\begin{bashcode}
-python
-import netCDF4
-\end{bashcode}
-\bigskip
-
-\noindent Install the \textit{mpi4py} (\textcolor{bleu_cite}{\href{https://pypi.python.org/pypi/mpi4py}{\textit{https://pypi.python.org/pypi/mpi4py}}}). 
-Extract and type:
-\bigskip
-
-\begin{bashcode}
-python setup.py build
-python setup.py install --prefix=$HOME/libsmodels
-\end{bashcode}
-\bigskip
-
-\noindent To test the installation, type:
-\bigskip
-
-\begin{bashcode}
-mpiexec -n 5 python demo/helloworld.py
-\end{bashcode}
-\bigskip
-
-\noindent Install the \textit{ESMF} e \textit{ESMPy} (\textcolor{bleu_cite}{\textit{https://www.earthsystemcog.org/projects/esmpy/releases}}). 
-First, type the following commands to install the necessary library files:
-\bigskip
-
-\begin{bashcode}
-sudo apt-get install python-setuptools
-sudo easy_install pip
-sudo pip install distribute
-sudo pip install nose
-\end{bashcode}
-\bigskip
-
-\noindent Inside the ESMF folder, type in the terminal:
-\bigskip
-
-\begin{bashcode}[fontsize=\footnotesize]
-export ESMF_F90COMPILER=gfortran
-export ESMF_NETCDF_LIBS="-lnetcdff -lnetcdf"
-export ESMF_DIR=$HOME/libsmodels/packages/esmp.ESMF_6_3_0rp1_ESMP_01/esmf
-export ESMF_NETCDF="local"
-export ESMF_COMPILER=gfortran
-export ESMF_COMM=openmpi
-export ESMF_TESTEXHAUSTIVE=on
-export ESMF_TESTSHAREDOBJ=on
-export ESMF_NETCDF_INCLUDE=$HOME/libsmodels/include
-export ESMF_NETCDF_LIBPATH=$HOME/libsmodels/lib
-export ESMF_INSTALL_PREFIX=$HOME/libsmodels/ESMF
-make
-make check
-make all_tests
-make install
-\end{bashcode}
-\bigskip
-
-\noindent Enter in the \textit{scr/addon/ESMPy} folder:
-\bigskip
-
-\begin{bashcode}
-cd src/addon/ESMPy/
-\end{bashcode}
-\bigskip
-
-\noindent Type:
-\bigskip
-
-\begin{tcolorbox}[enhanced,
-    grow to left by   = 0cm,
-    grow to right by  = 0cm,
-    enlarge top by    = 0cm,
-    enlarge bottom by = 0cm,
-    tcbox raise base,
-    boxrule           = 1.0pt,
-    left              = 18mm,
-    colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
-    overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Type everything from the box below in the same command line!
-  \end{tcolorbox}
-\bigskip
-
-\begin{bashcode}[fontsize=\footnotesize]
-python setup.py build
---ESMFMKFILE=$HOME/libsmodels/ESMF/lib/libO/Linux.gfortran.64.openmpi.default/esmf.mk
-\end{bashcode}
-\bigskip
-
-\noindent Complete the installation:
-\bigskip
-
-\begin{bashcode}
-python setup.py install --prefix=$HOME/libsmodels
-python setup.py test
-\end{bashcode}
-\bigskip
-
-\noindent Install Octant, using Git:
-\bigskip
-
-\begin{bashcode}
-git clone https://github.com/hetland/octant
-\end{bashcode}
-\bigskip
-
-\noindent In the \textit{octant/external} folder, delete everything and download the following files:
-\bigskip
-
-\begin{bashcode}
-rm -rf *
-git clone https://github.com/sakov/gridgen-c.git
-git clone https://github.com/sakov/gridutils-c
-git clone https://github.com/sakov/csa-c
-git clone https://github.com/sakov/nn-c
-\end{bashcode}
-\bigskip
-
-\noindent Rename the folders to, respectivamente: \textit{gridgen}, \textit{gridutils}, \textit{csa} and \textit{nn}. 
-Enter the \textit{nn/nn} folder, export the libraries and install \textit{nn}:
-\bigskip
-
-\begin{bashcode}
-cd nn/nn/
-export FC=gfortran
-export F77=gfortran
-export CC=gcc
-export CXX=g++
-./configure --prefix=$HOME/libsmodels
-make
-make install
-\end{bashcode}
-\bigskip
-
-\noindent Install \textit{csa} in the same way as \textit{nn} was installed:
-\bigskip
-
-\begin{bashcode}
-cd ../../csa/csa/
-export FC=gfortran
-export F77=gfortran
-export CC=gcc
-export CXX=g++
-./configure --prefix=$HOME/libsmodels
-make
-make install
-\end{bashcode}
-\bigskip
-
-\noindent In the \textit{csa} folder, copy the \textit{csa.o} file to the \textit{\$HOME/libsmodels/lib} folder:
-\bigskip
-
-\begin{bashcode}
-cp csa.o $HOME/libsmodels/lib
-\end{bashcode}
-\bigskip
-
-\noindent Install the \textit{gridutils}:
-\bigskip
-
-\begin{bashcode}[fontsize=\scriptsize]
-cd ../../gridutils/gridutils/
-export FC=gfortran
-export F77=gfortran
-export CC=gcc
-export CXX=g++
-LDFLAGS=-L$HOME/libsmodels/lib
-./configure --prefix=$HOME/libsmodels CPPFLAGS=-I$HOME/libsmodels/include
-make
-make install
-\end{bashcode}
-\bigskip
-
-\noindent Install the \textit{gridgen}:
-\bigskip
-
-\begin{bashcode}[fontsize=\scriptsize]
-cd ../../gridgen/
-export FC=gfortran
-export F77=gfortran
-export CC=gcc
-export CXX=g++
-LDFLAGS=-L$HOME/libsmodels/lib
-./configure -prefix=$HOME/libsmodels CPPFLAGS=-I$HOME/libsmodels/include
-\end{bashcode}
-\bigskip
-
-\noindent Open the file \textit{makefile} and change the file as shown below:
-\bigskip
-
-\begin{bashcode}
-CFLAGS = -g -O2 -Wall -I$HOME/libsmodels/include
-LDFLAGS = -L$HOME/libsmodels/lib
-LIBS = -lgu -lm -L$HOME/libsmodels/lib
-\end{bashcode}
-\bigskip
-
-\noindent Save the file, close and type in the terminal:
-\bigskip
-
-\begin{bashcode}
-make
-make lib
-make shlib
-make install
-\end{bashcode}
-\bigskip
-
-\noindent Inside the folder \textit{\$HOME/libsmodels/octant/octant}, modify the file \textit{grid.py} like the 
-example below (it is approximately on row 898).
-\bigskip
-
-\begin{tcolorbox}[enhanced,
-  grow to left by=0cm,%   equivalent to negative mdframed 'leftmargin'
-  grow to right by=0cm,%  equivalent to negative mdframed 'rightmargin'
-  enlarge top by=0cm,%     equivalent to mdframed 'skipabove'
-  enlarge bottom by=0cm,%  equivalent to mdframed 'skipbelow'
-  tcbox raise base,
-  boxrule=1.0pt,
-  left=18mm,
-  colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Pay close attention to the Python indentation inside the files!
-\end{tcolorbox}
-\bigskip
-
-
-\begin{bashcode}[fontsize=\footnotesize]
-self._libgridgen = np.ctypeslib.load_library('libgridgen.so', '$HOME/libsmodels/lib')
-print octant.__path__[0]
-self._libgridgen = np.ctypeslib.load_library('_gridgen', octant.__path__[0])
-\end{bashcode}
-\bigskip
-
-\noindent Salve e feche o arquivo. Digite:
-\bigskip
-
-\begin{bashcode}
-python setup.py build --fcompiler=gfortran
-\end{bashcode}
-\bigskip
-
-\noindent In \textit{\$HOME/libsmodels/octant/octant}, open the file \textit{csa.py} and modify as below:
-\bigskip
-
-\begin{bashcode}
-_csa = np.ctypeslib.load_library('csa.o', '$HOME/libsmodels/libs')
-\end{bashcode}
-\bigskip
-
-\noindent Finally, in \textit{\$HOME/libsmodels/octant}, type:
-\bigskip
-
-\begin{bashcode}
-python setup.py install --prefix=$HOME/libsmodels/octant
-\end{bashcode}
-\bigskip
-
-\noindent Export the paths in \textit{.bashrc}. Remember the: \textit{.bashrc} file is in your \textit{\$HOME}.
-\bigskip
-
-\begin{bashcode}[fontsize=\scriptsize]
-export PYTHONPATH=$PYTHONPATH:$HOME/libmodels/octant
-export PYTHONPATH=$PYTHONPATH:$HOME/libmodels/octant/include
-export PYTHONPATH=$PYTHONPATH:$HOME/libmodels/octant/lib/python2.7/site-packages
-export PYTHONPATH=$PYTHONPATH:$HOME/libmodels/octant/lib
-\end{bashcode}
-\bigskip
-
-\noindent Update the terminal with the new \textit{.bashrc}. Type:
-\bigskip
-
-\begin{bashcode}
-source .bashrc
-\end{bashcode}
-\bigskip
-
-\subsection{Using Conda to install ROMS libraries}\label{condasec}
+\subsection{Installing with Conda}\label{condasec}
 \bigskip
 \noindent Anaconda is a distribution for Python and R that supports the various libraries and packages used in this guide, 
 making installation easier. To download Anaconda go to
@@ -790,6 +83,8 @@ conda install -c anaconda numpy
 conda install -c anaconda scipy
 conda install -c anaconda mpi4py
 conda install -c conda-forge esmf
+conda install -c conda-forge lpsolve55 
+conda install -c conda-forge cftime
 \end{bashcode}
 \bigskip
 
@@ -801,7 +96,23 @@ It is a collection of tools to create ROMS files. It was originally started by R
 rewritten by Frederic Castruccio.
 \bigskip
 
-\noindent Download PyROMS inside your \textit{libsmodels} folder:
+\noindent Pyroms can be easily installed using Pip, a command line tool that allows you to install software packages written in Python.
+To install Pip for Python 2, use the following:
+\bigskip
+
+\begin{bashcode}
+  sudo apt install python-pip
+\end{bashcode}
+\bigskip
+
+\noindent For Python 3 users, use:
+\bigskip
+\begin{bashcode}
+sudo apt install python3-pip
+\end{bashcode}
+\bigskip
+
+\noindent Then, install the Pyrons by cloning the repository at Github:
 \bigskip
 
 \begin{bashcode}
@@ -809,148 +120,77 @@ git clone https://github.com/ESMG/pyroms.git
 \end{bashcode}
 \bigskip
 
-\noindent Enter the directory \textit{\$HOME/libsmodels/pyroms/pyroms\_toolbox} and type.
+\noindent Install it using Pip:
 \bigskip
 
 \begin{bashcode}
-export FC=gfortran
-export F77=gfortran
-export CC=gcc
-export CXX=g++
-python setup.py build --fcompiler=gfortran
-python setup.py install --prefix=$HOME/libsmodels/pyroms
+pip install -e pyroms/pyroms
+pip install -e pyroms/pyroms_toolbox
+pip install -e pyroms/bathy_smoother
 \end{bashcode}
 \bigskip
 
-\noindent Install the bathy\_smoother:
+\noindent This will install both three Pyroms packages, but if you try to import any of then without Script installed, you will get a warning 
+similar to that found in \textcolor{bleu_cite}{Figure \ref{scriperror}}:
+\bigskip
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{scriperror.png}
+  \caption{Scrip warning when Pyroms is imported without installing it.}
+  \label{scriperror}
+\end{figure}
+\bigskip
+
+\noindent As stated in the Pyroms repository, the scrip module is not available via Conda or any other package repository, but it can be built 
+and installed from source as the following:
 \bigskip
 
 \begin{bashcode}
-cd ../bathy_smoother/external/lp_solve_5.5/lp_solve/
-sh ccc
-cp bin/ux64/lp_solve $HOME/libsmodels/bin/
-cd ../lpsolve55
-sh ccc
-cp bin/ux64/* $HOME/libsmodels/lib/
+cd pyroms/pyroms/external/scrip/source/
 \end{bashcode}
 \bigskip
 
-\noindent Enter the following directory and open the \textit{setup.py}:
+\noindent Then, print the active Conda environment path. This will be used to find the netCDF library.
 \bigskip
 
 \begin{bashcode}
-cd ../../lp_solve_5.5/extra/Python/
-gedit setup.py
+conda info | grep "active env location"
 \end{bashcode}
 \bigskip
 
-\noindent Change the paths as described below, in the file \textit{setup.py}. Remember the indentation!
+\noindent The output must be something like as the following:
+\bigskip
+
+\begin{bashcode}
+active env location : /home/USER/anaconda3
+\end{bashcode}
+\bigskip
+
+\noindent Export the PREFIX variable with the location found in the previous step.
+\bigskip
+
+\begin{bashcode}
+export PREFIX=/home/USER/anaconda3
+\end{bashcode}
+\bigskip
+
+\noindent Install the module with the make command.
+\bigskip
+
+\begin{bashcode}
+sudo make DEVELOP=1 PREFIX=$PREFIX install
+\end{bashcode}
+\bigskip
+
+\noindent Move the Scrip files to the Pyroms folder, like the following:
 \bigskip
 
 \begin{bashcode}[fontsize=\scriptsize]
-include_dirs=['../..','/usr/include','$HOME/libsmodels/include'],
-library_dirs=['$HOME/libsmodels/pyroms/lib/','$HOME/libsmodels/lib'],
+  mv -vf scrip*.so ../../../pyroms
+  ‘scrip.cpython-37m-x86_64-linux-gnu.so’ -> ‘../../../pyroms/scrip.cpython-37m-x86_64-linux-gnu.so’
 \end{bashcode}
 \bigskip
-
-\noindent Install:
-\bigskip
-
-\begin{bashcode}
-python setup.py build
-python setup.py install --prefix=$HOME/libsmodels/pyroms
-\end{bashcode}
-\bigskip
-
-\noindent Enter the bathy\_smoother directory and type in the terminal:
-\bigskip
-
-\begin{bashcode}
-cd ../../../../../bathy_smoother/
-export FC=gfortran
-export F77=gfortran
-export CC=gcc
-export CXX=g++
-python setup.py build --fcompiler=gfortran
-python setup.py install --prefix=$HOME/libsmodels/pyroms
-\end{bashcode}
-\bigskip
-
-\noindent Install Pyroms.
-\bigskip
-
-\begin{bashcode}
-cd ../pyroms/pyroms/
-python setup.py install --prefix=$HOME/libsmodels/pyroms
-\end{bashcode}
-\bigskip
-
-\noindent Open the file \textit{hgrid.py} and change the line ~1028 as below:
-\bigskip
-
-\begin{bashcode}[fontsize=\scriptsize]
-self._libgridgen = np.ctypeslib.load_library('libgridgen.so', '$HOME/libsmodels/lib')
-\end{bashcode}
-\bigskip
-
-\noindent In the file \textit{hgrid.py}, add the following library at line ~21:
-\bigskip
-
-\begin{bashcode}
-from numpy import amin
-\end{bashcode}
-\bigskip
-
-\noindent Save, close \textit{hgrid.py} and type:
-\bigskip
-
-\begin{bashcode}
-cd ../
-export FC=gfortran
-export F77=gfortran
-export CC=gcc
-export CXX=g++
-python setup.py build --fcompiler=gfortran
-python setup.py install --prefix=$HOME/libsmodels/pyroms
-\end{bashcode}
-\bigskip
-
-\noindent Coloque os caminhos no seu \textit{.bashrc}:
-\bigskip
-
-\begin{bashcode}[fontsize=\scriptsize]
-export PYTHONPATH=$PYTHONPATH:$HOME/libsmodels/pyroms/lib/python2.7/site-packages
-export PYTHONPATH=$PYTHONPATH:$HOME/libsmodels/pyroms/lib/python2.7/site-packages
-export PYTHONPATH=$PYTHONPATH:$HOME/libsmodels/pyroms/lib/python2.7/site-packages
-export PYTHONPATH=$PYTHONPATH:$HOME/libsmodels/pyroms/lib
-export PYTHONPATH=$PYTHONPATH:$HOME/libsmodels/pyroms/lib/python2.7/site-packages/pyroms_toolbox/Grid_HYCOM
-export PYTHONPATH=$PYTHONPATH:$HOME/libsmodels/pyroms/examples
-\end{bashcode}
-\bigskip
-
-\noindent Update the terminal with the new\textit{.bashrc}:
-\bigskip
-\begin{bashcode}
-source .bashrc
-\end{bashcode}
-\bigskip
-
-\noindent Go to \textit{\$HOME/libsmodels/pyroms/lib/python2.7/site-packages/bathy\_smoother/} and delete the file lpsolve55.so.
-\bigskip
-
-\noindent Go to the \textit{pyroms\_toolbox/} folder and open \textit{\_\_init\_\_.py} file. Add a comment or erase the content
-on the row that imports the \textit{from move\_river\_t import move\_river\_t} (row ~51). Then ,in the folder \textit{Grid\_HYCOM},
-open the file \textit{flood\_fast.py} and comment or erase the content on row ~9 (\textit{import creep}).
-\bigskip
-
-\noindent Save and import pyroms\_toolbox using Python:
-\bigskip
-
-\begin{bashcode}
-python
-import pyroms_toolbox
-\end{bashcode}
-\bigskip 
 
 \section{The model2roms toolbox}\index{O model2roms}\label{model2romssec}
 \bigskip

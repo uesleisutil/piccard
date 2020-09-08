@@ -44,7 +44,7 @@
 \BOOKMARK [0][-]{chapter.5}{Building the ROMS}{}% 44
 \BOOKMARK [1][-]{section.5.1}{Installing Python libraries on the personal computer}{chapter.5}% 45
 \BOOKMARK [2][-]{subsection.5.1.1}{Installing manually}{section.5.1}% 46
-\BOOKMARK [2][-]{subsection.5.1.2}{Using Conda to install ROMS libraries}{section.5.1}% 47
+\BOOKMARK [2][-]{subsection.5.1.2}{Installing with Conda}{section.5.1}% 47
 \BOOKMARK [1][-]{section.5.2}{Installing Pyroms}{chapter.5}% 48
 \BOOKMARK [1][-]{section.5.3}{The model2roms toolbox}{chapter.5}% 49
 \BOOKMARK [2][-]{subsection.5.3.1}{Introduction to the ROMS grid}{section.5.3}% 50
@@ -57,6 +57,6 @@
 \BOOKMARK [0][-]{chapter.8}{Building the weights between grids with SCRIP}{}% 57
 \BOOKMARK [1][-]{section.8.1}{Building the weights}{chapter.8}% 58
 \BOOKMARK [1][-]{section.8.2}{Running your simulation}{chapter.8}% 59
-\BOOKMARK [0][-]{chapter.9}{Papers of the Ocean and Atmospheric Studies Laboratory}{}% 60
-\BOOKMARK [0][-]{chapter*.45}{Acknowledgments}{}% 61
-\BOOKMARK [0][-]{chapter*.46}{Bibliography}{}% 62
+\BOOKMARK [0][-]{chapter.9}{Papers of the Ocean and Atmosphere Studies Laboratory \(LOA/INPE\)}{}% 60
+\BOOKMARK [0][-]{chapter*.46}{Acknowledgments}{}% 61
+\BOOKMARK [0][-]{chapter*.47}{Bibliography}{}% 62

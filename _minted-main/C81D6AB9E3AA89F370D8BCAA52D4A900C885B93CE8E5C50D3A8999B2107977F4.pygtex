@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-cd \PYGZdl{}HOME
-gedit .bashrc
-export PATH=\PYGZdl{}HOME/libsmodels/bin:\PYGZdl{}PATH
-export LD\PYGZus{}LIBRARY\PYGZus{}PATH=\PYGZdl{}HOME/libsmodels/lib:\PYGZdl{}LD\PYGZus{}LIBRARY\PYGZus{}PATH
-export PATH=\PYGZdl{}HOME/libsmodels/include:\PYGZdl{}PATH
-\end{Verbatim}

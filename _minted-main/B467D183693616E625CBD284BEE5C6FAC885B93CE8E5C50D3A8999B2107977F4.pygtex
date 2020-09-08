@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+  mv \PYGZhy{}vf scrip*.so ../../../pyroms
+  ‘scrip.cpython\PYGZhy{}37m\PYGZhy{}x86\PYGZus{}64\PYGZhy{}linux\PYGZhy{}gnu.so’ \PYGZhy{}\PYGZgt{} ‘../../../pyroms/scrip.cpython\PYGZhy{}37m\PYGZhy{}x86\PYGZus{}64\PYGZhy{}linux\PYGZhy{}gnu.so’
+\end{Verbatim}

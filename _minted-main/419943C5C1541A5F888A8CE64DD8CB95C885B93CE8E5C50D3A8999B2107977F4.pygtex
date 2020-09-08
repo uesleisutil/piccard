@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
-which m4
-which make
-which perl
-\end{Verbatim}

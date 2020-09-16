@@ -119,7 +119,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.3}Introduction to ROMS forcing files}{61}{subsection.5.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.4}Global Ocean Physics Reanalysis (GLORYS)}{61}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.4}Global Ocean Physics Reanalysis (GLORYS)}{62}{subsection.5.3.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.5}Creating ROMS forcing files}{65}{subsection.5.3.5}%
 \defcounter {refsection}{0}\relax 
@@ -136,4 +136,6 @@
 \contentsline {chapter}{\numberline {9}\large {Papers of the Ocean and Atmosphere Studies Laboratory (LOA/INPE)}}{77}{chapter.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Acknowledgments}{85}{chapter*.54}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{87}{chapter*.55}%
 \contentsfinish 

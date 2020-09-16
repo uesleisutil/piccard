@@ -1,0 +1,19 @@
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'main.blg'
+[117] biber:322> INFO - === Wed Sep 16, 2020, 20:30:15
+[140] Biber.pm:415> INFO - Reading 'main.bcf'
+[252] Biber.pm:943> INFO - Found 40 citekeys in bib section 0
+[279] Biber.pm:4256> INFO - Processing section 0
+[280] Utils.pm:75> INFO - Globbing data source 'refs.bib'
+[280] Utils.pm:91> INFO - Globbed data source 'refs.bib' to refs.bib
+[296] Biber.pm:4455> INFO - Looking for bibtex format file 'refs.bib' for section 0
+[300] bibtex.pm:1653> INFO - LaTeX decoding ...
+[388] bibtex.pm:1471> INFO - Found BibTeX data source 'refs.bib'
+[1002] Utils.pm:293> WARN - BibTeX subsystem: /tmp/biber_tmp_ovIy/refs.bib_89540.utf8, line 193, warning: undefined macro "42-1"
+[1134] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1134] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1134] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1135] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[1236] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1365] bbl.pm:755> INFO - Output to main.bbl
+[1366] Biber.pm:128> INFO - WARNINGS: 1

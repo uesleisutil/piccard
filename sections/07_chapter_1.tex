@@ -77,7 +77,7 @@ to offer help to the users about the language. The site is avaliable at
 \bigskip
 \noindent The Regional Ocean Modeling System (ROMS; \cite{Shchepetkin2005}) is a three-dimensional ocean model with free surface, vertical sigma coordinate 
 with sigma vertical coordinates (that follow the terrain) and solve primitive equations. The model uses the Reynolds average and the finite difference method to 
-solve the Navier-Stokes equations using hydrostatic approximations and Boussinesq (\ cite {Haidvogel2008}).
+solve the Navier-Stokes equations using hydrostatic and Boussinesq approximations (\cite{Haidvogel2008}).
 \bigskip
 
 \noindent The hydrostatic equations of momentum use a split-explicit time-step scheme, where the barotropic and baroclinic modes are solved separately, in
@@ -93,7 +93,7 @@ econd order finite differences (\cite{Haidvogel2008}).
 \noindent ROMS is a model that has free code and its development has the contribution of the user community. Currently, the version used in COAWST is managed by Dr.
 Hernan Arango of Rutgers University. To access the model code, is necessary to register on the ROMS website (\textcolor{bleu_cite}{\href{https://www.myroms.org/}{\textit{https://www.myroms.org/}}})
 The site has a extremely useful and very active forum to discuss about questions and suggestions. You can access here:
-(\textcolor{bleu_cite}{\href{https://www.myroms.org/forum}{\textit{https://www.myroms.org/forum}}})
+\textcolor{bleu_cite}{\href{https://www.myroms.org/forum}{\textit{https://www.myroms.org/forum}}}.
 \bigskip
 
 \noindent We recommend to read the ROMS Technical Manual, written by \textcite{hedstrom2018}. This manual has several
@@ -234,7 +234,7 @@ used to remap the data between the different grids of the different models.
 
 \section{Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}\index{Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}\label{coawstsecao}
 \bigskip
-\noindent The COAWST \cite{Warner2010,Warner2008}) uses the WRF as the atmospheric model, the ROMS as the hydrodynamic model, the SWAN as the wave model and the sediment transport model
+\noindent The COAWST ()\cite{Warner2010,Warner2008}) uses the WRF as the atmospheric model, the ROMS as the hydrodynamic model, the SWAN as the wave model and the sediment transport model
 Community Sediment Transport Modeling Project (CSTM; \cite{Warner2008}), each one coupled by the MCT (\cite{Warner2010, Warner2008}). The frequency with which this information is
 exchanged between the different models is adjusted by the user.
 \bigskip

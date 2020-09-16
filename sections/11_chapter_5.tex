@@ -186,10 +186,222 @@ sudo make DEVELOP=1 PREFIX=$PREFIX install
 \noindent Move the Scrip files to the Pyroms folder, like the following:
 \bigskip
 
-\begin{bashcode}[fontsize=\scriptsize]
+\begin{bashcode}
   mv -vf scrip*.so ../../../pyroms
-  ‘scrip.cpython-37m-x86_64-linux-gnu.so’ -> ‘../../../pyroms/scrip.cpython-37m-x86_64-linux-gnu.so’
 \end{bashcode}
+\bigskip
+
+
+\subsection{Pyroms Palau\_Hycom test case}\index{O model2roms}\label{pyromstest}
+\bigskip
+
+
+\bigskip
+\begin{tcolorbox}[enhanced,
+    grow to left by   = 0cm,
+    grow to right by  = 0cm,
+    enlarge top by    = 0cm,
+    enlarge bottom by = 0cm,
+    tcbox raise base,
+    boxrule           = 1.0pt,
+    left              = 18mm,
+    colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
+    overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+This section will present the script files used by Pyroms as example to create ROMS forcing files. If you want to used our model2roms toolbox, check Section \textcolor{bleu_cite}{\ref{model2romssec}}.
+  \end{tcolorbox}
+\bigskip
+
+\noindent \textbf{This subsection was written by Dr. Jonas Takeo Carvalho.  \newline Lattes CV: \textit{\textcolor{bleu_cite}{\href{http://lattes.cnpq.br/8827254187143196}{http://lattes.cnpq.br/8827254187143196}}}} 
+\bigskip
+
+\noindent You can check several examples inside the \textit{examples} folder in Pyroms root directory. In this section 
+we will show how to run the Palau\_Hycom test case. Before running the scripts, check the paths contained within its structure. 
+In some scripts it is necessary to change the indicated path to the path in which your files are. First, run the file \textit{get\_hycom\_GLBa0.08\_Palau\_grid.py}
+to create the grid named \textit{HYCOM\_GLBa0.08\_Palau\_grid.nc}. This is a grid that represents Hycom data.
+\bigskip
+
+\begin{bashcode}
+python get_hycom_GLBa0.08_Palau_grid.py
+\end{bashcode}
+\bigskip
+
+\noindent Next, download the temperature, salinity, \textit{u} and \textit{v} components of the currents and SSH variables 
+through the scripts for this data. Each variable has a script. In the example for this tutorial, in addition to the paths within the scripts, the number of days 
+to download was also modified. On lines 79 and 82 of each variable file (for example, \textbf{get\_hycom\_GLBa0.08\_Palau\_temp\_2015.py} thee values \textit{366} and
+365 were changed to 1 (it means that it will be downloaded only one day). Before running, create a directory called \textit{data}. The downloaded files will be placed in
+this directory.
+\bigskip
+
+\subsubsection{Manipulating the files}
+\bigskip
+
+\noindent After executing the grid generation and data download script files, you will have the following files:
+\bigskip
+
+\begin{itemize}
+    \item HYCOM\_GLBa0.08\_PALAU\_grid.nc
+    \item HYCOM\_GLBa0.08\_temp\_2015\_001.nc
+    \item HYCOM\_GLBa0.08\_salt\_2015\_001.nc
+    \item HYCOM\_GLBa0.08\_ssh\_2015\_001.nc   
+    \item HYCOM\_GLBa0.08\_u\_2015\_001.nc
+    \item HYCOM\_GLBa0.08\_v\_2015\_001.nc    
+\end{itemize}
+
+\noindent We must now create the initial and boundary conditions with the downloaded data, but first we must concatenate them into a single file. 
+As they are files with different variables, without a common variable, we must first generate a variable to be shared between them, and still, be useful 
+for reading the ROMS model. Then the variable \textit{ocean\_time} will br created, which is read by the model and common to all files.
+For the most recent data from Hycom, this variable already exists, but but for older Hycom data, this step is important. Use \textit{NCO} to do this step:
+\bigskip
+
+\begin{itemize}
+    \item ncks -O  $-$$-$mk\_rec\_dmn ocean\_time HYCOM\_GLBa0.08\_ssh\_2015\_001.nc  var1.nc
+    \item ncks -O $-$$-$mk\_rec\_dmn ocean\_time HYCOM\_GLBa0.08\_salt\_2015\_001.nc  var2.nc
+    \item ncks -O $-$$-$mk\_rec\_dmn ocean\_time HYCOM\_GLBa0.08\_temp\_2015\_001.nc  var3.nc    
+    \item ncks -O $-$$-$mk\_rec\_dmn ocean\_time HYCOM\_GLBa0.08\_u\_2015\_001.nc  var4.nc
+    \item ncks -O $-$$-$mk\_rec\_dmn ocean\_time HYCOM\_GLBa0.08\_v\_2015\_001.nc  var5.nc  
+\end{itemize}
+\bigskip
+
+\noindent After including the variable \textit{ocean\_time}, concatenate the files into a single file with the commands: 
+\bigskip
+
+\begin{itemize}
+    \item ncks  -a  -O var1.nc  HYCOM\_GLBa0.08\_2015\_001.nc
+    \item ncks  -a  -A var2.nc  HYCOM\_GLBa0.08\_2015\_001.nc
+    \item ncks  -a  -A var3.nc  HYCOM\_GLBa0.08\_2015\_001.nc
+    \item ncks  -a  -A var4.nc  HYCOM\_GLBa0.08\_2015\_001.nc
+    \item ncks  -a  -A var5.nc  HYCOM\_GLBa0.08\_2015\_001.nc
+\end{itemize}
+\bigskip
+
+The file \textit{HYCOM\_GLBa0.08\_2015\_001.nc} contains all 5 variables necessary to generate boundary initial conditions.
+Now, change the paths in the scripts \textit{make\_bdry\_file.py} and \textbf{make\_ic\_file.py} pointing to the local directories you are using. 
+It is also necessary to do the same thing for interpolation script files. All files with the initial name \textit{remap} must be updated with you path.
+\bigskip
+
+\noindent After all the paths have been corrected, first run the script \textit{make\_remap\_weights\_file.py}, which will generate the files 
+used during the process of creating the initial and boundary condition files. After these files are generated, execute the scripts \textbf{make\_bdry\_file.py} and
+\textbf{make\_ic\_file.py} remembering only to add the year you chosed on the command line, for example: 
+\bigskip
+
+\begin{bashcode}
+python make_bdry_file.py 2015
+\end{bashcode}
+\bigskip
+    
+\noindent Should be generated the files \textit{HYCOM\_GLBy0.08\_2019\_001\_ic\_PALAU.nc} and \textit{HYCOM\_GLBy0.08\_2019\_001\_bdry\_PALAU.nc}
+\bigskip
+
+\subsubsection{Observations}
+\bigskip
+
+\noindent Pyroms uses a file called \textit{gridid.txt}, which contains information regarding the ROMS grid, such as the name of the grid, the number of 
+vertical levels, among other parameters. This file can be found in Pyroms in the \textit{pyroms/examples} directory. We should note that the information in 
+the PALAU grid is already in the file, but it is necessary to change the directory path.
+\bigskip
+
+\noindent Another information that we must take into account is that this grid generated for PALAU is not a typical ROMS grid, it is only to be 
+an example. The \textit{gridid.txt} file must contain the information from the ROMS notes, which will also be used to make the model, so we must 
+export this file to be viewed in any directory, as an example.
+\bigskip
+
+\noindent In addition to this command, it is recommended to export in your \textit{.bashrc} file the paths of the Python environment created for Pyroms: 
+\bigskip
+
+\begin{bashcode}[fontsize=\scriptsize]
+    export PATH="$HOME/install/anaconda3/bin:\$PATH"
+    export PYTHONPATH=\$PYTHONPATH:$HOME/install/anaconda3/envs/pyroms37/lib
+    export PYTHONPATH=\$PYTHONPATH:$HOME/install/anaconda3/envs/pyroms37/lib/python3.7/site-packages
+\end{bashcode}
+\bigskip
+
+\subsection{Pyroms LOA Antarctica test case}\index{O model2roms}\label{loatest}
+\bigskip
+
+\noindent Based on the structure of the Palau test case, the scripts to generate initial and boundary conditions with Pyroms were replicated to the Antarctica region.
+We selectec the Antarctic Peninsula as its central point in the grid. Below are some steps to generate the desired files.
+\bigskip
+
+\subsubsection{Replicating the scripts}
+\bigskip
+
+\noindent In addition to replicating the scripts to generate the grid that represents and download Hycom data, we must generate the ROMS grid for the region of interest.
+ We can use as an example the script \textit{make\_YELLOW\_grd\_v1.py} of the Yellow\_Sea test case. In this script we must replace the name, longitude and latitude values, 
+ grid dimensions, and vertical coordinate values. For this case, the ROMS grid, and its information from the \textit{gridid.txt} file can be found in the 
+ Kerana's repository. 
+\bigskip
+
+\noindent In the script files for downloading the data (\textit{get\_hycom\_GLBa0.08\_variavel.py}), it is also necessary to change the path of the Hycom data to be 
+downloaded. In the Palau example, the structure of the download data is from 2015. This structure is changed for periods called \textit{exp}. These scripts are also 
+found in the repository.
+\bigskip
+
+\subsubsection{Correcting dimensions}
+\bigskip
+
+\noindent A necessary change in the scripts is the grid size that represents Hycom and its downloaded data. After defining the limits for both latitude and longitude,
+we must choose an additional number of points outside the grid. If we don't define any extra points in the grid or in the data, the following error will be displayed:
+\bigskip
+
+\begin{bashcode}[fontsize=\scriptsize]
+ValueError: operands could not be broadcast together with shapes (873,1249) (875,1251)
+\end{bashcode}
+\bigskip
+
+\noindent The first set refers to the size of the grid that represents the Hycom and the second set represents the downloaded Hycom data. We must adjust these values, 
+increasing the dimension of the latitude, longitude and variable within the Hycom data download scripts by 2 units compared to the script representing the Hycom grid. 
+In the figure \textcolor{bleu_cite}{\ref{hycomantartic1}} and in the figure \textcolor{bleu_cite}{\ref{hycomantartic2}} we can see the location in the scripts where this addition is made.
+\bigskip
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{gridHycom.png}
+    \caption{\textbf{get\_hycom\_GLBa0.08\_antartic\_grid.py script}}
+    \label{hycomantartic1}
+\end{figure}
+\bigskip
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{dadosHycom.png}
+    \caption{\textbf{get\_hycom\_GLBa0.08\_antartic\_temp.py script}}
+    \label{hycomantartic2}
+\end{figure}
+\bigskip
+
+\noindent Note that in the grid script, the minimum and maximum longitude receive +5 and -5 extra values. In the download data script file, the minimum and maximum
+longitude receive -4 and +4 extra value, solving the ValueError. These values worked well in the Antartic grid. This exercise dows not have a specific rule, it is 
+necessary to start from a value of your desire and observe the obtained results.
+\bigskip
+
+\noindent When checking the initial and countour files, it should be noted that the edges are with the correct values. If any of the edges have extreme or zero values
+where they should have valid values, you must redo the files by testng other extra value for longitude and latitude. The initial condition file, if it is wrong, will also 
+present extreme values, and an unusual pattern for the region. 
+\bigskip
+
+\noindent When generating a long-term series, check if there is any missing day from the sries, ai it will generate zero values for this day and when running the model,
+it wil l propably interrupt the simulation.  The initial and boundary condition files should look similar to the figures \textcolor{bleu_cite}{\ref{hycomantartic3}} and \textcolor{bleu_cite}{\ref{hycomantartic4}}.
+\bigskip
+
+
+\begin{figure} [!htb] 
+    \centering
+    \includegraphics[trim=0.15cm 0.15cm 0.15cm 0.5cm,clip,width=0.9\textwidth]{temperatura.png}
+    \caption{Initial condition and east temperature boundary.}
+    \label{hycomantartic3}
+    \end{figure}
+    
+    
+    
+    %Figura5
+    \begin{figure} [!htb] 
+    \centering
+    \includegraphics[trim=0.15cm 0.15cm 0.15cm 0.5cm,clip,width=0.9\textwidth]{compV.png}
+    \caption{Initial condition and east boundary of the current \textit{v} component.}
+    \label{hycomantartic4}
+    \end{figure}
 \bigskip
 
 \section{The model2roms toolbox}\index{O model2roms}\label{model2romssec}

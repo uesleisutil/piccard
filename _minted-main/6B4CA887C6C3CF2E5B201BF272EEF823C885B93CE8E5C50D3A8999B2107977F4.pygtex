@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+    export PATH=\PYGZdq{}\PYGZdl{}HOME/install/anaconda3/bin:\PYGZbs{}\PYGZdl{}PATH\PYGZdq{}
+    export PYTHONPATH=\PYGZbs{}\PYGZdl{}PYTHONPATH:\PYGZdl{}HOME/install/anaconda3/envs/pyroms37/lib
+    export PYTHONPATH=\PYGZbs{}\PYGZdl{}PYTHONPATH:\PYGZdl{}HOME/install/anaconda3/envs/pyroms37/lib/python3.7/site\PYGZhy{}packages
+\end{Verbatim}

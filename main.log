@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.16)  16 SEP 2020 20:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.9.16)  16 SEP 2020 20:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2597,46 +2597,46 @@ Package pdftex.def Info: Pictures/scriperror.png  used on input line 139.
 
  (./_minted-main/C7B1ED57ADB206D9A8D0B0A45DCAFF0DC885B93CE8E5C50D3A8999B2107977F4.pygtex)
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 236.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 234.
  [54]
 \openout4 = `main.listing'.
 
  (./_minted-main/08C319EF0418FC84E3EE7D651B26A20DC885B93CE8E5C50D3A8999B2107977F4.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
+Underfull \hbox (badness 10000) in paragraph at lines 291--293
 \T1/ptm/m/n/10.95 (+20) Should be gen-er-ated the files \T1/ptm/m/it/10.95 (+20) HY-COM_GLBy0.08_2019_001_ic_PALAU.nc \T1/ptm/m/n/10.95 (+20) and
  []
 
 \openout4 = `main.listing'.
 
 (./_minted-main/6B4CA887C6C3CF2E5B201BF272EEF823C885B93CE8E5C50D3A8999B2107977F4.pygtex) [55]
-Underfull \hbox (badness 2253) in paragraph at lines 329--334
+Underfull \hbox (badness 2253) in paragraph at lines 345--350
 \T1/ptm/m/n/10.95 (+20) gen-er-ate the ROMS grid for the re-gion of in-ter-est. We can use as an ex-am-ple the script
  []
 
 \openout4 = `main.listing'.
 
 (./_minted-main/E6A6812B6C7A57362AD47E1978AD58C4C885B93CE8E5C50D3A8999B2107977F4.pygtex)
-<Pictures/gridHycom.png, id=927, 955.57pt x 293.095pt>
+<Pictures/gridHycom.png, id=929, 955.57pt x 293.095pt>
 File: Pictures/gridHycom.png Graphic file (type png)
 <use Pictures/gridHycom.png>
-Package pdftex.def Info: Pictures/gridHycom.png  used on input line 359.
+Package pdftex.def Info: Pictures/gridHycom.png  used on input line 375.
 (pdftex.def)             Requested size: 399.29463pt x 122.47293pt.
  [56]
-<Pictures/dadosHycom.png, id=937, 1084.05pt x 724.7075pt>
+<Pictures/dadosHycom.png, id=939, 1084.05pt x 724.7075pt>
 File: Pictures/dadosHycom.png Graphic file (type png)
 <use Pictures/dadosHycom.png>
-Package pdftex.def Info: Pictures/dadosHycom.png  used on input line 368.
+Package pdftex.def Info: Pictures/dadosHycom.png  used on input line 384.
 (pdftex.def)             Requested size: 399.29463pt x 266.93224pt.
-<Pictures/temperatura.png, id=940, 1202.4925pt x 578.16pt>
+<Pictures/temperatura.png, id=942, 1202.4925pt x 578.16pt>
 File: Pictures/temperatura.png Graphic file (type png)
 <use Pictures/temperatura.png>
-Package pdftex.def Info: Pictures/temperatura.png  used on input line 391.
+Package pdftex.def Info: Pictures/temperatura.png  used on input line 407.
 (pdftex.def)             Requested size: 422.77664pt x 198.17467pt.
  [57 <./Pictures/gridHycom.png> <./Pictures/dadosHycom.png>]
-<Pictures/compV.png, id=948, 1120.185pt x 579.16376pt>
+<Pictures/compV.png, id=950, 1120.185pt x 579.16376pt>
 File: Pictures/compV.png Graphic file (type png)
 <use Pictures/compV.png>
-Package pdftex.def Info: Pictures/compV.png  used on input line 401.
+Package pdftex.def Info: Pictures/compV.png  used on input line 417.
 (pdftex.def)             Requested size: 422.77664pt x 213.22778pt.
 \openout4 = `main.listing'.
 
@@ -2647,38 +2647,38 @@ Package pdftex.def Info: Pictures/compV.png  used on input line 401.
 \openout4 = `main.listing'.
 
  (./_minted-main/9BA5CEBEADA8AFDAD166BB1F566F7B0AC885B93CE8E5C50D3A8999B2107977F4.pygtex)
-<Pictures/etopo1.png, id=963, 1204.5pt x 615.80063pt>
+<Pictures/etopo1.png, id=965, 1204.5pt x 615.80063pt>
 File: Pictures/etopo1.png Graphic file (type png)
 <use Pictures/etopo1.png>
-Package pdftex.def Info: Pictures/etopo1.png  used on input line 464.
+Package pdftex.def Info: Pictures/etopo1.png  used on input line 480.
 (pdftex.def)             Requested size: 399.29463pt x 204.13567pt.
  [59]
 \openout4 = `main.listing'.
 
  (./_minted-main/33B75F3E8E740BAEF1912F469CBB8ED8C885B93CE8E5C50D3A8999B2107977F4.pygtex) [60 <./Pictures/etopo1.png>]
-<Pictures/makegrid.png, id=979, 1494.58376pt x 903.375pt>
+<Pictures/makegrid.png, id=981, 1494.58376pt x 903.375pt>
 File: Pictures/makegrid.png Graphic file (type png)
 <use Pictures/makegrid.png>
-Package pdftex.def Info: Pictures/makegrid.png  used on input line 551.
+Package pdftex.def Info: Pictures/makegrid.png  used on input line 567.
 (pdftex.def)             Requested size: 469.75502pt x 283.93054pt.
 \openout4 = `main.listing'.
 
  (./_minted-main/F391832866ABE11DA894731385B1B231C885B93CE8E5C50D3A8999B2107977F4.pygtex) [61 <./Pictures/makegrid.png>]
-<Pictures/glorys1.png, id=992, 966.61125pt x 929.4725pt>
+<Pictures/glorys1.png, id=994, 966.61125pt x 929.4725pt>
 File: Pictures/glorys1.png Graphic file (type png)
 <use Pictures/glorys1.png>
-Package pdftex.def Info: Pictures/glorys1.png  used on input line 591.
+Package pdftex.def Info: Pictures/glorys1.png  used on input line 607.
 (pdftex.def)             Requested size: 328.82707pt x 316.18666pt.
  [62 <./Pictures/glorys1.png>]
-<Pictures/glorys2.png, id=1002, 537.00626pt x 928.46875pt>
+<Pictures/glorys2.png, id=1004, 537.00626pt x 928.46875pt>
 File: Pictures/glorys2.png Graphic file (type png)
 <use Pictures/glorys2.png>
-Package pdftex.def Info: Pictures/glorys2.png  used on input line 621.
+Package pdftex.def Info: Pictures/glorys2.png  used on input line 637.
 (pdftex.def)             Requested size: 234.8775pt x 406.09074pt.
-<Pictures/glorys3.png, id=1005, 934.49126pt x 616.3025pt>
+<Pictures/glorys3.png, id=1007, 934.49126pt x 616.3025pt>
 File: Pictures/glorys3.png Graphic file (type png)
 <use Pictures/glorys3.png>
-Package pdftex.def Info: Pictures/glorys3.png  used on input line 635.
+Package pdftex.def Info: Pictures/glorys3.png  used on input line 651.
 (pdftex.def)             Requested size: 281.85587pt x 185.88899pt.
  [63 <./Pictures/glorys2.png>]
 \openout4 = `main.listing'.
@@ -2696,32 +2696,32 @@ Package pdftex.def Info: Pictures/glorys3.png  used on input line 635.
 \openout4 = `main.listing'.
 
  (./_minted-main/C005AE611FA93F43E1EBC603A01F5E32C885B93CE8E5C50D3A8999B2107977F4.pygtex)
-<Pictures/forcingfilename.png, id=1018, 500.87125pt x 328.22626pt>
+<Pictures/forcingfilename.png, id=1020, 500.87125pt x 328.22626pt>
 File: Pictures/forcingfilename.png Graphic file (type png)
 <use Pictures/forcingfilename.png>
-Package pdftex.def Info: Pictures/forcingfilename.png  used on input line 724.
+Package pdftex.def Info: Pictures/forcingfilename.png  used on input line 740.
 (pdftex.def)             Requested size: 281.85587pt x 184.71194pt.
-<Pictures/abrevi.png, id=1020, 431.6125pt x 58.2175pt>
+<Pictures/abrevi.png, id=1022, 431.6125pt x 58.2175pt>
 File: Pictures/abrevi.png Graphic file (type png)
 <use Pictures/abrevi.png>
-Package pdftex.def Info: Pictures/abrevi.png  used on input line 736.
+Package pdftex.def Info: Pictures/abrevi.png  used on input line 752.
 (pdftex.def)             Requested size: 281.85587pt x 38.01857pt.
-<Pictures/m2rgriddir.png, id=1022, 598.235pt x 43.16125pt>
+<Pictures/m2rgriddir.png, id=1024, 598.235pt x 43.16125pt>
 File: Pictures/m2rgriddir.png Graphic file (type png)
 <use Pictures/m2rgriddir.png>
-Package pdftex.def Info: Pictures/m2rgriddir.png  used on input line 748.
+Package pdftex.def Info: Pictures/m2rgriddir.png  used on input line 764.
 (pdftex.def)             Requested size: 281.85587pt x 20.33517pt.
  [65 <./Pictures/forcingfilename.png> <./Pictures/abrevi.png>]
-<Pictures/glorysdirm2r.png, id=1033, 534.99875pt x 71.26625pt>
+<Pictures/glorysdirm2r.png, id=1035, 534.99875pt x 71.26625pt>
 File: Pictures/glorysdirm2r.png Graphic file (type png)
 <use Pictures/glorysdirm2r.png>
-Package pdftex.def Info: Pictures/glorysdirm2r.png  used on input line 760.
+Package pdftex.def Info: Pictures/glorysdirm2r.png  used on input line 776.
 (pdftex.def)             Requested size: 281.85587pt x 37.5469pt.
  [66 <./Pictures/m2rgriddir.png> <./Pictures/glorysdirm2r.png>]
-<Pictures/m2roptions.png, id=1043, 642.4pt x 926.46124pt>
+<Pictures/m2roptions.png, id=1045, 642.4pt x 926.46124pt>
 File: Pictures/m2roptions.png Graphic file (type png)
 <use Pictures/m2roptions.png>
-Package pdftex.def Info: Pictures/m2roptions.png  used on input line 814.
+Package pdftex.def Info: Pictures/m2roptions.png  used on input line 830.
 (pdftex.def)             Requested size: 234.8775pt x 338.72807pt.
 \openout4 = `main.listing'.
 
@@ -2736,7 +2736,7 @@ Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
 \openout4 = `main.listing'.
 
 (./_minted-main/229E02F101C999257DE0C4EB385F8106C885B93CE8E5C50D3A8999B2107977F4.pygtex)
-<Pictures/makeswan.png, id=1055, 355.3275pt x 313.9228pt>
+<Pictures/makeswan.png, id=1057, 355.3275pt x 313.9228pt>
 File: Pictures/makeswan.png Graphic file (type png)
 <use Pictures/makeswan.png>
 Package pdftex.def Info: Pictures/makeswan.png  used on input line 33.
@@ -2747,7 +2747,7 @@ File: Pictures/header.jpg Graphic file (type jpg)
 <use Pictures/header.jpg>
 Package pdftex.def Info: Pictures/header.jpg  used on input line 47.
 (pdftex.def)             Requested size: 614.295pt x 303.34433pt.
-<Pictures/hiceroms.png, id=1074, 293.095pt x 279.0425pt>
+<Pictures/hiceroms.png, id=1076, 293.095pt x 279.0425pt>
 File: Pictures/hiceroms.png Graphic file (type png)
 <use Pictures/hiceroms.png>
 Package pdftex.def Info: Pictures/hiceroms.png  used on input line 78.
@@ -2769,7 +2769,7 @@ Package pdftex.def Info: Pictures/header.jpg  used on input line 3.
 \openout4 = `main.listing'.
 
 (./_minted-main/91B65BE0B1C3DD057C2F8544B1993319C885B93CE8E5C50D3A8999B2107977F4.pygtex)
-<Pictures/scripin.png, id=1090, 791.20593pt x 612.03656pt>
+<Pictures/scripin.png, id=1092, 791.20593pt x 612.03656pt>
 File: Pictures/scripin.png Graphic file (type png)
 <use Pictures/scripin.png>
 Package pdftex.def Info: Pictures/scripin.png  used on input line 23.
@@ -2786,7 +2786,7 @@ Package pdftex.def Info: Pictures/scripin.png  used on input line 23.
 \openout4 = `main.listing'.
 
  (./_minted-main/50E1EA9E29040747A21D8336B058E5D1C885B93CE8E5C50D3A8999B2107977F4.pygtex) [74 <./Pictures/scripin.png>]
-<Pictures/scripqsub.png, id=1103, 831.105pt x 350.81062pt>
+<Pictures/scripqsub.png, id=1105, 831.105pt x 350.81062pt>
 File: Pictures/scripqsub.png Graphic file (type png)
 <use Pictures/scripqsub.png>
 Package pdftex.def Info: Pictures/scripqsub.png  used on input line 79.
@@ -2847,18 +2847,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 264.
  ) 
 Here is how much of TeX's memory you used:
- 55343 strings out of 481239
- 1218906 string characters out of 5920377
+ 55344 strings out of 481239
+ 1218923 string characters out of 5920377
  2014203 words of memory out of 5000000
- 68680 multiletter control sequences out of 15000+600000
+ 68681 multiletter control sequences out of 15000+600000
  665103 words of font info for 371 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  159i,12n,200p,1679b,2975s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagdo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagko8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (90 pages, 9171004 bytes).
+Output written on main.pdf (90 pages, 9171536 bytes).
 PDF statistics:
- 1353 PDF objects out of 1440 (max. 8388607)
- 1070 compressed objects within 11 object streams
+ 1355 PDF objects out of 1440 (max. 8388607)
+ 1072 compressed objects within 11 object streams
  250 named destinations out of 1000 (max. 500000)
  72047 words of extra memory for PDF output out of 74296 (max. 10000000)
 

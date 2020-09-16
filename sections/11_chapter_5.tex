@@ -195,8 +195,6 @@ sudo make DEVELOP=1 PREFIX=$PREFIX install
 \subsection{Pyroms Palau\_Hycom test case}\index{O model2roms}\label{pyromstest}
 \bigskip
 
-
-\bigskip
 \begin{tcolorbox}[enhanced,
     grow to left by   = 0cm,
     grow to right by  = 0cm,
@@ -317,6 +315,24 @@ export this file to be viewed in any directory, as an example.
 \bigskip
 
 \subsection{Pyroms LOA Antarctica test case}\index{O model2roms}\label{loatest}
+\bigskip
+
+\begin{tcolorbox}[enhanced,
+    grow to left by   = 0cm,
+    grow to right by  = 0cm,
+    enlarge top by    = 0cm,
+    enlarge bottom by = 0cm,
+    tcbox raise base,
+    boxrule           = 1.0pt,
+    left              = 18mm,
+    colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
+    overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+This section will present the script files used by Pyroms as example to create ROMS forcing files. If you want to used our model2roms toolbox, check Section \textcolor{bleu_cite}{\ref{model2romssec}}.
+  \end{tcolorbox}
+\bigskip
+
+\noindent \textbf{This subsection was written by Dr. Jonas Takeo Carvalho.  \newline Lattes CV: \textit{\textcolor{bleu_cite}{\href{http://lattes.cnpq.br/8827254187143196}{http://lattes.cnpq.br/8827254187143196}}}} 
 \bigskip
 
 \noindent Based on the structure of the Palau test case, the scripts to generate initial and boundary conditions with Pyroms were replicated to the Antarctica region.

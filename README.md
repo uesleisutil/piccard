@@ -9,7 +9,7 @@ Third edition notes:
 * renewed the aesthetics of the guide;
 * updated to COAWST v3.6;
 * translated it to english;
-* added a section to use COAWST in your own computer (***planned***).
+* added a WW3 section.
 
 <h2>COAWST configuration guide, second edition.</h2>
 

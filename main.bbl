@@ -578,6 +578,33 @@
       \field{pages}{1\bibrangedash 15}
       \range{pages}{15}
     \endentry
+    \entry{WW32016}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fcb22f028872b964e8fa8d15ccde0e57}{%
+           family={Group},
+           familyi={G\bibinitperiod},
+           given={WWIII\bibnamedelima Development},
+           giveni={W\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fcb22f028872b964e8fa8d15ccde0e57}
+      \strng{fullhash}{fcb22f028872b964e8fa8d15ccde0e57}
+      \strng{bibnamehash}{fcb22f028872b964e8fa8d15ccde0e57}
+      \strng{authorbibnamehash}{fcb22f028872b964e8fa8d15ccde0e57}
+      \strng{authornamehash}{fcb22f028872b964e8fa8d15ccde0e57}
+      \strng{authorfullhash}{fcb22f028872b964e8fa8d15ccde0e57}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NOAA/NWS/NCEP/OMB Technical Note 329}
+      \field{title}{User manual and system documentation of WAVEWATCH-III version 5.16}
+      \field{year}{2016}
+      \field{pages}{326}
+      \range{pages}{1}
+    \endentry
     \entry{Haidvogel2008}{article}{}
       \name{author}{20}{}{%
         {{un=0,uniquepart=base,hash=f9140ebc0693657b46d0fcfa517eab0a}{%
@@ -2147,6 +2174,118 @@
       \verb 10.11137/2019_1_525_535
       \endverb
     \endentry
+    \entry{Tolman1997}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6c145207e42010694eb0d53fe8d88e8e}{%
+           family={Tolman},
+           familyi={T\bibinitperiod},
+           given={H.\bibnamedelimi L.},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{fullhash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{bibnamehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{authorbibnamehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{authornamehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{authorfullhash}{6c145207e42010694eb0d53fe8d88e8e}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NOAA/NWS/NCEP/OMB Technical Note 151}
+      \field{title}{User manual and system documentation of WAVEWATCH-III version 1.15.}
+      \field{year}{1997}
+      \field{pages}{97}
+      \range{pages}{1}
+    \endentry
+    \entry{Tolman1999}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6c145207e42010694eb0d53fe8d88e8e}{%
+           family={Tolman},
+           familyi={T\bibinitperiod},
+           given={H.\bibnamedelimi L.},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{fullhash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{bibnamehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{authorbibnamehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{authornamehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{authorfullhash}{6c145207e42010694eb0d53fe8d88e8e}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NOAA/NWS/NCEP/OMB Technical Note 166}
+      \field{title}{User manual and system documentation of WAVEWATCH-III version 1.18.}
+      \field{year}{1999}
+      \field{pages}{110}
+      \range{pages}{1}
+    \endentry
+    \entry{Tolman2009}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6c145207e42010694eb0d53fe8d88e8e}{%
+           family={Tolman},
+           familyi={T\bibinitperiod},
+           given={H.\bibnamedelimi L.},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{fullhash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{bibnamehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{authorbibnamehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{authornamehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{authorfullhash}{6c145207e42010694eb0d53fe8d88e8e}
+      \field{extraname}{3}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NOAA/NWS/NCEP/OMB Technical Note 276}
+      \field{title}{User manual and system documentation of WAVEWATCH-III version 3.14.}
+      \field{year}{2009}
+      \field{pages}{194}
+      \range{pages}{1}
+    \endentry
+    \entry{Tolman2014}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6c145207e42010694eb0d53fe8d88e8e}{%
+           family={Tolman},
+           familyi={T\bibinitperiod},
+           given={H.\bibnamedelimi L.},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{fullhash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{bibnamehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{authorbibnamehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{authornamehash}{6c145207e42010694eb0d53fe8d88e8e}
+      \strng{authorfullhash}{6c145207e42010694eb0d53fe8d88e8e}
+      \field{extraname}{4}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NOAA/NWS/NCEP/OMB Technical Note 316}
+      \field{title}{User manual and system documentation of WAVEWATCH-III version 4.18}
+      \field{year}{2014}
+      \field{pages}{194}
+      \range{pages}{1}
+    \endentry
     \entry{Ncl2017}{software}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f9d42537271e17846762aa4de308f2fc}{%
@@ -2175,6 +2314,33 @@
       \verb{url}
       \verb http://dx.doi.org/10.5065/D6WD3XH5
       \endverb
+    \endentry
+    \entry{Valcke2013}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b43461c8ce8d623138a302d40549caaa}{%
+           family={Valcke},
+           familyi={V\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b43461c8ce8d623138a302d40549caaa}
+      \strng{fullhash}{b43461c8ce8d623138a302d40549caaa}
+      \strng{bibnamehash}{b43461c8ce8d623138a302d40549caaa}
+      \strng{authorbibnamehash}{b43461c8ce8d623138a302d40549caaa}
+      \strng{authornamehash}{b43461c8ce8d623138a302d40549caaa}
+      \strng{authorfullhash}{b43461c8ce8d623138a302d40549caaa}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geosci. Model Dev.}
+      \field{title}{The OASIS3 coupler: a European climate modelling com- munity software}
+      \field{year}{2016}
+      \field{pages}{373\bibrangedash 388}
+      \range{pages}{16}
     \endentry
     \entry{Warner2010}{article}{}
       \name{author}{4}{}{%

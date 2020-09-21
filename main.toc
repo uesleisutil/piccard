@@ -11,131 +11,137 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Simulating Waves Nearshore}{14}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Model Coupling Toolkit}{14}{section.1.5}%
+\contentsline {section}{\numberline {1.5}WaveWatch III}{15}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Spherical Coordinate Remapping Interpolation Package}{15}{section.1.6}%
+\contentsline {section}{\numberline {1.6}Model Coupling Toolkit}{15}{section.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.7}Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}{15}{section.1.7}%
+\contentsline {section}{\numberline {1.7}Spherical Coordinate Remapping Interpolation Package}{16}{section.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.8}Requirements to use this guide}{16}{section.1.8}%
+\contentsline {section}{\numberline {1.8}Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}{16}{section.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}COAWST in a parallel cluster}{17}{chapter.2}%
+\contentsline {section}{\numberline {1.9}Requirements to use this guide}{17}{section.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}About our cluster Kerana}{17}{section.2.1}%
+\contentsline {chapter}{\numberline {2}COAWST in a parallel cluster}{19}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Signing up a user account}{17}{section.2.2}%
+\contentsline {section}{\numberline {2.1}About our cluster Kerana}{19}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Signing in to the Kerana cluster}{17}{section.2.3}%
+\contentsline {section}{\numberline {2.2}Signing up a user account}{19}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}File repository}{18}{section.2.4}%
+\contentsline {section}{\numberline {2.3}Signing in to the Kerana cluster}{19}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Kerana environment}{19}{section.2.5}%
+\contentsline {section}{\numberline {2.4}File repository}{20}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Downloading COAWST}{19}{section.2.6}%
+\contentsline {section}{\numberline {2.5}Kerana environment}{21}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Automating the compilation of COAWST in Kerana}{20}{section.2.7}%
+\contentsline {section}{\numberline {2.6}Downloading COAWST}{21}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Compiling the MCT}{21}{section.2.8}%
+\contentsline {section}{\numberline {2.7}Automating the compilation of COAWST in Kerana}{22}{section.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Compiling the Sandy test case}{23}{section.2.9}%
+\contentsline {section}{\numberline {2.8}Compiling the MCT}{23}{section.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.1}Projects folder}{24}{subsection.2.9.1}%
+\contentsline {section}{\numberline {2.9}Compiling the Sandy test case}{25}{section.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.2}Work folder}{26}{subsection.2.9.2}%
+\contentsline {subsection}{\numberline {2.9.1}Projects folder}{26}{subsection.2.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.3}Compiling the test case}{27}{subsection.2.9.3}%
+\contentsline {subsection}{\numberline {2.9.2}Work folder}{28}{subsection.2.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.10}Simulating the Sandy Test Case}{29}{section.2.10}%
+\contentsline {subsection}{\numberline {2.9.3}Compiling the test case}{29}{subsection.2.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}COAWST features}{31}{chapter.3}%
+\contentsline {section}{\numberline {2.10}Simulating the Sandy Test Case}{31}{section.2.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Structural model files}{31}{section.3.1}%
+\contentsline {chapter}{\numberline {3}COAWST features}{33}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Modifying the number of processors}{32}{section.3.2}%
+\contentsline {section}{\numberline {3.1}Structural model files}{33}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}ROMS}{32}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.2}Modifying the number of processors}{34}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}WRF}{32}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.1}ROMS}{34}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}SWAN}{32}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.2}WRF}{34}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}COAWST}{32}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.3}SWAN}{34}{subsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Modifying the coupling time interval between models}{33}{section.3.3}%
+\contentsline {subsection}{\numberline {3.2.4}COAWST}{34}{subsection.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Building the WRF}{35}{chapter.4}%
+\contentsline {section}{\numberline {3.3}Modifying the coupling time interval between models}{35}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Compiling WRF in Kerana cluster}{35}{section.4.1}%
+\contentsline {chapter}{\numberline {4}Building the WRF}{37}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}WRF Preprocessing System (WPS)}{36}{section.4.2}%
+\contentsline {section}{\numberline {4.1}Compiling WRF in Kerana cluster}{37}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Downloading WPS}{37}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.2}WRF Preprocessing System (WPS)}{38}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Compiling WPS in the Kerana cluster}{37}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.1}Downloading WPS}{39}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Building your project using CFSR}{39}{section.4.3}%
+\contentsline {subsection}{\numberline {4.2.2}Compiling WPS in the Kerana cluster}{39}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}\textit {geogrid}}{40}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.3}Building your project using CFSR}{41}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Using the NCL to plot the grid domain}{43}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.1}\textit {geogrid}}{42}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}\textit {ungrib}}{45}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.2}Using the NCL to plot the grid domain}{45}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}\textit {metgrid}}{46}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.3}\textit {ungrib}}{47}{subsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.5}\textit {real}}{47}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.4}\textit {metgrid}}{48}{subsection.4.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Using the WRF}{49}{section.4.4}%
+\contentsline {subsection}{\numberline {4.3.5}\textit {real}}{49}{subsection.4.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Building the ROMS}{51}{chapter.5}%
+\contentsline {section}{\numberline {4.4}Using the WRF}{51}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Installing Python libraries on the personal computer}{51}{section.5.1}%
+\contentsline {chapter}{\numberline {5}Building the ROMS}{53}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Installing manually}{51}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.1}Installing Python libraries on the personal computer}{53}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Installing with Conda}{51}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.1}Installing manually}{53}{subsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Installing Pyroms}{52}{section.5.2}%
+\contentsline {subsection}{\numberline {5.1.2}Installing with Conda}{53}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Pyroms Palau\_Hycom test case}{54}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.2}Installing Pyroms}{54}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Manipulating the files}{54}{section*.31}%
+\contentsline {subsection}{\numberline {5.2.1}Pyroms Palau\_Hycom test case}{56}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Observations}{55}{section*.32}%
+\contentsline {subsubsection}{Manipulating the files}{56}{section*.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Pyroms Antarctica test case}{56}{subsection.5.2.2}%
+\contentsline {subsubsection}{Observations}{57}{section*.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Replicating the scripts}{56}{section*.33}%
+\contentsline {subsection}{\numberline {5.2.2}Pyroms LOA-Antarctica test case}{58}{subsection.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Correcting dimensions}{56}{section*.34}%
+\contentsline {subsubsection}{Replicating the scripts}{58}{section*.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}The model2roms toolbox}{58}{section.5.3}%
+\contentsline {subsubsection}{Correcting dimensions}{58}{section*.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Introduction to the ROMS grid}{59}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.3}The model2roms toolbox}{60}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}ETOPO1 1 Arc-Minute Global Relief Model}{59}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.1}Introduction to the ROMS grid}{61}{subsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Creating the ROMS grid}{60}{section*.40}%
+\contentsline {subsection}{\numberline {5.3.2}ETOPO1 1 Arc-Minute Global Relief Model}{61}{subsection.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Introduction to ROMS forcing files}{61}{subsection.5.3.3}%
+\contentsline {subsubsection}{Creating the ROMS grid}{62}{section*.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.4}Global Ocean Physics Reanalysis (GLORYS)}{62}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.3}Introduction to ROMS forcing files}{63}{subsection.5.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.5}Creating ROMS forcing files}{65}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.4}Global Ocean Physics Reanalysis (GLORYS)}{64}{subsection.5.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Building the SWAN}{69}{chapter.6}%
+\contentsline {subsection}{\numberline {5.3.5}Creating ROMS forcing files}{67}{subsection.5.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Building the Budgell's Sea Ice Model}{71}{chapter.7}%
+\contentsline {chapter}{\numberline {6}Building the SWAN}{71}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Building the weights between grids with SCRIP}{73}{chapter.8}%
+\contentsline {chapter}{\numberline {7}Building the Budgell's Sea Ice Model}{73}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Building the weights}{73}{section.8.1}%
+\contentsline {chapter}{\numberline {8}Building the WaveWatch III}{75}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Running your simulation}{75}{section.8.2}%
+\contentsline {section}{\numberline {8.1}Generating grids}{75}{section.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}\large {Papers of the Ocean and Atmosphere Studies Laboratory (LOA/INPE)}}{77}{chapter.9}%
+\contentsline {chapter}{\numberline {9}Building the weights between grids with SCRIP}{77}{chapter.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acknowledgments}{85}{chapter*.54}%
+\contentsline {section}{\numberline {9.1}Building the weights}{77}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{87}{chapter*.55}%
+\contentsline {section}{\numberline {9.2}Running your simulation}{79}{section.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}\large {Papers of the Ocean and Atmosphere Studies Laboratory (LOA/INPE)}}{81}{chapter.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acknowledgments}{89}{chapter*.56}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{91}{chapter*.57}%
 \contentsfinish 

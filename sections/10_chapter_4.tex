@@ -105,7 +105,8 @@ prepare the input data for the simulations. It consists of the following modules
 \noindent WPS is controlled by the \textit{namelist.wps} file and is outlined in Figure \textcolor{bleu_cite}{\ref{wpsdetalha}}.
 \bigskip
 
-\noindent For more information about WPS, visit: \textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}{\textit{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}}}.
+\noindent You can find more information in the WPS 
+\textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}}}}.
 \bigskip
 
 \noindent After creating these files, the \textit{real.exe} is used to interpolate the meteorological fields to \texteta level.
@@ -122,8 +123,8 @@ prepare the input data for the simulations. It consists of the following modules
 \subsection{Downloading WPS}
 \bigskip
 
-\noindent WPS is included in the COAWST package, however WPS can be downloaded by visiting 
-\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}{\textit{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}}}. 
+\noindent WPS is included in the COAWST package, however WPS can be downloaded by visiting it
+\textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}}}}. 
 Download it and add the \textit{tar.gz} file inside the cluster with \textit{sftp}:
 \bigskip
 
@@ -270,15 +271,15 @@ DMCC    = gcc
 \section{Building your project using CFSR}
 \bigskip
 
-\noindent A database as option to use for simulations is the NCEP Climate Forecast System Reanalysis (CFSR)
- (\textcolor{bleu_cite}{\href{http://rda.ucar.edu/datasets/ds093.0}{\textit{http://rda.ucar.edu/datasets/ds093.0}}}).
-This database is a reanalysis, from January 1979 to December 2010, where a coupled model (atmosphere-ocean-land surface and sea ice)
+\noindent NCEP Climate Forecast System Reanalysis 
+\textcolor{bleu_cite}{\textit{CFSR})\footnote{\textcolor{bleu_cite}{\href{http://rda.ucar.edu/datasets/ds093.0}{http://rda.ucar.edu/datasets/ds093.0}}}}
+a reanalysis, avaliable from January 1979 to December 2010, with a coupled model (atmosphere-ocean-land surface and sea ice) that
 assimilates orbital data, research cruises, oceanographic buoys and weather stations. This database
 has vertical resolution with 38 levels, extending from the surface to 1 hPa, with a 6-hour temporal resolution
 and horizontal of 0.5\degree for pressure levels data and 0.312\degree for variables on the surface.
 \bigskip
 
-\noindent To access the data it is necessary to register on the site. After doing this, enter the database link,
+\noindent To access the data it is necessary to register on the site. After, access the database link,
 click on the\textit{Data Acess} and then, \textit{Get a subset}.
 \bigskip
 
@@ -338,9 +339,9 @@ tar -xvzf Surface.tar.gz
 \subsection{\textit{geogrid}}\label{geowps}
 \bigskip
 
-\noindent As previously mentioned, \ textit {geogrid} generates the grid domain using geographic data. The data can be obtained from this website:
-\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}{\textit{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}}}, 
-or directly from the guide repository:
+\noindent As previously mentioned, \ textit {geogrid} generates the grid domain using geographic data. The data can be obtained from it 
+\textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}}}}
+, or directly from the repository guide:
 \bigskip
 
 \begin{bashcode}

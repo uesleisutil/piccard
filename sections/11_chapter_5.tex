@@ -1,4 +1,4 @@
-% !TEX root = /media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex
+% !TEX root = /media/ueslei/Ueslei_HD/INPE/PCI/Projetos/Guia_COAWST/main.tex
 \chapterimage{header.jpg}
 \chapter{Building the ROMS}\index{Building the ROMS}
 \bigskip
@@ -50,10 +50,9 @@ Consider installing libraries with Anaconda will be faster than installing manua
 
 \subsection{Installing with Conda}\label{condasec}
 \bigskip
-\noindent Anaconda is a distribution for Python and R that supports the various libraries and packages used in this guide, 
-making installation easier. To download Anaconda go to
-\textcolor{bleu_cite}{\href{https://www.continuum.io/downloads}{\textit{https://www.continuum.io/downloads}}}. 
-To install, just enter the directory where the installation file is located, change the installation permissions of the file and 
+\noindent \textcolor{bleu_cite}{\textit{Anaconda}\footnote{\textcolor{bleu_cite}{\href{https://www.continuum.io/downloads}{https://www.continuum.io/downloads}}}}
+is a distribution for Python and R that supports the various libraries and packages used in this guide, 
+making installation easier. To install, enter the directory where the installation file is located, change the installation permissions of the file and 
 follow the installer's instructions:
 \bigskip
 
@@ -248,7 +247,7 @@ this directory.
 
 \noindent We must now create the initial and boundary conditions with the downloaded data, but first we must concatenate them into a single file. 
 As they are files with different variables, without a common variable, we must first generate a variable to be shared between them, and still, be useful 
-for reading the ROMS model. Then the variable \textit{ocean\_time} will br created, which is read by the model and common to all files.
+for reading the ROMS model. Then the variable \textit{ocean\_time} will be created, which is read by the model and common to all files.
 For the most recent data from Hycom, this variable already exists, but but for older Hycom data, this step is important. Use \textit{NCO} to do this step:
 \bigskip
 
@@ -273,13 +272,13 @@ For the most recent data from Hycom, this variable already exists, but but for o
 \end{itemize}
 \bigskip
 
-The file \textit{HYCOM\_GLBa0.08\_2015\_001.nc} contains all 5 variables necessary to generate boundary initial conditions.
+The file \textit{HYCOM\_GLBa0.08\_2015\_001.nc} contains all 5 variables necessary to generate boundary and initial conditions.
 Now, change the paths in the scripts \textit{make\_bdry\_file.py} and \textbf{make\_ic\_file.py} pointing to the local directories you are using. 
 It is also necessary to do the same thing for interpolation script files. All files with the initial name \textit{remap} must be updated with you path.
 \bigskip
 
 \noindent After all the paths have been corrected, first run the script \textit{make\_remap\_weights\_file.py}, which will generate the files 
-used during the process of creating the initial and boundary condition files. After these files are generated, execute the scripts \textbf{make\_bdry\_file.py} and
+used during the process of creating the initial and boundary condition files. After these files are generated, execute the scripts \textit{make\_bdry\_file.py} and
 \textbf{make\_ic\_file.py} remembering only to add the year you chosed on the command line, for example: 
 \bigskip
 
@@ -348,7 +347,7 @@ We selected the Antarctic Peninsula as its central point in the grid. Below are 
  Kerana's repository. 
 \bigskip
 
-\noindent In the script files for downloading the data (\textit{get\_hycom\_GLBa0.08\_variavel.py}), it is also necessary to change the path of the Hycom data to be 
+\noindent In the script files for downloading the data (\textit{get\_hycom\_GLBa0.08\_variable.py}), it is also necessary to change the path of the Hycom data to be 
 downloaded. In the Palau example, the structure of the download data is from 2015. This structure is changed for periods called \textit{exp}. These scripts are also 
 found in the repository.
 \bigskip
@@ -388,7 +387,7 @@ In the figure \textcolor{bleu_cite}{\ref{hycomantartic1}} and in the figure \tex
 \bigskip
 
 \noindent Note that in the grid script, the minimum and maximum longitude receive +5 and -5 extra values. In the download data script file, the minimum and maximum
-longitude receive -4 and +4 extra value, solving the ValueError. These values worked well in the Antartic grid. This exercise dows not have a specific rule, it is 
+longitude receive -4 and +4 extra value, solving the ValueError. These values worked well in the Antartic grid. This exercise does not have a specific rule, it is 
 necessary to start from a value of your desire and observe the obtained results.
 \bigskip
 
@@ -464,13 +463,14 @@ conda install -c anaconda basemap
 \subsection{ETOPO1 1 Arc-Minute Global Relief Model}\index{O ETOPO1 1 Arc-Minute Global Relief Model}
 \bigskip
 
-\noindent The ETOPO1 (\cite{Amante2009}; Figure \textcolor{bleu_cite}{\ref{etopo1}}) 
+\noindent The \textcolor{bleu_cite}{\textit{ETOPO1}\footnote{\textcolor{bleu_cite}{\href{https://www.ngdc.noaa.gov/mgg/global/global.html}{https://www.ngdc.noaa.gov/mgg/global/global.html}}}}
+ (\cite{Amante2009}; Figure \textcolor{bleu_cite}{\ref{etopo1}}) 
 is produced by the National Geophysical Data Center and provides two layers of relief information.
 The layers include bathymetry over the oceans and some of the main lakes on Earth.
  Terrestrial topography and ocean bathymetry are based on SRTM30 topography and through various bathymetric cruises
 \bigskip
 
-\noindent Visit the site \textcolor{bleu_cite}{\href{https://www.ngdc.noaa.gov/mgg/global/global.html}{\textit{https://www.ngdc.noaa.gov/mgg/global/global.html}}} 
+\noindent Visit the site
 and subset your area of interes on the ETOPO1 website map and download the data in NetCDF format.
 
 \bigskip  
@@ -587,15 +587,12 @@ and SODA3 (\cite{Carton2018}), however, we will only use GLORYS12V1 as an exampl
 \subsection{Global Ocean Physics Reanalysis (GLORYS)}\index{O Global Ocean Physics Reanalysis (GLORYS)}
 \bigskip
 
-\noindent GLORYS is a global reanalysis of the ocean with a spatial resolution of 1/12° with daily or monthly temporal resolution and 
+\noindent \textcolor{bleu_cite}{\textit{GLORYS}\footnote{\textcolor{bleu_cite}{\href{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}}}}
+is a global reanalysis of the ocean with a spatial resolution of 1/12° with daily or monthly temporal resolution and 
 50 vertical levels. It is based on the current CMEMS global weather forecasting system and is forced by ECMWF's ERA-Interim from the NEMO model.
 A Kalman filter with reduced order is used to assimilate the sea altimetry, sea surface temperature, sea ice concentration data obtained 
 from remote sensing and the \textit{in situ} data of vertical temperature and salinity profiles .
 In addition, a 3D-VAR scheme provides a correction for temperature and salinity deviations.
-\bigskip
-
-\noindent GLORYS can be downloaded from the website: 
-\textcolor{bleu_cite}{\href{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}{\textit{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}}}.
 \bigskip
 
 \noindent When you try to download, the site will warn you that you will need to create a Copernicus account.

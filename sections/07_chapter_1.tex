@@ -60,16 +60,14 @@ importance of the programmer's effort over the computational effort and prioriti
 which facilitates the search information by the user, as there is an extensive collection of libraries and documents on the internet.
 \bigskip
 
-\noindent Python (\textcolor{bleu_cite}{\href{http://python.org}{\textit{http://python.org}}}) offers great help for beginners, providing introductions about the 
+\noindent \textcolor{bleu_cite}{\textit{Python website}\footnote{\textcolor{bleu_cite}{\href{http://python.org}{http://python.org}}}} offers great help for beginners, providing introductions about the 
 language and also a guide to use Python for scienfic purposes. 
 \bigskip
 
-\noindent We also use MATLAB as a language. It is a paid, but high-performance interactive software focused on the numerical calculation. The MATLAB Answers website is a platform created 
-to offer help to the users about the language. The site is avaliable at
-\textit{\textcolor{bleu_cite}{\href{https://www.mathworks.com/matlabcentral/answers/index}{https://www.mathworks.com/matlabcentral/answers/index}}}.
-
-
-
+\noindent We also use MATLAB. It is a paid, but high-performance interactive software focused on the numerical calculation. The
+\textcolor{bleu_cite}{\textit{MATLAB Answers website}\footnote{\textcolor{bleu_cite}{\href{https://www.mathworks.com/matlabcentral/answers/index}{https://www.mathworks.com/matlabcentral/answers/index}}}} 
+is a platform created to offer help to the users about the language. 
+\bigskip
 
 %%%%%%%%%%%%%%%%%% ROMS %%%%%%%%%%%%%%%%%%%%
 
@@ -91,10 +89,12 @@ econd order finite differences (\cite{Haidvogel2008}).
 \bigskip
 
 \noindent ROMS is a model that has free code and its development has the contribution of the user community. Currently, the version used in COAWST is managed by Dr.
-Hernan Arango of Rutgers University. To access the model code, is necessary to register on the ROMS website (\textcolor{bleu_cite}{\href{https://www.myroms.org/}{\textit{https://www.myroms.org/}}})
-The site has a extremely useful and very active forum to discuss about questions and suggestions. You can access here:
-\textcolor{bleu_cite}{\href{https://www.myroms.org/forum}{\textit{https://www.myroms.org/forum}}}.
+Hernan Arango of Rutgers University. To access the model code, is necessary to register on the
+\textcolor{bleu_cite}{\textit{ROMS website}\footnote{\textcolor{bleu_cite}{\href{https://www.myroms.org/}{https://www.myroms.org/}}}}. 
+The site has a extremely useful and very active \textcolor{bleu_cite}{\textit{forum}\footnote{\textcolor{bleu_cite}{\href{https://www.myroms.org/forum}{https://www.myroms.org/forum}}}} 
+to discuss about questions and suggestions. You can access here:
 \bigskip
+
 
 \noindent We recommend to read the ROMS Technical Manual, written by \textcite{hedstrom2018}. This manual has several
 information about the equations and algorithms of the model and examples of test cases.
@@ -126,7 +126,8 @@ Thus, allows dynamic and thermodynamic modeling where sea ice predominates, such
 \section{Weather Research \& Forecasting Model}\index{Weather Research \& Forecasting Model}\label{secaowrf}
 \bigskip
 
-\noindent The Weather Research and Forecasting (WRF; \cite{Skamarock2008}) is a model developed by the National Centers for nvironmental Prediction (NCEP), the National Center for 
+\noindent The \textcolor{bleu_cite}{\textit{Weather Research and Forecasting }\footnote{\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}}}} 
+(WRF; \cite{Skamarock2008}) is a model developed by the National Centers for nvironmental Prediction (NCEP), the National Center for 
 Atmospheric Research (NCAR) and research groups from different universities.
 \bigskip
 
@@ -164,8 +165,6 @@ Z_{0} = Z_{ch} \frac{u_{*}^{2}}{g}
 the frictional speed (m/s) and \textit{g} the gravity acceleration(9,81 m/s\textsuperscript{2}).
 \bigskip
 
-\noindent The WRF is avaliable at: \textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}{\textit{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}}}.
-\bigskip
 
 %%%%%%%%%%%%%%%%%%% SWAN %%%%%%%%%%%%%%%%
 
@@ -193,7 +192,37 @@ others, being able to use fields of wind, bathymetry and currents provided by ot
 \end{itemize}
 \bigskip
 
-More features can be found in SWAN website, avaliable at: \textcolor{bleu_cite}{\href{http://swanmodel.sourceforge.net/}{\textit{http://swanmodel.sourceforge.net/}}}.
+More features can be found in \textcolor{bleu_cite}{\textit{SWAN website}\footnote{\textcolor{bleu_cite}{\href{http://swanmodel.sourceforge.net/}{http://swanmodel.sourceforge.net/}}}}.
+
+
+%%%%%%%%%%%%%%%%%%% WW# %%%%%%%%%%%%%%%%
+
+\section{WaveWatch III}\index{Simulating Waves Nearshore}\label{ww3secao}
+\bigskip
+
+\noindent \textbf{This section was written by Dr. Jonas Takeo Carvalho.  \newline Lattes CV: \textit{\textcolor{bleu_cite}{\href{http://lattes.cnpq.br/8827254187143196}{http://lattes.cnpq.br/8827254187143196}}}} 
+\bigskip
+
+\noindent WAVEWATCH III $^{\tiny{\textregistered}}$ (\cite{Tolman1997,Tolman1999,Tolman2009,Tolman2014,WW32016}) is a third generation wave model developed at NOAA/NCEP.  
+It solves the random phase spectral action density balance equation for wavenumber-direction spectra. The implicit assumption of this equation is that 
+properties of medium (water depth and current) as well as the wave field itself vary on time and space scales that are much larger than the variation 
+scales of a single wave. Source term options for extremely shallow water (surf zone) are included, as well as wetting and drying of grid points. 
+Whereas the surf-zone physics implemented so far are still fairly rudimentary, it does imply that the wave model can now be applied to arbitrary
+shallow water. 
+\bigskip
+
+\noindent Currently,  WAVEWATCH III (WW3) is evolving from a wave model into a wave modeling framework, which allows for easy development of additional 
+physical and numerical approaches to wave modeling. Futhermore,  WAVEWATCH III can be interfaced with OASIS3-MCT to allow coupling simulations with 
+atmosphere and/or ocean models. OASIS is a coupling software developed by the CERFACS and CNRS (\cite{Valcke2013}). The current OASIS3-MCT version is 
+interfaced with MCT, the Model Coupling Toolkit (\cite{Larson2005}) developed by the Argonne National Laboratory. The OASIS coupler is also interfaced 
+with the SCRIP library developed by Los Alamos National Laboratory. 
+\bigskip
+
+\noindent The COAWST system has a option to use WW3 coupled as the wave model component, interfaced with MCT and using SCPRIP library. In this framework, WW3 is 
+coupled with ROMS, WRF, CICE, and CSTMS. The latest avaiable version for WW3 within COAWST system, 
+is the version 5.16. WW3 source code is also avaiable on \textcolor{bleu_cite}{\textit{Github}\footnote{\textcolor{bleu_cite}{\href{https://github.com/NOAA-EMC/WW3/releases/tag/6.07.1}{https://github.com/NOAA-EMC/WW3/releases/tag/6.07.1}}}}, with he latest 
+version 6.07, released on 21 March 2019.
+
 
 %%%%%%%%%%%%%%%%%%% MCT %%%%%%%%%%%%%%%%
 \section{Model Coupling Toolkit}\index{Model Coupling Toolkit}\label{mctsecao}
@@ -204,7 +233,7 @@ and transformation of the different data necessary for model coupling. During in
 between processors, allowing models to be coupled also in parallel.
 \bigskip
 
-\noindent According to the MCT website, (\textcolor{bleu_cite}{\href{http://www.mcs.anl.gov/research/projects/mct/}{\textit{http://www.mcs.anl.gov/research/projects/mct/}}}), 
+\noindent According to the \textcolor{bleu_cite}{\textit{MCT website}\footnote{\textcolor{bleu_cite}{\href{http://www.mcs.anl.gov/research/projects/mct/}{http://www.mcs.anl.gov/research/projects/mct/}}}}, 
 the toolkit provides the following core coupling services:
 \bigskip
 
@@ -223,9 +252,10 @@ the toolkit provides the following core coupling services:
 \section{Spherical Coordinate Remapping Interpolation Package}\label{scripsecao}
 \bigskip
 
-\noindent O  Spherical Coordinate Remapping Interpolation Package (SCRIP; \cite{Jones1999,Jones1998}) is freely available for download at \textcolor{bleu_cite}{\href{https://github.com/SCRIP-Project/SCRIP}{\textit{https://github.com/SCRIP-Project/SCRIP}}}.    
-The package is distributed together with COAWST modeling system. This package is used for projects that use more than one model and with different grids (with different spatial resolutions). SCRIP will generate the interpolation weights that will be
-used to remap the data between the different grids of the different models.
+\noindent O  Spherical Coordinate Remapping Interpolation Package (SCRIP; \cite{Jones1999,Jones1998}) is freely available for download
+\textcolor{bleu_cite}{\textit{download}\footnote{\textcolor{bleu_cite}{\href{https://github.com/SCRIP-Project/SCRIP}{https://github.com/SCRIP-Project/SCRIP}}}}. 
+The package is distributed together with COAWST modeling system. This package is used for projects that use more than one model and with different grids (with different spatial 
+resolutions). SCRIP will generate the interpolation weights that will be used to remap the data between the different grids of the different models.
 \bigskip
 
 \noindent In COAWST, SCRIP was modified to generate a single file (in NetCDF format) that contains the weights based in each model grid.
@@ -302,14 +332,14 @@ when compared to simulations without active coupling.(\cite{Pullen2018, Miller20
         \path (C) edge [draw=black, bend right=20] node[sloped, align=center, below,font=\tiny] {U\textsubscript{s}, V\textsubscript{s}, Bathymetry, \\Bottom Elevation} (B); 
         \node[align=center,font=\bfseries, yshift=2em] (title) at (current bounding box.north) {\small Coupled Ocean-Atmosphere-Wave-\\\small Sediment Transport modeling system \\\small v3.4};
     \end{tikzpicture}
-\caption{Diagram about the exchange of information between the main models that make up the COAWST modeling system. (\cite{Warner2008})}
+\caption{Diagram about the exchange of information between the main models that make up the COAWST modeling system. (\cite{Warner2008})}.
 \label{acopla}
 \end{figure}
 \bigskip
 
-\noindent The Woods Hole Coastal and Marine Science Center page provides an experimental presentation on real time of COAWST (Sea Surface Temperature, Sea Surface Height, Significant Height
-Wave, Current and Wind Vectors and Sediment Dispersion) in the eastern United States and Gulf of Mexico. The content is available at: 
-\textcolor{bleu_cite}{\href{https://woodshole.er.usgs.gov/project-pages/cccp/public/COAWST.htm}{\textit{https://woodshole.er.usgs.gov/project-pages/cccp/public/COAWST.htm}}}.
+\noindent The Woods Hole Coastal and Marine Science Center page provides an experimental presentation on real time of 
+\textcolor{bleu_cite}{\textit{COAWST}\footnote{\textcolor{bleu_cite}{\href{https://woodshole.er.usgs.gov/project-pages/cccp/public/COAWST.htm}{https://woodshole.er.usgs.gov/project-pages/cccp/public/COAWST.htm}}}}
+(Sea Surface Temperature, Sea Surface Height, Significant Height Wave, Current and Wind Vectors and Sediment Dispersion) in the eastern United States and Gulf of Mexico.
 \bigskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% MATERIAIS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

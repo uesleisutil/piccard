@@ -10,30 +10,31 @@ and the rate of exchange of information between them.
 \section{Structural model files}
 \bigskip
 
-\noindent As you may have noticed when simulating the Sandy test case, the models have files that assist the user about how to setup the project
+\noindent As you may have noticed when simulating the Sandy test case, the models have files that assist the user about how to setup the project.
 
 \bigskip
 
 \noindent ROMS uses the \textit{sandy.h} file as a file containing the C pre-processing options that define the project.
-Access the website \textcolor{bleu_cite}{\href{https://www.myroms.org/wiki/cppdefs.h}{\textit{https://www.myroms.org/wiki/cppdefs.h}}} 
+Access the \textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{https://www.myroms.org/wiki/cppdefs.h}{https://www.myroms.org/wiki/cppdefs.h}}}}
 to know more about the available options into this file. ROMS also uses the \textit{ocean\_sandy.in} as standard input for
 running the model. This file defines the spatial dimensions of the project and parameters that are not informed during compilation,
 such as time steps, coefficients and physical constants, configuration of vertical coordinates, flags for
 control the output frequency, among other factors. You can learn more about this file by accessing the
-site \textcolor{bleu_cite}{\href{https://www.myroms.org/wiki/ocean.in}{\textit{https://www.myroms.org/wiki/ocean.in}}}.
+\textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{https://www.myroms.org/wiki/ocean.in}{https://www.myroms.org/wiki/ocean.in}}}}.
 \bigskip
 
 \noindent WRF uses the file \textit{namelist.input} to manage information about the project, as well as
 physical parameterization schemes that will be used. To learn about the file description,
-visit \textcolor{bleu_cite}{\href{https://esrl.noaa.gov/gsd/wrfportal/namelist\_input\_options.html}{\textit{https://esrl.noaa.gov/gsd/wrfportal/namelist\_input\_options.html}}}.
-To learn about the physical options of the model and the references of each one, visit \textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/phys\_references.html}{\textit{http://www2.mmm.ucar.edu/wrf/users/phys\_references.html}}}.
+visit the \textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{https://esrl.noaa.gov/gsd/wrfportal/namelist\_input\_options.html}{https://esrl.noaa.gov/gsd/wrfportal/namelist\_input\_options.html}}}}.
+To learn about the physical options of the model and the references of each one, visit the
+\textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/phys\_references.html}{http://www2.mmm.ucar.edu/wrf/users/phys\_references.html}}}}.
 \bigskip
 
 \noindent SWAN uses the file \textit{swan\_sandy.in} as a manager. It describes several parameters,
 such as the project description, the input data, the grid and the initial and boundary conditions, the
 wave physics parameterizations, among others. To learn more about configuring the file, visit the \textit{User Manual} tab
-in the website \textcolor{bleu_cite}{\href{http://swanmodel.sourceforge.net/}{\textit{http://swanmodel.sourceforge.net/}}}
-and look for the section \textit{Description of commands}.
+in the \textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{http://swanmodel.sourceforge.net/}{http://swanmodel.sourceforge.net/}}}}.
+and search for the section \textit{Description of commands}.
 \bigskip
 
 \section{Modifying the number of processors}

@@ -1,100 +1,53 @@
-% !TEX root = /media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex
 \chapterimage{header.jpg}
-\chapter{Building the weights between grids with SCRIP}
 \bigskip
-\section{Building the weights}
-\bigskip
-\noindent As seen in the section \textcolor{bleu_cite}{\ref{scripsecao}}, SCRIP is used to interpolate the weights between two or more grids of different models. 
-In COAWST, the package was modified to generate only one NetCDF file that will be used during integrations.
+\chapter{Building the WaveWatch III}
+
+\noindent \textbf{This section was written by Dr. Jonas Takeo Carvalho.  \newline Lattes CV: \textit{\textcolor{bleu_cite}{\href{http://lattes.cnpq.br/8827254187143196}{http://lattes.cnpq.br/8827254187143196}}}} 
 \bigskip
 
-\noindent The SCRIP directory is located at:
+\section{Generating grids}
 \bigskip
 
-\begin{bashcode}
-/home/name.surname/COAWST/Lib/SCRIP
-\end{bashcode}
+\noindent WW3 can be built in many grid options: tradicional regular, curvilinear, triangular unstructured, and spherical multiple-cell (SMC). 
+There are some tools been developed and avaiable to built WW3 grids. The example shown here will be focused on tradicional regular grid. Inside 
+WW3 \textit{GitHub} page, there is an automated grid generation package for WW3 in \textit{MATLAB} called \textit{gridgen}, avaiable for download along with
+the necessary information to use it. The main program \textbf{create\_grid.m} is shown in the figure \textcolor{bleu_cite}{\ref{fig1}}. It is possible to change the grid resolution, 
+the latitude and longitude limits, the name of the file generated. Remember to modify the source directories before running. 
 \bigskip
 
-\noindent Inside the folder, look for the file with the extension\textit{.in}. As in the example in Figure \textcolor{bleu_cite}{\ref{scripinnedit}}:
+\noindent The files generated for this example are:
+\bigskip
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.65\textwidth]{scripin.png}
-    \caption{SCRIP \textit{.in} file for the Sandy project.}
-    \label{scripinnedit}
+\begin{itemize}
+    \item antartic10km.maskorig\_ascii
+    \item antartic10km.depth\_ascii
+    \item antartic10km.obstr\_lev1
+    \item antartic10km.meta
+\end{itemize}
+\bigskip
+
+\noindent Respectively the mask file, the bathymetry file, the obstacle file and a grid information file. These files are necessary to compile the WW3 grid 
+using the \textbf{{ww3\_grid.inp}} file the executable \textbf{ww3\_grid}, described in the WW3 manual. The resultant file is \textbf{mod\_def.ww3}, that will 
+be used for running the model. In figure \textcolor{bleu_cite}{\ref{fig2}}, it is shown the bathymetry generated in this example.
+\bigskip
+
+\noindent In future tutorials we intend to show other examples of grid generation, but for now, the most common use within COAWST framework is the tradicional regular 
+grid. We also intend to ilustrate how to generate boundary conditions for regional simulations, and how to set a coupled configuration using WW3.  
+\bigskip
+
+%Figura1
+\begin{figure} [!htb] 
+\centering
+\includegraphics[trim=0.15cm 0.15cm 0.15cm 0.5cm,clip,width=0.75\textwidth]{ww3_ant_grid.png}
+\caption{Gridgen main script}
+\label{fig1}
 \end{figure}
-\bigskip
 
-\noindent In \textit{OUTPUT\_NCFILE}, change the name of the NetCDF file that will be generated if necessary.
-\bigskip
 
-\noindent In section 2 of the file, change the variables \textit{NGRIDS\_ROMS}, \textit{NGRIDS\_SWAN} and \textit{NGRIDS\_WRF} according to the number of grids, 
-existing in your project, in ROMS, SWAN and WRF, respectively.
-\bigskip
-
-\noindent In the third section of the file, renew the ROMS grid directories according to the names in your project.
-\bigskip
-
-\noindent For SWAN, in the fourth section, in addition to changing the directories of the SWAN grids (\textit{SWAN\_COORD} and \textit{SWAN\_BATH}), change the 
-number of existing grid points, according to your project , in the variables \textit {SWAN\_NUMX} and \textit{SWAN\_NUMY}.
-\bigskip
-
-\noindent Finally, in the fifth section, change the WRF grid directories (\textit{WRF\_GRIDS}). In \textit {PARENT\_GRID\_RATIO}, if your project includes nesting 
-between the WRF grids, change to the relationship used between the grids used in your project. In \textit{PARENT\_ID}, add the grid ID.
-\bigskip
-
-\noindent Then, save the changes.
-\bigskip
-
-\noindent To run SCRIP, search the repository for the file \textit{qsub\_scrip.sh}:
-\bigskip
-
-\begin{bashcode}
-/home/name.surname/repositorio/qsub_scrip.sh
-\end{bashcode}
-\bigskip
-
-\noindent Move the file to the SCRIP directory:
-\bigskip
-
-\begin{bashcode}[fontsize=\scriptsize]
-mv /home/name.surname/repositorio/qsub_scrip.sh /home/name.surname/COAWST/Lib/SCRIP
-\end{bashcode}
-\bigskip
-
-\noindent Open the file \textit{qsub\_scrip.sh}:
-\bigskip
-
-\begin{bashcode}
-nedit qsub_scrip.sh
-\end{bashcode}
-\bigskip
-
-\noindent Change and save the file \textit{.sh}, as in the example in Figure \textcolor{bleu_cite}{\ref{qsubscripsh}}:
-\bigskip
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.65\textwidth]{scripqsub.png}
-    \caption{\textit{qsub\_scrip.sh} file used to run SCRIP.}
-    \label{qsubscripsh}
+%Figura2
+\begin{figure} [!htb] 
+\centering
+\includegraphics[trim=0.15cm 0.15cm 0.15cm 0.5cm,clip,width=0.75\textwidth]{ww3_ant_bat.png}
+\caption{Bathymetry file: antartic10km.depth\_ascii}
+\label{fig2}
 \end{figure}
-\bigskip
-
-\noindent To start SCRIP, type:
-\bigskip
-
-\begin{bashcode}
-qsub qsub_scrip.sh
-\end{bashcode}
-\bigskip
-
-\noindent At the end, the file \textit{scrip\_static.nc} will be created. Now put them in your project folder and you're done! COAWST is ready to run.
-\bigskip
-
-\section{Running your simulation}{{{{ }}}}
-\bigskip
-
-\noindent Now, with everything ready, your project is ready to be started. Visit the section \textcolor{bleu_cite}{\ref{sandyexec}} to remember 
-how to execute the project.

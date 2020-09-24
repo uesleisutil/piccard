@@ -15,20 +15,20 @@ and temporal.
 \section{Signing up a user account}
 \bigskip
 
-\noindent To start the process of applying for a user account in Kerana, it is necessary that the computer in the INPE's premises have a fixed IP. Your advisor or supervisor 
-is required to send an email to \textit{Helpdesk} (\textcolor{bleu_cite}{\href{helpdesk.cptec@inpe.br}{\textit{helpdesk.cptec@inpe.br}}}) informing the MAC address, hostname
+\noindent To start the process of applying for a user account in Kerana, it is necessary to use the network at INPE with a fixed IP in your computer. Your advisor or supervisor 
+is required to send an email to \textit{Helpdesk} (\textcolor{bleu_cite}{\href{mailto:helpdesk.cptec@inpe.br}{\textit{helpdesk.cptec@inpe.br}}}) informing the MAC address, hostname
 and reason for the request. If the computer already has a fixed IP assigned, it also need to be informed to be changed.
 \bigskip
 
-\noindent With the fixed IP configured, contact the \textit{Helpdesk} (\textcolor{bleu_cite}{\href{helpdesk.cptec@inpe.br}{\textit{helpdesk.cptec@inpe.br}}}) to request a form 
+\noindent With the fixed IP configured, contact the \textit{Helpdesk} (\textcolor{bleu_cite}{\href{mailto:helpdesk.cptec@inpe.br}{\textit{helpdesk.cptec@inpe.br}}}) to request a form 
 to use Kerana.
 \bigskip
 
 \section{Signing in to the Kerana cluster}\label{keranaacess}
 \bigskip
 
-\noindent Access will be done entirely through the computer terminal. You will need two primary commands: \textit{ssh} for accessing and manipulating files and folders and 
-\textit{sftp} to download and upload files.
+\noindent Access will be done entirely through your system terminal. You will need use primary commands: \textit{ssh} for accessing and manipulating files 
+and folders and \textit{sftp} to download and upload files.
 \bigskip
 
 \noindent To access and modify files and folders, type in the terminal, replacing \textit{name.surname} with the user provided by \textit{Helpdesk}:
@@ -48,7 +48,6 @@ to use Kerana.
     From now on, whenever the guide shows the user as \textit{name.surname}, change to your username provided by the Helpdesk.
 \end{tcolorbox}
 \bigskip
-
 
 \begin{bashcode}
 ssh -Y name.surname@acesso-hpc.cptec.inpe.br -p 2000
@@ -97,7 +96,7 @@ get file.tar.gz
 \section{File repository}\label{reposit}
 \bigskip
 
-\noindent Certain files are needed in each user's area to facilitate the use of the cluster. You will find them in the directory:
+\noindent Certain files are needed in each user's area to make more easy to work with the cluster. You will find them in the directory:
 \bigskip
 
 \begin{bashcode}
@@ -178,14 +177,14 @@ source .bashrc
   tcbox raise base,
   boxrule=1.0pt,
   left=18mm,
-  colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+  colframe=yellow!50!black,coltext=red!25!black,colback=yellow!10!white,
+  overlay={\begin{tcbclipinterior}\fill[yellow!75!blue!50!white] (frame.south west)
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATTENTION} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
 COAWST v3.6 is already in the repository within the Kerana cluster, as discussed in Section \textcolor{bleu_cite}{\ref{reposit}}.
 \end{tcolorbox}
 \bigskip
 
-\noindent To download COAWST, send an email to Dr. John Warner (\textcolor{bleu_cite}{\href{jcwarner@usgs.gov}{\textit{jcwarner@usgs.gov}}}), one of the heads behind the coupled regional modeling system.
+\noindent To download COAWST, send an email to Dr. John Warner (\textcolor{bleu_cite}{\href{mailto:jcwarner@usgs.gov}{\textit{jcwarner@usgs.gov}}}), one of the heads behind the coupled regional modeling system.
 \bigskip
 
 \noindent After access is granted, with the user credentials and password provided by Dr. John Warner, type in the command the command below, changing the \ textit {myusrname} to your username.
@@ -233,7 +232,7 @@ nedit Config.pl
 \end{bashcode}
 \bigskip
 
-\noindent Look for the lines:
+\noindent Search for the lines:
 \bigskip
 
 \begin{bashcode}[fontsize=\small]
@@ -259,7 +258,7 @@ nedit configure.defaults
 \end{bashcode}
 \bigskip
 
-\noindent Look for the \textit{TRADEFLAG}, option, which is on line 1262, approximately:
+\noindent Look for the \textit{TRADEFLAG} option, which is on line 1262, approximately:
 \bigskip
 
 \begin{bashcode}
@@ -334,7 +333,7 @@ nedit setup_pgi.sh
 \end{bashcode}
 \bigskip
 
-\noindent If necessary, change the directories according to the name of your COAWST folder and execute the file to load the necessary modules:
+\noindent If necessary, change the directories according to the name of your COAWST folder and execute the file to load the modules:
 \bigskip
 
 \begin{bashcode}
@@ -349,7 +348,7 @@ source setup_pgi.sh
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{modules.png}
-    \caption{Modules activated in the cluster with the file \textit{setup\_pgi.sh} with user adriano.sutil.}
+    \caption{Modules activated with the file \textit{setup\_pgi.sh}.}
     \label{modulos}
 \end{figure}
 \bigskip
@@ -381,9 +380,9 @@ nedit Makefile.conf
   tcbox raise base,
   boxrule=1.0pt,
   left=18mm,
-  colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+  colframe=yellow!50!black,coltext=yellow!25!black,colback=yellow!10!white,
+  overlay={\begin{tcbclipinterior}\fill[yellow!75!blue!50!white] (frame.south west)
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATTENTION} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
     Remember to change the \textit{name.surname}!
 \end{tcolorbox}
 \bigskip
@@ -458,8 +457,8 @@ Representation of the main COAWST folder and subfolders.}
 \subsection{Projects folder}\index{Pasta Projetcs}
 \bigskip
 
-\noindent To organize the projects, in the directory \textit{COAWST/Projects/Sandy} are all the files used to simulate the
-Sandy case. The following files must be inside:
+\noindent To organize the projects, in the \textit{COAWST/Projects/Sandy} folder are all the files used to simulate the
+Sandy case. The following files must be inside the folder:
 \bigskip
 
 \begin{itemize}
@@ -534,8 +533,7 @@ Sandy case. The following files must be inside:
 \bigskip
 
 \noindent To make the management of simulations easier, it is suggested, for each new user, the creation of the \textit{Work} folder in
-main COAWST directory, with each project inserted separately within it. It is in this folder that will be simulated
-the test case.
+main COAWST directory, with each project inserted separately within it. It is in this folder that test case will be simulated.
 \bigskip
 
 \begin{bashcode}
@@ -556,7 +554,7 @@ mkdir Sandy
 \end{itemize}
 \bigskip
 
-\noindent The file \textit{run\_sandy.sh} will be used to start the simulation, \textit{link.sh} creates symbolic links in the folder \textit{Work}, 
+\noindent The file \textit{run\_sandy.sh} will be used to start the simulation, \textit{link.sh} creates symbolic links in the \textit{Work} folder, 
 that will be used by the models, and \textit{limpa.sh} is used to clear the folder if an error occurs and a new integration needs to be started. The files 
 are inside the folder \textit{/repositorio/work\_coawst}.
 \bigskip
@@ -571,7 +569,7 @@ cp limpa.sh link.sh run_sandy.sh /scratch/name.surname/COAWST/Work/Sandy
 \end{bashcode}
 \bigskip
 
-\noindent Go to the directory \textit{/scratch/name.surname/COAWST/Work/Sandy} and open the file\textit{run\_sandy.sh}:
+\noindent Go to the \textit{/scratch/name.surname/COAWST/Work/Sandy} folder and open the file\textit{run\_sandy.sh}:
 \bigskip
 
 \begin{bashcode}
@@ -601,7 +599,7 @@ ROOTDIR=/scratch/name.surname/COAWST
 \end{bashcode}
 \bigskip
 
-\noindent Open the following files to make changes to the next steps:
+\noindent Open the following files to make changes for the next steps:
 \bigskip
 
 \begin{itemize}
@@ -629,7 +627,7 @@ OCN_name = Projects/Sandy/ocean_sandy.in
 \bigskip
 
 \begin{bashcode}
-OCN_name = /scratch/name.surname/COAWST/Projects/Sandy/ocean_sandy.in
+OCN_name = ocean_sandy.in
 \end{bashcode}
 \bigskip
 
@@ -762,9 +760,9 @@ tail -f coawst.pgi.sandy
   tcbox raise base,
   boxrule=1.0pt,
   left=18mm,
-  colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+  colframe=yellow!50!black,coltext=yellow!25!black,colback=yellow!10!white,
+  overlay={\begin{tcbclipinterior}\fill[yellow!75!blue!50!white] (frame.south west)
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATTENTION} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
 The compilation process is long!
 \end{tcolorbox}
 \bigskip
@@ -777,7 +775,7 @@ will be compiled. Now with COAWST compiled, we will start the test case.
 \section{Simulating the Sandy Test Case}\label{sandyexec}
 \bigskip
 
-\noindent To simulate the case, search for the \textit{run\_sandy.sh} file in \textit{Work/Sandy}. Type it:
+\noindent To simulate the test case, search for the \textit{run\_sandy.sh} file in \textit{Work/Sandy} folder. Type:
 \bigskip
 
 \begin{bashcode}
@@ -817,14 +815,14 @@ qsub run_sandy.sh
   tcbox raise base,
   boxrule=1.0pt,
   left=18mm,
-  colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+  colframe=green!50!black,coltext=green!25!black,colback=green!10!white,
+  overlay={\begin{tcbclipinterior}\fill[green!75!blue!50!white] (frame.south west)
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {NOTE} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
  The command \textit{qsub} will submit you job. It will send the executed script to a batch of the cluster, reserving a part of the processors for your simulation.
 \end{tcolorbox}
 \bigskip
 
-\noindent The process will generate two files to follow the evolution of the simulation: \textit{log.out} and \textit{log.err}. To open, use:
+\noindent The process will generate two files to follow the evolution of the simulation: \textit{log.out} and \textit{log.err}. To open it, use:
 \bigskip
 
 \begin{bashcode}
@@ -857,9 +855,9 @@ tail -f log.out
   tcbox raise base,
   boxrule=1.0pt,
   left=18mm,
-  colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-    The simulation of the may take several hours when integrating using 3 processors.
+  colframe=yellow!50!black,coltext=yellow!25!black,colback=yellow!10!white,
+  overlay={\begin{tcbclipinterior}\fill[yellow!75!blue!50!white] (frame.south west)
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATTENTION} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+    The simulation of the may take several hours when using 3 processors.
 \end{tcolorbox}
 \bigskip

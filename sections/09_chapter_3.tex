@@ -2,7 +2,7 @@
 \chapterimage{header.jpg}
 \chapter{COAWST features}
 \bigskip
-\noindent So far we have learned how to use the Kerana cluster and how to compile and run a simple COAWST test case.
+\noindent So far we have learned how to use the Kerana cluster and how to compile and run a COAWST test case.
 From now on we will enter into the specifics of the models, such as changing the number of processors
 and the rate of exchange of information between them.
 \bigskip
@@ -15,25 +15,25 @@ and the rate of exchange of information between them.
 \bigskip
 
 \noindent ROMS uses the \textit{sandy.h} file as a file containing the C pre-processing options that define the project.
-Access the \textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{https://www.myroms.org/wiki/cppdefs.h}{https://www.myroms.org/wiki/cppdefs.h}}}}
+Access the website\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://www.myroms.org/wiki/cppdefs.h}{https://www.myroms.org/wiki/cppdefs.h}}}}
 to know more about the available options into this file. ROMS also uses the \textit{ocean\_sandy.in} as standard input for
 running the model. This file defines the spatial dimensions of the project and parameters that are not informed during compilation,
 such as time steps, coefficients and physical constants, configuration of vertical coordinates, flags for
 control the output frequency, among other factors. You can learn more about this file by accessing the
-\textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{https://www.myroms.org/wiki/ocean.in}{https://www.myroms.org/wiki/ocean.in}}}}.
+website\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://www.myroms.org/wiki/ocean.in}{https://www.myroms.org/wiki/ocean.in}}}}.
 \bigskip
 
 \noindent WRF uses the file \textit{namelist.input} to manage information about the project, as well as
 physical parameterization schemes that will be used. To learn about the file description,
-visit the \textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{https://esrl.noaa.gov/gsd/wrfportal/namelist\_input\_options.html}{https://esrl.noaa.gov/gsd/wrfportal/namelist\_input\_options.html}}}}.
+visit the website\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://esrl.noaa.gov/gsd/wrfportal/namelist\_input\_options.html}{https://esrl.noaa.gov/gsd/wrfportal/namelist\_input\_options.html}}}}.
 To learn about the physical options of the model and the references of each one, visit the
-\textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/phys\_references.html}{http://www2.mmm.ucar.edu/wrf/users/phys\_references.html}}}}.
+website\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/phys\_references.html}{http://www2.mmm.ucar.edu/wrf/users/phys\_references.html}}}}.
 \bigskip
 
 \noindent SWAN uses the file \textit{swan\_sandy.in} as a manager. It describes several parameters,
 such as the project description, the input data, the grid and the initial and boundary conditions, the
 wave physics parameterizations, among others. To learn more about configuring the file, visit the \textit{User Manual} tab
-in the \textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{http://swanmodel.sourceforge.net/}{http://swanmodel.sourceforge.net/}}}}.
+in the website\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://swanmodel.sourceforge.net/}{http://swanmodel.sourceforge.net/}}}}.
 and search for the section \textit{Description of commands}.
 \bigskip
 
@@ -60,8 +60,8 @@ In this case, ROMS will reserve 320 processors to run, since 16 x 20 = 160.
 \subsection{WRF}
 \bigskip
 
-\noindent To change the number of WRF processors, it is necessary to modify the file \textit{namelist.input}.
-You will find the variables \textit{nproc\_x} and \textit{nproc\_y}, as in Figure \textcolor{bleu_cite}{\ref{procswrf}}.
+\noindent To change the number of WRF processors, it is necessary to modify the \textit{namelist.input} file.
+Search for the variables \textit{nproc\_x} and \textit{nproc\_y}, as in Figure \textcolor{bleu_cite}{\ref{procswrf}}.
 In this case, 320 processors will be reserved for the atmospheric model.
 
 \begin{figure}[H]
@@ -74,11 +74,11 @@ In this case, 320 processors will be reserved for the atmospheric model.
 
 \subsection{SWAN}
 
-\bigskip The SWAN \textit{.in} file does not discriminate the numbers of processors used, so just change the number
-number of processors in \textit{coupling.in}, as will be shown in the subsection below.
+\bigskip The SWAN \textit{.in} file does not have the numbers of processors. In that case just change the number
+number of processors in \textit{coupling.in}, as shown in the next \textcolor{bleu_cite}{\ref{coawstproc}} subsection.
 \bigskip
 
-\subsection{COAWST}
+\subsection{COAWST}\label{coawstproc}
 \bigskip
 
 \noindent Now that the number of processors have been modified, the coupler needs to be informed about the change. 
@@ -147,9 +147,9 @@ modify the variables \textit{TI\_ATM2WAV}, \textit{TI\_ATM2OCN}, \textit{TI\_WAV
   tcbox raise base,
   boxrule=1.0pt,
   left=18mm,
-  colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+  colframe=yellow!50!black,coltext=yellow!25!black,colback=yellow!10!white,
+  overlay={\begin{tcbclipinterior}\fill[yellow!75!blue!50!white] (frame.south west)
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATTENTION} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
     The information exchange rate is defined in seconds.
 \end{tcolorbox}
 \bigskip

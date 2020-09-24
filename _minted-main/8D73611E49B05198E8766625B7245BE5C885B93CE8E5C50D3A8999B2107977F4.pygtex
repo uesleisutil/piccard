@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+conda install \PYGZhy{}c mutirri szip
+conda install \PYGZhy{}c anaconda zlib
+conda install \PYGZhy{}c conda\PYGZhy{}forge udunits
+conda install \PYGZhy{}c anaconda netcdf4
+conda install \PYGZhy{}c conda\PYGZhy{}forge netcdf\PYGZhy{}fortran
+conda install \PYGZhy{}c anaconda numpy
+conda install \PYGZhy{}c anaconda scipy
+conda install \PYGZhy{}c conda\PYGZhy{}forge esmf
+conda install \PYGZhy{}c conda\PYGZhy{}forge esmpy
+conda install \PYGZhy{}c conda\PYGZhy{}forge lpsolve55
+conda install \PYGZhy{}c conda\PYGZhy{}forge cftime
+conda install \PYGZhy{}c anaconda basemap
+conda install \PYGZhy{}c conda\PYGZhy{}forge basemap\PYGZhy{}data\PYGZhy{}hires
+conda install \PYGZhy{}c conda\PYGZhy{}forge matplotlib
+\end{Verbatim}

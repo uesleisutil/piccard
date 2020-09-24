@@ -20,7 +20,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.8}Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}{16}{section.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.9}Requirements to use this guide}{17}{section.1.9}%
+\contentsline {section}{\numberline {1.9}System requirements to use this guide}{17}{section.1.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}COAWST in a parallel cluster}{19}{chapter.2}%
 \ttl@stoptoc {default@1}
@@ -100,39 +100,35 @@
 \ttl@stoptoc {default@4}
 \ttl@starttoc {default@5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Installing Python libraries on the personal computer}{53}{section.5.1}%
+\contentsline {subsection}{\numberline {5.0.1}Installing Anaconda}{53}{subsection.5.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Installing manually}{53}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.1}Installing Pyroms}{54}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Installing with Conda}{53}{subsection.5.1.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Installing Pyroms}{54}{section.5.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Pyroms Palau\_Hycom test case}{56}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.1.1}Pyroms Palau\_Hycom test case}{56}{subsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Manipulating the files}{56}{section*.31}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Observations}{57}{section*.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Pyroms LOA-Antarctica test case}{58}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.1.2}Pyroms LOA-Antarctica test case}{58}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Replicating the scripts}{58}{section*.33}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Correcting dimensions}{58}{section*.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}The model2roms toolbox}{60}{section.5.3}%
+\contentsline {section}{\numberline {5.2}The model2roms toolbox}{60}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Introduction to the ROMS grid}{61}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.2.1}Introduction to the ROMS grid}{61}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}ETOPO1 1 Arc-Minute Global Relief Model}{61}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.2.2}ETOPO1 1 Arc-Minute Global Relief Model}{61}{subsection.5.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Creating the ROMS grid}{62}{section*.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}Introduction to ROMS forcing files}{63}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.2.3}Introduction to ROMS forcing files}{63}{subsection.5.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.4}Global Ocean Physics Reanalysis (GLORYS)}{64}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.2.4}Global Ocean Physics Reanalysis (GLORYS)}{64}{subsection.5.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.5}Creating ROMS forcing files}{67}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.2.5}Creating ROMS forcing files}{67}{subsection.5.2.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Building the SWAN}{71}{chapter.6}%
 \ttl@stoptoc {default@5}
@@ -156,7 +152,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.2}Running your simulation}{79}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}\large {Papers of the Ocean and Atmosphere Studies Laboratory (LOA/INPE)}}{81}{chapter.10}%
+\contentsline {chapter}{\numberline {10}\large {Papers of the Ocean and Atmosphere Studies Laboratory (LOA)}}{81}{chapter.10}%
 \ttl@stoptoc {default@9}
 \ttl@starttoc {default@10}
 \defcounter {refsection}{0}\relax 

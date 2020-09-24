@@ -7,12 +7,11 @@ It is also possible to define a numerical grid within the \textit{SWAN.EDT} and 
 with the defined grid.
 \bigskip
 
-\noindent As an example, SWAN files will be created from the ROMS grid, but without the introduction of initial data,
-as the implementation of a grid inside \textit{SWAN.EDT} is not trivial.
+\noindent As an example, SWAN files will be created from the ROMS grid, but without the initial condiiton data.
 \bigskip
 
 \noindent For SWAN boundary conditions, the wind fields will come from the WRF, as soon as
-the waves generated are associated with the atmospheric systems represented in these simulations. Without the information
+the waves generated are associated with the atmospheric systems represented in these simulations. Without the
 the boundary files information, the simulated waves will be generated only within the boundary of the domain, disregarding the energy that
 is leaving or entering the grid.
 \bigskip
@@ -81,7 +80,19 @@ add the following options into the \textit{.h} file, as shown in Figure \textcol
 \end{figure}
 \bigskip
 
-\noindent For more information about the model, it is recommended to read \textcite{hedstrom2018}.
+\begin{tcolorbox}[enhanced,
+    grow to left by   = 0cm,
+    grow to right by  = 0cm,
+    enlarge top by    = 0cm,
+    enlarge bottom by = 0cm,
+    tcbox raise base,
+    boxrule           = 1.0pt,
+    left              = 18mm,
+    colframe          = green!50!black,coltext=green!25!black,colback=green!10!white,
+    overlay           = {\begin{tcbclipinterior}\fill[green!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+For more information about the sea-ice model, it is recommended to read \textcite{hedstrom2018}.
+\end{tcolorbox}
 \bigskip
 
 \noindent Get the \textit{.in} file for the sea ice model. Copy the file \textit{ice.in} into the Kerana repository and add it to your project.

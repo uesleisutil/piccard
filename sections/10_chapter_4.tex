@@ -3,7 +3,7 @@
 \chapter{Building the WRF}\index{Construindo o WRF}
 \bigskip 
 \noindent Now that we have learned how to simulate a test case and change the coupling rate and number of processors, we will begin 
-the process of creating a specific grid and the initial and boundary conditions for the WRF using the NCEP Climate Forecast System Reanalysis (CFSR; \cite{Saha2006}).
+the process of creating the grid and forcing files for the WRF using the NCEP Climate Forecast System Reanalysis (CFSR; \cite{Saha2006}).
 \bigskip
 
 \section{Compiling WRF in Kerana cluster}
@@ -40,9 +40,9 @@ source setup_pgi.sh
   tcbox raise base,
   boxrule=1.0pt,
   left=18mm,
-  colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+  colframe=green!50!black,coltext=green!25!black,colback=green!10!white,
+  overlay={\begin{tcbclipinterior}\fill[green!75!blue!50!white] (frame.south west)
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {NOTE} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
 The next step can be automated. If you choose the automated compilation, see Section \textcolor{bleu_cite}{\ref{autowrf}}.
 \end{tcolorbox}
 \bigskip
@@ -98,7 +98,7 @@ prepare the input data for the simulations. It consists of the following modules
 \begin{itemize}
 \item \textbf{\textit{geogrid}}: Defines the model domain and interpolates the geographic data for the grid;
 \item \textbf{\textit{ungrib}}: Extract weather fields from \textit{.grib} files;
-\item \textbf{\textit{metgrid}}: Interpolates the weather fields extracted by ungrib to the model grid defined by metrid.
+\item \textbf{\textit{metgrid}}: Interpolates the weather fields extracted by ungrib to the model grid defined by metgrid.
 \end{itemize}
 \bigskip
 
@@ -106,7 +106,7 @@ prepare the input data for the simulations. It consists of the following modules
 \bigskip
 
 \noindent You can find more information in the WPS 
-\textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}}}}.
+website\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}{http://www2.mmm.ucar.edu/wrf/OnLineTutorial/}}}}.
 \bigskip
 
 \noindent After creating these files, the \textit{real.exe} is used to interpolate the meteorological fields to \texteta level.
@@ -114,7 +114,7 @@ prepare the input data for the simulations. It consists of the following modules
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.65\textwidth]{image002.png}
+    \includegraphics[width=0.55\textwidth]{image002.png}
     \caption{WPS schemeatic. \newline Author: \textcite{duda2006}.}
     \label{wpsdetalha}
 \end{figure}
@@ -159,12 +159,12 @@ tar -xvzf WPSV3.9.0.1.tar.gz
     colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
     overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
       rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-      As stated earlier in Section \textcolor{bleu_cite}{\ref{wpsker}}, WPS is included with COAWST. We recommend to use this version.
+      As stated earlier in Section \textcolor{bleu_cite}{\ref{wpsker}}, WPS is included with COAWST. We recommend to use that version.
 \end{tcolorbox}
 \bigskip
 
 \noindent To compile the WPS and generate the executables, it is necessary to activate the libraries with \textit{setup\_pgi.sh},
-found in the directory \textit{/home/name.surname/repository}. Activate them with the command:
+found in the \textit{/home/name.surname/repository} directory. Activate them with the command:
 \bigskip
 
 \begin{bashcode}
@@ -272,9 +272,9 @@ DMCC    = gcc
 \bigskip
 
 \noindent NCEP Climate Forecast System Reanalysis 
-\textcolor{bleu_cite}{\textit{CFSR})\footnote{\textcolor{bleu_cite}{\href{http://rda.ucar.edu/datasets/ds093.0}{http://rda.ucar.edu/datasets/ds093.0}}}}
+(CFSR)\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://rda.ucar.edu/datasets/ds093.0}{http://rda.ucar.edu/datasets/ds093.0}}}}
 a reanalysis, avaliable from January 1979 to December 2010, with a coupled model (atmosphere-ocean-land surface and sea ice) that
-assimilates orbital data, research cruises, oceanographic buoys and weather stations. This database
+assimilates data from remote sensing, research cruises, oceanographic buoys and weather stations. This database
 has vertical resolution with 38 levels, extending from the surface to 1 hPa, with a 6-hour temporal resolution
 and horizontal of 0.5\degree for pressure levels data and 0.312\degree for variables on the surface.
 \bigskip
@@ -311,7 +311,7 @@ and select in \textit {Parameter presets} one of the three parameters of the WRF
 \end{figure}
 \bigskip
 
-\noindent Download the data (as \textit{GRIB}) and separate it into three folders according to the parameters of each one:
+\noindent Download the data (as \textit{GRIB} format) and separate it into three folders according to the parameters of each one:
 SST, Surface and Pressure. Compress them and put them in the cluster:
 \bigskip
 
@@ -340,8 +340,8 @@ tar -xvzf Surface.tar.gz
 \bigskip
 
 \noindent As previously mentioned, \ textit {geogrid} generates the grid domain using geographic data. The data can be obtained from it 
-\textcolor{bleu_cite}{\textit{website}\footnote{\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}}}}
-, or directly from the repository guide:
+website\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}{http://www2.mmm.ucar.edu/wrf/users/download/get\_sources\_wps\_geog.html}}}}
+ or directly from the repository guide:
 \bigskip
 
 \begin{bashcode}
@@ -435,11 +435,11 @@ ncview geo_em_d01.nc
 
 \noindent You will always need to run \textit{geogrid} until you find a domain that is suitable for your project, 
 since WPS does not have a graphical interface. One solution to work around the problem is to use NCAR Command Language version 6.4 
-(NCL; \cite{Ncl2017}) to plot the image of the chosen domain. This will be the subject of the next subsection.
+(NCL; \cite{Ncl2017}) to plot the image of the chosen domain. This will be the subject of the \textcolor{bleu_cite}{\ref{nclsec}} subsection.
 
 \bigskip
 
-\subsection{Using the NCL to plot the grid domain}
+\subsection{Using the NCL to plot the grid domain}\label{nclsec}
 \bigskip
 
 \noindent To install the NCL, move the \textit{NCL} folder inside the repository:
@@ -562,7 +562,7 @@ ln -sf ungrib/Variable_Tables/Vtable.SST Vtable
   overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
     rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
 The \textit{Vtable} is used to read the files in \textit{Grib} format. It is mandatory to use the corresponding \textit{Vtable} to the chosen 
-database. You can consult them at \textit{WPS/ungrib/Variable\_Tables}.
+database. You can consult them at \textit{WPS/ungrib/Variable\_Tables folder}.
 \end{tcolorbox}
 \bigskip
 
@@ -590,9 +590,9 @@ qsub qsub_ungrib.sh
   tcbox raise base,
   boxrule=1.0pt,
   left=18mm,
-  colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+  colframe=yellow!50!black,coltext=yellow!25!black,colback=yellow!10!white,
+  overlay={\begin{tcbclipinterior}\fill[yellow!75!blue!50!white] (frame.south west)
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATTENTION} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
     The \textit{qsub\_ungrib.sh} file is located in the \textit{/repository/WPS\_scripts} folder.
 \end{tcolorbox}
 \bigskip
@@ -693,9 +693,9 @@ qsub qsub_metgrid.sh
     tcbox raise base,
     boxrule=1.0pt,
     left=18mm,
-    colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
-    overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+    colframe=green!50!black,coltext=green!25!black,colback=green!10!white,
+    overlay={\begin{tcbclipinterior}\fill[green!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {NOTE} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
 If you are an experienced user, you can create symbolic links pointing to the \textit{met} files instead of moving them.
   \end{tcolorbox}
   \bigskip
@@ -769,15 +769,15 @@ qsub qsub_real.sh
   tcbox raise base,
   boxrule=1.0pt,
   left=18mm,
-  colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+  colframe=yellow!50!black,coltext=yellow!25!black,colback=yellow!10!white,
+  overlay={\begin{tcbclipinterior}\fill[yellow!75!blue!50!white] (frame.south west)
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATTENTION} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
 The \textit{qsub\_real.sh} file is located in the \textit{/repository/WRF\_scripts} folder.
 \end{tcolorbox}
 \bigskip
 
-\noindent To check if \textit{real} succeeded, look at the end of the \textit{log.out} file for the success message as shown 
-in Figure \textcolor{bleu_cite}{\ref{realfinish}}.
+\noindent To check if \textit{real} succeeded in generating the forcinf files, look at the end of the \textit{log.out} file for the success message 
+as shown in Figure \textcolor{bleu_cite}{\ref{realfinish}}.
 \bigskip
 
 \begin{figure}[H]
@@ -788,9 +788,8 @@ in Figure \textcolor{bleu_cite}{\ref{realfinish}}.
 \end{figure}
 \bigskip
 
-
 \noindent Upon completing \textit{real}, three files will be generated: \textit{wrfbdy\_d01}, \textit{wrfinput\_d01} and 
-\textit{wrflowinp\_d01}, if you have chosen only one domain. After that, the WRF conditions are ready to be copied to your project
+\textit{wrflowinp\_d01}. Now, the WRF conditions are ready to be copied to your project
 folder in COAWST:
 \bigskip
 
@@ -802,11 +801,11 @@ cp wrfbdy_d01 wrfinput_d01 wrflowinp_d01 /home/name.surname/COAWST/Projects/proj
 \section{Using the WRF}\label{wrfsecao2}
 \bigskip
 
-\noindent With the files ready, it is possible to start the simulation of your project using only the WRF.
+\noindent Now it is possible to start the simulation of your project with the WRF.
 \bigskip
 
 \noindent To run the simulation on the cluster, it is necessary to use the file \textit{qsub\_wrf.sh}. It is located in the 
-\textit{/repository/WRF\_scripts} directory. Move the file to the WRF \textit{in\_real} folder, modify the directory according
+\textit{/repository/WRF\_scripts} folder. Move the file to the WRF \textit{em\_real} folder, modify the directory according
 to your user and save:
 \bigskip
 
@@ -833,14 +832,14 @@ qsub qsub_wrf.sh
   tcbox raise base,
   boxrule=1.0pt,
   left=18mm,
-  colframe=red!50!black,coltext=red!25!black,colback=red!10!white,
-  overlay={\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+  colframe=yellow!50!black,coltext=yellow!25!black,colback=yellow!10!white,
+  overlay={\begin{tcbclipinterior}\fill[yellow!75!blue!50!white] (frame.south west)
+    rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATTENTION} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
 The \textit{qsub\_wrf.sh} file is located in the \textit{/repository/WRF\_scripts} folder.
 \end{tcolorbox}
 \bigskip
 
-\noindent Follow the evolution of the job with the \textit{log.out} and \textit {log.err} files. If you want to have the information 
+\noindent Follow the job evolution using \textit{log.out} and \textit {log.err} files. If you want to have the information 
 updated by the terminal, type:
 \bigskip
 

@@ -2,17 +2,14 @@
 \chapterimage{header.jpg}
 \chapter{Building the ROMS}\index{Building the ROMS}
 \bigskip
-\section{Installing Python libraries on the personal computer}
-\bigskip
 
 \noindent Before generating the ROMS files, it is necessary to install the libraries and modules. 
 In this chapter, we address how to download them, as well as the commands in the terminal to install through \textit{apt-get}.
 \bigskip
 
-\noindent There are two ways to install the required libraries: manually, and through Anaconda. 
+\noindent In this guide we will install the ROMS forcing files programs using Anaconda and Pip. 
 Anaconda is a free and open source platform for Python and R and has a package manager called Conda, which makes easy 
-to install the libraries. In this guide, I will present both options. For convenience, I suggest installing using Conda 
-(Section \textcolor{bleu_cite}{\ref{condasec}}), but beware of version conflicts, as the Conda repositories are constantly updated.
+to install the libraries. In this guide, we will present both options. 
 \bigskip
 
 \begin{tcolorbox}[enhanced,
@@ -26,12 +23,48 @@ to install the libraries. In this guide, I will present both options. For conven
   colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
   overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
     rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-ROMS files must be builded on your own computer and no longer on Kerana cluster, as previously done with WRF.
+Although the ROMS model will be executed in the cluster, we will build the forcing files our own computer and then place them in the Kerana.
 \end{tcolorbox}
 \bigskip
 
-\subsection{Installing manually}\index{Instalação manual}
+\subsection{Installing Anaconda}\label{condasec}
 \bigskip
+\noindent Anaconda\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://www.anaconda.com/products/individual}{https://www.anaconda.com/products/individual}}}}
+is a distribution for Python and R that supports the various libraries and packages used in this guide, 
+making installation easier. To install, enter the directory where the installation file is located, change the installation permissions of the file and 
+follow the installer's instructions:
+\bigskip
+
+\begin{bashcode}
+ sudo chmod 770 Anaconda.sh
+ ./Anaconda2.sh
+\end{bashcode}
+\bigskip
+
+\noindent Next, enter the following commands on the terminal to install the libraries needed to build a project on ROMS:
+\bigskip
+
+\begin{bashcode}
+conda install -c mutirri szip
+conda install -c anaconda zlib
+conda install -c conda-forge udunits
+conda install -c anaconda netcdf4
+conda install -c conda-forge netcdf-fortran
+conda install -c anaconda numpy
+conda install -c anaconda scipy
+conda install -c conda-forge esmf
+conda install -c conda-forge esmpy 
+conda install -c conda-forge lpsolve55 
+conda install -c conda-forge cftime
+conda install -c anaconda basemap 
+conda install -c conda-forge basemap-data-hires 
+conda install -c conda-forge matplotlib 
+\end{bashcode}
+\bigskip
+
+\section{Installing Pyroms}\index{Instalando o Pyroms}
+\bigskip
+
 \begin{tcolorbox}[enhanced,
     grow to left by   = 0cm,
     grow to right by  = 0cm,
@@ -43,75 +76,31 @@ ROMS files must be builded on your own computer and no longer on Kerana cluster,
     colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
     overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
       rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-Consider installing libraries with Anaconda will be faster than installing manually. See Section \textcolor{bleu_cite}{\ref{condasec}}.
+Pyroms was recently updated and is working only with Python3. We suggest to install Python3 with Anaconda since Python2 will no longer be updated after 01 January 2020.
   \end{tcolorbox}
 \bigskip
 
-
-\subsection{Installing with Conda}\label{condasec}
-\bigskip
-\noindent \textcolor{bleu_cite}{\textit{Anaconda}\footnote{\textcolor{bleu_cite}{\href{https://www.continuum.io/downloads}{https://www.continuum.io/downloads}}}}
-is a distribution for Python and R that supports the various libraries and packages used in this guide, 
-making installation easier. To install, enter the directory where the installation file is located, change the installation permissions of the file and 
-follow the installer's instructions:
-\bigskip
-
-\begin{bashcode}
- sudo chmod 770 Anaconda2.sh
- ./Anaconda2.sh
-\end{bashcode}
-\bigskip
-
-\noindent Next, enter the following commands on the terminal to install the libraries needed to build a project on ROMS using Python:
-\bigskip
-
-\begin{bashcode}
-conda install -c conda-forge openmpi
-conda install -c anaconda gcc
-conda install -c mutirri szip
-conda install -c anaconda zlib
-conda install -c anaconda curl
-conda install -c anaconda hdf5
-conda install -c conda-forge netcdf-fortran
-conda install -c scitools jasper
-conda install -c anaconda libpng
-conda install -c conda-forge udunits
-conda install -c anaconda netcdf4
-conda install -c anaconda cython
-conda install -c anaconda numpy
-conda install -c anaconda scipy
-conda install -c anaconda mpi4py
-conda install -c conda-forge esmf
-conda install -c conda-forge lpsolve55 
-conda install -c conda-forge cftime
-\end{bashcode}
-\bigskip
-
-\section{Installing Pyroms}\index{Instalando o Pyroms}
-\bigskip
-
-\noindent With the libraries already installed, this section will show you how to install Pyroms. 
-It is a collection of tools to create ROMS files. It was originally started by Rob Hetland as a project on GoogleCode and 
-rewritten by Frederic Castruccio.
+\noindent This section will show you how to install Pyroms. It is a collection of tools to create ROMS files. It was originally started by Rob Hetland as a
+project on Google Code and rewritten by Frederic Castruccio.
 \bigskip
 
 \noindent Pyroms can be easily installed using Pip, a command line tool that allows you to install software packages written in Python.
-To install Pip for Python 2, use the following:
 \bigskip
 
-\begin{bashcode}
-  sudo apt install python-pip
-\end{bashcode}
-\bigskip
-
-\noindent For Python 3 users, use:
-\bigskip
 \begin{bashcode}
 sudo apt install python3-pip
 \end{bashcode}
 \bigskip
 
-\noindent Then, install the Pyrons by cloning the repository at Github:
+\noindent Install Git to access the Pyroms repository:\label{gitinfo}
+\bigskip
+
+\begin{bashcode}
+sudo apt-get install git
+\end{bashcode}
+\bigskip
+
+\noindent Then, download the Pyroms by cloning the repository at Github:
 \bigskip
 
 \begin{bashcode}
@@ -119,7 +108,7 @@ git clone https://github.com/ESMG/pyroms.git
 \end{bashcode}
 \bigskip
 
-\noindent Install it using Pip:
+\noindent Enter inside the Pyroms folder and install it using Pip:
 \bigskip
 
 \begin{bashcode}
@@ -129,7 +118,7 @@ pip install -e pyroms/bathy_smoother
 \end{bashcode}
 \bigskip
 
-\noindent This will install both three Pyroms packages, but if you try to import any of then without Script installed, you will get a warning 
+\noindent This will install both three Pyroms packages, but if you try to import any of then without scrip installed, you will get a warning 
 similar to that found in \textcolor{bleu_cite}{Figure \ref{scriperror}}:
 \bigskip
 
@@ -142,7 +131,7 @@ similar to that found in \textcolor{bleu_cite}{Figure \ref{scriperror}}:
 \bigskip
 
 \noindent As stated in the Pyroms repository, the scrip module is not available via Conda or any other package repository, but it can be built 
-and installed from source as the following:
+and installed as the following:
 \bigskip
 
 \begin{bashcode}
@@ -244,6 +233,7 @@ this directory.
     \item HYCOM\_GLBa0.08\_u\_2015\_001.nc
     \item HYCOM\_GLBa0.08\_v\_2015\_001.nc    
 \end{itemize}
+\bigskip
 
 \noindent We must now create the initial and boundary conditions with the downloaded data, but first we must concatenate them into a single file. 
 As they are files with different variables, without a common variable, we must first generate a variable to be shared between them, and still, be useful 
@@ -377,7 +367,6 @@ In the figure \textcolor{bleu_cite}{\ref{hycomantartic1}} and in the figure \tex
 \end{figure}
 \bigskip
 
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{dadosHycom.png}
@@ -427,7 +416,22 @@ It was created and is being updated by Trond Kristiansen (\textcolor{bleu_cite}{
 LOA-INPE. 
 \bigskip
 
-\noindent To download \textit{model2roms}, enter \textit{home} on your computer and download using Github:
+\noindent To download \textit{model2roms}, enter in your \textit{home} folder and download using Github:
+\bigskip
+
+\begin{tcolorbox}[enhanced,
+    grow to left by   = 0cm,
+    grow to right by  = 0cm,
+    enlarge top by    = 0cm,
+    enlarge bottom by = 0cm,
+    tcbox raise base,
+    boxrule           = 1.0pt,
+    left              = 18mm,
+    colframe          = green!50!black,coltext=green!25!black,colback=green!10!white,
+    overlay           = {\begin{tcbclipinterior}\fill[green!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {NOTE} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+Read how to install Git in the subsection \textcolor{bleu_cite}{\ref{gitinfo}}.
+  \end{tcolorbox}
 \bigskip
 
 \begin{bashcode}
@@ -463,15 +467,15 @@ conda install -c anaconda basemap
 \subsection{ETOPO1 1 Arc-Minute Global Relief Model}\index{O ETOPO1 1 Arc-Minute Global Relief Model}
 \bigskip
 
-\noindent The \textcolor{bleu_cite}{\textit{ETOPO1}\footnote{\textcolor{bleu_cite}{\href{https://www.ngdc.noaa.gov/mgg/global/global.html}{https://www.ngdc.noaa.gov/mgg/global/global.html}}}}
+\noindent The ETOPO1\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://www.ngdc.noaa.gov/mgg/global/global.html}{https://www.ngdc.noaa.gov/mgg/global/global.html}}}}
  (\cite{Amante2009}; Figure \textcolor{bleu_cite}{\ref{etopo1}}) 
 is produced by the National Geophysical Data Center and provides two layers of relief information.
 The layers include bathymetry over the oceans and some of the main lakes on Earth.
- Terrestrial topography and ocean bathymetry are based on SRTM30 topography and through various bathymetric cruises
+ Terrestrial topography and ocean bathymetry are based on SRTM30 topography and through various bathymetric cruises.
 \bigskip
 
 \noindent Visit the site
-and subset your area of interes on the ETOPO1 website map and download the data in NetCDF format.
+and subset your area of interest on the ETOPO1 website map and download the data in NetCDF format.
 
 \bigskip  
    
@@ -503,6 +507,7 @@ The script \textit{make\_roms\_grid.py} does not allow the selection of the lati
 \bigskip
 
 \subsubsection{Creating the ROMS grid}\index{Gerando a grade do ROMS}
+\bigskip
 
 \noindent Enter the \textit{model2roms} directory and look for the \textit{grid} subfolder. Open the code \textit{make\_roms\_grid.py}.
 \bigskip
@@ -555,9 +560,9 @@ gedit make_roms_grid.py
     tcbox raise base,
     boxrule           = 1.0pt,
     left              = 18mm,
-    colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
-    overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
-      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
+    colframe          = yellow!50!black,coltext=yellow!25!black,colback=yellow!10!white,
+    overlay           = {\begin{tcbclipinterior}\fill[yellow!75!blue!50!white] (frame.south west)
+      rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {ATTENTION} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
 As we do not use the data from SRTM\_30\_PLUS, the variable \textit{srtm\_dir} does not need to be modified.
 \end{tcolorbox}
 \bigskip
@@ -587,15 +592,15 @@ and SODA3 (\cite{Carton2018}), however, we will only use GLORYS12V1 as an exampl
 \subsection{Global Ocean Physics Reanalysis (GLORYS)}\index{O Global Ocean Physics Reanalysis (GLORYS)}
 \bigskip
 
-\noindent \textcolor{bleu_cite}{\textit{GLORYS}\footnote{\textcolor{bleu_cite}{\href{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}}}}
-is a global reanalysis of the ocean with a spatial resolution of 1/12° with daily or monthly temporal resolution and 
+\noindent GLORYS\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}}}}
+is a global reanalysis of the ocean with a 1/12° spatial resolution with daily and monthly temporal resolution and 
 50 vertical levels. It is based on the current CMEMS global weather forecasting system and is forced by ECMWF's ERA-Interim from the NEMO model.
 A Kalman filter with reduced order is used to assimilate the sea altimetry, sea surface temperature, sea ice concentration data obtained 
 from remote sensing and the \textit{in situ} data of vertical temperature and salinity profiles .
 In addition, a 3D-VAR scheme provides a correction for temperature and salinity deviations.
 \bigskip
 
-\noindent When you try to download, the site will warn you that you will need to create a Copernicus account.
+\noindent When you try to download, the site will warn you that you will need to create an account.
 Register and choose the GLORYS daily data set, as shown in Figure \textcolor{bleu_cite}{\ref{glorys1}}.
 \bigskip
 
@@ -639,7 +644,7 @@ ice model in ROMS, select all variables, with the exception of:
 
 \noindent The Copernicus server allow files for download with a maximum of 1024 mb. 
 If the selected period has a larger file size, as for example in Figure \textcolor{bleu_cite}{\ref{glorys3}}, it will be necessary to 
-return to the previous step and partition the files into smaller pieces or download the complete file by clicking on \textit{FTP ACCESS}
+return to the previous step and partition the files into smaller pieces or download the complete set by clicking on \textit{FTP ACCESS}
 (Figure \textcolor{bleu_cite}{\ref{glorys3}}).
 \bigskip
 
@@ -704,7 +709,7 @@ cdo cat glorys* glorys.nc
     colframe          = red!50!black,coltext=red!25!black,colback=red!10!white,
     overlay           = {\begin{tcbclipinterior}\fill[red!75!blue!50!white] (frame.south west)
       rectangle node[text=white,font=\sffamily\bfseries\footnotesize,rotate=0] {WARNING} ([xshift=18mm]frame.north west);\end{tcbclipinterior}}]
-  Para facilitar os próximos passos, coloque o arquivo do GLORYS dentro do diretório \textit{\$HOME/model2roms/input}
+Place de dowloaded GLORYS files inside the \textit{\$HOME/model2roms/input} folder.
 \end{tcolorbox}
 
 \subsection{Creating ROMS forcing files}\index{Gerando as condições do ROMS}
@@ -788,21 +793,21 @@ grid directory and the abbreviation \textit{SuaAbreviaçãoAqui} by the name cho
     \item \textbf{self.useesmf}: Set as \textit{True} to use \textit{ESMF} to interpolate the GLORYS data to the ROMS grid;
     \item \textbf{self.usefilter}: Set as \textit{True} to apply a filter to smooth out 2D fields.
     \item \textbf{self.myformat}: The extension for writing ROMS input files. It is, by default, \textit{NETCDF};
-    \item \textbf{self.timefrequencyofinputdata}: The time frequency of the input data. If using GLORYS, write \textit{'day'};
-    \item \textbf{self.indatatype}: The name of the data used to generate the forcing files. \textit{'GLORYS} or \textit{SODA3};
+    \item \textbf{self.timefrequencyofinputdata}: The time frequency of the input data. If using GLORYS, write \textit{day};
+    \item \textbf{self.indatatype}: The name of the data used to generate the forcing files. \textit{GLORYS} or \textit{SODA3};
     \item \textbf{self.authorname}: The name of the user using \textit{model2roms};
     \item \textbf{self.authoremail}: The email of the user using \textit{model2roms};
-    \item \textbf{self.ingridtype}: It will interpolate the GLORYS grid, which is in \textit{'ZLEVEL'} coordinate;
-    \item \textbf{self.grdtype}: The GLORYS grid type, which is \textit{'regular'};
-    \item \textbf{self.lonname}: The name of the GLORYS longitude variable, which is \textit{'longitude'};
-    \item \textbf{self.latname}: The name of the GLORYS latitude variable, which is \textit{'latitude'};
-    \item \textbf{self.depthname}: The name of the GLORYS depth variable, which is \textit{'depth'};
-    \item \textbf{self.lonname\_u}: The name of the GLORYS U-longitude variable, which is \textit{'longitude'};
-    \item \textbf{self.latname\_u}: The name of the GLORYS U-latitude variable, which is \textit{'latitude'};
-    \item \textbf{self.lonname\_v}: The name of the GLORYS V-longitude variable, which is \textit{'longitude'};
-    \item \textbf{self.latname\_v}: The name of the GLORYS U-latitude variable, which is \textit{'latitude'};
-    \item \textbf{self.timename}: The name of the GLORYS time variable, which is \textit{'time'};
-    \item \textbf{self.realm}: The realm in which \textit{model2roms} is being executed, in this case, \textit{'ocean'};
+    \item \textbf{self.ingridtype}: It will interpolate the GLORYS grid, which is in \textit{ZLEVEL} coordinate;
+    \item \textbf{self.grdtype}: The GLORYS grid type, which is \textit{regular};
+    \item \textbf{self.lonname}: The name of the GLORYS longitude variable, which is \textit{longitude};
+    \item \textbf{self.latname}: The name of the GLORYS latitude variable, which is \textit{latitude};
+    \item \textbf{self.depthname}: The name of the GLORYS depth variable, which is \textit{depth};
+    \item \textbf{self.lonname\_u}: The name of the GLORYS U-longitude variable, which is \textit{longitude};
+    \item \textbf{self.latname\_u}: The name of the GLORYS U-latitude variable, which is \textit{latitude};
+    \item \textbf{self.lonname\_v}: The name of the GLORYS V-longitude variable, which is \textit{longitude};
+    \item \textbf{self.latname\_v}: The name of the GLORYS U-latitude variable, which is \textit{latitude};
+    \item \textbf{self.timename}: The name of the GLORYS time variable, which is \textit{time};
+    \item \textbf{self.realm}: The realm in which \textit{model2roms} is being executed, in this case, \textit{ocean};
     \item \textbf{self.fillvaluein}: The \textit{fillvalue} value of the NetCDF file. By convention, \textit{-1.e20};
     \item \textbf{self.outgrid}: The name of the abbreviation used in the definition \textit{defineabbreviation};
     \item \textbf{self.outgridtype}: If \textit{"ROMS"}, it will create the output in the standard ROMS format;

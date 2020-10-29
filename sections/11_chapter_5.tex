@@ -214,7 +214,7 @@ python get_hycom_GLBa0.08_Palau_grid.py
 
 \noindent Next, download the temperature, salinity, \textit{u} and \textit{v} components of the currents and SSH variables 
 through the scripts for this data. Each variable has a script. In the example for this tutorial, in addition to the paths within the scripts, the number of days 
-to download was also modified. On lines 79 and 82 of each variable file (for example, \textbf{get\_hycom\_GLBa0.08\_Palau\_temp\_2015.py} thee values \textit{366} and
+to download was also modified. On lines 79 and 82 of each variable file (for example, \textbf{get\_hycom\_GLBa0.08\_Palau\_temp\_2015.py} the values \textit{366} and
 365 were changed to 1 (it means that it will be downloaded only one day). Before running, create a directory called \textit{data}. The downloaded files will be placed in
 this directory.
 \bigskip
@@ -583,6 +583,13 @@ ipython make_roms_grid.py --pylab
 \end{bashcode}
 \bigskip
 
+\subsection{Gridbuilder}
+\bigskip
+
+Gridbuilder\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://austides.com/wp-content/uploads/GridBuilder-v0.99.pdf}{https://austides.com/wp-content/uploads/GridBuilder-v0.99.pdf}}}}
+is a tool that can be an alternative to build the grid used in the oceanic model instead of using the \textit{make\_grid.py} script. It is is intended for rapid development of grids for numerical ocean models
+with a particular emphasis on elements commonly used in ROMS. 
+
 \subsection{Introduction to ROMS forcing files}\index{Introdução sobre as condições do ROMS}
 \bigskip
 
@@ -592,7 +599,7 @@ and SODA3 (\cite{Carton2018}), however, we will only use GLORYS12V1 as an exampl
 \subsection{Global Ocean Physics Reanalysis (GLORYS)}\index{O Global Ocean Physics Reanalysis (GLORYS)}
 \bigskip
 
-\noindent GLORYS\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}}}}
+\noindent GLORYS\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}{\nolinkurl{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}}}}}
 is a global reanalysis of the ocean with a 1/12° spatial resolution with daily and monthly temporal resolution and 
 50 vertical levels. It is based on the current CMEMS global weather forecasting system and is forced by ECMWF's ERA-Interim from the NEMO model.
 A Kalman filter with reduced order is used to assimilate the sea altimetry, sea surface temperature, sea ice concentration data obtained 
@@ -600,7 +607,18 @@ from remote sensing and the \textit{in situ} data of vertical temperature and sa
 In addition, a 3D-VAR scheme provides a correction for temperature and salinity deviations.
 \bigskip
 
-\noindent When you try to download, the site will warn you that you will need to create an account.
+\noindent You can download the GLORYS data using the \textit{download\_glorys\_cmems\_lsl.sh} script provided by Luciana Lima. Go to the repository root folder, download the \textit{download\_glorys\_cmems\_lsl.sh}
+file, modify according your needs and execute, as the following:
+\bigskip
+
+\begin{bashcode}
+cd /scratch/adriano.sutil/repositorio
+get download_glorys_cmems_lsl.sh
+./download_glorys_cmems_lsl.sh
+\end{bashcode}
+\bigskip
+
+\noindent You can also, download the data manually. But when you try to download, the site will warn you that you will need to create an account.
 Register and choose the GLORYS daily data set, as shown in Figure \textcolor{bleu_cite}{\ref{glorys1}}.
 \bigskip
 

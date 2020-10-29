@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+cd /scratch/adriano.sutil/repositorio
+get download\PYGZus{}glorys\PYGZus{}cmems\PYGZus{}lsl.sh
+./download\PYGZus{}glorys\PYGZus{}cmems\PYGZus{}lsl.sh
+\end{Verbatim}

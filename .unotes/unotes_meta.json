@@ -1,0 +1,39 @@
+{
+  "name": "",
+  "isOrdered": true,
+  "folders": {
+    "_minted-main": {
+      "name": "_minted-main",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "Pictures": {
+      "name": "Pictures",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "sections": {
+      "name": "sections",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "v1": {
+      "name": "v1",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "v2": {
+      "name": "v2",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    }
+  },
+  "files": {
+    "README": 0
+  }
+}

@@ -1,1 +1,1 @@
-nedit configure.wps
+qsub qsub_scrip.sh

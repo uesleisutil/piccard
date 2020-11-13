@@ -2,20 +2,20 @@
 \bigskip
 \chapter{Building the WaveWatch III}
 
-\noindent \textbf{This section was written by Dr. Jonas Takeo Carvalho.  \newline Lattes CV: \textit{\textcolor{bleu_cite}{\href{http://lattes.cnpq.br/8827254187143196}{http://lattes.cnpq.br/8827254187143196}}}} 
+ \textbf{This section was written by Dr. Jonas Takeo Carvalho.  \newline Lattes CV: \textit{\textcolor{bleu_cite}{\href{http://lattes.cnpq.br/8827254187143196}{http://lattes.cnpq.br/8827254187143196}}}} 
 \bigskip
 
 \section{Generating grids}
 \bigskip
 
-\noindent WW3 can be built in many grid options: tradicional regular, curvilinear, triangular unstructured, and spherical multiple-cell (SMC). 
+ WW3 can be built in many grid options: tradicional regular, curvilinear, triangular unstructured, and spherical multiple-cell (SMC). 
 There are some tools been developed and avaiable to built WW3 grids. The example shown here will be focused on tradicional regular grid. Inside 
 WW3 \textit{GitHub} page, there is an automated grid generation package for WW3 in \textit{MATLAB} called \textit{gridgen}, avaiable for download along with
 the necessary information to use it. The main program \textbf{create\_grid.m} is shown in the figure \textcolor{bleu_cite}{\ref{fig1}}. It is possible to change the grid resolution, 
 the latitude and longitude limits, the name of the file generated. Remember to modify the source directories before running. 
 \bigskip
 
-\noindent The files generated for this example are:
+ The files generated for this example are:
 \bigskip
 
 \begin{itemize}
@@ -26,12 +26,12 @@ the latitude and longitude limits, the name of the file generated. Remember to m
 \end{itemize}
 \bigskip
 
-\noindent Respectively the mask file, the bathymetry file, the obstacle file and a grid information file. These files are necessary to compile the WW3 grid 
+ Respectively the mask file, the bathymetry file, the obstacle file and a grid information file. These files are necessary to compile the WW3 grid 
 using the \textbf{{ww3\_grid.inp}} file the executable \textbf{ww3\_grid}, described in the WW3 manual. The resultant file is \textbf{mod\_def.ww3}, that will 
 be used for running the model. In figure \textcolor{bleu_cite}{\ref{fig2}}, it is shown the bathymetry generated in this example.
 \bigskip
 
-\noindent In future tutorials we intend to show other examples of grid generation, but for now, the most common use within COAWST framework is the tradicional regular 
+ In future tutorials we intend to show other examples of grid generation, but for now, the most common use within COAWST framework is the tradicional regular 
 grid. We also intend to ilustrate how to generate boundary conditions for regional simulations, and how to set a coupled configuration using WW3.  
 \bigskip
 

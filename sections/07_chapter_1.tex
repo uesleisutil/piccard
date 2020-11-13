@@ -2,7 +2,7 @@
 \chapter{Introduction}
 \bigskip
 
-\noindent This guide provides a brief introduction to the models that make up the Coupled Ocean-Atmosphere-Wave-Sediment Transport Modeling System
+ This guide provides a brief introduction to the models that make up the Coupled Ocean-Atmosphere-Wave-Sediment Transport Modeling System
 (COAWST), as well as the additional user settings required for specific projects. As shown in Figure \textcolor{bleu_cite} {\ref{coawstestruct}},
 COAWST uses several models and programs that will be presented below:
 
@@ -55,16 +55,16 @@ COAWST uses several models and programs that will be presented below:
 \bigskip
 \pagebreak
 
-\noindent We chosed to use Python as a programming language for some steps. It is a programming language designed with a philosophy of emphasizing the 
+ We chosed to use Python as a programming language for some steps. It is a programming language designed with a philosophy of emphasizing the 
 to prioritize code readability over speed or expressiveness. The language has a wide and active community,
 which makes easy to the search about it, as there is an extensive collection of libraries and documents on the internet.
 \bigskip
 
-\noindent  Python website\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://python.org}{http://python.org}}}} offers great help for beginners, providing introductions about the 
+  Python website\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://python.org}{http://python.org}}}} offers great help for beginners, providing introductions about the 
 language and also a guide to use Python for scienfic purposes. 
 \bigskip
 
-\noindent We also use MATLAB. It is a paid, but high-performance interactive software focused on the numerical calculation. The
+ We also use MATLAB. It is a paid, but high-performance interactive software focused on the numerical calculation. The
 MATLAB Answers website\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://www.mathworks.com/matlabcentral/answers/index}{https://www.mathworks.com/matlabcentral/answers/index}}}} 
 is a platform created to offer help to the users about the language. 
 \bigskip
@@ -73,22 +73,22 @@ is a platform created to offer help to the users about the language.
 
 \section{Regional Ocean Modeling System}\index{Regional Ocean Modeling System}\label{romssecao}
 \bigskip
-\noindent The Regional Ocean Modeling System (ROMS; \cite{Shchepetkin2005}) is a three-dimensional ocean model with free surface, sigma vertical coordinates 
+ The Regional Ocean Modeling System (ROMS; \cite{Shchepetkin2005}) is a three-dimensional ocean model with free surface, sigma vertical coordinates 
 (that follow the terrain) and solve primitive equations. The model uses the Reynolds average and the finite difference method to 
 solve the Navier-Stokes equations using hydrostatic and Boussinesq approximations (\cite{Haidvogel2008}).
 \bigskip
 
-\noindent The hydrostatic equations of momentum use a split-explicit time-step scheme, where the barotropic and baroclinic modes are solved separately, in
+ The hydrostatic equations of momentum use a split-explicit time-step scheme, where the barotropic and baroclinic modes are solved separately, in
 different finite numbers of steps of time, to solve the free surface equations and it is integrated vertically. Separating the time-steps frames maintains 
 the volume conservation and consistency preservation that are necessary for the tracers (\cite{Shchepetkin2005, Haidvogel2008}).
 \bigskip
 
-\noindent The model solves the horizontally equations through orthogonal curvilinear coordinates of the Arakawa-C grid type (\cite{Arakawa1977}). Vertically, the 
+ The model solves the horizontally equations through orthogonal curvilinear coordinates of the Arakawa-C grid type (\cite{Arakawa1977}). Vertically, the 
 coordinates follow the features of the terrain and allow you to adjust the resolution along the water column. To guarantee the conservation of momentum, the grid uses
 second order finite differences (\cite{Haidvogel2008}).
 \bigskip
 
-\noindent ROMS is a model that has free code and its development has the contribution of the user community. Currently, the version used in COAWST is managed by Dr.
+ ROMS is a model that has free code and its development has the contribution of the user community. Currently, the version used in COAWST is managed by Dr.
 Hernan Arango of Rutgers University. To download the model source code, is necessary to register on the
 ROMS website\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://www.myroms.org/}{https://www.myroms.org/}}}}. 
 The site has a extremely useful and very active forum\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://www.myroms.org/forum}{https://www.myroms.org/forum}}}} 
@@ -115,11 +115,11 @@ to discuss about questions and suggestions.
 \section{Budgell's Sea Ice Model}\index{Budgell's Sea Ice Model}\label{seaicesecao}
 \bigskip
 
-\noindent The Sea Ice Model, developed by \textcite{Budgell2005}, shares the same time and grid steps as the ROMS model and shares the same parallel encoding structure 
+ The Sea Ice Model, developed by \textcite{Budgell2005}, shares the same time and grid steps as the ROMS model and shares the same parallel encoding structure 
 for use with Message Passing Import (MPI). Thus, allows dynamic and thermodynamic modeling where sea ice predominates, such as at high latitudes.
 \bigskip
 
-\noindent The main attributes of the model, according to \textcite{hedstrom2018}, are:
+ The main attributes of the model, according to \textcite{hedstrom2018}, are:
 \bigskip
 \begin{itemize}
     \item \textcite{Hunke1997} and \textcite{Hunke2001} elastic-viscous-plastic dynamics;
@@ -137,17 +137,17 @@ for use with Message Passing Import (MPI). Thus, allows dynamic and thermodynami
 \section{Weather Research \& Forecasting Model}\index{Weather Research \& Forecasting Model}\label{secaowrf}
 \bigskip
 
-\noindent The Weather Research and Forecasting\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}}}} 
+ The Weather Research and Forecasting\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}{http://www2.mmm.ucar.edu/wrf/users/download/get\_source.html}}}} 
 (WRF; \cite{Skamarock2008}) is a model developed by the National Centers for nvironmental Prediction (NCEP), the National Center for 
 Atmospheric Research (NCAR) and research groups from different universities.
 \bigskip
 
-\noindent To integrate the equations over time, the Advanced Research WRF (ARW) uses low frequency modes that are integrated using the third-order Runge-Kutta scheme, 
+ To integrate the equations over time, the Advanced Research WRF (ARW) uses low frequency modes that are integrated using the third-order Runge-Kutta scheme, 
 and the integrated acoustic and gravity (high frequency) modes with a lower time step. By this way, the numerical stability is maintained through a “forward-backward” scheme for
 acoustic modes that propagate horizontally and an implicit scheme for acoustic modes for vertical propagation and buoyancy oscillations (\cite{Skamarock2008}).
 \bigskip
 
-\noindent The WRF model uses an Arakawa-C type grid (\cite{Arakawa1977}), where normal speeds are staggered halfway through the grid of thermodynamic variables, as shown in the 
+ The WRF model uses an Arakawa-C type grid (\cite{Arakawa1977}), where normal speeds are staggered halfway through the grid of thermodynamic variables, as shown in the 
 schematic representation illustrated in Figure \textcolor{bleu_cite}{\ref{gradeswrf}}.
 \bigskip
 
@@ -161,7 +161,7 @@ schematic representation illustrated in Figure \textcolor{bleu_cite}{\ref{grades
 \end{figure}
 \bigskip
 
-\noindent It is important to note that the WRF, without coupling with other models, simulates the surface roughness based on the ratio of roughness to wind 
+ It is important to note that the WRF, without coupling with other models, simulates the surface roughness based on the ratio of roughness to wind 
 shear proposed by \textcite{Charnock1955}, as exemplified in the following equation \textcolor{bleu_cite}{\ref{equacao1}}:
 \bigskip
 
@@ -172,7 +172,7 @@ Z_{0} = Z_{ch} \frac{u_{*}^{2}}{g}
 
 \bigskip
 
-\noindent Where \textit{Z\textsubscript{0}} é a roughness, \textit{Z\textsubscript{ch}} is the Charnock parameter (a dimensionless value of 0,018), \textit{u\textsubscript{*}} 
+ Where \textit{Z\textsubscript{0}} é a roughness, \textit{Z\textsubscript{ch}} is the Charnock parameter (a dimensionless value of 0,018), \textit{u\textsubscript{*}} 
 the frictional speed (m/s) and \textit{g} the gravity acceleration(9,81 m/s\textsuperscript{2}).
 \bigskip
 
@@ -182,12 +182,12 @@ the frictional speed (m/s) and \textit{g} the gravity acceleration(9,81 m/s\text
 \section{Simulating Waves Nearshore}\index{Simulating Waves Nearshore}\label{swansecao}
 \bigskip
 
-\noindent The Simulating Waves Nearshore (SWAN; \cite{Booij1999, Booij1996}) is a third generation model,
+ The Simulating Waves Nearshore (SWAN; \cite{Booij1999, Booij1996}) is a third generation model,
 designed to simulate coastal regions with shallow waters and local currents. The model is widely used in the numerical forecast of waves in coastal regions, estuaries,  channels and 
 others, being able to use wind, bathymetry and currents provided by other models \parencite{Booij1999, Booij1996}.
 \bigskip
 
-\noindent \textcite{Dasilva2013} and \textcite{Booij1999,Booij1996} list the main characteristics of the SWAN:
+ \textcite{Dasilva2013} and \textcite{Booij1999,Booij1996} list the main characteristics of the SWAN:
 \bigskip
 
 \begin{itemize}
@@ -210,10 +210,10 @@ More features can be found in the SWAN website\textcolor{bleu_cite}{\textit{}\fo
 \section{WaveWatch III}\index{Simulating Waves Nearshore}\label{ww3secao}
 \bigskip
 
-\noindent \textbf{This section was written by Dr. Jonas Takeo Carvalho.  \newline Lattes CV: \textit{\textcolor{bleu_cite}{\href{http://lattes.cnpq.br/8827254187143196}{http://lattes.cnpq.br/8827254187143196}}}} 
+ \textbf{This section was written by Dr. Jonas Takeo Carvalho.  \newline Lattes CV: \textit{\textcolor{bleu_cite}{\href{http://lattes.cnpq.br/8827254187143196}{http://lattes.cnpq.br/8827254187143196}}}} 
 \bigskip
 
-\noindent WAVEWATCH III $^{\tiny{\textregistered}}$ (\cite{Tolman1997,Tolman1999,Tolman2009,Tolman2014,WW32016}) is a third generation wave model developed at NOAA/NCEP.  
+ WAVEWATCH III $^{\tiny{\textregistered}}$ (\cite{Tolman1997,Tolman1999,Tolman2009,Tolman2014,WW32016}) is a third generation wave model developed at NOAA/NCEP.  
 It solves the random phase spectral action density balance equation for wavenumber-direction spectra. The implicit assumption of this equation is that 
 properties of medium (water depth and current) as well as the wave field itself vary on time and space scales that are much larger than the variation 
 scales of a single wave. Source term options for extremely shallow water (surf zone) are included, as well as wetting and drying of grid points. 
@@ -221,14 +221,14 @@ Whereas the surf-zone physics implemented so far are still fairly rudimentary, i
 shallow water. 
 \bigskip
 
-\noindent Currently,  WAVEWATCH III (WW3) is evolving from a wave model into a wave modeling framework, which allows for easy development of additional 
+ Currently,  WAVEWATCH III (WW3) is evolving from a wave model into a wave modeling framework, which allows for easy development of additional 
 physical and numerical approaches to wave modeling. Futhermore,  WAVEWATCH III can be interfaced with OASIS3-MCT to allow coupling simulations with 
 atmosphere and/or ocean models. OASIS is a coupling software developed by the CERFACS and CNRS (\cite{Valcke2013}). The current OASIS3-MCT version is 
 interfaced with MCT, the Model Coupling Toolkit (\cite{Larson2005}) developed by the Argonne National Laboratory. The OASIS coupler is also interfaced 
 with the SCRIP library developed by Los Alamos National Laboratory. 
 \bigskip
 
-\noindent The COAWST system has a option to use WW3 coupled as the wave model component, interfaced with MCT and using SCPRIP library. In this framework, WW3 is 
+ The COAWST system has a option to use WW3 coupled as the wave model component, interfaced with MCT and using SCPRIP library. In this framework, WW3 is 
 coupled with ROMS, WRF, CICE, and CSTMS. The latest avaiable version for WW3 within COAWST system, 
 is the version 5.16. WW3 source code is also avaiable on Github\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://github.com/NOAA-EMC/WW3/releases/tag/6.07.1}{https://github.com/NOAA-EMC/WW3/releases/tag/6.07.1}}}}, with he latest 
 version 6.07, released on 21 March 2019.
@@ -238,12 +238,12 @@ version 6.07, released on 21 March 2019.
 \section{Model Coupling Toolkit}\index{Model Coupling Toolkit}\label{mctsecao}
 \bigskip
 
-\noindent  The Model Coupling Toolkip (MCT; \cite{Larson2005, Jacob2005, Warner2008}) is a set of open-source scripts, written in Fortran90 that allow the transmission 
+  The Model Coupling Toolkip (MCT; \cite{Larson2005, Jacob2005, Warner2008}) is a set of open-source scripts, written in Fortran90 that allow the transmission 
 and transformation of the different data used for model coupling. During initialization, the model domains are broken down into segments that are distributed
 between processors, allowing models to be coupled in parallel.
 \bigskip
 
-\noindent According to the MCT website\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://www.mcs.anl.gov/research/projects/mct/}{http://www.mcs.anl.gov/research/projects/mct/}}}}, 
+ According to the MCT website\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://www.mcs.anl.gov/research/projects/mct/}{http://www.mcs.anl.gov/research/projects/mct/}}}}, 
 the toolkit provides the following core coupling services:
 \bigskip
 
@@ -262,7 +262,7 @@ the toolkit provides the following core coupling services:
 \section{Spherical Coordinate Remapping Interpolation Package}\label{scripsecao}
 \bigskip
 
-\noindent O  Spherical Coordinate Remapping Interpolation Package (SCRIP; \cite{Jones1999,Jones1998}) is freely available for
+ O  Spherical Coordinate Remapping Interpolation Package (SCRIP; \cite{Jones1999,Jones1998}) is freely available for
 download\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://github.com/SCRIP-Project/SCRIP}{https://github.com/SCRIP-Project/SCRIP}}}}. 
 The package is distributed together with COAWST modeling system. This package is used for projects that use more than one model and with different grids (with different spatial 
 resolutions). SCRIP will generate the interpolated weights that will be used to remap the data between the grids of the models.
@@ -272,12 +272,12 @@ resolutions). SCRIP will generate the interpolated weights that will be used to 
 
 \section{Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}\index{Coupled-Ocean-Atmosphere-Wave-Sediment Transport Modeling System}\label{coawstsecao}
 \bigskip
-\noindent The COAWST (\cite{Warner2010,Warner2008}) uses the WRF as the atmospheric model, the ROMS as the hydrodynamic model, the SWAN as the wave model and the
+ The COAWST (\cite{Warner2010,Warner2008}) uses the WRF as the atmospheric model, the ROMS as the hydrodynamic model, the SWAN as the wave model and the
 Community Sediment Transport Modeling Project (CSTM; \cite{Warner2008}). Each model can be coupled by the MCT (\cite{Warner2010, Warner2008}). The frequency with which this information is
 exchanged between the different models is adjusted by the user.
 \bigskip
 
-\noindent The coupling between the models allows the different physical processes that occur in both oceanic and atmospheric environments to be identified and analyzed with greater accuracy 
+ The coupling between the models allows the different physical processes that occur in both oceanic and atmospheric environments to be identified and analyzed with greater accuracy 
 when compared to simulations without active coupling.(\cite{Pullen2018, Miller2018}).
 \bigskip
 
@@ -297,7 +297,7 @@ when compared to simulations without active coupling.(\cite{Pullen2018, Miller20
 \bigskip
 
 
-\noindent As shown in Figure \textcolor{bleu_cite}{\ref{acopla}}, the informations exchanged between models are:
+ As shown in Figure \textcolor{bleu_cite}{\ref{acopla}}, the informations exchanged between models are:
 \bigskip
 
 \begin{itemize}
@@ -345,7 +345,7 @@ when compared to simulations without active coupling.(\cite{Pullen2018, Miller20
 \end{figure}
 \bigskip
 
-\noindent The Woods Hole Coastal and Marine Science Center page provides an experimental presentation on real time of 
+ The Woods Hole Coastal and Marine Science Center page provides an experimental presentation on real time of 
 COAWST\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://woodshole.er.usgs.gov/project-pages/cccp/public/COAWST.htm}{https://woodshole.er.usgs.gov/project-pages/cccp/public/COAWST.htm}}}}
 (Sea Surface Temperature, Sea Surface Height, Significant Height Wave, Current and Wind Vectors and Sediment Dispersion) in the eastern United States and Gulf of Mexico.
 \bigskip
@@ -354,12 +354,12 @@ COAWST\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https
 \section{System requirements to use this guide}\index{Materiais}
 \bigskip
 
-\noindent To compile COAWST, this guide uses a cluster with parallel communication. If you choose to compile in
+ To compile COAWST, this guide uses a cluster with parallel communication. If you choose to compile in
 on a computer with different specifications, use, also, the original COAWST user manual as a reference, available in the modeling system repository. In this case,
 see how to download COAWST in the \textcolor{bleu_cite}{\ref{coawstbaixa}} section.
 \bigskip
 
-\noindent We use \textbf{Ubuntu 19.04 LTS}. It is important to maintain the same systems operational, as other version may conflict with some libraries used by the \textit{model2roms} toolkit or 
+ We use \textbf{Ubuntu 19.04 LTS}. It is important to maintain the same systems operational, as other version may conflict with some libraries used by the \textit{model2roms} toolkit or 
 even the COAWST itself.
 \bigskip
 

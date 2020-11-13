@@ -36,13 +36,16 @@ Submit a comment, suggestions or modifications and improvements you would like t
 email will be very useful.
 
 <h2>To cite the third version</h2>
-Under construction.
+ SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST - 2ª Edição. São José dos Campos: INPE, 2020. 100 p. IBI: 8JMKD3MGPCW/3DT298SL, ISBN: 978-85-17-00098-0, doi:10.13140/RG.2.2.15147.18720, Avaliable at:http://urlib.net/rep/8JMKD3MGP3W34R/3TUTUJB.
+
 
 <h2>To cite the second version</h2>
-SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST - 2ª Edição. São José dos Campos: INPE, 2019. 100 p. IBI: <8JMKD3MGPCW/3DT298SL>. ISBN: <978-85-17-00098-0>. Avaliable at: <http://urlib.net/rep/8JMKD3MGP3W34R/3TUTUJB>
+SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST - 2ª Edição. São José dos Campos: INPE, 2019. 100 p. IBI: 8JMKD3MGPCW/3DT298SL, ISBN: 978-85-17-00098-0, doi:10.13140/RG.2.2.15147.18720, Avaliable at:http://urlib.net/rep/8JMKD3MGP3W34R/3TUTUJB.
+
 
 <h2>To cite the first version</h2>
-SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST. São José dos Campos: INPE, 2018. 86 p. IBI: 8JMKD3MGP3W34R/3RQSQ2L. Avaliable at: ttp://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L. 
+SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST. São José dos Campos: INPE, 2018. 86 p. IBI: 8JMKD3MGP3W34R/3RQSQ2L, ISBN: 978-85-17-00093-5, doi:10.13140/RG.2.2.31726.87363. Avaliable at:{http://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L.
+ 
 
 <h2>License</h2>
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.

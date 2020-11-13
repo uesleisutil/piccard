@@ -2,21 +2,20 @@
 \bigskip
 \chapter{Building the SWAN}
 
-\noindent SWAN uses the \textit{SWAN.EDT} file to read the grid (\textit{swan\_coord.grd}) and bathymetry (\textit{swan\_bathy.bot}) files. 
+ SWAN uses the \textit{SWAN.EDT} file to read the grid (\textit{swan\_coord.grd}) and bathymetry (\textit{swan\_bathy.bot}) files. 
 It is also possible to define a numerical grid within the \textit{SWAN.EDT} and indicate the bathymetry file that will be read and associated 
 with the defined grid.
 \bigskip
 
-\noindent As an example, SWAN files will be created from the ROMS grid, but without the initial condiiton data.
+ As an example, SWAN files will be created from the ROMS grid, but without the initial condition data.
 \bigskip
 
-\noindent For SWAN boundary conditions, the wind fields will come from the WRF, as soon as
-the waves generated are associated with the atmospheric systems represented in these simulations. Without the
+ For SWAN boundary conditions, the wind fields will come from the WRF. Without the
 the boundary files information, the simulated waves will be generated only within the boundary of the domain, disregarding the energy that
 is leaving or entering the grid.
 \bigskip
 
-\noindent We will use the MATLAB script, \textit{make\_swan.m}, to generate the files. The script is located at:
+ We will use the MATLAB script, \textit{make\_swan.m}, to generate the files. The script is located at:
 \bigskip
 
 \begin{bashcode}
@@ -24,7 +23,7 @@ is leaving or entering the grid.
 \end{bashcode}
 \bigskip
 
-\noindent As shown in Figure \textcolor{bleu_cite}{\ref{makeswan}}, the script has the following construction:
+ As shown in Figure \textcolor{bleu_cite}{\ref{makeswan}}, the script has the following construction:
 \bigskip
 
 \begin{figure}[H]
@@ -35,20 +34,20 @@ is leaving or entering the grid.
 \end{figure}
 \bigskip
 
-\noindent To generate the two SWAN files, look in the script for the variable \textit{ncfile} and change the directory
+ To generate the two SWAN files, search over in the script for the variable \textit{ncfile} and change the directory
 to the path where your ROMS grid is.
 \bigskip
 
-\noindent Run the script and the two files will be created: \textit{swan\_coord.grd} and \textit{swan\_bathy.bot}.
+ Run the script and the two files will be created: \textit{swan\_coord.grd} and \textit{swan\_bathy.bot}.
 The two files must be placed inside your project folder.
 \bigskip
 
 \chapter{Building the Budgell's Sea Ice Model}
 \bigskip
 
-\noindent The sea ice model is fully coupled to ROMS, so that, after generating the conditions of the
-ROMS with ice data (see Section \textcolor{bleu_cite}{\ref{model2romssec}}), to activate the sea ice model 
-just modify the ROMS \textit{.h} file in your project. According to \textcite{hedstrom2018}, you can
+Since the sea ice model is fully coupled to ROMS, therefore, after generating the conditions of the
+ROMS with ice data (see Section \textcolor{bleu_cite}{\ref{model2romssec}}), you can activate the sea ice model to be incialized too.
+Just modify the ROMS \textit{.h} file in your project. According to \textcite{hedstrom2018}, you can
 add the following options into the \textit{.h} file, as shown in Figure \textcolor{bleu_cite}{\ref{hiceroms}}:
 \bigskip
 
@@ -95,7 +94,7 @@ For more information about the sea-ice model, it is recommended to read \textcit
 \end{tcolorbox}
 \bigskip
 
-\noindent Get the \textit{.in} file for the sea ice model. Copy the file \textit{ice.in} into the Kerana repository and add it to your project.
+ Get the \textit{.in} file for the sea ice model. Copy the file \textit{ice.in} into the Kerana repository and add it to your project.
 \bigskip
 
 \begin{bashcode}
@@ -103,7 +102,7 @@ For more information about the sea-ice model, it is recommended to read \textcit
 \end{bashcode}
 \bigskip
     
-\noindent Modify the ROMS \textit{.in} file, pointing to the \textit{ice.in} into the variable \textit{IPARNAM}:
+ Modify the ROMS \textit{.in} file, pointing to the \textit{ice.in} into the variable \textit{IPARNAM}:
 \bigskip
 
 \begin{bashcode}

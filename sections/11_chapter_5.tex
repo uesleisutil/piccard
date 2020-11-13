@@ -3,11 +3,11 @@
 \chapter{Building the ROMS}\index{Building the ROMS}
 \bigskip
 
-\noindent Before generating the ROMS files, it is necessary to install the libraries and modules. 
+Before generating the ROMS files, it is necessary to install the libraries and modules. 
 In this chapter, we address how to download them, as well as the commands in the terminal to install through \textit{apt-get}.
 \bigskip
 
-\noindent In this guide we will install the ROMS forcing files programs using Anaconda and Pip. 
+In this guide we will install the ROMS forcing files programs using Anaconda and Pip. 
 Anaconda is a free and open source platform for Python and R and has a package manager called Conda, which makes easy 
 to install the libraries. In this guide, we will present both options. 
 \bigskip
@@ -29,7 +29,7 @@ Although the ROMS model will be executed in the cluster, we will build the forci
 
 \subsection{Installing Anaconda}\label{condasec}
 \bigskip
-\noindent Anaconda\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://www.anaconda.com/products/individual}{https://www.anaconda.com/products/individual}}}}
+Anaconda\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://www.anaconda.com/products/individual}{https://www.anaconda.com/products/individual}}}}
 is a distribution for Python and R that supports the various libraries and packages used in this guide, 
 making installation easier. To install, enter the directory where the installation file is located, change the installation permissions of the file and 
 follow the installer's instructions:
@@ -41,7 +41,7 @@ follow the installer's instructions:
 \end{bashcode}
 \bigskip
 
-\noindent Next, enter the following commands on the terminal to install the libraries needed to build a project on ROMS:
+Next, enter the following commands on the terminal to install the libraries needed to build a project on ROMS:
 \bigskip
 
 \begin{bashcode}
@@ -80,11 +80,11 @@ Pyroms was recently updated and is working only with Python3. We suggest to inst
   \end{tcolorbox}
 \bigskip
 
-\noindent This section will show you how to install Pyroms. It is a collection of tools to create ROMS files. It was originally started by Rob Hetland as a
+This section will show you how to install Pyroms. It is a collection of tools to create ROMS files originally started by Rob Hetland as a
 project on Google Code and rewritten by Frederic Castruccio.
 \bigskip
 
-\noindent Pyroms can be easily installed using Pip, a command line tool that allows you to install software packages written in Python.
+Pyhon3 can be easily installed using Pip, a command line tool that allows you to install software packages written in Python.
 \bigskip
 
 \begin{bashcode}
@@ -92,7 +92,7 @@ sudo apt install python3-pip
 \end{bashcode}
 \bigskip
 
-\noindent Install Git to access the Pyroms repository:\label{gitinfo}
+Install Git to access the Pyroms repository:\label{gitinfo}
 \bigskip
 
 \begin{bashcode}
@@ -100,7 +100,7 @@ sudo apt-get install git
 \end{bashcode}
 \bigskip
 
-\noindent Then, download the Pyroms by cloning the repository at Github:
+Then, download the Pyroms by cloning the repository at Github:
 \bigskip
 
 \begin{bashcode}
@@ -108,7 +108,7 @@ git clone https://github.com/ESMG/pyroms.git
 \end{bashcode}
 \bigskip
 
-\noindent Enter inside the Pyroms folder and install it using Pip:
+Enter inside the Pyroms folder and install it using Pip:
 \bigskip
 
 \begin{bashcode}
@@ -118,7 +118,7 @@ pip install -e pyroms/bathy_smoother
 \end{bashcode}
 \bigskip
 
-\noindent This will install both three Pyroms packages, but if you try to import any of then without scrip installed, you will get a warning 
+This will install both three Pyroms packages, but if you try to import any of then without \textit{Scrip} installed, you will get a warning 
 similar to that found in \textcolor{bleu_cite}{Figure \ref{scriperror}}:
 \bigskip
 
@@ -130,7 +130,7 @@ similar to that found in \textcolor{bleu_cite}{Figure \ref{scriperror}}:
 \end{figure}
 \bigskip
 
-\noindent As stated in the Pyroms repository, the scrip module is not available via Conda or any other package repository, but it can be built 
+As stated in the Pyroms repository, the scrip module is not available via Conda or any other package repository, but it can be built 
 and installed as the following:
 \bigskip
 
@@ -139,7 +139,7 @@ cd pyroms/pyroms/external/scrip/source/
 \end{bashcode}
 \bigskip
 
-\noindent Then, print the active Conda environment path. This will be used to find the netCDF library.
+Then, print the active Conda environment path. This will be used to find the netCDF library.
 \bigskip
 
 \begin{bashcode}
@@ -147,7 +147,7 @@ conda info | grep "active env location"
 \end{bashcode}
 \bigskip
 
-\noindent The output must be something like as the following:
+The output must be something like as the following:
 \bigskip
 
 \begin{bashcode}
@@ -155,7 +155,7 @@ active env location : /home/USER/anaconda3
 \end{bashcode}
 \bigskip
 
-\noindent Export the PREFIX variable with the location found in the previous step.
+Export the PREFIX variable with the location found in the previous step.
 \bigskip
 
 \begin{bashcode}
@@ -163,7 +163,7 @@ export PREFIX=/home/USER/anaconda3
 \end{bashcode}
 \bigskip
 
-\noindent Install the module with the make command.
+Install the module with the make command.
 \bigskip
 
 \begin{bashcode}
@@ -171,7 +171,7 @@ sudo make DEVELOP=1 PREFIX=$PREFIX install
 \end{bashcode}
 \bigskip
 
-\noindent Move the Scrip files to the Pyroms folder, like the following:
+Move the Scrip files to the Pyroms folder, like the following:
 \bigskip
 
 \begin{bashcode}
@@ -198,10 +198,10 @@ This section will present the script files used by Pyroms as example to create R
   \end{tcolorbox}
 \bigskip
 
-\noindent \textbf{This subsection was written by Dr. Jonas Takeo Carvalho.  \newline Lattes CV: \textit{\textcolor{bleu_cite}{\href{http://lattes.cnpq.br/8827254187143196}{http://lattes.cnpq.br/8827254187143196}}}} 
+\textbf{This subsection was written by Dr. Jonas Takeo Carvalho.  \newline Lattes CV: \textit{\textcolor{bleu_cite}{\href{http://lattes.cnpq.br/8827254187143196}{http://lattes.cnpq.br/8827254187143196}}}} 
 \bigskip
 
-\noindent You can check several examples inside the \textit{examples} folder in Pyroms root directory. In this section 
+You can check several examples inside the \textit{examples} folder in Pyroms root directory. In this section 
 we will show how to run the Palau\_Hycom test case. Before running the scripts, check the paths contained within its structure. 
 In some scripts it is necessary to change the indicated path to the path in which your files are. First, run the file \textit{get\_hycom\_GLBa0.08\_Palau\_grid.py}
 to create the grid named \textit{HYCOM\_GLBa0.08\_Palau\_grid.nc}. This is a grid that represents Hycom data.
@@ -212,7 +212,7 @@ python get_hycom_GLBa0.08_Palau_grid.py
 \end{bashcode}
 \bigskip
 
-\noindent Next, download the temperature, salinity, \textit{u} and \textit{v} components of the currents and SSH variables 
+Next, download the temperature, salinity, \textit{u} and \textit{v} components of the currents and SSH variables 
 through the scripts for this data. Each variable has a script. In the example for this tutorial, in addition to the paths within the scripts, the number of days 
 to download was also modified. On lines 79 and 82 of each variable file (for example, \textbf{get\_hycom\_GLBa0.08\_Palau\_temp\_2015.py} the values \textit{366} and
 365 were changed to 1 (it means that it will be downloaded only one day). Before running, create a directory called \textit{data}. The downloaded files will be placed in
@@ -222,7 +222,7 @@ this directory.
 \subsubsection{Manipulating the files}
 \bigskip
 
-\noindent After executing the grid generation and data download script files, you will have the following files:
+After executing the grid generation and data download script files, you will have the following files:
 \bigskip
 
 \begin{itemize}
@@ -235,7 +235,7 @@ this directory.
 \end{itemize}
 \bigskip
 
-\noindent We must now create the initial and boundary conditions with the downloaded data, but first we must concatenate them into a single file. 
+We must now create the initial and boundary conditions with the downloaded data, but first we must concatenate them into a single file. 
 As they are files with different variables, without a common variable, we must first generate a variable to be shared between them, and still, be useful 
 for reading the ROMS model. Then the variable \textit{ocean\_time} will be created, which is read by the model and common to all files.
 For the most recent data from Hycom, this variable already exists, but but for older Hycom data, this step is important. Use \textit{NCO} to do this step:
@@ -250,7 +250,7 @@ For the most recent data from Hycom, this variable already exists, but but for o
 \end{itemize}
 \bigskip
 
-\noindent After including the variable \textit{ocean\_time}, concatenate the files into a single file with the commands: 
+After including the variable \textit{ocean\_time}, concatenate the files into a single file with the commands: 
 \bigskip
 
 \begin{itemize}
@@ -267,7 +267,7 @@ Now, change the paths in the scripts \textit{make\_bdry\_file.py} and \textbf{ma
 It is also necessary to do the same thing for interpolation script files. All files with the initial name \textit{remap} must be updated with you path.
 \bigskip
 
-\noindent After all the paths have been corrected, first run the script \textit{make\_remap\_weights\_file.py}, which will generate the files 
+After all the paths have been corrected, first run the script \textit{make\_remap\_weights\_file.py}, which will generate the files 
 used during the process of creating the initial and boundary condition files. After these files are generated, execute the scripts \textit{make\_bdry\_file.py} and
 \textbf{make\_ic\_file.py} remembering only to add the year you chosed on the command line, for example: 
 \bigskip
@@ -277,23 +277,23 @@ python make_bdry_file.py 2015
 \end{bashcode}
 \bigskip
     
-\noindent Should be generated the files \textit{HYCOM\_GLBy0.08\_2019\_001\_ic\_PALAU.nc} and \textit{HYCOM\_GLBy0.08\_2019\_001\_bdry\_PALAU.nc}
+Should be generated the files \textit{HYCOM\_GLBy0.08\_2019\_001\_ic\_PALAU.nc} and \textit{HYCOM\_GLBy0.08\_2019\_001\_bdry\_PALAU.nc}
 \bigskip
 
 \subsubsection{Observations}
 \bigskip
 
-\noindent Pyroms uses a file called \textit{gridid.txt}, which contains information regarding the ROMS grid, such as the name of the grid, the number of 
+Pyroms uses a file called \textit{gridid.txt}, which contains information regarding the ROMS grid, such as the name of the grid, the number of 
 vertical levels, among other parameters. This file can be found in Pyroms in the \textit{pyroms/examples} directory. We should note that the information in 
 the PALAU grid is already in the file, but it is necessary to change the directory path.
 \bigskip
 
-\noindent Another information that we must take into account is that this grid generated for PALAU is not a typical ROMS grid, it is only to be 
+Another information that we must take into account is that this grid generated for PALAU is not a typical ROMS grid, it is only to be 
 an example. The \textit{gridid.txt} file must contain the information from the ROMS notes, which will also be used to make the model, so we must 
 export this file to be viewed in any directory, as an example.
 \bigskip
 
-\noindent In addition to this command, it is recommended to export in your \textit{.bashrc} file the paths of the Python environment created for Pyroms: 
+In addition to this command, it is recommended to export in your \textit{.bashrc} file the paths of the Python environment created for Pyroms: 
 \bigskip
 
 \begin{bashcode}[fontsize=\scriptsize]
@@ -321,23 +321,23 @@ This section will present the script files used by Pyroms as example to create R
   \end{tcolorbox}
 \bigskip
 
-\noindent \textbf{This subsection was written by Dr. Jonas Takeo Carvalho.  \newline Lattes CV: \textit{\textcolor{bleu_cite}{\href{http://lattes.cnpq.br/8827254187143196}{http://lattes.cnpq.br/8827254187143196}}}} 
+\textbf{This subsection was written by Dr. Jonas Takeo Carvalho.  \newline Lattes CV: \textit{\textcolor{bleu_cite}{\href{http://lattes.cnpq.br/8827254187143196}{http://lattes.cnpq.br/8827254187143196}}}} 
 \bigskip
 
-\noindent Based on the structure of the Palau test case, the scripts to generate initial and boundary conditions with Pyroms were replicated to the Antarctica region. 
+Based on the structure of the Palau test case, the scripts to generate initial and boundary conditions with Pyroms were replicated to the Antarctica region. 
 We selected the Antarctic Peninsula as its central point in the grid. Below are some steps to generate the desired files.
 \bigskip
 
 \subsubsection{Replicating the scripts}
 \bigskip
 
-\noindent In addition to replicating the scripts to generate the grid that represents and download Hycom data, we must generate the ROMS grid for the region of interest.
+In addition to replicating the scripts to generate the grid that represents and download Hycom data, we must generate the ROMS grid for the region of interest.
  We can use as an example the script \textit{make\_YELLOW\_grd\_v1.py} of the Yellow\_Sea test case. In this script we must replace the name, longitude and latitude values, 
  grid dimensions, and vertical coordinate values. For this case, the ROMS grid, and its information from the \textit{gridid.txt} file can be found in the 
  Kerana's repository. 
 \bigskip
 
-\noindent In the script files for downloading the data (\textit{get\_hycom\_GLBa0.08\_variable.py}), it is also necessary to change the path of the Hycom data to be 
+In the script files for downloading the data (\textit{get\_hycom\_GLBa0.08\_variable.py}), it is also necessary to change the path of the Hycom data to be 
 downloaded. In the Palau example, the structure of the download data is from 2015. This structure is changed for periods called \textit{exp}. These scripts are also 
 found in the repository.
 \bigskip
@@ -345,7 +345,7 @@ found in the repository.
 \subsubsection{Correcting dimensions}
 \bigskip
 
-\noindent A necessary change in the scripts is the grid size that represents Hycom and its downloaded data. After defining the limits for both latitude and longitude,
+A necessary change in the scripts is the grid size that represents Hycom and its downloaded data. After defining the limits for both latitude and longitude,
 we must choose an additional number of points outside the grid. If we don't define any extra points in the grid or in the data, the following error will be displayed:
 \bigskip
 
@@ -354,7 +354,7 @@ ValueError: operands could not be broadcast together with shapes (873,1249) (875
 \end{bashcode}
 \bigskip
 
-\noindent The first set refers to the size of the grid that represents the Hycom and the second set represents the downloaded Hycom data. We must adjust these values, 
+The first set refers to the size of the grid that represents the Hycom and the second set represents the downloaded Hycom data. We must adjust these values, 
 increasing the dimension of the latitude, longitude and variable within the Hycom data download scripts by 2 units compared to the script representing the Hycom grid. 
 In the figure \textcolor{bleu_cite}{\ref{hycomantartic1}} and in the figure \textcolor{bleu_cite}{\ref{hycomantartic2}} we can see the location in the scripts where this addition is made.
 \bigskip
@@ -375,17 +375,17 @@ In the figure \textcolor{bleu_cite}{\ref{hycomantartic1}} and in the figure \tex
 \end{figure}
 \bigskip
 
-\noindent Note that in the grid script, the minimum and maximum longitude receive +5 and -5 extra values. In the download data script file, the minimum and maximum
+Note that in the grid script, the minimum and maximum longitude receive +5 and -5 extra values. In the download data script file, the minimum and maximum
 longitude receive -4 and +4 extra value, solving the ValueError. These values worked well in the Antartic grid. This exercise does not have a specific rule, it is 
 necessary to start from a value of your desire and observe the obtained results.
 \bigskip
 
-\noindent When checking the initial and countour files, it should be noted that the edges are with the correct values. If any of the edges have extreme or zero values
+When checking the initial and countour files, it should be noted that the edges are with the correct values. If any of the edges have extreme or zero values
 where they should have valid values, you must redo the files by testng other extra value for longitude and latitude. The initial condition file, if it is wrong, will also 
 present extreme values, and an unusual pattern for the region. 
 \bigskip
 
-\noindent When generating a long-term series, check if there is any missing day from the sries, ai it will generate zero values for this day and when running the model,
+When generating a long-term series, check if there is any missing day from the sries, ai it will generate zero values for this day and when running the model,
 it wil l propably interrupt the simulation.  The initial and boundary condition files should look similar to the figures \textcolor{bleu_cite}{\ref{hycomantartic3}} and \textcolor{bleu_cite}{\ref{hycomantartic4}}.
 \bigskip
 
@@ -411,12 +411,12 @@ it wil l propably interrupt the simulation.  The initial and boundary condition 
 \section{The model2roms toolbox}\index{O model2roms}\label{model2romssec}
 \bigskip
 
-\noindent In this section, you will be introduced to install model2roms, the toolbox used to generate ROMS forcing files and its grid. 
+In this section, you will be introduced to install model2roms, the toolbox used to generate ROMS forcing files and its grid. 
 It was created and is being updated by Trond Kristiansen (\textcolor{bleu_cite}{\cite{Trond2019}}) and we adapted to the needs of 
 LOA-INPE. 
 \bigskip
 
-\noindent To download \textit{model2roms}, enter in your \textit{home} folder and download using Github:
+To download \textit{model2roms}, enter in your \textit{home} folder and download using Github:
 \bigskip
 
 \begin{tcolorbox}[enhanced,
@@ -440,7 +440,7 @@ git clone https://github.com/usutil/model2roms
 \end{bashcode}
 \bigskip
 
-\noindent Change the folder name from \textit{model2roms-master} to \textit{model2roms}:
+Change the folder name from \textit{model2roms-master} to \textit{model2roms}:
 \bigskip
 
 \begin{bashcode}
@@ -451,12 +451,12 @@ mv model2roms-master model2roms
 \subsection{Introduction to the ROMS grid}\index{Gerar a grade do ROMS}
 \bigskip
 
-\noindent To generate the ROMS grid, we will use the code \textit{make\_roms\_grid.py}, located in the \textit{model2roms/grid} 
+To generate the ROMS grid, we will use the code \textit{make\_roms\_grid.py}, located in the \textit{model2roms/grid} 
 directory. The code supports the SRTM30\_plus data (\cite{Becker2009}), however, for practical purposes, we will exemplify 
 only the data from ETOPO1 (\cite{Amante2009}), which will be discussed in the next subsection.
 \bigskip
 
-\noindent Install basemap to use the code, if you have not previously installed
+Install basemap to use the code, if you have not previously installed.
 \bigskip
 
 \begin{bashcode}
@@ -467,14 +467,14 @@ conda install -c anaconda basemap
 \subsection{ETOPO1 1 Arc-Minute Global Relief Model}\index{O ETOPO1 1 Arc-Minute Global Relief Model}
 \bigskip
 
-\noindent The ETOPO1\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://www.ngdc.noaa.gov/mgg/global/global.html}{https://www.ngdc.noaa.gov/mgg/global/global.html}}}}
+The ETOPO1\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://www.ngdc.noaa.gov/mgg/global/global.html}{https://www.ngdc.noaa.gov/mgg/global/global.html}}}}
  (\cite{Amante2009}; Figure \textcolor{bleu_cite}{\ref{etopo1}}) 
 is produced by the National Geophysical Data Center and provides two layers of relief information.
 The layers include bathymetry over the oceans and some of the main lakes on Earth.
  Terrestrial topography and ocean bathymetry are based on SRTM30 topography and through various bathymetric cruises.
 \bigskip
 
-\noindent Visit the site
+Visit the site
 and subset your area of interest on the ETOPO1 website map and download the data in NetCDF format.
 
 \bigskip  
@@ -509,7 +509,7 @@ The script \textit{make\_roms\_grid.py} does not allow the selection of the lati
 \subsubsection{Creating the ROMS grid}\index{Gerando a grade do ROMS}
 \bigskip
 
-\noindent Enter the \textit{model2roms} directory and look for the \textit{grid} subfolder. Open the code \textit{make\_roms\_grid.py}.
+Enter the \textit{model2roms} directory and look for the \textit{grid} subfolder. Open the code \textit{make\_roms\_grid.py}.
 \bigskip
 
 \begin{bashcode}
@@ -518,7 +518,7 @@ gedit make_roms_grid.py
 \end{bashcode}
 \bigskip
 
-\noindent As Figure \textcolor{bleu_cite}{\ref{fazgrade}} shown, the variables that will be modified are:
+As Figure \textcolor{bleu_cite}{\ref{fazgrade}} shown, the variables that will be modified are:
 \bigskip
 
 \begin{itemize}
@@ -575,7 +575,7 @@ As we do not use the data from SRTM\_30\_PLUS, the variable \textit{srtm\_dir} d
 \end{figure}
 \bigskip
 
-\noindent After making the changes, just run the code. Type it:
+After making the changes, just run the code. Type it:
 \bigskip
 
 \begin{bashcode}
@@ -586,20 +586,20 @@ ipython make_roms_grid.py --pylab
 \subsection{Gridbuilder}
 \bigskip
 
-Gridbuilder\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://austides.com/wp-content/uploads/GridBuilder-v0.99.pdf}{https://austides.com/wp-content/uploads/GridBuilder-v0.99.pdf}}}}
-is a tool that can be an alternative to build the grid used in the oceanic model instead of using the \textit{make\_grid.py} script. It is is intended for rapid development of grids for numerical ocean models
-with a particular emphasis on elements commonly used in ROMS. 
+Optionally, you can use the Gridbuilder\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{https://austides.com/wp-content/uploads/GridBuilder-v0.99.pdf}{https://austides.com/wp-content/uploads/GridBuilder-v0.99.pdf}}}}.
+It is a tool that can be an alternative to build the grid used in the oceanic model instead of using the \textit{make\_grid.py} script. It is is intended for rapid development of grids for numerical ocean models
+with a particular emphasis on elements commonly used in ROMS. The website offers a PDF with valuable informations about how to use the program.
 
 \subsection{Introduction to ROMS forcing files}\index{Introdução sobre as condições do ROMS}
 \bigskip
 
-\noindent We will use \textit{model2roms} to generate the ROMS conditions. The toolbox supports data from GLORYS12V1 (\cite{Fernandez2018}) 
+We will use \textit{model2roms} to generate the ROMS conditions. The toolbox supports data from GLORYS12V1 (\cite{Fernandez2018}) 
 and SODA3 (\cite{Carton2018}), however, we will only use GLORYS12V1 as an example.
 
 \subsection{Global Ocean Physics Reanalysis (GLORYS)}\index{O Global Ocean Physics Reanalysis (GLORYS)}
 \bigskip
 
-\noindent GLORYS\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}{\nolinkurl{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}}}}}
+GLORYS\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}{\nolinkurl{http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com\_csw\&view=details\&product\_id=GLOBAL\_REANALYSIS\_PHY\_001\_030}}}}}
 is a global reanalysis of the ocean with a 1/12° spatial resolution with daily and monthly temporal resolution and 
 50 vertical levels. It is based on the current CMEMS global weather forecasting system and is forced by ECMWF's ERA-Interim from the NEMO model.
 A Kalman filter with reduced order is used to assimilate the sea altimetry, sea surface temperature, sea ice concentration data obtained 
@@ -607,7 +607,7 @@ from remote sensing and the \textit{in situ} data of vertical temperature and sa
 In addition, a 3D-VAR scheme provides a correction for temperature and salinity deviations.
 \bigskip
 
-\noindent You can download the GLORYS data using the \textit{download\_glorys\_cmems\_lsl.sh} script provided by Luciana Lima. Go to the repository root folder, download the \textit{download\_glorys\_cmems\_lsl.sh}
+You can download the GLORYS data using the \textit{download\_glorys\_cmems\_lsl.sh} script provided by Luciana Lima. Go to the repository root folder, download the \textit{download\_glorys\_cmems\_lsl.sh}
 file, modify according your needs and execute, as the following:
 \bigskip
 
@@ -618,7 +618,7 @@ get download_glorys_cmems_lsl.sh
 \end{bashcode}
 \bigskip
 
-\noindent You can also, download the data manually. But when you try to download, the site will warn you that you will need to create an account.
+You can also, download the data manually. But when you try to download, the site will warn you that you will need to create an account.
 Register and choose the GLORYS daily data set, as shown in Figure \textcolor{bleu_cite}{\ref{glorys1}}.
 \bigskip
 
@@ -630,8 +630,8 @@ Register and choose the GLORYS daily data set, as shown in Figure \textcolor{ble
 \end{figure}
 \bigskip
 
-\noindent Click on \textit{Dowload product} and, on the next page (Figure \textcolor{bleu_cite}{\ref{glorys2}}), select the area according to 
-the latitude and longitude limits of the chosen grid. Also choose the period of data to be downloaded and if you want to use the sea 
+Click on \textit{Dowload product} and, on the next page (Figure \textcolor{bleu_cite}{\ref{glorys2}}), select the area according to 
+the latitude and longitude limits of the chosen grid. Also choose the period of data to be downloaded. Also, if you want to use the sea 
 ice model in ROMS, select all variables, with the exception of:
 \bigskip
 
@@ -641,7 +641,7 @@ ice model in ROMS, select all variables, with the exception of:
 \end{itemize}
 \bigskip
 
-\noindent If you choose to not use the sea ice model, do not select the variables:
+If you choose to not use the sea ice model, do not select the variables:
 \bigskip
 
 \begin{itemize}
@@ -660,7 +660,7 @@ ice model in ROMS, select all variables, with the exception of:
 \end{figure}
 \bigskip
 
-\noindent The Copernicus server allow files for download with a maximum of 1024 mb. 
+The Copernicus server allow download with a maximum size of 1024 mb. 
 If the selected period has a larger file size, as for example in Figure \textcolor{bleu_cite}{\ref{glorys3}}, it will be necessary to 
 return to the previous step and partition the files into smaller pieces or download the complete set by clicking on \textit{FTP ACCESS}
 (Figure \textcolor{bleu_cite}{\ref{glorys3}}).
@@ -674,14 +674,14 @@ return to the previous step and partition the files into smaller pieces or downl
 \end{figure}
 \bigskip
 
-\noindent If you choose to partition the files or download the files by \textit{FTP}, you will need to create a new file with 
+If you choose to partition the files or download the files by \textit{FTP}, you will need to create a new file with 
 all the concatenated chosen dates. In this case, it is necessary to use \textit{Climate Data Operators} (CDO).
 \bigskip
 
-\noindent There are two ways to install CDO: by \textit{Conda} or by \textit{apt-get}.
+There are two ways to install CDO: by \textit{Conda} or by \textit{apt-get}.
 \bigskip
 
-\noindent If you choose to use \textit{Conda}, type:
+If you choose to use \textit{Conda}, type:
 \bigskip
 
 \begin{bashcode}
@@ -689,7 +689,7 @@ conda install -c conda-forge cdo
 \end{bashcode}
 \bigskip
 
-\noindent If you choose to use \textit{apt-get}, type:
+If you choose to use \textit{apt-get}, type:
 \bigskip
 
 \begin{bashcode}
@@ -697,7 +697,7 @@ sudo apt-get install cdo
 \end{bashcode}
 \bigskip
 
-\noindent After installation, enter the directory where all GLORYS files are located and type:
+After installation, enter the directory where all GLORYS files are located and type:
 \bigskip
 
 \begin{bashcode}
@@ -705,7 +705,7 @@ cdo cat glorys* glorys.nc
 \end{bashcode}
 \bigskip
 
-\noindent Where: 
+Where: 
 \bigskip
 
 \begin{itemize}
@@ -733,11 +733,11 @@ Place de dowloaded GLORYS files inside the \textit{\$HOME/model2roms/input} fold
 \subsection{Creating ROMS forcing files}\index{Gerando as condições do ROMS}
 \bigskip
 
-\noindent When opening the \textit{model2roms} folder, it is possible to observe several script files. 
-We will start with the file \textit{compile.py}, which will compile several files in Fortran90. 
+When opening the \textit{model2roms} folder, it is possible to observe several script files. 
+We will start with the file \textit{compile.py}, which will compile the files in Fortran90 to be read by Python. 
 \bigskip
 
-\noindent Compile the files with the command:
+Compile the files with the command:
 \bigskip
 
 \begin{bashcode}
@@ -745,7 +745,7 @@ ipython compile.py --pylab
 \end{bashcode}
 \bigskip
 
-\noindent If your \textit{GLORYS} file name is different from \textit{glorys.nc}, open the code \textit{forcingFilenames.py} 
+If your \textit{GLORYS} file name is different from \textit{glorys.nc}, open the code \textit{forcingFilenames.py} 
 (Figure \textcolor{bleu_cite}{\ref{forcingfilename}}) and in row 15, change \textit{'glorys.nc'} to the name of the created file.
 \bigskip
 
@@ -763,8 +763,8 @@ gedit forcingFilenames.py
 \end{figure}
 \bigskip
 
-\noindent Open the file \textit{configM2R.py} and, in row 16 (Figure \textcolor{bleu_cite}{\ref{abrev}}), change the abbreviation \textit{SuaAbreviaçãoAqui} 
-of the \textit{defineabbreviation} to the name of your choice.
+Open the file \textit{configM2R.py} and, in row 16 (Figure \textcolor{bleu_cite}{\ref{abrev}}), change the abbreviation \textit{SuaAbreviaçãoAqui} 
+to a name of your choice.
 \bigskip
 
 \begin{figure}[H]
@@ -775,7 +775,7 @@ of the \textit{defineabbreviation} to the name of your choice.
 \end{figure}
 \bigskip
 
-\noindent In row 63 (Figure \textcolor{bleu_cite}{\ref{gradediretoriom2r}}), change the grid directory \textit{Minha\_Grade.nc} to your 
+In row 63 (Figure \textcolor{bleu_cite}{\ref{gradediretoriom2r}}), change the grid directory \textit{Minha\_Grade.nc} to your 
 grid directory and the abbreviation \textit{SuaAbreviaçãoAqui} by the name chosen in the previous step.
 \bigskip
 
@@ -788,7 +788,7 @@ grid directory and the abbreviation \textit{SuaAbreviaçãoAqui} by the name cho
 \end{figure}
 \bigskip
 
-\noindent On row 67 (Figure \textcolor{bleu_cite}{\ref{glorysdirm2r}}), change the \textit{GLORYS} file directory to your chosen path.
+On row 67 (Figure \textcolor{bleu_cite}{\ref{glorysdirm2r}}), change the \textit{GLORYS} file directory to your chosen path.
 \bigskip
 
 \begin{figure}[H]
@@ -799,7 +799,7 @@ grid directory and the abbreviation \textit{SuaAbreviaçãoAqui} by the name cho
 \end{figure}
 \bigskip
 
-\noindent From row 76 (Figure \textcolor{bleu_cite}{\ref{m2roptions}}), modify according to your project: 
+From row 76 (Figure \textcolor{bleu_cite}{\ref{m2roptions}}), modify according to your project: 
 \bigskip
 
 \begin{itemize}
@@ -853,7 +853,7 @@ grid directory and the abbreviation \textit{SuaAbreviaçãoAqui} by the name cho
 \end{figure}
 \bigskip
 
-\noindent Run \textit{model2roms} with the command:
+Run \textit{model2roms} with the command:
 \bigskip
 
 \begin{bashcode}
@@ -861,6 +861,6 @@ ipython runM2R.py
 \end{bashcode}
 \bigskip
 
-\noindent At the end, the initial, boundary and climatological files will be created, which should be added to your project folder, in the Kerana cluster.
+At the end, the initial, boundary and climatological files will be created, which should be added to your project folder, in the Kerana cluster.
 \bigskip
    

@@ -1,48 +1,47 @@
-% !TEX root = /media/ueslei/Ueslei/INPE/PCI/Projetos/Guia_COAWST/main.tex
 \chapterimage{header.jpg}
 \chapter*{Author's note}
 \bigskip
-\noindent This guide is designed to assist new users to configure and use the Coupled Ocean-Atmosphere-Wave-Sediment Transport System (COAWST).
+ This guide is designed to assist new users to configure and use the Coupled Ocean-Atmosphere-Wave-Sediment Transport System (COAWST).
 The main idea behind this  guide is to teach the necessary steps to use COAWST, starting with its installation, then a simulation of a test case and 
 then, the configuration of your own project. To achieve this goal, we use several programming languages, such as Fortran, Python and MATLAB. In the future we intend to adapt all scripts
 to a free programming language.
 \bigskip
 
-\noindent When we started writing this guide, we wanted to pass on our expertise of using a numerical modeling system that is considered the state of the art in our field, 
+ When we started writing this guide, we wanted to pass on our expertise of using a numerical modeling system that is considered the state of the art in our field, 
 throughout reading, understanding how it works and how to use the COAWST, allying theory with practice.
 \bigskip
 
-\noindent However, a major difficulty in this process was the generation of the boundary and initial conditions for the oceanic model, the Regional Ocean Modeling System (ROMS),
+ However, a major difficulty in this process was the generation of the boundary and initial conditions for the oceanic model, the Regional Ocean Modeling System (ROMS),
 which rely on paid software. To get around this problem we chosed to work with the \textit {model2roms} toolbox package. This set of routines was developed in Python and 
 Fortran language by Trond Kristiansen\textcolor{bleu_cite}{\textit{}\footnote{\textcolor{bleu_cite}{\href{http://www.trondkristiansen.com}{http://www.trondkristiansen.com}}}}. 
 \bigskip
 
-\noindent We emphasize that in some chapters, the reader will find how to use the COAWST in a cluster that is available for use by the Ocean and Atmosphere 
+ We emphasize that in some chapters, the reader will find how to use the COAWST in a cluster that is available for use by the Ocean and Atmosphere 
 Studies Laboratory (LOA) of the National Institute for Space Research (INPE). This is a high performance computing system that allows to use softwares on 
 parallel computing processes. Therefore, this guide will serve as an inspiration for COAWST users to implement their projects on their own computational systems.
 \bigskip
 
-\noindent To cite the \textbf{third edition}, use the following:
+ To cite the \textbf{third edition}, use the following:
 \bigskip
 
-\noindent SUTIL, U. A.; PEZZI, L. P. COAWST User's Guide - 3ª Edition. São José dos Campos: INPE, 2020. 94 p. IBI: <8JMKD3MGP3W34R/43BQG8E>. ISBN: <978-85-17-00093-5>. Avaliable at: <\textcolor{bleu_cite}{\href{http://urlib.net/8JMKD3MGP3W34R/43BQG8E}{http://urlib.net/8JMKD3MGP3W34R/43BQG8E}}>. 
+ SUTIL, U. A.; PEZZI, L. P. COAWST User's Guide - 3ª Edition. São José dos Campos: INPE, 2020. 94 p., IBI: 8JMKD3MGP3W34R/43BQG8E, ISBN: 978-65-89159-00-1, doi:\textcolor{bleu_cite}{\href{https://www.doi.org/10.13140/RG.2.2.31269.12002}{10.13140/RG.2.2.31269.12002}}. Avaliable at: <\textcolor{bleu_cite}{\href{http://urlib.net/8JMKD3MGP3W34R/43BQG8E}{http://urlib.net/8JMKD3MGP3W34R/43BQG8E}}>. 
 \bigskip
 \newpage
 
-\noindent To cite the \textbf{second edition}, use the following:
+ To cite the \textbf{second edition}, use the following:
 \bigskip
 
-\noindent SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST - 2ª Edição. São José dos Campos: INPE, 2019. 100 p. IBI: <8JMKD3MGPCW/3DT298SL>. ISBN: <978-85-17-00098-0>. Avaliable at: <\textcolor{bleu_cite}{\href{http://urlib.net/rep/8JMKD3MGP3W34R/3TUTUJB}{http://urlib.net/rep/8JMKD3MGP3W34R/3TUTUJB}}>. 
+ SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST - 2ª Edição. São José dos Campos: INPE, 2019. 100 p., IBI: 8JMKD3MGPCW/3DT298SL, ISBN: 978-85-17-00098-0, doi:\textcolor{bleu_cite}{\href{https://www.doi.org/10.13140/RG.2.2.15147.18720}{10.13140/RG.2.2.15147.18720}}, Avaliable at: <\textcolor{bleu_cite}{\href{http://urlib.net/rep/8JMKD3MGP3W34R/3TUTUJB}{http://urlib.net/rep/8JMKD3MGP3W34R/3TUTUJB}}>. 
 \bigskip
 
-\noindent To cite the \textbf{first edition}, use the following:
+ To cite the \textbf{first edition}, use the following:
 \bigskip
 
-\noindent SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST. São José dos Campos: INPE, 2018. 86 p. IBI: <8JMKD3MGP3W34R/3RQSQ2L>. ISBN: <978-85-17-00093-5>. Avaliable at: <\textcolor{bleu_cite}{\href{http://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L}{http://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L}}>. 
+ SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST. São José dos Campos: INPE, 2018. 86 p., IBI: 8JMKD3MGP3W34R/3RQSQ2L, ISBN: 978-85-17-00093-5, doi:\textcolor{bleu_cite}{\href{https://www.doi.org/10.13140/RG.2.2.31726.87363}{10.13140/RG.2.2.31726.87363}}. Avaliable at: <\textcolor{bleu_cite}{\href{http://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L}{http://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L}}>. 
 \bigskip
 \bigskip
 
-\noindent We wish you a good reading and success in your research.
+ We wish you a good reading and success in your research.
 \bigskip
 
-\noindent The authors.
+ The authors.

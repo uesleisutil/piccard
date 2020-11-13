@@ -1,19 +1,19 @@
 [0] Config.pm:304> INFO - This is Biber 2.14 (beta)
 [0] Config.pm:307> INFO - Logfile is 'main.blg'
-[87] biber:322> INFO - === Tue Nov 10, 2020, 10:30:17
-[104] Biber.pm:415> INFO - Reading 'main.bcf'
-[186] Biber.pm:943> INFO - Found 46 citekeys in bib section 0
-[200] Biber.pm:4256> INFO - Processing section 0
-[200] Utils.pm:75> INFO - Globbing data source 'refs.bib'
-[201] Utils.pm:91> INFO - Globbed data source 'refs.bib' to refs.bib
-[211] Biber.pm:4455> INFO - Looking for bibtex format file 'refs.bib' for section 0
-[214] bibtex.pm:1653> INFO - LaTeX decoding ...
-[287] bibtex.pm:1471> INFO - Found BibTeX data source 'refs.bib'
-[715] Utils.pm:293> WARN - BibTeX subsystem: /tmp/biber_tmp_Nvtv/refs.bib_32154.utf8, line 244, warning: undefined macro "42-1"
-[803] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[803] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[803] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[803] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[873] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[965] bbl.pm:755> INFO - Output to main.bbl
-[966] Biber.pm:128> INFO - WARNINGS: 1
+[75] biber:322> INFO - === Fri Nov 13, 2020, 10:57:31
+[90] Biber.pm:415> INFO - Reading 'main.bcf'
+[158] Biber.pm:943> INFO - Found 46 citekeys in bib section 0
+[171] Biber.pm:4256> INFO - Processing section 0
+[171] Utils.pm:75> INFO - Globbing data source 'refs.bib'
+[171] Utils.pm:91> INFO - Globbed data source 'refs.bib' to refs.bib
+[180] Biber.pm:4455> INFO - Looking for bibtex format file 'refs.bib' for section 0
+[182] bibtex.pm:1653> INFO - LaTeX decoding ...
+[234] bibtex.pm:1471> INFO - Found BibTeX data source 'refs.bib'
+[606] Utils.pm:293> WARN - BibTeX subsystem: /tmp/biber_tmp_vZTX/refs.bib_26033.utf8, line 244, warning: undefined macro "42-1"
+[685] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[685] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[685] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[685] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[741] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[821] bbl.pm:755> INFO - Output to main.bbl
+[821] Biber.pm:128> INFO - WARNINGS: 1

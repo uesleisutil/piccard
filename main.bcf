@@ -2190,40 +2190,26 @@
     <bcf:citekey order="4">Arakawa1977</bcf:citekey>
     <bcf:citekey order="5">Haidvogel2008</bcf:citekey>
     <bcf:citekey order="6">hedstrom2018</bcf:citekey>
-    <bcf:citekey order="7">hedstrom2018</bcf:citekey>
     <bcf:citekey order="8">Budgell2005</bcf:citekey>
-    <bcf:citekey order="9">Budgell2005</bcf:citekey>
     <bcf:citekey order="10">hedstrom2018</bcf:citekey>
-    <bcf:citekey order="11">hedstrom2018</bcf:citekey>
     <bcf:citekey order="12">Hunke1997</bcf:citekey>
-    <bcf:citekey order="13">Hunke1997</bcf:citekey>
     <bcf:citekey order="14">Hunke2001</bcf:citekey>
-    <bcf:citekey order="15">Hunke2001</bcf:citekey>
     <bcf:citekey order="16">Mellor1989</bcf:citekey>
-    <bcf:citekey order="17">Mellor1989</bcf:citekey>
     <bcf:citekey order="18">Arakawa1977</bcf:citekey>
-    <bcf:citekey order="19">Arakawa1977</bcf:citekey>
     <bcf:citekey order="20">Smolarkiewicz1990</bcf:citekey>
-    <bcf:citekey order="21">Smolarkiewicz1990</bcf:citekey>
     <bcf:citekey order="22">Lemieux2015</bcf:citekey>
-    <bcf:citekey order="23">Lemieux2015</bcf:citekey>
     <bcf:citekey order="24">Skamarock2008</bcf:citekey>
     <bcf:citekey order="25">Skamarock2008</bcf:citekey>
     <bcf:citekey order="26">Arakawa1977</bcf:citekey>
     <bcf:citekey order="27">Skamarock2008</bcf:citekey>
-    <bcf:citekey order="28">Skamarock2008</bcf:citekey>
     <bcf:citekey order="29">Charnock1955</bcf:citekey>
-    <bcf:citekey order="30">Charnock1955</bcf:citekey>
     <bcf:citekey order="31">Booij1999</bcf:citekey>
     <bcf:citekey order="31">Booij1996</bcf:citekey>
     <bcf:citekey order="32">Booij1999</bcf:citekey>
     <bcf:citekey order="32">Booij1996</bcf:citekey>
     <bcf:citekey order="33">Dasilva2013</bcf:citekey>
-    <bcf:citekey order="34">Dasilva2013</bcf:citekey>
     <bcf:citekey order="35">Booij1999</bcf:citekey>
     <bcf:citekey order="35">Booij1996</bcf:citekey>
-    <bcf:citekey order="36">Booij1996</bcf:citekey>
-    <bcf:citekey order="36">Booij1999</bcf:citekey>
     <bcf:citekey order="37">Tolman1997</bcf:citekey>
     <bcf:citekey order="37">Tolman1999</bcf:citekey>
     <bcf:citekey order="37">Tolman2009</bcf:citekey>
@@ -2239,83 +2225,4 @@
     <bcf:citekey order="42">Warner2010</bcf:citekey>
     <bcf:citekey order="42">Warner2008</bcf:citekey>
     <bcf:citekey order="43">Warner2008</bcf:citekey>
-    <bcf:citekey order="44">Warner2010</bcf:citekey>
-    <bcf:citekey order="44">Warner2008</bcf:citekey>
-    <bcf:citekey order="45">Pullen2018</bcf:citekey>
-    <bcf:citekey order="45">Miller2018</bcf:citekey>
-    <bcf:citekey order="46">Warner2010</bcf:citekey>
-    <bcf:citekey order="47">Warner2010</bcf:citekey>
-    <bcf:citekey order="48">Warner2008</bcf:citekey>
-    <bcf:citekey order="49">Saha2006</bcf:citekey>
-    <bcf:citekey order="50">duda2006</bcf:citekey>
-    <bcf:citekey order="51">duda2006</bcf:citekey>
-    <bcf:citekey order="52">Ncl2017</bcf:citekey>
-    <bcf:citekey order="53">Trond2019</bcf:citekey>
-    <bcf:citekey order="54">Becker2009</bcf:citekey>
-    <bcf:citekey order="55">Amante2009</bcf:citekey>
-    <bcf:citekey order="56">Amante2009</bcf:citekey>
-    <bcf:citekey order="57">Fernandez2018</bcf:citekey>
-    <bcf:citekey order="58">Carton2018</bcf:citekey>
-    <bcf:citekey order="59">hedstrom2018</bcf:citekey>
-    <bcf:citekey order="60">hedstrom2018</bcf:citekey>
-    <bcf:citekey order="61">Mellor1989</bcf:citekey>
-    <bcf:citekey order="62">Mellor1989</bcf:citekey>
-    <bcf:citekey order="63">Hunke1997</bcf:citekey>
-    <bcf:citekey order="64">Hunke1997</bcf:citekey>
-    <bcf:citekey order="65">Hunke2001</bcf:citekey>
-    <bcf:citekey order="66">Hunke2001</bcf:citekey>
-    <bcf:citekey order="67">Overland1988</bcf:citekey>
-    <bcf:citekey order="68">Overland1988</bcf:citekey>
-    <bcf:citekey order="69">Budgell2005</bcf:citekey>
-    <bcf:citekey order="70">Budgell2005</bcf:citekey>
-    <bcf:citekey order="71">hedstrom2018</bcf:citekey>
-    <bcf:citekey order="72">hedstrom2018</bcf:citekey>
-    <bcf:citekey order="73">Sutil2019</bcf:citekey>
-    <bcf:citekey order="74">Endo2019</bcf:citekey>
-    <bcf:citekey order="75">Lima2019</bcf:citekey>
-    <bcf:citekey order="76">Pullen2017</bcf:citekey>
-    <bcf:citekey order="77">Mendonca2017</bcf:citekey>
-    <bcf:citekey order="78">Parise2015</bcf:citekey>
-    <bcf:citekey order="79">Dias2014</bcf:citekey>
-    <bcf:citekey order="80">Silveira2014</bcf:citekey>
-  </bcf:section>
-  <!-- SORTING TEMPLATES -->
-  <bcf:sortingtemplate name="nyt">
-    <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">year</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="6">
-      <bcf:sortitem order="1">volume</bcf:sortitem>
-      <bcf:sortitem literal="1" order="2">0</bcf:sortitem>
-    </bcf:sort>
-  </bcf:sortingtemplate>
-  <!-- DATALISTS -->
-  <bcf:datalist section="0"
-                name="nyt/global//global/global"
-                type="entry"
-                sortingtemplatename="nyt"
-                sortingnamekeytemplatename="global"
-                labelprefix=""
-                uniquenametemplatename="global"
-                labelalphanametemplatename="global">
-  </bcf:datalist>
-</bcf:controlfile>
+    <bcf:citek

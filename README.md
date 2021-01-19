@@ -35,15 +35,15 @@ Second edition notes:
 Submit a comment, suggestions or modifications and improvements you would like to see. I would love to see this project go much further, so your
 email will be very useful.
 
-<h2>To cite the third version</h2>
+<h2>Third Edition Reference</h2>
 SUTIL, U. A.; PEZZI, L. P. COAWST User's Guide - 3ª Edition. São José dos Campos: INPE, 2020. 94 p., IBI: 8JMKD3MGP3W34R/43BQG8E, ISBN: 978-65-89159-00-1, doi:10.13140/RG.2.2.31269.12002. Avaliable at: http://urlib.net/8JMKD3MGP3W34R/43BQG8E. 
 
 
-<h2>To cite the second version</h2>
+<h2>Second Edition Reference</h2>
 SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST - 2ª Edição. São José dos Campos: INPE, 2019. 100 p. IBI: 8JMKD3MGPCW/3DT298SL, ISBN: 978-85-17-00098-0, doi:10.13140/RG.2.2.15147.18720, Avaliable at:http://urlib.net/rep/8JMKD3MGP3W34R/3TUTUJB.
 
 
-<h2>To cite the first version</h2>
+<h2>First Edition Reference</h2>
 SUTIL, U. A.; PEZZI, L. P. Guia prático para utilização do COAWST. São José dos Campos: INPE, 2018. 86 p. IBI: 8JMKD3MGP3W34R/3RQSQ2L, ISBN: 978-85-17-00093-5, doi:10.13140/RG.2.2.31726.87363. Avaliable at:{http://urlib.net/rep/8JMKD3MGP3W34R/3RQSQ2L.
  
 

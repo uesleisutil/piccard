@@ -1,9 +1,9 @@
-# COAWST configuration guide - 3° Edition
+# COAWST User's Guide - 3° Edition
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/uesleisutil/coawst_guide">
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />
 
-<h2>COAWST configuration guide, third edition.</h2>
+<h2> COAWST User's Guide, third edition.</h2>
 
 Third edition notes:
 * renewed the aesthetics of the guide;
@@ -11,7 +11,7 @@ Third edition notes:
 * translated it to english;
 * added a WW3 section.
 
-<h2>COAWST configuration guide, second edition.</h2>
+<h2> COAWST User's Guide, second edition.</h2>
 
 **The second edition project is in the V2 folder.**
 
@@ -22,7 +22,7 @@ Second edition notes:
 * reformulated the ROMS section, using the model2roms toolbox by Trond Kristiansen;
 * added section for Budgell's Sea Ice Model;
 
-<h2>COAWST configuration guide, first edition.</h2>
+<h2>COAWST User's Guide, first edition.</h2>
 
 **The first edition project is in the V2 folder.**
   
